@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bookmarks Jev</title>
+  </head>
+  <body>
+    <main>
+      <form id="search-form" role="search">
+        <label for="search">Search bookmarks</label>
+        <input id="search" name="q" type="search" autocomplete="off" />
+      </form>
+      <output id="result" for="search"></output>
+    </main>
+    <script type="module">
+      const form = document.querySelector("#search-form");
+      const input = document.querySelector("#search");
+      const result = document.querySelector("#result");
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const response = await fetch(`/api/search?q=${encodeURIComponent(input.value)}`);
+        result.textContent = await response.text();
+      });
+    </script>
+  </body>
+</html>
