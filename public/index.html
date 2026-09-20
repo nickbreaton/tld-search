@@ -62,11 +62,23 @@
       const form = document.querySelector("#search-form");
       const input = document.querySelector("#search");
       const result = document.querySelector("#result");
-      const username = new URL(location.href).searchParams.get("username");
 
-      if (username) {
-        account.textContent = `Signed in as @${username}`;
-      }
+      const loadAccount = async () => {
+        try {
+          const response = await fetch("/api/me");
+
+          if (!response.ok) {
+            return;
+          }
+
+          const body = await response.json();
+          account.textContent = `Signed in as @${body.username}`;
+        } catch {
+          // Keep the sign-in link when the current session cannot be loaded.
+        }
+      };
+
+      void loadAccount();
 
       form.addEventListener("submit", async (event) => {
         event.preventDefault();

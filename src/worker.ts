@@ -1,11 +1,14 @@
 import * as Cloudflare from "alchemy/Cloudflare";
 import * as Config from "effect/Config";
+import * as DateTime from "effect/DateTime";
 import * as Duration from "effect/Duration";
 import * as Effect from "effect/Effect";
+import * as Option from "effect/Option";
 import * as Redacted from "effect/Redacted";
 import * as Schema from "effect/Schema";
 import { HttpServerRequest } from "effect/unstable/http/HttpServerRequest";
 import * as HttpServerResponse from "effect/unstable/http/HttpServerResponse";
+import { IronSession } from "./IronSession.ts";
 
 const JevResponse = Schema.Struct({
   result: Schema.Struct({
@@ -21,11 +24,31 @@ const JevResponse = Schema.Struct({
 
 const TokenResponse = Schema.Struct({
   access_token: Schema.String,
+  expires_in: Schema.Number,
+  refresh_token: Schema.String,
+  scope: Schema.String,
+  token_type: Schema.String,
 });
 
 const UserResponse = Schema.Struct({
   data: Schema.Struct({
+    id: Schema.String,
     username: Schema.String,
+  }),
+});
+
+const SessionData = Schema.Struct({
+  version: Schema.Literal(1),
+  user: Schema.Struct({
+    id: Schema.String,
+    username: Schema.String,
+  }),
+  oauth: Schema.Struct({
+    accessToken: Schema.String,
+    refreshToken: Schema.String,
+    tokenType: Schema.String,
+    scope: Schema.String,
+    accessTokenExpiresAt: Schema.Number,
   }),
 });
 
@@ -112,10 +135,13 @@ export default Cloudflare.Worker(
     const ai = yield* Cloudflare.Workers.AI();
     const xClientId = yield* Config.String("X_CLIENT_ID");
     const xClientSecret = yield* Config.Redacted("X_CLIENT_SECRET");
+    const sessionSecret = yield* Config.Redacted("SESSION_SECRET");
+    const ironSessionLayer = IronSession.layer({ password: sessionSecret });
 
     return {
       fetch: Effect.gen(function* () {
         const request = yield* HttpServerRequest;
+        const ironSession = yield* IronSession;
         const url = new URL(request.url, requestOrigin(request));
 
         if (url.pathname === "/auth/x") {
@@ -211,11 +237,10 @@ export default Cloudflare.Worker(
             Effect.flatMap(decodeUserResponse),
           );
 
+          const now = yield* DateTime.now;
           const destination = new URL("/", url.origin);
 
-          destination.searchParams.set("username", user.data.username);
-
-          return yield* HttpServerResponse.redirect(destination).pipe(
+          const response = yield* HttpServerResponse.redirect(destination).pipe(
             HttpServerResponse.expireCookie("x_oauth_state", { path: "/auth/x/callback" }),
             Effect.flatMap(
               HttpServerResponse.expireCookie("x_oauth_verifier", {
@@ -223,10 +248,38 @@ export default Cloudflare.Worker(
               }),
             ),
           );
+
+          return yield* ironSession.save(request, response, {
+            version: 1,
+            user: user.data,
+            oauth: {
+              accessToken: token.access_token,
+              refreshToken: token.refresh_token,
+              tokenType: token.token_type,
+              scope: token.scope,
+              accessTokenExpiresAt:
+                DateTime.toEpochMillis(now) + Duration.toMillis(Duration.seconds(token.expires_in)),
+            },
+          });
         }
 
-        if (url.pathname !== "/api/search") {
+        if (url.pathname !== "/api/me" && url.pathname !== "/api/search") {
           return HttpServerResponse.empty({ status: 404 });
+        }
+
+        const session = yield* ironSession.load(request, SessionData);
+
+        if (Option.isNone(session)) {
+          return yield* HttpServerResponse.json(
+            { error: "Authentication required." },
+            { status: 401 },
+          );
+        }
+
+        if (url.pathname === "/api/me") {
+          return yield* HttpServerResponse.json({ username: session.value.user.username }).pipe(
+            Effect.map(HttpServerResponse.setHeader("cache-control", "no-store")),
+          );
         }
 
         const query = url.searchParams.get("q")?.trim();
@@ -246,6 +299,7 @@ export default Cloudflare.Worker(
         );
       }).pipe(
         Effect.catch(() => HttpServerResponse.json({ error: "Request failed." }, { status: 500 })),
+        Effect.provide(ironSessionLayer),
       ),
     };
   }).pipe(Effect.provide(Cloudflare.Workers.AIBinding)),
