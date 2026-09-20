@@ -16,7 +16,8 @@
     "@effect/platform-bun": "4.0.0-rc.116",
     "@effect/platform-node": "4.0.0-rc.116",
     "alchemy": "2.0.0-beta.79",
-    "effect": "4.0.0-rc.116"
+    "effect": "4.0.0-rc.116",
+    "iron-session": "^9.0.1"
   },
   "devDependencies": {
     "@oxlint/plugins": "1.83.0",
