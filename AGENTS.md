@@ -1,4 +1,4 @@
-# Agent Guide
+Do not change this file unless explicitly instructed to.
 
 ## Product goal
 
@@ -28,4 +28,3 @@ Use [Jev by TypeSafe AI](https://docs.typesafe.ai/) to rank bookmarks with struc
 ## Data access controls
 
 Data must be isolated by authenticated X user: users may access or delete only their own bookmarks, sync state, and credentials. We will decide the storage and enforcement mechanisms during implementation.
-
