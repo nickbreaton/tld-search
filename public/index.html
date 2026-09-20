@@ -3,15 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bookmarks Jev</title>
+    <title>Sandwich?</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, sans-serif;
+      }
+      body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        place-items: center;
+      }
+      main {
+        width: min(32rem, calc(100% - 2rem));
+      }
+      label,
+      input,
+      output {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      label {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      input {
+        padding: 0.8rem 1rem;
+        font: inherit;
+      }
+      output {
+        min-height: 2rem;
+        margin-top: 1rem;
+        font-size: 1.25rem;
+      }
+    </style>
   </head>
   <body>
     <main>
       <form id="search-form" role="search">
-        <label for="search">Search bookmarks</label>
-        <input id="search" name="q" type="search" autocomplete="off" />
+        <label for="search">Is it a sandwich?</label>
+        <input
+          id="search"
+          name="q"
+          type="search"
+          placeholder="hot dog"
+          autocomplete="off"
+          required
+        />
       </form>
-      <output id="result" for="search"></output>
+      <output id="result" for="search" aria-live="polite"></output>
     </main>
     <script type="module">
       const form = document.querySelector("#search-form");
@@ -20,8 +63,20 @@
 
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
-        const response = await fetch(`/api/search?q=${encodeURIComponent(input.value)}`);
-        result.textContent = await response.text();
+        result.textContent = "Classifying…";
+
+        try {
+          const response = await fetch(`/api/search?q=${encodeURIComponent(input.value)}`);
+          const body = await response.json();
+
+          if (!response.ok) {
+            throw new Error(body.error ?? "Classification failed.");
+          }
+
+          result.textContent = `${body.food}: ${body.classification}`;
+        } catch (error) {
+          result.textContent = error instanceof Error ? error.message : "Classification failed.";
+        }
       });
     </script>
   </body>
