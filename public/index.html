@@ -43,6 +43,7 @@
   </head>
   <body>
     <main>
+      <p id="account"><a href="/auth/x">Sign in with X</a></p>
       <form id="search-form" role="search">
         <label for="search">Is it a sandwich?</label>
         <input
@@ -57,9 +58,15 @@
       <output id="result" for="search" aria-live="polite"></output>
     </main>
     <script type="module">
+      const account = document.querySelector("#account");
       const form = document.querySelector("#search-form");
       const input = document.querySelector("#search");
       const result = document.querySelector("#result");
+      const username = new URL(location.href).searchParams.get("username");
+
+      if (username) {
+        account.textContent = `Signed in as @${username}`;
+      }
 
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
