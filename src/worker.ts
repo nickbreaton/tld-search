@@ -327,50 +327,69 @@ export default Cloudflare.Worker(
           );
         }
 
-        const bookmarksUrl = new URL(
-          `https://api.x.com/2/users/${encodeURIComponent(session.value.user.id)}/bookmarks`,
-        );
+        const bookmarksById = new Map<string, typeof Bookmark.Type>();
+        let paginationToken: string | undefined;
 
-        bookmarksUrl.search = new URLSearchParams({
-          max_results: "100",
-          "tweet.fields": "author_id,created_at",
-        }).toString();
-
-        const bookmarksHttpResponse = yield* Effect.scoped(
+        yield* Effect.scoped(
           Effect.gen(function* () {
             yield* Console.time("x-bookmarks");
 
-            return yield* Effect.tryPromise(() =>
-              fetch(bookmarksUrl, {
-                headers: {
-                  authorization: `Bearer ${session.value.oauth.accessToken}`,
-                },
-              }),
-            );
+            for (let page = 0; page < 5; page += 1) {
+              const bookmarksUrl = new URL(
+                `https://api.x.com/2/users/${encodeURIComponent(session.value.user.id)}/bookmarks`,
+              );
+
+              const searchParameters = new URLSearchParams({
+                max_results: "100",
+                "tweet.fields": "author_id,created_at",
+              });
+
+              if (paginationToken) {
+                searchParameters.set("pagination_token", paginationToken);
+              }
+
+              bookmarksUrl.search = searchParameters.toString();
+
+              const bookmarksHttpResponse = yield* Effect.tryPromise(() =>
+                fetch(bookmarksUrl, {
+                  headers: {
+                    authorization: `Bearer ${session.value.oauth.accessToken}`,
+                  },
+                }),
+              );
+
+              if (!bookmarksHttpResponse.ok) {
+                yield* Effect.logError("X bookmarks request failed", {
+                  page: page + 1,
+                  status: bookmarksHttpResponse.status,
+                  statusText: bookmarksHttpResponse.statusText,
+                });
+
+                return yield* Effect.fail(new Error("Loading X bookmarks failed."));
+              }
+
+              const bookmarksPage = yield* Effect.tryPromise(() =>
+                bookmarksHttpResponse.json(),
+              ).pipe(Effect.flatMap(decodeBookmarksResponse));
+
+              for (const bookmark of bookmarksPage.data ?? []) {
+                bookmarksById.set(bookmark.id, bookmark);
+              }
+
+              paginationToken = bookmarksPage.meta?.next_token;
+
+              if (!paginationToken) {
+                break;
+              }
+            }
           }),
-        );
-
-        if (!bookmarksHttpResponse.ok) {
-          yield* Effect.logError("X bookmarks request failed", {
-            status: bookmarksHttpResponse.status,
-            statusText: bookmarksHttpResponse.statusText,
-          });
-
-          return yield* HttpServerResponse.json(
-            { error: "Loading X bookmarks failed." },
-            { status: 502 },
-          );
-        }
-
-        const bookmarks = yield* Effect.tryPromise(() => bookmarksHttpResponse.json()).pipe(
-          Effect.flatMap(decodeBookmarksResponse),
         );
 
         const scores = yield* Effect.scoped(
           Effect.gen(function* () {
             yield* Console.time("jev-score");
 
-            return yield* rankBookmarks(ai, query, bookmarks.data ?? []);
+            return yield* rankBookmarks(ai, query, [...bookmarksById.values()]);
           }),
         );
 
