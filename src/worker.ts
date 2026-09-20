@@ -37,6 +37,25 @@ const UserResponse = Schema.Struct({
   }),
 });
 
+const BookmarksResponse = Schema.Struct({
+  data: Schema.optionalKey(
+    Schema.Array(
+      Schema.Struct({
+        id: Schema.String,
+        text: Schema.String,
+        author_id: Schema.optionalKey(Schema.String),
+        created_at: Schema.optionalKey(Schema.String),
+      }),
+    ),
+  ),
+  meta: Schema.optionalKey(
+    Schema.Struct({
+      result_count: Schema.Number,
+      next_token: Schema.optionalKey(Schema.String),
+    }),
+  ),
+});
+
 const SessionData = Schema.Struct({
   version: Schema.Literal(1),
   user: Schema.Struct({
@@ -57,6 +76,8 @@ const decodeJevResponse = Schema.decodeUnknownEffect(JevResponse);
 const decodeTokenResponse = Schema.decodeUnknownEffect(TokenResponse);
 
 const decodeUserResponse = Schema.decodeUnknownEffect(UserResponse);
+
+const decodeBookmarksResponse = Schema.decodeUnknownEffect(BookmarksResponse);
 
 const randomBase64Url = (byteLength: number) => {
   const bytes = crypto.getRandomValues(new Uint8Array(byteLength));
@@ -277,9 +298,44 @@ export default Cloudflare.Worker(
         }
 
         if (url.pathname === "/api/me") {
-          return yield* HttpServerResponse.json({ username: session.value.user.username }).pipe(
-            Effect.map(HttpServerResponse.setHeader("cache-control", "no-store")),
+          const bookmarksUrl = new URL(
+            `https://api.x.com/2/users/${encodeURIComponent(session.value.user.id)}/bookmarks`,
           );
+
+          bookmarksUrl.search = new URLSearchParams({
+            max_results: "100",
+            "tweet.fields": "author_id,created_at",
+          }).toString();
+
+          const bookmarksHttpResponse = yield* Effect.tryPromise(() =>
+            fetch(bookmarksUrl, {
+              headers: {
+                authorization: `Bearer ${session.value.oauth.accessToken}`,
+              },
+            }),
+          );
+
+          if (!bookmarksHttpResponse.ok) {
+            yield* Effect.logError("X bookmarks request failed", {
+              status: bookmarksHttpResponse.status,
+              statusText: bookmarksHttpResponse.statusText,
+            });
+
+            return yield* HttpServerResponse.json(
+              { error: "Loading X bookmarks failed." },
+              { status: 502 },
+            );
+          }
+
+          const bookmarks = yield* Effect.tryPromise(() => bookmarksHttpResponse.json()).pipe(
+            Effect.flatMap(decodeBookmarksResponse),
+          );
+
+          return yield* HttpServerResponse.json({
+            username: session.value.user.username,
+            bookmarks: bookmarks.data ?? [],
+            nextToken: bookmarks.meta?.next_token,
+          }).pipe(Effect.map(HttpServerResponse.setHeader("cache-control", "no-store")));
         }
 
         const query = url.searchParams.get("q")?.trim();
@@ -298,6 +354,7 @@ export default Cloudflare.Worker(
           ),
         );
       }).pipe(
+        Effect.tapCause((cause) => Effect.logError("Request failed", cause)),
         Effect.catch(() => HttpServerResponse.json({ error: "Request failed." }, { status: 500 })),
         Effect.provide(ironSessionLayer),
       ),

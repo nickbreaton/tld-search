@@ -67,14 +67,16 @@
         try {
           const response = await fetch("/api/me");
 
+          const body = await response.json();
+
           if (!response.ok) {
+            console.error("Loading the account failed:", response.status, body.error);
             return;
           }
 
-          const body = await response.json();
           account.textContent = `Signed in as @${body.username}`;
-        } catch {
-          // Keep the sign-in link when the current session cannot be loaded.
+        } catch (error) {
+          console.error("Loading the account failed:", error);
         }
       };
 
