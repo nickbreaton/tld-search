@@ -379,6 +379,7 @@ export default Cloudflare.Worker(
           .sort((a, b) => b.relevance - a.relevance)
           .slice(0, 10)
           .map((score) => ({
+            id: score.bookmark.id,
             text: stripLinks(score.bookmark.text),
             relevance: score.relevance,
           }));

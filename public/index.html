@@ -20,7 +20,7 @@
       }
       label,
       input,
-      output {
+      #result {
         display: block;
         width: 100%;
         box-sizing: border-box;
@@ -34,17 +34,24 @@
         padding: 0.8rem 1rem;
         font: inherit;
       }
-      output {
+      #result {
         min-height: 2rem;
         margin-top: 1rem;
         font-size: 1.25rem;
       }
-      ul {
+      ol {
         margin: 1rem 0 0;
-        padding-left: 1.25rem;
+        padding: 0;
+        list-style: none;
       }
       li {
-        margin-bottom: 0.75rem;
+        min-height: 4rem;
+        margin-bottom: 1rem;
+      }
+      .tweet-fallback {
+        display: block;
+        padding: 1rem;
+        text-align: center;
       }
     </style>
   </head>
@@ -62,13 +69,34 @@
           required
         />
       </form>
-      <output id="result" for="search" aria-live="polite"></output>
+      <section id="result" aria-live="polite"></section>
     </main>
     <script type="module">
       const account = document.querySelector("#account");
       const form = document.querySelector("#search-form");
       const input = document.querySelector("#search");
       const result = document.querySelector("#result");
+
+      let twitterWidgetsPromise;
+
+      const loadTwitterWidgets = () => {
+        if (globalThis.twttr?.widgets) {
+          return Promise.resolve(globalThis.twttr.widgets);
+        }
+
+        if (!twitterWidgetsPromise) {
+          twitterWidgetsPromise = new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = "https://platform.twitter.com/widgets.js";
+            script.async = true;
+            script.onload = () => resolve(globalThis.twttr.widgets);
+            script.onerror = () => reject(new Error("Loading X embeds failed."));
+            document.head.append(script);
+          });
+        }
+
+        return twitterWidgetsPromise;
+      };
 
       const loadAccount = async () => {
         try {
@@ -108,15 +136,34 @@
             return;
           }
 
-          const list = document.createElement("ul");
-
-          for (const { text, relevance } of results) {
-            const item = document.createElement("li");
-            item.textContent = `${text} (${(relevance * 100).toFixed(0)}%)`;
-            list.append(item);
-          }
+          const list = document.createElement("ol");
+          const items = [...results]
+            .sort((a, b) => b.relevance - a.relevance)
+            .slice(0, 10)
+            .map(({ id }) => {
+              const item = document.createElement("li");
+              list.append(item);
+              return { id, item };
+            });
 
           result.replaceChildren(list);
+
+          const widgets = await loadTwitterWidgets();
+
+          for (const { id, item } of items) {
+            const tweet = await widgets.createTweet(id, item, {
+              align: "center",
+              dnt: true,
+            });
+
+            if (!tweet) {
+              const link = document.createElement("a");
+              link.className = "tweet-fallback";
+              link.href = `https://x.com/i/status/${encodeURIComponent(id)}`;
+              link.textContent = "View this post on X";
+              item.append(link);
+            }
+          }
         } catch (error) {
           result.textContent = error instanceof Error ? error.message : "Search failed.";
         }
