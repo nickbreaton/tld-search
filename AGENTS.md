@@ -7,10 +7,11 @@ Build an extremely minimal hosted application for searching a user’s X (Twitte
 ## Core experience
 
 1. The visitor signs in exclusively with X OAuth; there is no separate account system.
-2. Treat the imported archive as a contiguous, gap-free range bounded by a newest **high-water mark** and an oldest **low-water mark**. On every visit, reconcile both boundaries: fetch any bookmarks newer than the high-water mark and resume fetching older bookmarks beyond the low-water mark until the archive is complete.
-3. Persist bookmarks in strict chronological order and advance a boundary only after its corresponding batch has been saved successfully. This ordered, checkpointed import makes the high- and low-water marks trustworthy after interruptions. Writes must remain idempotent and tolerate overlapping pages.
-4. The search interface is a single prominent input with a minimal loading, empty, error, and sync-progress state.
-5. Debounced queries use Jev to classify/rank the user’s stored bookmarks by relevance and return the best results for display as X embeds.
+2. Reconcile bookmarks newest-to-oldest. Begin every sync at the newest page and follow pagination backward until either the API is exhausted or a bookmark already known at the start of the sync is reached. Do not skip directly to a previously returned pagination cursor.
+3. Treat pagination cursors as ephemeral traversal state, not durable archive checkpoints. Never persist or advance a cursor in a way that could cause a retry to resume behind an uncommitted gap. If traversal fails, the next sync starts from the newest page again and safely overlaps prior work.
+4. Persist every fetched page idempotently, with bookmarks in strict chronological order. Only after the complete newest-to-known (or newest-to-exhaustion) traversal and all corresponding writes succeed may sync metadata advance. The committed newest bookmark ID is the stopping point for a later reconciliation; exhaustion marks the historical archive complete.
+5. The search interface is a single prominent input with a minimal loading, empty, error, and sync-progress state.
+6. Debounced queries use Jev to classify/rank the user’s stored bookmarks by relevance and return the best results for display as X embeds.
 
 ## Jev
 
