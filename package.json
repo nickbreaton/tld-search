@@ -1,0 +1,29 @@
+{
+  "name": "bookmarks-jev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "alchemy dev src/alchemy.run.ts",
+    "deploy": "alchemy deploy src/alchemy.run.ts",
+    "destroy": "alchemy destroy src/alchemy.run.ts",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint --type-aware",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run format:check && bun run lint && bun run typecheck"
+  },
+  "dependencies": {
+    "@effect/platform-bun": "4.0.0-rc.116",
+    "@effect/platform-node": "4.0.0-rc.116",
+    "alchemy": "2.0.0-beta.79",
+    "effect": "4.0.0-rc.116"
+  },
+  "devDependencies": {
+    "@oxlint/plugins": "1.83.0",
+    "@types/bun": "^1.4.2",
+    "oxfmt": "^0.68.0",
+    "oxlint": "1.83.0",
+    "oxlint-tsgolint": "^7.0.2002",
+    "typescript": "^7.0.2"
+  }
+}
