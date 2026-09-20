@@ -1,4 +1,5 @@
 import * as Cloudflare from "alchemy/Cloudflare";
+import * as Console from "effect/Console";
 import * as Config from "effect/Config";
 import * as DateTime from "effect/DateTime";
 import * as Duration from "effect/Duration";
@@ -12,12 +13,15 @@ import { IronSession } from "./IronSession.ts";
 
 const JevResponse = Schema.Struct({
   result: Schema.Struct({
-    answers: Schema.Struct({
-      is_sandwich: Schema.Struct({
-        type: Schema.Literal("noul"),
-        noul: Schema.Number,
+    answers: Schema.Record(
+      Schema.String,
+      Schema.Struct({
+        type: Schema.Literal("choice"),
+        choice: Schema.String,
+        confidence: Schema.optionalKey(Schema.Number),
+        probabilities: Schema.Record(Schema.String, Schema.Number),
       }),
-    }),
+    ),
   }),
   state: Schema.Literal("Completed"),
 });
@@ -37,17 +41,16 @@ const UserResponse = Schema.Struct({
   }),
 });
 
+const Bookmark = Schema.Struct({
+  id: Schema.String,
+  text: Schema.String,
+  author_id: Schema.optionalKey(Schema.String),
+  created_at: Schema.optionalKey(Schema.String),
+});
+
 const BookmarksResponse = Schema.Struct({
-  data: Schema.optionalKey(
-    Schema.Array(
-      Schema.Struct({
-        id: Schema.String,
-        text: Schema.String,
-        author_id: Schema.optionalKey(Schema.String),
-        created_at: Schema.optionalKey(Schema.String),
-      }),
-    ),
-  ),
+  data: Schema.optionalKey(Schema.Array(Bookmark)),
+
   meta: Schema.optionalKey(
     Schema.Struct({
       result_count: Schema.Number,
@@ -112,37 +115,49 @@ const requestOrigin = (request: HttpServerRequest) => {
   return `${protocol}://${host}`;
 };
 
-const classify = (ai: Cloudflare.Workers.AIClient, food: string) =>
+const rankBookmarks = (
+  ai: Cloudflare.Workers.AIClient,
+  query: string,
+  bookmarks: ReadonlyArray<typeof Bookmark.Type>,
+) =>
   Effect.gen(function* () {
     const binding = yield* ai.raw;
 
+    const criteria: Record<string, string> = {};
+
+    for (const bookmark of bookmarks) {
+      const text = stripLinks(bookmark.text);
+
+      if (text.length > 0) {
+        criteria[bookmark.id] = text;
+      }
+    }
+
     const response = yield* Effect.promise(() =>
       binding.run("typesafe/jev", {
-        state: food,
+        state: { query },
         questions: {
-          is_sandwich: {
-            type: "noul",
-            instructions:
-              "Is this food a sandwich? Classify the named food itself, not examples or related foods.",
-            criteria: {
-              true: "The food consists of a filling held between separate pieces or two distinct sides of bread.",
-              false:
-                "The food is not a sandwich, including foods served in a single hinged bun or folded bread.",
-            },
+          top_match: {
+            type: "choice",
+            instructions: "Which tweet best matches the search query's meaning, topic, or intent?",
+            criteria,
           },
         },
       }),
     );
 
     const result = yield* decodeJevResponse(response);
-    const probability = result.result.answers.is_sandwich.noul;
 
-    return {
-      food,
-      classification: probability >= 0.5 ? "sandwich" : "not sandwich",
-      probability,
-    } as const;
+    const { probabilities } = result.result.answers.top_match;
+
+    return bookmarks.map((bookmark) => ({
+      bookmark,
+      relevance: probabilities[bookmark.id] ?? 0,
+    }));
   });
+
+/** Strip URLs from tweet text so Jev only sees plain prose. */
+const stripLinks = (text: string) => text.replace(/https?:\/\/\S+/g, "").trim();
 
 export default Cloudflare.Worker(
   "Worker",
@@ -298,43 +313,8 @@ export default Cloudflare.Worker(
         }
 
         if (url.pathname === "/api/me") {
-          const bookmarksUrl = new URL(
-            `https://api.x.com/2/users/${encodeURIComponent(session.value.user.id)}/bookmarks`,
-          );
-
-          bookmarksUrl.search = new URLSearchParams({
-            max_results: "100",
-            "tweet.fields": "author_id,created_at",
-          }).toString();
-
-          const bookmarksHttpResponse = yield* Effect.tryPromise(() =>
-            fetch(bookmarksUrl, {
-              headers: {
-                authorization: `Bearer ${session.value.oauth.accessToken}`,
-              },
-            }),
-          );
-
-          if (!bookmarksHttpResponse.ok) {
-            yield* Effect.logError("X bookmarks request failed", {
-              status: bookmarksHttpResponse.status,
-              statusText: bookmarksHttpResponse.statusText,
-            });
-
-            return yield* HttpServerResponse.json(
-              { error: "Loading X bookmarks failed." },
-              { status: 502 },
-            );
-          }
-
-          const bookmarks = yield* Effect.tryPromise(() => bookmarksHttpResponse.json()).pipe(
-            Effect.flatMap(decodeBookmarksResponse),
-          );
-
           return yield* HttpServerResponse.json({
             username: session.value.user.username,
-            bookmarks: bookmarks.data ?? [],
-            nextToken: bookmarks.meta?.next_token,
           }).pipe(Effect.map(HttpServerResponse.setHeader("cache-control", "no-store")));
         }
 
@@ -342,17 +322,70 @@ export default Cloudflare.Worker(
 
         if (!query) {
           return yield* HttpServerResponse.json(
-            { error: "Enter a food to classify." },
+            { error: "Enter a bookmark search query." },
             { status: 400 },
           );
         }
 
-        return yield* classify(ai, query).pipe(
-          Effect.flatMap(HttpServerResponse.json),
-          Effect.catch(() =>
-            HttpServerResponse.json({ error: "Classification failed." }, { status: 502 }),
-          ),
+        const bookmarksUrl = new URL(
+          `https://api.x.com/2/users/${encodeURIComponent(session.value.user.id)}/bookmarks`,
         );
+
+        bookmarksUrl.search = new URLSearchParams({
+          max_results: "100",
+          "tweet.fields": "author_id,created_at",
+        }).toString();
+
+        const bookmarksHttpResponse = yield* Effect.scoped(
+          Effect.gen(function* () {
+            yield* Console.time("x-bookmarks");
+
+            return yield* Effect.tryPromise(() =>
+              fetch(bookmarksUrl, {
+                headers: {
+                  authorization: `Bearer ${session.value.oauth.accessToken}`,
+                },
+              }),
+            );
+          }),
+        );
+
+        if (!bookmarksHttpResponse.ok) {
+          yield* Effect.logError("X bookmarks request failed", {
+            status: bookmarksHttpResponse.status,
+            statusText: bookmarksHttpResponse.statusText,
+          });
+
+          return yield* HttpServerResponse.json(
+            { error: "Loading X bookmarks failed." },
+            { status: 502 },
+          );
+        }
+
+        const bookmarks = yield* Effect.tryPromise(() => bookmarksHttpResponse.json()).pipe(
+          Effect.flatMap(decodeBookmarksResponse),
+        );
+
+        const scores = yield* Effect.scoped(
+          Effect.gen(function* () {
+            yield* Console.time("jev-score");
+
+            return yield* rankBookmarks(ai, query, bookmarks.data ?? []);
+          }),
+        );
+
+        const topResults = [...scores]
+          .filter((score) => stripLinks(score.bookmark.text).length > 0)
+          .sort((a, b) => b.relevance - a.relevance)
+          .slice(0, 10)
+          .map((score) => ({
+            text: stripLinks(score.bookmark.text),
+            relevance: score.relevance,
+          }));
+
+        return yield* HttpServerResponse.json({
+          results: topResults,
+        });
       }).pipe(
         Effect.tapCause((cause) => Effect.logError("Request failed", cause)),
         Effect.catch(() => HttpServerResponse.json({ error: "Request failed." }, { status: 500 })),

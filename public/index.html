@@ -39,18 +39,25 @@
         margin-top: 1rem;
         font-size: 1.25rem;
       }
+      ul {
+        margin: 1rem 0 0;
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 0.75rem;
+      }
     </style>
   </head>
   <body>
     <main>
       <p id="account"><a href="/auth/x">Sign in with X</a></p>
       <form id="search-form" role="search">
-        <label for="search">Is it a sandwich?</label>
+        <label for="search">Search your bookmarks</label>
         <input
           id="search"
           name="q"
           type="search"
-          placeholder="hot dog"
+          placeholder="typography resources"
           autocomplete="off"
           required
         />
@@ -84,19 +91,34 @@
 
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
-        result.textContent = "Classifying…";
+        result.textContent = "Searching…";
 
         try {
           const response = await fetch(`/api/search?q=${encodeURIComponent(input.value)}`);
           const body = await response.json();
 
           if (!response.ok) {
-            throw new Error(body.error ?? "Classification failed.");
+            throw new Error(body.error ?? "Search failed.");
           }
 
-          result.textContent = `${body.food}: ${body.classification}`;
+          const results = body.results ?? [];
+
+          if (results.length === 0) {
+            result.textContent = "No bookmarks found.";
+            return;
+          }
+
+          const list = document.createElement("ul");
+
+          for (const { text, relevance } of results) {
+            const item = document.createElement("li");
+            item.textContent = `${text} (${(relevance * 100).toFixed(0)}%)`;
+            list.append(item);
+          }
+
+          result.replaceChildren(list);
         } catch (error) {
-          result.textContent = error instanceof Error ? error.message : "Classification failed.";
+          result.textContent = error instanceof Error ? error.message : "Search failed.";
         }
       });
     </script>
