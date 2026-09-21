@@ -14,6 +14,7 @@ export default defineConfig({
     ".roo/**",
     ".windsurf/**",
     ".alchemy/**",
+    ".astro/**",
     "tools/oxlint/anti-slop/**",
   ],
   jsPlugins: [

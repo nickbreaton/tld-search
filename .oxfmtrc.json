@@ -1,6 +1,7 @@
 {
   "ignorePatterns": [
     ".alchemy/**",
+    ".astro/**",
     ".agent/**",
     ".agents/**",
     ".claude/**",

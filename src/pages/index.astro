@@ -1,0 +1,28 @@
+---
+import SearchForm from "../components/SearchForm.astro";
+import TldList from "../components/TldList.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { initialTlds } from "../server/TldCatalog";
+
+export const prerender = false;
+---
+
+<PageLayout>
+  <header class="hero">
+    <a class="wordmark" href="/" aria-label="TL;DR home">TL;DR</a>
+    <p class="eyebrow">Top-level domain that's right for you</p>
+    <h1>Find a better ending for your idea.</h1>
+    <p class="lede">
+      Describe what you're building. We'll find the domain extensions that fit.
+    </p>
+    <SearchForm />
+  </header>
+
+  <section aria-labelledby="starting-points">
+    <div class="section-heading">
+      <h2 id="starting-points">A few starting points</h2>
+      <p>Every visit is rendered fresh at the edge.</p>
+    </div>
+    <TldList items={initialTlds} />
+  </section>
+</PageLayout>

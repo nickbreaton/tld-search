@@ -1,0 +1,24 @@
+---
+interface Props {
+  query?: string;
+}
+
+const { query = "" } = Astro.props;
+---
+
+<form action="/search" method="get" class="search-form">
+  <label for="query">What are you making?</label>
+  <div class="search-control">
+    <input
+      id="query"
+      name="q"
+      type="search"
+      value={query}
+      maxlength="120"
+      placeholder="An art portfolio, a coffee shop, a developer tool…"
+      required
+      autofocus
+    />
+    <button type="submit">Find my TLD</button>
+  </div>
+</form>
