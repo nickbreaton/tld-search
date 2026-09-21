@@ -8,6 +8,7 @@ TL;DR stands for “top-level domain that's right for you.” It is an Astro sit
 - Use Astro components and plain HTML/CSS. Do not add a frontend framework.
 - Do not add client-side JavaScript without an explicit product requirement.
 - Use Effect for server-side domain logic, validation, configuration, and errors.
+- Import Effect APIs from the highest-level `effect` package, such as `import { Effect, Schema } from "effect"`. Do not import from subpaths such as `effect/Effect` or `effect/Schema`.
 - Provision Cloudflare resources with `alchemy.run.ts`; do not add a Wrangler configuration.
 - Route Workers AI through the Alchemy-managed Cloudflare AI Gateway.
 - Treat the TLD catalog as recommendations. A listed TLD is not a guarantee that a particular domain can be registered.
