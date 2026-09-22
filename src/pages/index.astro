@@ -67,7 +67,7 @@ const tlds = await Effect.runPromise(allTlds.pipe(Effect.provide(TldCatalog.laye
               console.error(error);
             }
           }
-        }, 300);
+        }, 10);
       });
     </script>
   </body>
