@@ -3,11 +3,8 @@ import { env } from "cloudflare:workers";
 
 import type { WebsiteEnv } from "../../alchemy.run";
 
-export class CloudflareAi extends Context.Service<
-  CloudflareAi,
-  {
-    readonly binding: WebsiteEnv["AI"];
-  }
->()("tldr/server/CloudflareAi") {
-  static readonly layer = Layer.succeed(CloudflareAi, CloudflareAi.of({ binding: env.AI }));
+export class CloudflareAi extends Context.Service<CloudflareAi, WebsiteEnv["AI"]>()(
+  "tldr/server/CloudflareAi",
+) {
+  static readonly layer = Layer.succeed(CloudflareAi, CloudflareAi.of(env.AI));
 }

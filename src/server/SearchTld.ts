@@ -75,7 +75,7 @@ export class SearchTld extends Context.Service<
 
         const response = yield* Effect.tryPromise({
           try: () =>
-            ai.binding.run("typesafe/jev", {
+            ai.run("typesafe/jev", {
               state: normalizedQuery,
               questions,
             }),
