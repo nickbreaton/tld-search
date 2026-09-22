@@ -3,7 +3,7 @@
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "types": ["bun"],
+    "types": ["bun", "@cloudflare/workers-types"],
     "verbatimModuleSyntax": true
   },
   "include": [".astro/types.d.ts", "**/*"],

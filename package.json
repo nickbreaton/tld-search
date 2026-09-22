@@ -10,7 +10,8 @@
     "format:check": "oxfmt --check .",
     "lint": "oxlint --type-aware",
     "typecheck": "astro check && tsc --noEmit",
-    "check": "bun run format:check && bun run lint && bun run typecheck"
+    "check": "bun run format:check && bun run lint && bun run typecheck",
+    "auth": "alchemy profile refresh --profile default --provider Cloudflare"
   },
   "dependencies": {
     "alchemy": "2.0.0-beta.79",

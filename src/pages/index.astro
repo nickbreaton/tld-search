@@ -15,10 +15,60 @@ const tlds = await Effect.runPromise(allTlds.pipe(Effect.provide(TldCatalog.laye
     <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-    <input type="search" name="q" placeholder='Search by phrase, idea, or feeling' autofocus />
+    <input
+      id="query"
+      type="search"
+      name="q"
+      maxlength="120"
+      placeholder="Search by phrase, idea, or feeling"
+      autofocus
+    />
 
     <ul>
       {tlds.map((tld) => <li>{tld}</li>)}
     </ul>
+
+    <script>
+      const input = document.querySelector<HTMLInputElement>("#query");
+
+      let timeout: ReturnType<typeof setTimeout> | undefined;
+
+      let request: AbortController | undefined;
+
+      input?.addEventListener("input", () => {
+        clearTimeout(timeout);
+        request?.abort();
+
+        const query = input.value.trim();
+
+        if (!query) {
+          return;
+        }
+
+        timeout = setTimeout(async () => {
+          request = new AbortController();
+
+          try {
+            const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`, {
+              signal: request.signal,
+            });
+
+            if (response.ok) {
+              const result: unknown = await response.json();
+
+              console.log(result);
+            } else {
+              const error = await response.text();
+
+              console.error(`TLD search failed (${response.status}): ${error}`);
+            }
+          } catch (error) {
+            if (!(error instanceof DOMException && error.name === "AbortError")) {
+              console.error(error);
+            }
+          }
+        }, 300);
+      });
+    </script>
   </body>
 </html>

@@ -4,12 +4,8 @@
 import type { WebsiteEnv } from "../alchemy.run";
 
 declare global {
-  namespace App {
-    interface Locals {
-      runtime: {
-        env: WebsiteEnv;
-      };
-    }
+  namespace Cloudflare {
+    interface Env extends WebsiteEnv {}
   }
 }
 
