@@ -30,16 +30,26 @@ const tlds = await Effect.runPromise(
       autofocus
     />
 
-    <ul>
+    <ul id="tlds">
       {tlds.map((tld) => <li>{tld}</li>)}
     </ul>
 
     <script>
       const input = document.querySelector<HTMLInputElement>("#query");
 
+      const list = document.querySelector<HTMLUListElement>("#tlds");
+
+      const initialTlds = Array.from(list?.querySelectorAll("li") ?? [], (item) =>
+        item.textContent ?? "",
+      );
+
       let timeout: ReturnType<typeof setTimeout> | undefined;
 
       let request: AbortController | undefined;
+
+      const renderTlds = (tlds: ReadonlyArray<string>) => {
+        list?.replaceChildren(...tlds.map((tld) => Object.assign(document.createElement("li"), { textContent: tld })));
+      };
 
       input?.addEventListener("input", () => {
         clearTimeout(timeout);
@@ -48,6 +58,8 @@ const tlds = await Effect.runPromise(
         const query = input.value.trim();
 
         if (!query) {
+          renderTlds(initialTlds);
+
           return;
         }
 
@@ -60,9 +72,10 @@ const tlds = await Effect.runPromise(
             });
 
             if (response.ok) {
-              const result: unknown = await response.json();
+              // SAFETY: This response comes from our typed `/api/search` endpoint.
+              const result = (await response.json()) as { readonly tlds: ReadonlyArray<string> };
 
-              console.log(result);
+              renderTlds(result.tlds);
             } else {
               const error = await response.text();
 
