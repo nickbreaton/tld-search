@@ -1,5 +1,4 @@
 import type { APIRoute } from "astro";
-import { env } from "cloudflare:workers";
 import { Effect } from "effect";
 
 import { TldRecommender } from "../../server/RecommendTld";
@@ -11,7 +10,7 @@ export const GET: APIRoute = async ({ url }) => {
     Effect.gen(function* () {
       const recommender = yield* TldRecommender;
 
-      return yield* recommender.recommend(env.AI, query);
+      return yield* recommender.recommend(query);
     }).pipe(
       Effect.provide(TldRecommender.layer),
       Effect.tapError((error) =>

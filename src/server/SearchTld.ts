@@ -1,6 +1,6 @@
 import { Context, Effect, Layer, Predicate, Schema } from "effect";
 
-import type { WebsiteEnv } from "../../alchemy.run";
+import { CloudflareAi } from "./CloudflareAi";
 import { TldCatalog } from "./TldCatalog";
 
 const minimumProbability = 0.5;
@@ -43,18 +43,16 @@ class SearchTldError extends Schema.TaggedError<SearchTldError>()("SearchTldErro
 export class SearchTld extends Context.Service<
   SearchTld,
   {
-    readonly search: (
-      ai: WebsiteEnv["AI"],
-      query: string,
-    ) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
+    readonly search: (query: string) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
   }
 >()("tldr/server/SearchTld") {
   static readonly layer = Layer.effect(
     SearchTld,
     Effect.gen(function* () {
+      const ai = yield* CloudflareAi;
       const catalog = yield* TldCatalog;
 
-      const search = Effect.fn("SearchTld.search")(function* (ai: WebsiteEnv["AI"], query: string) {
+      const search = Effect.fn("SearchTld.search")(function* (query: string) {
         const normalizedQuery = query.trim();
 
         if (normalizedQuery.length === 0) {
@@ -77,7 +75,7 @@ export class SearchTld extends Context.Service<
 
         const response = yield* Effect.tryPromise({
           try: () =>
-            ai.run("typesafe/jev", {
+            ai.binding.run("typesafe/jev", {
               state: normalizedQuery,
               questions,
             }),
@@ -119,5 +117,5 @@ export class SearchTld extends Context.Service<
 
       return SearchTld.of({ search });
     }),
-  ).pipe(Layer.provide(TldCatalog.layer));
+  ).pipe(Layer.provide(TldCatalog.layer), Layer.provide(CloudflareAi.layer));
 }
