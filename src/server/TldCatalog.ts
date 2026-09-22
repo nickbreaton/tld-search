@@ -28,9 +28,3 @@ export class TldCatalog extends Context.Service<
     ),
   );
 }
-
-export const allTlds = Effect.gen(function* () {
-  const catalog = yield* TldCatalog;
-
-  return catalog.all;
-});

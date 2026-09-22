@@ -1,11 +1,17 @@
 ---
 import { Effect } from "effect";
 
-import { allTlds, TldCatalog } from "../server/TldCatalog";
+import { TldCatalog } from "../server/TldCatalog";
 
 export const prerender = false;
 
-const tlds = await Effect.runPromise(allTlds.pipe(Effect.provide(TldCatalog.layer)));
+const tlds = await Effect.runPromise(
+  Effect.gen(function* () {
+    const catalog = yield* TldCatalog;
+
+    return catalog.all;
+  }).pipe(Effect.provide(TldCatalog.layer)),
+);
 ---
 
 <!doctype html>

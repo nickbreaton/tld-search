@@ -1,4 +1,4 @@
-import { Effect, Predicate, Schema } from "effect";
+import { Context, Effect, Layer, Predicate, Schema } from "effect";
 
 import type { WebsiteEnv } from "../../alchemy.run";
 import { TldCatalog } from "./TldCatalog";
@@ -34,74 +34,90 @@ const JevResponse = Schema.Union([
 
 const decodeJevResponse = Schema.decodeUnknownEffect(JevResponse);
 
-export class SearchTldError extends Schema.TaggedError<SearchTldError>()("SearchTldError", {
+class SearchTldError extends Schema.TaggedError<SearchTldError>()("SearchTldError", {
   cause: Schema.Defect(),
   message: Schema.String,
   operation: Schema.Literals(["inference", "response", "validation"]),
 }) {}
 
-export const searchTld = Effect.fn("searchTld")(function* (
-  ai: WebsiteEnv["AI"],
-  query: string,
-): Effect.fn.Return<ReadonlyArray<string>, SearchTldError, TldCatalog> {
-  const normalizedQuery = query.trim();
-
-  if (normalizedQuery.length === 0) {
-    return yield* new SearchTldError({
-      cause: "The normalized query was empty.",
-      message: "A search phrase is required.",
-      operation: "validation",
-    });
+export class SearchTld extends Context.Service<
+  SearchTld,
+  {
+    readonly search: (
+      ai: WebsiteEnv["AI"],
+      query: string,
+    ) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
   }
+>()("tldr/server/SearchTld") {
+  static readonly layer = Layer.effect(
+    SearchTld,
+    Effect.gen(function* () {
+      const catalog = yield* TldCatalog;
 
-  const catalog = yield* TldCatalog;
-  const questions: Record<string, { readonly type: "noul"; readonly instructions: string }> = {};
+      const search = Effect.fn("SearchTld.search")(function* (ai: WebsiteEnv["AI"], query: string) {
+        const normalizedQuery = query.trim();
 
-  for (const tld of catalog.all) {
-    questions[tld] = {
-      type: "noul",
-      instructions: `Is the .${tld} top-level domain relevant to this phrase?`,
-    };
-  }
+        if (normalizedQuery.length === 0) {
+          return yield* new SearchTldError({
+            cause: "The normalized query was empty.",
+            message: "A search phrase is required.",
+            operation: "validation",
+          });
+        }
 
-  const response = yield* Effect.tryPromise({
-    try: () =>
-      ai.run("typesafe/jev", {
-        state: normalizedQuery,
-        questions,
-      }),
-    catch: (cause) =>
-      new SearchTldError({
-        cause,
-        message: "The TLD search failed.",
-        operation: "inference",
-      }),
-  });
+        const questions: Record<string, { readonly type: "noul"; readonly instructions: string }> =
+          {};
 
-  const decoded = yield* decodeJevResponse(response).pipe(
-    Effect.mapError(
-      (cause) =>
-        new SearchTldError({
-          cause,
-          message: "The TLD search response was invalid.",
-          operation: "response",
-        }),
-    ),
-  );
+        for (const tld of catalog.all) {
+          questions[tld] = {
+            type: "noul",
+            instructions: `Is the .${tld} top-level domain relevant to this phrase?`,
+          };
+        }
 
-  const answers = Predicate.hasProperty(decoded, "answers")
-    ? decoded.answers
-    : decoded.result.answers;
+        const response = yield* Effect.tryPromise({
+          try: () =>
+            ai.run("typesafe/jev", {
+              state: normalizedQuery,
+              questions,
+            }),
+          catch: (cause) =>
+            new SearchTldError({
+              cause,
+              message: "The TLD search failed.",
+              operation: "inference",
+            }),
+        });
 
-  const matches: Array<{ readonly probability: number; readonly tld: string }> = [];
+        const decoded = yield* decodeJevResponse(response).pipe(
+          Effect.mapError(
+            (cause) =>
+              new SearchTldError({
+                cause,
+                message: "The TLD search response was invalid.",
+                operation: "response",
+              }),
+          ),
+        );
 
-  for (const [tld, answer] of Object.entries(answers)) {
-    if (answer.noul >= minimumProbability) {
-      matches.push({ probability: answer.noul, tld });
-    }
-  }
+        const answers = Predicate.hasProperty(decoded, "answers")
+          ? decoded.answers
+          : decoded.result.answers;
 
-  matches.sort((left, right) => right.probability - left.probability);
+        const matches: Array<{ readonly probability: number; readonly tld: string }> = [];
 
-  return matches.map((match) => match.tld);
-});
+        for (const [tld, answer] of Object.entries(answers)) {
+          if (answer.noul >= minimumProbability) {
+            matches.push({ probability: answer.noul, tld });
+          }
+        }
+
+        matches.sort((left, right) => right.probability - left.probability);
+
+        return matches.map((match) => match.tld);
+      });
+
+      return SearchTld.of({ search });
+    }),
+  ).pipe(Layer.provide(TldCatalog.layer));
+}
