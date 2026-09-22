@@ -69,7 +69,7 @@ export class SearchTld extends Context.Service<
         for (const tld of catalog.all) {
           questions[tld] = {
             type: "noul",
-            instructions: `Is the .${tld} top-level domain relevant to this phrase?`,
+            instructions: `Is the .${tld} top-level domain relevant to this phrase? Be creative.`,
           };
         }
 
