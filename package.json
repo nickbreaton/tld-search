@@ -11,13 +11,13 @@
     "lint": "oxlint --type-aware",
     "typecheck": "astro check && tsc --noEmit",
     "check": "bun run format:check && bun run lint && bun run typecheck",
+    "generate:tlds": "bun run scripts/generate-tlds.ts",
     "auth": "alchemy profile refresh --profile default --provider Cloudflare"
   },
   "dependencies": {
     "alchemy": "2.0.0-beta.79",
     "astro": "7.3.3",
-    "effect": "4.0.0-rc.116",
-    "global-tld-list": "1.27.57"
+    "effect": "4.0.0-rc.116"
   },
   "devDependencies": {
     "@alchemy.run/frontend-frameworks": "2.0.0-beta.79",

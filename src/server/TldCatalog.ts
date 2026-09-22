@@ -1,5 +1,14 @@
-import { TLDs } from "global-tld-list";
-import { Context, Effect, Layer } from "effect";
+import { Context, Effect, Layer, Schema } from "effect";
+
+import generatedTlds from "../../generated/tlds.json";
+
+const Tld = Schema.Struct({
+  tld: Schema.String,
+  punycode: Schema.String,
+  type: Schema.Literals(["cctld", "gtld", "infrastructure"]),
+});
+
+const Tlds = Schema.Array(Tld);
 
 export class TldCatalog extends Context.Service<
   TldCatalog,
@@ -9,10 +18,13 @@ export class TldCatalog extends Context.Service<
 >()("tldr/server/TldCatalog") {
   static readonly layer = Layer.effect(
     TldCatalog,
-    Effect.sync(() =>
-      TldCatalog.of({
-        all: [...TLDs.tlds.keys()],
-      }),
+    Schema.decodeUnknownEffect(Tlds)(generatedTlds).pipe(
+      Effect.map((tlds) =>
+        TldCatalog.of({
+          all: tlds.map((entry) => entry.tld),
+        }),
+      ),
+      Effect.orDie,
     ),
   );
 }

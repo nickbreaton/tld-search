@@ -1,0 +1,5617 @@
+[
+  {
+    "tld": "able",
+    "punycode": "able",
+    "type": "gtld"
+  },
+  {
+    "tld": "abogado",
+    "punycode": "abogado",
+    "type": "gtld"
+  },
+  {
+    "tld": "abudhabi",
+    "punycode": "abudhabi",
+    "type": "gtld"
+  },
+  {
+    "tld": "ac",
+    "punycode": "ac",
+    "type": "cctld"
+  },
+  {
+    "tld": "academy",
+    "punycode": "academy",
+    "type": "gtld"
+  },
+  {
+    "tld": "accountant",
+    "punycode": "accountant",
+    "type": "gtld"
+  },
+  {
+    "tld": "accountants",
+    "punycode": "accountants",
+    "type": "gtld"
+  },
+  {
+    "tld": "actor",
+    "punycode": "actor",
+    "type": "gtld"
+  },
+  {
+    "tld": "ad",
+    "punycode": "ad",
+    "type": "cctld"
+  },
+  {
+    "tld": "adult",
+    "punycode": "adult",
+    "type": "gtld"
+  },
+  {
+    "tld": "ae",
+    "punycode": "ae",
+    "type": "cctld"
+  },
+  {
+    "tld": "aero",
+    "punycode": "aero",
+    "type": "gtld"
+  },
+  {
+    "tld": "af",
+    "punycode": "af",
+    "type": "cctld"
+  },
+  {
+    "tld": "africa",
+    "punycode": "africa",
+    "type": "gtld"
+  },
+  {
+    "tld": "ag",
+    "punycode": "ag",
+    "type": "cctld"
+  },
+  {
+    "tld": "agakhan",
+    "punycode": "agakhan",
+    "type": "gtld"
+  },
+  {
+    "tld": "agency",
+    "punycode": "agency",
+    "type": "gtld"
+  },
+  {
+    "tld": "ai",
+    "punycode": "ai",
+    "type": "cctld"
+  },
+  {
+    "tld": "airforce",
+    "punycode": "airforce",
+    "type": "gtld"
+  },
+  {
+    "tld": "akdn",
+    "punycode": "akdn",
+    "type": "gtld"
+  },
+  {
+    "tld": "al",
+    "punycode": "al",
+    "type": "cctld"
+  },
+  {
+    "tld": "allfinanz",
+    "punycode": "allfinanz",
+    "type": "gtld"
+  },
+  {
+    "tld": "alsace",
+    "punycode": "alsace",
+    "type": "gtld"
+  },
+  {
+    "tld": "am",
+    "punycode": "am",
+    "type": "cctld"
+  },
+  {
+    "tld": "amsterdam",
+    "punycode": "amsterdam",
+    "type": "gtld"
+  },
+  {
+    "tld": "analytics",
+    "punycode": "analytics",
+    "type": "gtld"
+  },
+  {
+    "tld": "anquan",
+    "punycode": "anquan",
+    "type": "gtld"
+  },
+  {
+    "tld": "ao",
+    "punycode": "ao",
+    "type": "cctld"
+  },
+  {
+    "tld": "apartments",
+    "punycode": "apartments",
+    "type": "gtld"
+  },
+  {
+    "tld": "app",
+    "punycode": "app",
+    "type": "gtld"
+  },
+  {
+    "tld": "aq",
+    "punycode": "aq",
+    "type": "cctld"
+  },
+  {
+    "tld": "ar",
+    "punycode": "ar",
+    "type": "cctld"
+  },
+  {
+    "tld": "arab",
+    "punycode": "arab",
+    "type": "gtld"
+  },
+  {
+    "tld": "aramco",
+    "punycode": "aramco",
+    "type": "gtld"
+  },
+  {
+    "tld": "archi",
+    "punycode": "archi",
+    "type": "gtld"
+  },
+  {
+    "tld": "army",
+    "punycode": "army",
+    "type": "gtld"
+  },
+  {
+    "tld": "arpa",
+    "punycode": "arpa",
+    "type": "infrastructure"
+  },
+  {
+    "tld": "art",
+    "punycode": "art",
+    "type": "gtld"
+  },
+  {
+    "tld": "as",
+    "punycode": "as",
+    "type": "cctld"
+  },
+  {
+    "tld": "asia",
+    "punycode": "asia",
+    "type": "gtld"
+  },
+  {
+    "tld": "associates",
+    "punycode": "associates",
+    "type": "gtld"
+  },
+  {
+    "tld": "at",
+    "punycode": "at",
+    "type": "cctld"
+  },
+  {
+    "tld": "attorney",
+    "punycode": "attorney",
+    "type": "gtld"
+  },
+  {
+    "tld": "au",
+    "punycode": "au",
+    "type": "cctld"
+  },
+  {
+    "tld": "auction",
+    "punycode": "auction",
+    "type": "gtld"
+  },
+  {
+    "tld": "audio",
+    "punycode": "audio",
+    "type": "gtld"
+  },
+  {
+    "tld": "author",
+    "punycode": "author",
+    "type": "gtld"
+  },
+  {
+    "tld": "auto",
+    "punycode": "auto",
+    "type": "gtld"
+  },
+  {
+    "tld": "autos",
+    "punycode": "autos",
+    "type": "gtld"
+  },
+  {
+    "tld": "aw",
+    "punycode": "aw",
+    "type": "cctld"
+  },
+  {
+    "tld": "ax",
+    "punycode": "ax",
+    "type": "cctld"
+  },
+  {
+    "tld": "az",
+    "punycode": "az",
+    "type": "cctld"
+  },
+  {
+    "tld": "ba",
+    "punycode": "ba",
+    "type": "cctld"
+  },
+  {
+    "tld": "baby",
+    "punycode": "baby",
+    "type": "gtld"
+  },
+  {
+    "tld": "baidu",
+    "punycode": "baidu",
+    "type": "gtld"
+  },
+  {
+    "tld": "band",
+    "punycode": "band",
+    "type": "gtld"
+  },
+  {
+    "tld": "bank",
+    "punycode": "bank",
+    "type": "gtld"
+  },
+  {
+    "tld": "bar",
+    "punycode": "bar",
+    "type": "gtld"
+  },
+  {
+    "tld": "barcelona",
+    "punycode": "barcelona",
+    "type": "gtld"
+  },
+  {
+    "tld": "bargains",
+    "punycode": "bargains",
+    "type": "gtld"
+  },
+  {
+    "tld": "baseball",
+    "punycode": "baseball",
+    "type": "gtld"
+  },
+  {
+    "tld": "basketball",
+    "punycode": "basketball",
+    "type": "gtld"
+  },
+  {
+    "tld": "bayern",
+    "punycode": "bayern",
+    "type": "gtld"
+  },
+  {
+    "tld": "bb",
+    "punycode": "bb",
+    "type": "cctld"
+  },
+  {
+    "tld": "bcn",
+    "punycode": "bcn",
+    "type": "gtld"
+  },
+  {
+    "tld": "bd",
+    "punycode": "bd",
+    "type": "cctld"
+  },
+  {
+    "tld": "be",
+    "punycode": "be",
+    "type": "cctld"
+  },
+  {
+    "tld": "beauty",
+    "punycode": "beauty",
+    "type": "gtld"
+  },
+  {
+    "tld": "beer",
+    "punycode": "beer",
+    "type": "gtld"
+  },
+  {
+    "tld": "berlin",
+    "punycode": "berlin",
+    "type": "gtld"
+  },
+  {
+    "tld": "best",
+    "punycode": "best",
+    "type": "gtld"
+  },
+  {
+    "tld": "bet",
+    "punycode": "bet",
+    "type": "gtld"
+  },
+  {
+    "tld": "bf",
+    "punycode": "bf",
+    "type": "cctld"
+  },
+  {
+    "tld": "bg",
+    "punycode": "bg",
+    "type": "cctld"
+  },
+  {
+    "tld": "bh",
+    "punycode": "bh",
+    "type": "cctld"
+  },
+  {
+    "tld": "bi",
+    "punycode": "bi",
+    "type": "cctld"
+  },
+  {
+    "tld": "bible",
+    "punycode": "bible",
+    "type": "gtld"
+  },
+  {
+    "tld": "bid",
+    "punycode": "bid",
+    "type": "gtld"
+  },
+  {
+    "tld": "bike",
+    "punycode": "bike",
+    "type": "gtld"
+  },
+  {
+    "tld": "bingo",
+    "punycode": "bingo",
+    "type": "gtld"
+  },
+  {
+    "tld": "bio",
+    "punycode": "bio",
+    "type": "gtld"
+  },
+  {
+    "tld": "biz",
+    "punycode": "biz",
+    "type": "gtld"
+  },
+  {
+    "tld": "bj",
+    "punycode": "bj",
+    "type": "cctld"
+  },
+  {
+    "tld": "black",
+    "punycode": "black",
+    "type": "gtld"
+  },
+  {
+    "tld": "blackfriday",
+    "punycode": "blackfriday",
+    "type": "gtld"
+  },
+  {
+    "tld": "blog",
+    "punycode": "blog",
+    "type": "gtld"
+  },
+  {
+    "tld": "blue",
+    "punycode": "blue",
+    "type": "gtld"
+  },
+  {
+    "tld": "bm",
+    "punycode": "bm",
+    "type": "cctld"
+  },
+  {
+    "tld": "bn",
+    "punycode": "bn",
+    "type": "cctld"
+  },
+  {
+    "tld": "bo",
+    "punycode": "bo",
+    "type": "cctld"
+  },
+  {
+    "tld": "boats",
+    "punycode": "boats",
+    "type": "gtld"
+  },
+  {
+    "tld": "bom",
+    "punycode": "bom",
+    "type": "gtld"
+  },
+  {
+    "tld": "bond",
+    "punycode": "bond",
+    "type": "gtld"
+  },
+  {
+    "tld": "boo",
+    "punycode": "boo",
+    "type": "gtld"
+  },
+  {
+    "tld": "book",
+    "punycode": "book",
+    "type": "gtld"
+  },
+  {
+    "tld": "booking",
+    "punycode": "booking",
+    "type": "gtld"
+  },
+  {
+    "tld": "boston",
+    "punycode": "boston",
+    "type": "gtld"
+  },
+  {
+    "tld": "bot",
+    "punycode": "bot",
+    "type": "gtld"
+  },
+  {
+    "tld": "boutique",
+    "punycode": "boutique",
+    "type": "gtld"
+  },
+  {
+    "tld": "box",
+    "punycode": "box",
+    "type": "gtld"
+  },
+  {
+    "tld": "br",
+    "punycode": "br",
+    "type": "cctld"
+  },
+  {
+    "tld": "broadway",
+    "punycode": "broadway",
+    "type": "gtld"
+  },
+  {
+    "tld": "broker",
+    "punycode": "broker",
+    "type": "gtld"
+  },
+  {
+    "tld": "brussels",
+    "punycode": "brussels",
+    "type": "gtld"
+  },
+  {
+    "tld": "bs",
+    "punycode": "bs",
+    "type": "cctld"
+  },
+  {
+    "tld": "bt",
+    "punycode": "bt",
+    "type": "cctld"
+  },
+  {
+    "tld": "build",
+    "punycode": "build",
+    "type": "gtld"
+  },
+  {
+    "tld": "builders",
+    "punycode": "builders",
+    "type": "gtld"
+  },
+  {
+    "tld": "business",
+    "punycode": "business",
+    "type": "gtld"
+  },
+  {
+    "tld": "buy",
+    "punycode": "buy",
+    "type": "gtld"
+  },
+  {
+    "tld": "buzz",
+    "punycode": "buzz",
+    "type": "gtld"
+  },
+  {
+    "tld": "bv",
+    "punycode": "bv",
+    "type": "cctld"
+  },
+  {
+    "tld": "bw",
+    "punycode": "bw",
+    "type": "cctld"
+  },
+  {
+    "tld": "by",
+    "punycode": "by",
+    "type": "cctld"
+  },
+  {
+    "tld": "bz",
+    "punycode": "bz",
+    "type": "cctld"
+  },
+  {
+    "tld": "bzh",
+    "punycode": "bzh",
+    "type": "gtld"
+  },
+  {
+    "tld": "ca",
+    "punycode": "ca",
+    "type": "cctld"
+  },
+  {
+    "tld": "cab",
+    "punycode": "cab",
+    "type": "gtld"
+  },
+  {
+    "tld": "cafe",
+    "punycode": "cafe",
+    "type": "gtld"
+  },
+  {
+    "tld": "cal",
+    "punycode": "cal",
+    "type": "gtld"
+  },
+  {
+    "tld": "call",
+    "punycode": "call",
+    "type": "gtld"
+  },
+  {
+    "tld": "cam",
+    "punycode": "cam",
+    "type": "gtld"
+  },
+  {
+    "tld": "camera",
+    "punycode": "camera",
+    "type": "gtld"
+  },
+  {
+    "tld": "camp",
+    "punycode": "camp",
+    "type": "gtld"
+  },
+  {
+    "tld": "capetown",
+    "punycode": "capetown",
+    "type": "gtld"
+  },
+  {
+    "tld": "capital",
+    "punycode": "capital",
+    "type": "gtld"
+  },
+  {
+    "tld": "car",
+    "punycode": "car",
+    "type": "gtld"
+  },
+  {
+    "tld": "cards",
+    "punycode": "cards",
+    "type": "gtld"
+  },
+  {
+    "tld": "care",
+    "punycode": "care",
+    "type": "gtld"
+  },
+  {
+    "tld": "career",
+    "punycode": "career",
+    "type": "gtld"
+  },
+  {
+    "tld": "careers",
+    "punycode": "careers",
+    "type": "gtld"
+  },
+  {
+    "tld": "cars",
+    "punycode": "cars",
+    "type": "gtld"
+  },
+  {
+    "tld": "casa",
+    "punycode": "casa",
+    "type": "gtld"
+  },
+  {
+    "tld": "cash",
+    "punycode": "cash",
+    "type": "gtld"
+  },
+  {
+    "tld": "casino",
+    "punycode": "casino",
+    "type": "gtld"
+  },
+  {
+    "tld": "cat",
+    "punycode": "cat",
+    "type": "gtld"
+  },
+  {
+    "tld": "catering",
+    "punycode": "catering",
+    "type": "gtld"
+  },
+  {
+    "tld": "catholic",
+    "punycode": "catholic",
+    "type": "gtld"
+  },
+  {
+    "tld": "cc",
+    "punycode": "cc",
+    "type": "cctld"
+  },
+  {
+    "tld": "cd",
+    "punycode": "cd",
+    "type": "cctld"
+  },
+  {
+    "tld": "center",
+    "punycode": "center",
+    "type": "gtld"
+  },
+  {
+    "tld": "ceo",
+    "punycode": "ceo",
+    "type": "gtld"
+  },
+  {
+    "tld": "cf",
+    "punycode": "cf",
+    "type": "cctld"
+  },
+  {
+    "tld": "cfd",
+    "punycode": "cfd",
+    "type": "gtld"
+  },
+  {
+    "tld": "cg",
+    "punycode": "cg",
+    "type": "cctld"
+  },
+  {
+    "tld": "ch",
+    "punycode": "ch",
+    "type": "cctld"
+  },
+  {
+    "tld": "channel",
+    "punycode": "channel",
+    "type": "gtld"
+  },
+  {
+    "tld": "charity",
+    "punycode": "charity",
+    "type": "gtld"
+  },
+  {
+    "tld": "chat",
+    "punycode": "chat",
+    "type": "gtld"
+  },
+  {
+    "tld": "cheap",
+    "punycode": "cheap",
+    "type": "gtld"
+  },
+  {
+    "tld": "christmas",
+    "punycode": "christmas",
+    "type": "gtld"
+  },
+  {
+    "tld": "church",
+    "punycode": "church",
+    "type": "gtld"
+  },
+  {
+    "tld": "ci",
+    "punycode": "ci",
+    "type": "cctld"
+  },
+  {
+    "tld": "circle",
+    "punycode": "circle",
+    "type": "gtld"
+  },
+  {
+    "tld": "city",
+    "punycode": "city",
+    "type": "gtld"
+  },
+  {
+    "tld": "ck",
+    "punycode": "ck",
+    "type": "cctld"
+  },
+  {
+    "tld": "cl",
+    "punycode": "cl",
+    "type": "cctld"
+  },
+  {
+    "tld": "claims",
+    "punycode": "claims",
+    "type": "gtld"
+  },
+  {
+    "tld": "cleaning",
+    "punycode": "cleaning",
+    "type": "gtld"
+  },
+  {
+    "tld": "click",
+    "punycode": "click",
+    "type": "gtld"
+  },
+  {
+    "tld": "clinic",
+    "punycode": "clinic",
+    "type": "gtld"
+  },
+  {
+    "tld": "clothing",
+    "punycode": "clothing",
+    "type": "gtld"
+  },
+  {
+    "tld": "cloud",
+    "punycode": "cloud",
+    "type": "gtld"
+  },
+  {
+    "tld": "club",
+    "punycode": "club",
+    "type": "gtld"
+  },
+  {
+    "tld": "cm",
+    "punycode": "cm",
+    "type": "cctld"
+  },
+  {
+    "tld": "cn",
+    "punycode": "cn",
+    "type": "cctld"
+  },
+  {
+    "tld": "co",
+    "punycode": "co",
+    "type": "cctld"
+  },
+  {
+    "tld": "coach",
+    "punycode": "coach",
+    "type": "gtld"
+  },
+  {
+    "tld": "codes",
+    "punycode": "codes",
+    "type": "gtld"
+  },
+  {
+    "tld": "coffee",
+    "punycode": "coffee",
+    "type": "gtld"
+  },
+  {
+    "tld": "college",
+    "punycode": "college",
+    "type": "gtld"
+  },
+  {
+    "tld": "cologne",
+    "punycode": "cologne",
+    "type": "gtld"
+  },
+  {
+    "tld": "com",
+    "punycode": "com",
+    "type": "gtld"
+  },
+  {
+    "tld": "community",
+    "punycode": "community",
+    "type": "gtld"
+  },
+  {
+    "tld": "company",
+    "punycode": "company",
+    "type": "gtld"
+  },
+  {
+    "tld": "compare",
+    "punycode": "compare",
+    "type": "gtld"
+  },
+  {
+    "tld": "computer",
+    "punycode": "computer",
+    "type": "gtld"
+  },
+  {
+    "tld": "comsec",
+    "punycode": "comsec",
+    "type": "gtld"
+  },
+  {
+    "tld": "condos",
+    "punycode": "condos",
+    "type": "gtld"
+  },
+  {
+    "tld": "construction",
+    "punycode": "construction",
+    "type": "gtld"
+  },
+  {
+    "tld": "consulting",
+    "punycode": "consulting",
+    "type": "gtld"
+  },
+  {
+    "tld": "contact",
+    "punycode": "contact",
+    "type": "gtld"
+  },
+  {
+    "tld": "contractors",
+    "punycode": "contractors",
+    "type": "gtld"
+  },
+  {
+    "tld": "cooking",
+    "punycode": "cooking",
+    "type": "gtld"
+  },
+  {
+    "tld": "cool",
+    "punycode": "cool",
+    "type": "gtld"
+  },
+  {
+    "tld": "coop",
+    "punycode": "coop",
+    "type": "gtld"
+  },
+  {
+    "tld": "corsica",
+    "punycode": "corsica",
+    "type": "gtld"
+  },
+  {
+    "tld": "country",
+    "punycode": "country",
+    "type": "gtld"
+  },
+  {
+    "tld": "coupon",
+    "punycode": "coupon",
+    "type": "gtld"
+  },
+  {
+    "tld": "coupons",
+    "punycode": "coupons",
+    "type": "gtld"
+  },
+  {
+    "tld": "courses",
+    "punycode": "courses",
+    "type": "gtld"
+  },
+  {
+    "tld": "cpa",
+    "punycode": "cpa",
+    "type": "gtld"
+  },
+  {
+    "tld": "cr",
+    "punycode": "cr",
+    "type": "cctld"
+  },
+  {
+    "tld": "credit",
+    "punycode": "credit",
+    "type": "gtld"
+  },
+  {
+    "tld": "creditcard",
+    "punycode": "creditcard",
+    "type": "gtld"
+  },
+  {
+    "tld": "creditunion",
+    "punycode": "creditunion",
+    "type": "gtld"
+  },
+  {
+    "tld": "cricket",
+    "punycode": "cricket",
+    "type": "gtld"
+  },
+  {
+    "tld": "crs",
+    "punycode": "crs",
+    "type": "gtld"
+  },
+  {
+    "tld": "cruise",
+    "punycode": "cruise",
+    "type": "gtld"
+  },
+  {
+    "tld": "cruises",
+    "punycode": "cruises",
+    "type": "gtld"
+  },
+  {
+    "tld": "cu",
+    "punycode": "cu",
+    "type": "cctld"
+  },
+  {
+    "tld": "cv",
+    "punycode": "cv",
+    "type": "cctld"
+  },
+  {
+    "tld": "cw",
+    "punycode": "cw",
+    "type": "cctld"
+  },
+  {
+    "tld": "cx",
+    "punycode": "cx",
+    "type": "cctld"
+  },
+  {
+    "tld": "cy",
+    "punycode": "cy",
+    "type": "cctld"
+  },
+  {
+    "tld": "cymru",
+    "punycode": "cymru",
+    "type": "gtld"
+  },
+  {
+    "tld": "cyou",
+    "punycode": "cyou",
+    "type": "gtld"
+  },
+  {
+    "tld": "cz",
+    "punycode": "cz",
+    "type": "cctld"
+  },
+  {
+    "tld": "dad",
+    "punycode": "dad",
+    "type": "gtld"
+  },
+  {
+    "tld": "dance",
+    "punycode": "dance",
+    "type": "gtld"
+  },
+  {
+    "tld": "data",
+    "punycode": "data",
+    "type": "gtld"
+  },
+  {
+    "tld": "date",
+    "punycode": "date",
+    "type": "gtld"
+  },
+  {
+    "tld": "dating",
+    "punycode": "dating",
+    "type": "gtld"
+  },
+  {
+    "tld": "day",
+    "punycode": "day",
+    "type": "gtld"
+  },
+  {
+    "tld": "dclk",
+    "punycode": "dclk",
+    "type": "gtld"
+  },
+  {
+    "tld": "dds",
+    "punycode": "dds",
+    "type": "gtld"
+  },
+  {
+    "tld": "de",
+    "punycode": "de",
+    "type": "cctld"
+  },
+  {
+    "tld": "deal",
+    "punycode": "deal",
+    "type": "gtld"
+  },
+  {
+    "tld": "dealer",
+    "punycode": "dealer",
+    "type": "gtld"
+  },
+  {
+    "tld": "deals",
+    "punycode": "deals",
+    "type": "gtld"
+  },
+  {
+    "tld": "degree",
+    "punycode": "degree",
+    "type": "gtld"
+  },
+  {
+    "tld": "delivery",
+    "punycode": "delivery",
+    "type": "gtld"
+  },
+  {
+    "tld": "democrat",
+    "punycode": "democrat",
+    "type": "gtld"
+  },
+  {
+    "tld": "dental",
+    "punycode": "dental",
+    "type": "gtld"
+  },
+  {
+    "tld": "dentist",
+    "punycode": "dentist",
+    "type": "gtld"
+  },
+  {
+    "tld": "desi",
+    "punycode": "desi",
+    "type": "gtld"
+  },
+  {
+    "tld": "design",
+    "punycode": "design",
+    "type": "gtld"
+  },
+  {
+    "tld": "dev",
+    "punycode": "dev",
+    "type": "gtld"
+  },
+  {
+    "tld": "diamonds",
+    "punycode": "diamonds",
+    "type": "gtld"
+  },
+  {
+    "tld": "diet",
+    "punycode": "diet",
+    "type": "gtld"
+  },
+  {
+    "tld": "digital",
+    "punycode": "digital",
+    "type": "gtld"
+  },
+  {
+    "tld": "direct",
+    "punycode": "direct",
+    "type": "gtld"
+  },
+  {
+    "tld": "directory",
+    "punycode": "directory",
+    "type": "gtld"
+  },
+  {
+    "tld": "discount",
+    "punycode": "discount",
+    "type": "gtld"
+  },
+  {
+    "tld": "dj",
+    "punycode": "dj",
+    "type": "cctld"
+  },
+  {
+    "tld": "dk",
+    "punycode": "dk",
+    "type": "cctld"
+  },
+  {
+    "tld": "dm",
+    "punycode": "dm",
+    "type": "cctld"
+  },
+  {
+    "tld": "do",
+    "punycode": "do",
+    "type": "cctld"
+  },
+  {
+    "tld": "doctor",
+    "punycode": "doctor",
+    "type": "gtld"
+  },
+  {
+    "tld": "dog",
+    "punycode": "dog",
+    "type": "gtld"
+  },
+  {
+    "tld": "domains",
+    "punycode": "domains",
+    "type": "gtld"
+  },
+  {
+    "tld": "dot",
+    "punycode": "dot",
+    "type": "gtld"
+  },
+  {
+    "tld": "download",
+    "punycode": "download",
+    "type": "gtld"
+  },
+  {
+    "tld": "dtv",
+    "punycode": "dtv",
+    "type": "gtld"
+  },
+  {
+    "tld": "dubai",
+    "punycode": "dubai",
+    "type": "gtld"
+  },
+  {
+    "tld": "durban",
+    "punycode": "durban",
+    "type": "gtld"
+  },
+  {
+    "tld": "dvr",
+    "punycode": "dvr",
+    "type": "gtld"
+  },
+  {
+    "tld": "dz",
+    "punycode": "dz",
+    "type": "cctld"
+  },
+  {
+    "tld": "earth",
+    "punycode": "earth",
+    "type": "gtld"
+  },
+  {
+    "tld": "ec",
+    "punycode": "ec",
+    "type": "cctld"
+  },
+  {
+    "tld": "eco",
+    "punycode": "eco",
+    "type": "gtld"
+  },
+  {
+    "tld": "edu",
+    "punycode": "edu",
+    "type": "gtld"
+  },
+  {
+    "tld": "education",
+    "punycode": "education",
+    "type": "gtld"
+  },
+  {
+    "tld": "ee",
+    "punycode": "ee",
+    "type": "cctld"
+  },
+  {
+    "tld": "eg",
+    "punycode": "eg",
+    "type": "cctld"
+  },
+  {
+    "tld": "email",
+    "punycode": "email",
+    "type": "gtld"
+  },
+  {
+    "tld": "energy",
+    "punycode": "energy",
+    "type": "gtld"
+  },
+  {
+    "tld": "engineer",
+    "punycode": "engineer",
+    "type": "gtld"
+  },
+  {
+    "tld": "engineering",
+    "punycode": "engineering",
+    "type": "gtld"
+  },
+  {
+    "tld": "enterprises",
+    "punycode": "enterprises",
+    "type": "gtld"
+  },
+  {
+    "tld": "equipment",
+    "punycode": "equipment",
+    "type": "gtld"
+  },
+  {
+    "tld": "er",
+    "punycode": "er",
+    "type": "cctld"
+  },
+  {
+    "tld": "erni",
+    "punycode": "erni",
+    "type": "gtld"
+  },
+  {
+    "tld": "es",
+    "punycode": "es",
+    "type": "cctld"
+  },
+  {
+    "tld": "esq",
+    "punycode": "esq",
+    "type": "gtld"
+  },
+  {
+    "tld": "estate",
+    "punycode": "estate",
+    "type": "gtld"
+  },
+  {
+    "tld": "et",
+    "punycode": "et",
+    "type": "cctld"
+  },
+  {
+    "tld": "eu",
+    "punycode": "eu",
+    "type": "cctld"
+  },
+  {
+    "tld": "eus",
+    "punycode": "eus",
+    "type": "gtld"
+  },
+  {
+    "tld": "events",
+    "punycode": "events",
+    "type": "gtld"
+  },
+  {
+    "tld": "exchange",
+    "punycode": "exchange",
+    "type": "gtld"
+  },
+  {
+    "tld": "expert",
+    "punycode": "expert",
+    "type": "gtld"
+  },
+  {
+    "tld": "exposed",
+    "punycode": "exposed",
+    "type": "gtld"
+  },
+  {
+    "tld": "express",
+    "punycode": "express",
+    "type": "gtld"
+  },
+  {
+    "tld": "fail",
+    "punycode": "fail",
+    "type": "gtld"
+  },
+  {
+    "tld": "faith",
+    "punycode": "faith",
+    "type": "gtld"
+  },
+  {
+    "tld": "family",
+    "punycode": "family",
+    "type": "gtld"
+  },
+  {
+    "tld": "fan",
+    "punycode": "fan",
+    "type": "gtld"
+  },
+  {
+    "tld": "fans",
+    "punycode": "fans",
+    "type": "gtld"
+  },
+  {
+    "tld": "farm",
+    "punycode": "farm",
+    "type": "gtld"
+  },
+  {
+    "tld": "fashion",
+    "punycode": "fashion",
+    "type": "gtld"
+  },
+  {
+    "tld": "fast",
+    "punycode": "fast",
+    "type": "gtld"
+  },
+  {
+    "tld": "feedback",
+    "punycode": "feedback",
+    "type": "gtld"
+  },
+  {
+    "tld": "fi",
+    "punycode": "fi",
+    "type": "cctld"
+  },
+  {
+    "tld": "film",
+    "punycode": "film",
+    "type": "gtld"
+  },
+  {
+    "tld": "final",
+    "punycode": "final",
+    "type": "gtld"
+  },
+  {
+    "tld": "finance",
+    "punycode": "finance",
+    "type": "gtld"
+  },
+  {
+    "tld": "financial",
+    "punycode": "financial",
+    "type": "gtld"
+  },
+  {
+    "tld": "firmdale",
+    "punycode": "firmdale",
+    "type": "gtld"
+  },
+  {
+    "tld": "fish",
+    "punycode": "fish",
+    "type": "gtld"
+  },
+  {
+    "tld": "fishing",
+    "punycode": "fishing",
+    "type": "gtld"
+  },
+  {
+    "tld": "fit",
+    "punycode": "fit",
+    "type": "gtld"
+  },
+  {
+    "tld": "fitness",
+    "punycode": "fitness",
+    "type": "gtld"
+  },
+  {
+    "tld": "fj",
+    "punycode": "fj",
+    "type": "cctld"
+  },
+  {
+    "tld": "fk",
+    "punycode": "fk",
+    "type": "cctld"
+  },
+  {
+    "tld": "flights",
+    "punycode": "flights",
+    "type": "gtld"
+  },
+  {
+    "tld": "florist",
+    "punycode": "florist",
+    "type": "gtld"
+  },
+  {
+    "tld": "flowers",
+    "punycode": "flowers",
+    "type": "gtld"
+  },
+  {
+    "tld": "fm",
+    "punycode": "fm",
+    "type": "cctld"
+  },
+  {
+    "tld": "fo",
+    "punycode": "fo",
+    "type": "cctld"
+  },
+  {
+    "tld": "foo",
+    "punycode": "foo",
+    "type": "gtld"
+  },
+  {
+    "tld": "football",
+    "punycode": "football",
+    "type": "gtld"
+  },
+  {
+    "tld": "forex",
+    "punycode": "forex",
+    "type": "gtld"
+  },
+  {
+    "tld": "forsale",
+    "punycode": "forsale",
+    "type": "gtld"
+  },
+  {
+    "tld": "forum",
+    "punycode": "forum",
+    "type": "gtld"
+  },
+  {
+    "tld": "foundation",
+    "punycode": "foundation",
+    "type": "gtld"
+  },
+  {
+    "tld": "fr",
+    "punycode": "fr",
+    "type": "cctld"
+  },
+  {
+    "tld": "free",
+    "punycode": "free",
+    "type": "gtld"
+  },
+  {
+    "tld": "frl",
+    "punycode": "frl",
+    "type": "gtld"
+  },
+  {
+    "tld": "ftr",
+    "punycode": "ftr",
+    "type": "gtld"
+  },
+  {
+    "tld": "fun",
+    "punycode": "fun",
+    "type": "gtld"
+  },
+  {
+    "tld": "fund",
+    "punycode": "fund",
+    "type": "gtld"
+  },
+  {
+    "tld": "furniture",
+    "punycode": "furniture",
+    "type": "gtld"
+  },
+  {
+    "tld": "futbol",
+    "punycode": "futbol",
+    "type": "gtld"
+  },
+  {
+    "tld": "fyi",
+    "punycode": "fyi",
+    "type": "gtld"
+  },
+  {
+    "tld": "ga",
+    "punycode": "ga",
+    "type": "cctld"
+  },
+  {
+    "tld": "gal",
+    "punycode": "gal",
+    "type": "gtld"
+  },
+  {
+    "tld": "gallery",
+    "punycode": "gallery",
+    "type": "gtld"
+  },
+  {
+    "tld": "game",
+    "punycode": "game",
+    "type": "gtld"
+  },
+  {
+    "tld": "games",
+    "punycode": "games",
+    "type": "gtld"
+  },
+  {
+    "tld": "garden",
+    "punycode": "garden",
+    "type": "gtld"
+  },
+  {
+    "tld": "gay",
+    "punycode": "gay",
+    "type": "gtld"
+  },
+  {
+    "tld": "gb",
+    "punycode": "gb",
+    "type": "cctld"
+  },
+  {
+    "tld": "gbiz",
+    "punycode": "gbiz",
+    "type": "gtld"
+  },
+  {
+    "tld": "gd",
+    "punycode": "gd",
+    "type": "cctld"
+  },
+  {
+    "tld": "gdn",
+    "punycode": "gdn",
+    "type": "gtld"
+  },
+  {
+    "tld": "ge",
+    "punycode": "ge",
+    "type": "cctld"
+  },
+  {
+    "tld": "gent",
+    "punycode": "gent",
+    "type": "gtld"
+  },
+  {
+    "tld": "gf",
+    "punycode": "gf",
+    "type": "cctld"
+  },
+  {
+    "tld": "gg",
+    "punycode": "gg",
+    "type": "cctld"
+  },
+  {
+    "tld": "ggee",
+    "punycode": "ggee",
+    "type": "gtld"
+  },
+  {
+    "tld": "gh",
+    "punycode": "gh",
+    "type": "cctld"
+  },
+  {
+    "tld": "gi",
+    "punycode": "gi",
+    "type": "cctld"
+  },
+  {
+    "tld": "gift",
+    "punycode": "gift",
+    "type": "gtld"
+  },
+  {
+    "tld": "gifts",
+    "punycode": "gifts",
+    "type": "gtld"
+  },
+  {
+    "tld": "gives",
+    "punycode": "gives",
+    "type": "gtld"
+  },
+  {
+    "tld": "giving",
+    "punycode": "giving",
+    "type": "gtld"
+  },
+  {
+    "tld": "gl",
+    "punycode": "gl",
+    "type": "cctld"
+  },
+  {
+    "tld": "glass",
+    "punycode": "glass",
+    "type": "gtld"
+  },
+  {
+    "tld": "gle",
+    "punycode": "gle",
+    "type": "gtld"
+  },
+  {
+    "tld": "global",
+    "punycode": "global",
+    "type": "gtld"
+  },
+  {
+    "tld": "globo",
+    "punycode": "globo",
+    "type": "gtld"
+  },
+  {
+    "tld": "gm",
+    "punycode": "gm",
+    "type": "cctld"
+  },
+  {
+    "tld": "gmbh",
+    "punycode": "gmbh",
+    "type": "gtld"
+  },
+  {
+    "tld": "gn",
+    "punycode": "gn",
+    "type": "cctld"
+  },
+  {
+    "tld": "gold",
+    "punycode": "gold",
+    "type": "gtld"
+  },
+  {
+    "tld": "golf",
+    "punycode": "golf",
+    "type": "gtld"
+  },
+  {
+    "tld": "gop",
+    "punycode": "gop",
+    "type": "gtld"
+  },
+  {
+    "tld": "got",
+    "punycode": "got",
+    "type": "gtld"
+  },
+  {
+    "tld": "gov",
+    "punycode": "gov",
+    "type": "gtld"
+  },
+  {
+    "tld": "gp",
+    "punycode": "gp",
+    "type": "cctld"
+  },
+  {
+    "tld": "gq",
+    "punycode": "gq",
+    "type": "cctld"
+  },
+  {
+    "tld": "gr",
+    "punycode": "gr",
+    "type": "cctld"
+  },
+  {
+    "tld": "graphics",
+    "punycode": "graphics",
+    "type": "gtld"
+  },
+  {
+    "tld": "gratis",
+    "punycode": "gratis",
+    "type": "gtld"
+  },
+  {
+    "tld": "green",
+    "punycode": "green",
+    "type": "gtld"
+  },
+  {
+    "tld": "gripe",
+    "punycode": "gripe",
+    "type": "gtld"
+  },
+  {
+    "tld": "grocery",
+    "punycode": "grocery",
+    "type": "gtld"
+  },
+  {
+    "tld": "group",
+    "punycode": "group",
+    "type": "gtld"
+  },
+  {
+    "tld": "gs",
+    "punycode": "gs",
+    "type": "cctld"
+  },
+  {
+    "tld": "gt",
+    "punycode": "gt",
+    "type": "cctld"
+  },
+  {
+    "tld": "gu",
+    "punycode": "gu",
+    "type": "cctld"
+  },
+  {
+    "tld": "guge",
+    "punycode": "guge",
+    "type": "gtld"
+  },
+  {
+    "tld": "guide",
+    "punycode": "guide",
+    "type": "gtld"
+  },
+  {
+    "tld": "guitars",
+    "punycode": "guitars",
+    "type": "gtld"
+  },
+  {
+    "tld": "guru",
+    "punycode": "guru",
+    "type": "gtld"
+  },
+  {
+    "tld": "gw",
+    "punycode": "gw",
+    "type": "cctld"
+  },
+  {
+    "tld": "gy",
+    "punycode": "gy",
+    "type": "cctld"
+  },
+  {
+    "tld": "hair",
+    "punycode": "hair",
+    "type": "gtld"
+  },
+  {
+    "tld": "hamburg",
+    "punycode": "hamburg",
+    "type": "gtld"
+  },
+  {
+    "tld": "hangout",
+    "punycode": "hangout",
+    "type": "gtld"
+  },
+  {
+    "tld": "haus",
+    "punycode": "haus",
+    "type": "gtld"
+  },
+  {
+    "tld": "health",
+    "punycode": "health",
+    "type": "gtld"
+  },
+  {
+    "tld": "healthcare",
+    "punycode": "healthcare",
+    "type": "gtld"
+  },
+  {
+    "tld": "help",
+    "punycode": "help",
+    "type": "gtld"
+  },
+  {
+    "tld": "helsinki",
+    "punycode": "helsinki",
+    "type": "gtld"
+  },
+  {
+    "tld": "hiphop",
+    "punycode": "hiphop",
+    "type": "gtld"
+  },
+  {
+    "tld": "hiv",
+    "punycode": "hiv",
+    "type": "gtld"
+  },
+  {
+    "tld": "hk",
+    "punycode": "hk",
+    "type": "cctld"
+  },
+  {
+    "tld": "hm",
+    "punycode": "hm",
+    "type": "cctld"
+  },
+  {
+    "tld": "hn",
+    "punycode": "hn",
+    "type": "cctld"
+  },
+  {
+    "tld": "hockey",
+    "punycode": "hockey",
+    "type": "gtld"
+  },
+  {
+    "tld": "holdings",
+    "punycode": "holdings",
+    "type": "gtld"
+  },
+  {
+    "tld": "holiday",
+    "punycode": "holiday",
+    "type": "gtld"
+  },
+  {
+    "tld": "homes",
+    "punycode": "homes",
+    "type": "gtld"
+  },
+  {
+    "tld": "horse",
+    "punycode": "horse",
+    "type": "gtld"
+  },
+  {
+    "tld": "hospital",
+    "punycode": "hospital",
+    "type": "gtld"
+  },
+  {
+    "tld": "host",
+    "punycode": "host",
+    "type": "gtld"
+  },
+  {
+    "tld": "hosting",
+    "punycode": "hosting",
+    "type": "gtld"
+  },
+  {
+    "tld": "hot",
+    "punycode": "hot",
+    "type": "gtld"
+  },
+  {
+    "tld": "hotels",
+    "punycode": "hotels",
+    "type": "gtld"
+  },
+  {
+    "tld": "house",
+    "punycode": "house",
+    "type": "gtld"
+  },
+  {
+    "tld": "how",
+    "punycode": "how",
+    "type": "gtld"
+  },
+  {
+    "tld": "hr",
+    "punycode": "hr",
+    "type": "cctld"
+  },
+  {
+    "tld": "ht",
+    "punycode": "ht",
+    "type": "cctld"
+  },
+  {
+    "tld": "hu",
+    "punycode": "hu",
+    "type": "cctld"
+  },
+  {
+    "tld": "icu",
+    "punycode": "icu",
+    "type": "gtld"
+  },
+  {
+    "tld": "id",
+    "punycode": "id",
+    "type": "cctld"
+  },
+  {
+    "tld": "ie",
+    "punycode": "ie",
+    "type": "cctld"
+  },
+  {
+    "tld": "il",
+    "punycode": "il",
+    "type": "cctld"
+  },
+  {
+    "tld": "im",
+    "punycode": "im",
+    "type": "cctld"
+  },
+  {
+    "tld": "imamat",
+    "punycode": "imamat",
+    "type": "gtld"
+  },
+  {
+    "tld": "immo",
+    "punycode": "immo",
+    "type": "gtld"
+  },
+  {
+    "tld": "immobilien",
+    "punycode": "immobilien",
+    "type": "gtld"
+  },
+  {
+    "tld": "in",
+    "punycode": "in",
+    "type": "cctld"
+  },
+  {
+    "tld": "inc",
+    "punycode": "inc",
+    "type": "gtld"
+  },
+  {
+    "tld": "industries",
+    "punycode": "industries",
+    "type": "gtld"
+  },
+  {
+    "tld": "info",
+    "punycode": "info",
+    "type": "gtld"
+  },
+  {
+    "tld": "ing",
+    "punycode": "ing",
+    "type": "gtld"
+  },
+  {
+    "tld": "ink",
+    "punycode": "ink",
+    "type": "gtld"
+  },
+  {
+    "tld": "institute",
+    "punycode": "institute",
+    "type": "gtld"
+  },
+  {
+    "tld": "insurance",
+    "punycode": "insurance",
+    "type": "gtld"
+  },
+  {
+    "tld": "insure",
+    "punycode": "insure",
+    "type": "gtld"
+  },
+  {
+    "tld": "int",
+    "punycode": "int",
+    "type": "gtld"
+  },
+  {
+    "tld": "international",
+    "punycode": "international",
+    "type": "gtld"
+  },
+  {
+    "tld": "investments",
+    "punycode": "investments",
+    "type": "gtld"
+  },
+  {
+    "tld": "io",
+    "punycode": "io",
+    "type": "cctld"
+  },
+  {
+    "tld": "iq",
+    "punycode": "iq",
+    "type": "cctld"
+  },
+  {
+    "tld": "ir",
+    "punycode": "ir",
+    "type": "cctld"
+  },
+  {
+    "tld": "irish",
+    "punycode": "irish",
+    "type": "gtld"
+  },
+  {
+    "tld": "is",
+    "punycode": "is",
+    "type": "cctld"
+  },
+  {
+    "tld": "ismaili",
+    "punycode": "ismaili",
+    "type": "gtld"
+  },
+  {
+    "tld": "ist",
+    "punycode": "ist",
+    "type": "gtld"
+  },
+  {
+    "tld": "istanbul",
+    "punycode": "istanbul",
+    "type": "gtld"
+  },
+  {
+    "tld": "it",
+    "punycode": "it",
+    "type": "cctld"
+  },
+  {
+    "tld": "je",
+    "punycode": "je",
+    "type": "cctld"
+  },
+  {
+    "tld": "jetzt",
+    "punycode": "jetzt",
+    "type": "gtld"
+  },
+  {
+    "tld": "jewelry",
+    "punycode": "jewelry",
+    "type": "gtld"
+  },
+  {
+    "tld": "jm",
+    "punycode": "jm",
+    "type": "cctld"
+  },
+  {
+    "tld": "jo",
+    "punycode": "jo",
+    "type": "cctld"
+  },
+  {
+    "tld": "jobs",
+    "punycode": "jobs",
+    "type": "gtld"
+  },
+  {
+    "tld": "joburg",
+    "punycode": "joburg",
+    "type": "gtld"
+  },
+  {
+    "tld": "jot",
+    "punycode": "jot",
+    "type": "gtld"
+  },
+  {
+    "tld": "joy",
+    "punycode": "joy",
+    "type": "gtld"
+  },
+  {
+    "tld": "jp",
+    "punycode": "jp",
+    "type": "cctld"
+  },
+  {
+    "tld": "jprs",
+    "punycode": "jprs",
+    "type": "gtld"
+  },
+  {
+    "tld": "juegos",
+    "punycode": "juegos",
+    "type": "gtld"
+  },
+  {
+    "tld": "kaufen",
+    "punycode": "kaufen",
+    "type": "gtld"
+  },
+  {
+    "tld": "ke",
+    "punycode": "ke",
+    "type": "cctld"
+  },
+  {
+    "tld": "kerryhotels",
+    "punycode": "kerryhotels",
+    "type": "gtld"
+  },
+  {
+    "tld": "kerryproperties",
+    "punycode": "kerryproperties",
+    "type": "gtld"
+  },
+  {
+    "tld": "kfh",
+    "punycode": "kfh",
+    "type": "gtld"
+  },
+  {
+    "tld": "kg",
+    "punycode": "kg",
+    "type": "cctld"
+  },
+  {
+    "tld": "kh",
+    "punycode": "kh",
+    "type": "cctld"
+  },
+  {
+    "tld": "ki",
+    "punycode": "ki",
+    "type": "cctld"
+  },
+  {
+    "tld": "kids",
+    "punycode": "kids",
+    "type": "gtld"
+  },
+  {
+    "tld": "kim",
+    "punycode": "kim",
+    "type": "gtld"
+  },
+  {
+    "tld": "kitchen",
+    "punycode": "kitchen",
+    "type": "gtld"
+  },
+  {
+    "tld": "kiwi",
+    "punycode": "kiwi",
+    "type": "gtld"
+  },
+  {
+    "tld": "km",
+    "punycode": "km",
+    "type": "cctld"
+  },
+  {
+    "tld": "kn",
+    "punycode": "kn",
+    "type": "cctld"
+  },
+  {
+    "tld": "koeln",
+    "punycode": "koeln",
+    "type": "gtld"
+  },
+  {
+    "tld": "kosher",
+    "punycode": "kosher",
+    "type": "gtld"
+  },
+  {
+    "tld": "kp",
+    "punycode": "kp",
+    "type": "cctld"
+  },
+  {
+    "tld": "kr",
+    "punycode": "kr",
+    "type": "cctld"
+  },
+  {
+    "tld": "krd",
+    "punycode": "krd",
+    "type": "gtld"
+  },
+  {
+    "tld": "kred",
+    "punycode": "kred",
+    "type": "gtld"
+  },
+  {
+    "tld": "kuokgroup",
+    "punycode": "kuokgroup",
+    "type": "gtld"
+  },
+  {
+    "tld": "kw",
+    "punycode": "kw",
+    "type": "cctld"
+  },
+  {
+    "tld": "ky",
+    "punycode": "ky",
+    "type": "cctld"
+  },
+  {
+    "tld": "kyoto",
+    "punycode": "kyoto",
+    "type": "gtld"
+  },
+  {
+    "tld": "kz",
+    "punycode": "kz",
+    "type": "cctld"
+  },
+  {
+    "tld": "la",
+    "punycode": "la",
+    "type": "cctld"
+  },
+  {
+    "tld": "lacaixa",
+    "punycode": "lacaixa",
+    "type": "gtld"
+  },
+  {
+    "tld": "land",
+    "punycode": "land",
+    "type": "gtld"
+  },
+  {
+    "tld": "lasalle",
+    "punycode": "lasalle",
+    "type": "gtld"
+  },
+  {
+    "tld": "lat",
+    "punycode": "lat",
+    "type": "gtld"
+  },
+  {
+    "tld": "latino",
+    "punycode": "latino",
+    "type": "gtld"
+  },
+  {
+    "tld": "law",
+    "punycode": "law",
+    "type": "gtld"
+  },
+  {
+    "tld": "lawyer",
+    "punycode": "lawyer",
+    "type": "gtld"
+  },
+  {
+    "tld": "lb",
+    "punycode": "lb",
+    "type": "cctld"
+  },
+  {
+    "tld": "lc",
+    "punycode": "lc",
+    "type": "cctld"
+  },
+  {
+    "tld": "lease",
+    "punycode": "lease",
+    "type": "gtld"
+  },
+  {
+    "tld": "legal",
+    "punycode": "legal",
+    "type": "gtld"
+  },
+  {
+    "tld": "lgbt",
+    "punycode": "lgbt",
+    "type": "gtld"
+  },
+  {
+    "tld": "li",
+    "punycode": "li",
+    "type": "cctld"
+  },
+  {
+    "tld": "life",
+    "punycode": "life",
+    "type": "gtld"
+  },
+  {
+    "tld": "lifeinsurance",
+    "punycode": "lifeinsurance",
+    "type": "gtld"
+  },
+  {
+    "tld": "lifestyle",
+    "punycode": "lifestyle",
+    "type": "gtld"
+  },
+  {
+    "tld": "lighting",
+    "punycode": "lighting",
+    "type": "gtld"
+  },
+  {
+    "tld": "like",
+    "punycode": "like",
+    "type": "gtld"
+  },
+  {
+    "tld": "limited",
+    "punycode": "limited",
+    "type": "gtld"
+  },
+  {
+    "tld": "limo",
+    "punycode": "limo",
+    "type": "gtld"
+  },
+  {
+    "tld": "link",
+    "punycode": "link",
+    "type": "gtld"
+  },
+  {
+    "tld": "live",
+    "punycode": "live",
+    "type": "gtld"
+  },
+  {
+    "tld": "living",
+    "punycode": "living",
+    "type": "gtld"
+  },
+  {
+    "tld": "lk",
+    "punycode": "lk",
+    "type": "cctld"
+  },
+  {
+    "tld": "llc",
+    "punycode": "llc",
+    "type": "gtld"
+  },
+  {
+    "tld": "llp",
+    "punycode": "llp",
+    "type": "gtld"
+  },
+  {
+    "tld": "loan",
+    "punycode": "loan",
+    "type": "gtld"
+  },
+  {
+    "tld": "loans",
+    "punycode": "loans",
+    "type": "gtld"
+  },
+  {
+    "tld": "locker",
+    "punycode": "locker",
+    "type": "gtld"
+  },
+  {
+    "tld": "lol",
+    "punycode": "lol",
+    "type": "gtld"
+  },
+  {
+    "tld": "london",
+    "punycode": "london",
+    "type": "gtld"
+  },
+  {
+    "tld": "lotto",
+    "punycode": "lotto",
+    "type": "gtld"
+  },
+  {
+    "tld": "love",
+    "punycode": "love",
+    "type": "gtld"
+  },
+  {
+    "tld": "lr",
+    "punycode": "lr",
+    "type": "cctld"
+  },
+  {
+    "tld": "ls",
+    "punycode": "ls",
+    "type": "cctld"
+  },
+  {
+    "tld": "lt",
+    "punycode": "lt",
+    "type": "cctld"
+  },
+  {
+    "tld": "ltd",
+    "punycode": "ltd",
+    "type": "gtld"
+  },
+  {
+    "tld": "ltda",
+    "punycode": "ltda",
+    "type": "gtld"
+  },
+  {
+    "tld": "lu",
+    "punycode": "lu",
+    "type": "cctld"
+  },
+  {
+    "tld": "luxe",
+    "punycode": "luxe",
+    "type": "gtld"
+  },
+  {
+    "tld": "luxury",
+    "punycode": "luxury",
+    "type": "gtld"
+  },
+  {
+    "tld": "lv",
+    "punycode": "lv",
+    "type": "cctld"
+  },
+  {
+    "tld": "ly",
+    "punycode": "ly",
+    "type": "cctld"
+  },
+  {
+    "tld": "ma",
+    "punycode": "ma",
+    "type": "cctld"
+  },
+  {
+    "tld": "madrid",
+    "punycode": "madrid",
+    "type": "gtld"
+  },
+  {
+    "tld": "maison",
+    "punycode": "maison",
+    "type": "gtld"
+  },
+  {
+    "tld": "makeup",
+    "punycode": "makeup",
+    "type": "gtld"
+  },
+  {
+    "tld": "management",
+    "punycode": "management",
+    "type": "gtld"
+  },
+  {
+    "tld": "mango",
+    "punycode": "mango",
+    "type": "gtld"
+  },
+  {
+    "tld": "map",
+    "punycode": "map",
+    "type": "gtld"
+  },
+  {
+    "tld": "market",
+    "punycode": "market",
+    "type": "gtld"
+  },
+  {
+    "tld": "marketing",
+    "punycode": "marketing",
+    "type": "gtld"
+  },
+  {
+    "tld": "markets",
+    "punycode": "markets",
+    "type": "gtld"
+  },
+  {
+    "tld": "mba",
+    "punycode": "mba",
+    "type": "gtld"
+  },
+  {
+    "tld": "mc",
+    "punycode": "mc",
+    "type": "cctld"
+  },
+  {
+    "tld": "md",
+    "punycode": "md",
+    "type": "cctld"
+  },
+  {
+    "tld": "me",
+    "punycode": "me",
+    "type": "cctld"
+  },
+  {
+    "tld": "med",
+    "punycode": "med",
+    "type": "gtld"
+  },
+  {
+    "tld": "media",
+    "punycode": "media",
+    "type": "gtld"
+  },
+  {
+    "tld": "melbourne",
+    "punycode": "melbourne",
+    "type": "gtld"
+  },
+  {
+    "tld": "meme",
+    "punycode": "meme",
+    "type": "gtld"
+  },
+  {
+    "tld": "memorial",
+    "punycode": "memorial",
+    "type": "gtld"
+  },
+  {
+    "tld": "men",
+    "punycode": "men",
+    "type": "gtld"
+  },
+  {
+    "tld": "menu",
+    "punycode": "menu",
+    "type": "gtld"
+  },
+  {
+    "tld": "merck",
+    "punycode": "merck",
+    "type": "gtld"
+  },
+  {
+    "tld": "merckmsd",
+    "punycode": "merckmsd",
+    "type": "gtld"
+  },
+  {
+    "tld": "mg",
+    "punycode": "mg",
+    "type": "cctld"
+  },
+  {
+    "tld": "mh",
+    "punycode": "mh",
+    "type": "cctld"
+  },
+  {
+    "tld": "miami",
+    "punycode": "miami",
+    "type": "gtld"
+  },
+  {
+    "tld": "mil",
+    "punycode": "mil",
+    "type": "gtld"
+  },
+  {
+    "tld": "mk",
+    "punycode": "mk",
+    "type": "cctld"
+  },
+  {
+    "tld": "ml",
+    "punycode": "ml",
+    "type": "cctld"
+  },
+  {
+    "tld": "mls",
+    "punycode": "mls",
+    "type": "gtld"
+  },
+  {
+    "tld": "mm",
+    "punycode": "mm",
+    "type": "cctld"
+  },
+  {
+    "tld": "mma",
+    "punycode": "mma",
+    "type": "gtld"
+  },
+  {
+    "tld": "mn",
+    "punycode": "mn",
+    "type": "cctld"
+  },
+  {
+    "tld": "mo",
+    "punycode": "mo",
+    "type": "cctld"
+  },
+  {
+    "tld": "mobi",
+    "punycode": "mobi",
+    "type": "gtld"
+  },
+  {
+    "tld": "mobile",
+    "punycode": "mobile",
+    "type": "gtld"
+  },
+  {
+    "tld": "moda",
+    "punycode": "moda",
+    "type": "gtld"
+  },
+  {
+    "tld": "moe",
+    "punycode": "moe",
+    "type": "gtld"
+  },
+  {
+    "tld": "moi",
+    "punycode": "moi",
+    "type": "gtld"
+  },
+  {
+    "tld": "mom",
+    "punycode": "mom",
+    "type": "gtld"
+  },
+  {
+    "tld": "money",
+    "punycode": "money",
+    "type": "gtld"
+  },
+  {
+    "tld": "mortgage",
+    "punycode": "mortgage",
+    "type": "gtld"
+  },
+  {
+    "tld": "moscow",
+    "punycode": "moscow",
+    "type": "gtld"
+  },
+  {
+    "tld": "motorcycles",
+    "punycode": "motorcycles",
+    "type": "gtld"
+  },
+  {
+    "tld": "mov",
+    "punycode": "mov",
+    "type": "gtld"
+  },
+  {
+    "tld": "movie",
+    "punycode": "movie",
+    "type": "gtld"
+  },
+  {
+    "tld": "mp",
+    "punycode": "mp",
+    "type": "cctld"
+  },
+  {
+    "tld": "mq",
+    "punycode": "mq",
+    "type": "cctld"
+  },
+  {
+    "tld": "mr",
+    "punycode": "mr",
+    "type": "cctld"
+  },
+  {
+    "tld": "ms",
+    "punycode": "ms",
+    "type": "cctld"
+  },
+  {
+    "tld": "mt",
+    "punycode": "mt",
+    "type": "cctld"
+  },
+  {
+    "tld": "mu",
+    "punycode": "mu",
+    "type": "cctld"
+  },
+  {
+    "tld": "museum",
+    "punycode": "museum",
+    "type": "gtld"
+  },
+  {
+    "tld": "music",
+    "punycode": "music",
+    "type": "gtld"
+  },
+  {
+    "tld": "mv",
+    "punycode": "mv",
+    "type": "cctld"
+  },
+  {
+    "tld": "mw",
+    "punycode": "mw",
+    "type": "cctld"
+  },
+  {
+    "tld": "mx",
+    "punycode": "mx",
+    "type": "cctld"
+  },
+  {
+    "tld": "my",
+    "punycode": "my",
+    "type": "cctld"
+  },
+  {
+    "tld": "mz",
+    "punycode": "mz",
+    "type": "cctld"
+  },
+  {
+    "tld": "na",
+    "punycode": "na",
+    "type": "cctld"
+  },
+  {
+    "tld": "nagoya",
+    "punycode": "nagoya",
+    "type": "gtld"
+  },
+  {
+    "tld": "name",
+    "punycode": "name",
+    "type": "gtld"
+  },
+  {
+    "tld": "navy",
+    "punycode": "navy",
+    "type": "gtld"
+  },
+  {
+    "tld": "nc",
+    "punycode": "nc",
+    "type": "cctld"
+  },
+  {
+    "tld": "ne",
+    "punycode": "ne",
+    "type": "cctld"
+  },
+  {
+    "tld": "net",
+    "punycode": "net",
+    "type": "gtld"
+  },
+  {
+    "tld": "network",
+    "punycode": "network",
+    "type": "gtld"
+  },
+  {
+    "tld": "new",
+    "punycode": "new",
+    "type": "gtld"
+  },
+  {
+    "tld": "news",
+    "punycode": "news",
+    "type": "gtld"
+  },
+  {
+    "tld": "nf",
+    "punycode": "nf",
+    "type": "cctld"
+  },
+  {
+    "tld": "ng",
+    "punycode": "ng",
+    "type": "cctld"
+  },
+  {
+    "tld": "ngo",
+    "punycode": "ngo",
+    "type": "gtld"
+  },
+  {
+    "tld": "ni",
+    "punycode": "ni",
+    "type": "cctld"
+  },
+  {
+    "tld": "ninja",
+    "punycode": "ninja",
+    "type": "gtld"
+  },
+  {
+    "tld": "nl",
+    "punycode": "nl",
+    "type": "cctld"
+  },
+  {
+    "tld": "no",
+    "punycode": "no",
+    "type": "cctld"
+  },
+  {
+    "tld": "now",
+    "punycode": "now",
+    "type": "gtld"
+  },
+  {
+    "tld": "nowruz",
+    "punycode": "nowruz",
+    "type": "gtld"
+  },
+  {
+    "tld": "np",
+    "punycode": "np",
+    "type": "cctld"
+  },
+  {
+    "tld": "nr",
+    "punycode": "nr",
+    "type": "cctld"
+  },
+  {
+    "tld": "nrw",
+    "punycode": "nrw",
+    "type": "gtld"
+  },
+  {
+    "tld": "nu",
+    "punycode": "nu",
+    "type": "cctld"
+  },
+  {
+    "tld": "nyc",
+    "punycode": "nyc",
+    "type": "gtld"
+  },
+  {
+    "tld": "nz",
+    "punycode": "nz",
+    "type": "cctld"
+  },
+  {
+    "tld": "observer",
+    "punycode": "observer",
+    "type": "gtld"
+  },
+  {
+    "tld": "office",
+    "punycode": "office",
+    "type": "gtld"
+  },
+  {
+    "tld": "okinawa",
+    "punycode": "okinawa",
+    "type": "gtld"
+  },
+  {
+    "tld": "olayan",
+    "punycode": "olayan",
+    "type": "gtld"
+  },
+  {
+    "tld": "olayangroup",
+    "punycode": "olayangroup",
+    "type": "gtld"
+  },
+  {
+    "tld": "ollo",
+    "punycode": "ollo",
+    "type": "gtld"
+  },
+  {
+    "tld": "om",
+    "punycode": "om",
+    "type": "cctld"
+  },
+  {
+    "tld": "one",
+    "punycode": "one",
+    "type": "gtld"
+  },
+  {
+    "tld": "ong",
+    "punycode": "ong",
+    "type": "gtld"
+  },
+  {
+    "tld": "onl",
+    "punycode": "onl",
+    "type": "gtld"
+  },
+  {
+    "tld": "online",
+    "punycode": "online",
+    "type": "gtld"
+  },
+  {
+    "tld": "ooo",
+    "punycode": "ooo",
+    "type": "gtld"
+  },
+  {
+    "tld": "org",
+    "punycode": "org",
+    "type": "gtld"
+  },
+  {
+    "tld": "organic",
+    "punycode": "organic",
+    "type": "gtld"
+  },
+  {
+    "tld": "osaka",
+    "punycode": "osaka",
+    "type": "gtld"
+  },
+  {
+    "tld": "ott",
+    "punycode": "ott",
+    "type": "gtld"
+  },
+  {
+    "tld": "ovh",
+    "punycode": "ovh",
+    "type": "gtld"
+  },
+  {
+    "tld": "pa",
+    "punycode": "pa",
+    "type": "cctld"
+  },
+  {
+    "tld": "page",
+    "punycode": "page",
+    "type": "gtld"
+  },
+  {
+    "tld": "paris",
+    "punycode": "paris",
+    "type": "gtld"
+  },
+  {
+    "tld": "pars",
+    "punycode": "pars",
+    "type": "gtld"
+  },
+  {
+    "tld": "partners",
+    "punycode": "partners",
+    "type": "gtld"
+  },
+  {
+    "tld": "parts",
+    "punycode": "parts",
+    "type": "gtld"
+  },
+  {
+    "tld": "party",
+    "punycode": "party",
+    "type": "gtld"
+  },
+  {
+    "tld": "pay",
+    "punycode": "pay",
+    "type": "gtld"
+  },
+  {
+    "tld": "pe",
+    "punycode": "pe",
+    "type": "cctld"
+  },
+  {
+    "tld": "pet",
+    "punycode": "pet",
+    "type": "gtld"
+  },
+  {
+    "tld": "pf",
+    "punycode": "pf",
+    "type": "cctld"
+  },
+  {
+    "tld": "pg",
+    "punycode": "pg",
+    "type": "cctld"
+  },
+  {
+    "tld": "ph",
+    "punycode": "ph",
+    "type": "cctld"
+  },
+  {
+    "tld": "pharmacy",
+    "punycode": "pharmacy",
+    "type": "gtld"
+  },
+  {
+    "tld": "phd",
+    "punycode": "phd",
+    "type": "gtld"
+  },
+  {
+    "tld": "phone",
+    "punycode": "phone",
+    "type": "gtld"
+  },
+  {
+    "tld": "photo",
+    "punycode": "photo",
+    "type": "gtld"
+  },
+  {
+    "tld": "photography",
+    "punycode": "photography",
+    "type": "gtld"
+  },
+  {
+    "tld": "photos",
+    "punycode": "photos",
+    "type": "gtld"
+  },
+  {
+    "tld": "physio",
+    "punycode": "physio",
+    "type": "gtld"
+  },
+  {
+    "tld": "pics",
+    "punycode": "pics",
+    "type": "gtld"
+  },
+  {
+    "tld": "pictures",
+    "punycode": "pictures",
+    "type": "gtld"
+  },
+  {
+    "tld": "pid",
+    "punycode": "pid",
+    "type": "gtld"
+  },
+  {
+    "tld": "pin",
+    "punycode": "pin",
+    "type": "gtld"
+  },
+  {
+    "tld": "pink",
+    "punycode": "pink",
+    "type": "gtld"
+  },
+  {
+    "tld": "pizza",
+    "punycode": "pizza",
+    "type": "gtld"
+  },
+  {
+    "tld": "pk",
+    "punycode": "pk",
+    "type": "cctld"
+  },
+  {
+    "tld": "pl",
+    "punycode": "pl",
+    "type": "cctld"
+  },
+  {
+    "tld": "place",
+    "punycode": "place",
+    "type": "gtld"
+  },
+  {
+    "tld": "plumbing",
+    "punycode": "plumbing",
+    "type": "gtld"
+  },
+  {
+    "tld": "plus",
+    "punycode": "plus",
+    "type": "gtld"
+  },
+  {
+    "tld": "pm",
+    "punycode": "pm",
+    "type": "cctld"
+  },
+  {
+    "tld": "pn",
+    "punycode": "pn",
+    "type": "cctld"
+  },
+  {
+    "tld": "pohl",
+    "punycode": "pohl",
+    "type": "gtld"
+  },
+  {
+    "tld": "poker",
+    "punycode": "poker",
+    "type": "gtld"
+  },
+  {
+    "tld": "politie",
+    "punycode": "politie",
+    "type": "gtld"
+  },
+  {
+    "tld": "porn",
+    "punycode": "porn",
+    "type": "gtld"
+  },
+  {
+    "tld": "post",
+    "punycode": "post",
+    "type": "gtld"
+  },
+  {
+    "tld": "pr",
+    "punycode": "pr",
+    "type": "cctld"
+  },
+  {
+    "tld": "press",
+    "punycode": "press",
+    "type": "gtld"
+  },
+  {
+    "tld": "pro",
+    "punycode": "pro",
+    "type": "gtld"
+  },
+  {
+    "tld": "prod",
+    "punycode": "prod",
+    "type": "gtld"
+  },
+  {
+    "tld": "productions",
+    "punycode": "productions",
+    "type": "gtld"
+  },
+  {
+    "tld": "prof",
+    "punycode": "prof",
+    "type": "gtld"
+  },
+  {
+    "tld": "promo",
+    "punycode": "promo",
+    "type": "gtld"
+  },
+  {
+    "tld": "properties",
+    "punycode": "properties",
+    "type": "gtld"
+  },
+  {
+    "tld": "property",
+    "punycode": "property",
+    "type": "gtld"
+  },
+  {
+    "tld": "protection",
+    "punycode": "protection",
+    "type": "gtld"
+  },
+  {
+    "tld": "ps",
+    "punycode": "ps",
+    "type": "cctld"
+  },
+  {
+    "tld": "pt",
+    "punycode": "pt",
+    "type": "cctld"
+  },
+  {
+    "tld": "pub",
+    "punycode": "pub",
+    "type": "gtld"
+  },
+  {
+    "tld": "pw",
+    "punycode": "pw",
+    "type": "cctld"
+  },
+  {
+    "tld": "py",
+    "punycode": "py",
+    "type": "cctld"
+  },
+  {
+    "tld": "qa",
+    "punycode": "qa",
+    "type": "cctld"
+  },
+  {
+    "tld": "qpon",
+    "punycode": "qpon",
+    "type": "gtld"
+  },
+  {
+    "tld": "quebec",
+    "punycode": "quebec",
+    "type": "gtld"
+  },
+  {
+    "tld": "quest",
+    "punycode": "quest",
+    "type": "gtld"
+  },
+  {
+    "tld": "racing",
+    "punycode": "racing",
+    "type": "gtld"
+  },
+  {
+    "tld": "radio",
+    "punycode": "radio",
+    "type": "gtld"
+  },
+  {
+    "tld": "re",
+    "punycode": "re",
+    "type": "cctld"
+  },
+  {
+    "tld": "read",
+    "punycode": "read",
+    "type": "gtld"
+  },
+  {
+    "tld": "realestate",
+    "punycode": "realestate",
+    "type": "gtld"
+  },
+  {
+    "tld": "realtor",
+    "punycode": "realtor",
+    "type": "gtld"
+  },
+  {
+    "tld": "realty",
+    "punycode": "realty",
+    "type": "gtld"
+  },
+  {
+    "tld": "recipes",
+    "punycode": "recipes",
+    "type": "gtld"
+  },
+  {
+    "tld": "red",
+    "punycode": "red",
+    "type": "gtld"
+  },
+  {
+    "tld": "redumbrella",
+    "punycode": "redumbrella",
+    "type": "gtld"
+  },
+  {
+    "tld": "rehab",
+    "punycode": "rehab",
+    "type": "gtld"
+  },
+  {
+    "tld": "reise",
+    "punycode": "reise",
+    "type": "gtld"
+  },
+  {
+    "tld": "reisen",
+    "punycode": "reisen",
+    "type": "gtld"
+  },
+  {
+    "tld": "reit",
+    "punycode": "reit",
+    "type": "gtld"
+  },
+  {
+    "tld": "ren",
+    "punycode": "ren",
+    "type": "gtld"
+  },
+  {
+    "tld": "rent",
+    "punycode": "rent",
+    "type": "gtld"
+  },
+  {
+    "tld": "rentals",
+    "punycode": "rentals",
+    "type": "gtld"
+  },
+  {
+    "tld": "repair",
+    "punycode": "repair",
+    "type": "gtld"
+  },
+  {
+    "tld": "report",
+    "punycode": "report",
+    "type": "gtld"
+  },
+  {
+    "tld": "republican",
+    "punycode": "republican",
+    "type": "gtld"
+  },
+  {
+    "tld": "rest",
+    "punycode": "rest",
+    "type": "gtld"
+  },
+  {
+    "tld": "restaurant",
+    "punycode": "restaurant",
+    "type": "gtld"
+  },
+  {
+    "tld": "review",
+    "punycode": "review",
+    "type": "gtld"
+  },
+  {
+    "tld": "reviews",
+    "punycode": "reviews",
+    "type": "gtld"
+  },
+  {
+    "tld": "rich",
+    "punycode": "rich",
+    "type": "gtld"
+  },
+  {
+    "tld": "richardli",
+    "punycode": "richardli",
+    "type": "gtld"
+  },
+  {
+    "tld": "rio",
+    "punycode": "rio",
+    "type": "gtld"
+  },
+  {
+    "tld": "rip",
+    "punycode": "rip",
+    "type": "gtld"
+  },
+  {
+    "tld": "ro",
+    "punycode": "ro",
+    "type": "cctld"
+  },
+  {
+    "tld": "rocks",
+    "punycode": "rocks",
+    "type": "gtld"
+  },
+  {
+    "tld": "rodeo",
+    "punycode": "rodeo",
+    "type": "gtld"
+  },
+  {
+    "tld": "room",
+    "punycode": "room",
+    "type": "gtld"
+  },
+  {
+    "tld": "rs",
+    "punycode": "rs",
+    "type": "cctld"
+  },
+  {
+    "tld": "rsvp",
+    "punycode": "rsvp",
+    "type": "gtld"
+  },
+  {
+    "tld": "ru",
+    "punycode": "ru",
+    "type": "cctld"
+  },
+  {
+    "tld": "rugby",
+    "punycode": "rugby",
+    "type": "gtld"
+  },
+  {
+    "tld": "ruhr",
+    "punycode": "ruhr",
+    "type": "gtld"
+  },
+  {
+    "tld": "run",
+    "punycode": "run",
+    "type": "gtld"
+  },
+  {
+    "tld": "rw",
+    "punycode": "rw",
+    "type": "cctld"
+  },
+  {
+    "tld": "ryukyu",
+    "punycode": "ryukyu",
+    "type": "gtld"
+  },
+  {
+    "tld": "sa",
+    "punycode": "sa",
+    "type": "cctld"
+  },
+  {
+    "tld": "saarland",
+    "punycode": "saarland",
+    "type": "gtld"
+  },
+  {
+    "tld": "safe",
+    "punycode": "safe",
+    "type": "gtld"
+  },
+  {
+    "tld": "safety",
+    "punycode": "safety",
+    "type": "gtld"
+  },
+  {
+    "tld": "sakura",
+    "punycode": "sakura",
+    "type": "gtld"
+  },
+  {
+    "tld": "sale",
+    "punycode": "sale",
+    "type": "gtld"
+  },
+  {
+    "tld": "salon",
+    "punycode": "salon",
+    "type": "gtld"
+  },
+  {
+    "tld": "samsung",
+    "punycode": "samsung",
+    "type": "gtld"
+  },
+  {
+    "tld": "sarl",
+    "punycode": "sarl",
+    "type": "gtld"
+  },
+  {
+    "tld": "save",
+    "punycode": "save",
+    "type": "gtld"
+  },
+  {
+    "tld": "sb",
+    "punycode": "sb",
+    "type": "cctld"
+  },
+  {
+    "tld": "sc",
+    "punycode": "sc",
+    "type": "cctld"
+  },
+  {
+    "tld": "scholarships",
+    "punycode": "scholarships",
+    "type": "gtld"
+  },
+  {
+    "tld": "school",
+    "punycode": "school",
+    "type": "gtld"
+  },
+  {
+    "tld": "schule",
+    "punycode": "schule",
+    "type": "gtld"
+  },
+  {
+    "tld": "science",
+    "punycode": "science",
+    "type": "gtld"
+  },
+  {
+    "tld": "scot",
+    "punycode": "scot",
+    "type": "gtld"
+  },
+  {
+    "tld": "sd",
+    "punycode": "sd",
+    "type": "cctld"
+  },
+  {
+    "tld": "se",
+    "punycode": "se",
+    "type": "cctld"
+  },
+  {
+    "tld": "search",
+    "punycode": "search",
+    "type": "gtld"
+  },
+  {
+    "tld": "secure",
+    "punycode": "secure",
+    "type": "gtld"
+  },
+  {
+    "tld": "security",
+    "punycode": "security",
+    "type": "gtld"
+  },
+  {
+    "tld": "select",
+    "punycode": "select",
+    "type": "gtld"
+  },
+  {
+    "tld": "services",
+    "punycode": "services",
+    "type": "gtld"
+  },
+  {
+    "tld": "sex",
+    "punycode": "sex",
+    "type": "gtld"
+  },
+  {
+    "tld": "sexy",
+    "punycode": "sexy",
+    "type": "gtld"
+  },
+  {
+    "tld": "sg",
+    "punycode": "sg",
+    "type": "cctld"
+  },
+  {
+    "tld": "sh",
+    "punycode": "sh",
+    "type": "cctld"
+  },
+  {
+    "tld": "shia",
+    "punycode": "shia",
+    "type": "gtld"
+  },
+  {
+    "tld": "shiksha",
+    "punycode": "shiksha",
+    "type": "gtld"
+  },
+  {
+    "tld": "shoes",
+    "punycode": "shoes",
+    "type": "gtld"
+  },
+  {
+    "tld": "shop",
+    "punycode": "shop",
+    "type": "gtld"
+  },
+  {
+    "tld": "shopping",
+    "punycode": "shopping",
+    "type": "gtld"
+  },
+  {
+    "tld": "shouji",
+    "punycode": "shouji",
+    "type": "gtld"
+  },
+  {
+    "tld": "show",
+    "punycode": "show",
+    "type": "gtld"
+  },
+  {
+    "tld": "si",
+    "punycode": "si",
+    "type": "cctld"
+  },
+  {
+    "tld": "singles",
+    "punycode": "singles",
+    "type": "gtld"
+  },
+  {
+    "tld": "site",
+    "punycode": "site",
+    "type": "gtld"
+  },
+  {
+    "tld": "sj",
+    "punycode": "sj",
+    "type": "cctld"
+  },
+  {
+    "tld": "sk",
+    "punycode": "sk",
+    "type": "cctld"
+  },
+  {
+    "tld": "ski",
+    "punycode": "ski",
+    "type": "gtld"
+  },
+  {
+    "tld": "skin",
+    "punycode": "skin",
+    "type": "gtld"
+  },
+  {
+    "tld": "sl",
+    "punycode": "sl",
+    "type": "cctld"
+  },
+  {
+    "tld": "sm",
+    "punycode": "sm",
+    "type": "cctld"
+  },
+  {
+    "tld": "smile",
+    "punycode": "smile",
+    "type": "gtld"
+  },
+  {
+    "tld": "sn",
+    "punycode": "sn",
+    "type": "cctld"
+  },
+  {
+    "tld": "so",
+    "punycode": "so",
+    "type": "cctld"
+  },
+  {
+    "tld": "soccer",
+    "punycode": "soccer",
+    "type": "gtld"
+  },
+  {
+    "tld": "social",
+    "punycode": "social",
+    "type": "gtld"
+  },
+  {
+    "tld": "software",
+    "punycode": "software",
+    "type": "gtld"
+  },
+  {
+    "tld": "sohu",
+    "punycode": "sohu",
+    "type": "gtld"
+  },
+  {
+    "tld": "solar",
+    "punycode": "solar",
+    "type": "gtld"
+  },
+  {
+    "tld": "solutions",
+    "punycode": "solutions",
+    "type": "gtld"
+  },
+  {
+    "tld": "song",
+    "punycode": "song",
+    "type": "gtld"
+  },
+  {
+    "tld": "soy",
+    "punycode": "soy",
+    "type": "gtld"
+  },
+  {
+    "tld": "spa",
+    "punycode": "spa",
+    "type": "gtld"
+  },
+  {
+    "tld": "space",
+    "punycode": "space",
+    "type": "gtld"
+  },
+  {
+    "tld": "sport",
+    "punycode": "sport",
+    "type": "gtld"
+  },
+  {
+    "tld": "spot",
+    "punycode": "spot",
+    "type": "gtld"
+  },
+  {
+    "tld": "sr",
+    "punycode": "sr",
+    "type": "cctld"
+  },
+  {
+    "tld": "srl",
+    "punycode": "srl",
+    "type": "gtld"
+  },
+  {
+    "tld": "ss",
+    "punycode": "ss",
+    "type": "cctld"
+  },
+  {
+    "tld": "st",
+    "punycode": "st",
+    "type": "cctld"
+  },
+  {
+    "tld": "star",
+    "punycode": "star",
+    "type": "gtld"
+  },
+  {
+    "tld": "stc",
+    "punycode": "stc",
+    "type": "gtld"
+  },
+  {
+    "tld": "stcgroup",
+    "punycode": "stcgroup",
+    "type": "gtld"
+  },
+  {
+    "tld": "stockholm",
+    "punycode": "stockholm",
+    "type": "gtld"
+  },
+  {
+    "tld": "storage",
+    "punycode": "storage",
+    "type": "gtld"
+  },
+  {
+    "tld": "store",
+    "punycode": "store",
+    "type": "gtld"
+  },
+  {
+    "tld": "stream",
+    "punycode": "stream",
+    "type": "gtld"
+  },
+  {
+    "tld": "studio",
+    "punycode": "studio",
+    "type": "gtld"
+  },
+  {
+    "tld": "study",
+    "punycode": "study",
+    "type": "gtld"
+  },
+  {
+    "tld": "style",
+    "punycode": "style",
+    "type": "gtld"
+  },
+  {
+    "tld": "su",
+    "punycode": "su",
+    "type": "cctld"
+  },
+  {
+    "tld": "sucks",
+    "punycode": "sucks",
+    "type": "gtld"
+  },
+  {
+    "tld": "supplies",
+    "punycode": "supplies",
+    "type": "gtld"
+  },
+  {
+    "tld": "supply",
+    "punycode": "supply",
+    "type": "gtld"
+  },
+  {
+    "tld": "support",
+    "punycode": "support",
+    "type": "gtld"
+  },
+  {
+    "tld": "surf",
+    "punycode": "surf",
+    "type": "gtld"
+  },
+  {
+    "tld": "surgery",
+    "punycode": "surgery",
+    "type": "gtld"
+  },
+  {
+    "tld": "sv",
+    "punycode": "sv",
+    "type": "cctld"
+  },
+  {
+    "tld": "swiss",
+    "punycode": "swiss",
+    "type": "gtld"
+  },
+  {
+    "tld": "sx",
+    "punycode": "sx",
+    "type": "cctld"
+  },
+  {
+    "tld": "sy",
+    "punycode": "sy",
+    "type": "cctld"
+  },
+  {
+    "tld": "sydney",
+    "punycode": "sydney",
+    "type": "gtld"
+  },
+  {
+    "tld": "systems",
+    "punycode": "systems",
+    "type": "gtld"
+  },
+  {
+    "tld": "sz",
+    "punycode": "sz",
+    "type": "cctld"
+  },
+  {
+    "tld": "taipei",
+    "punycode": "taipei",
+    "type": "gtld"
+  },
+  {
+    "tld": "talk",
+    "punycode": "talk",
+    "type": "gtld"
+  },
+  {
+    "tld": "tatar",
+    "punycode": "tatar",
+    "type": "gtld"
+  },
+  {
+    "tld": "tattoo",
+    "punycode": "tattoo",
+    "type": "gtld"
+  },
+  {
+    "tld": "tax",
+    "punycode": "tax",
+    "type": "gtld"
+  },
+  {
+    "tld": "taxi",
+    "punycode": "taxi",
+    "type": "gtld"
+  },
+  {
+    "tld": "tc",
+    "punycode": "tc",
+    "type": "cctld"
+  },
+  {
+    "tld": "tci",
+    "punycode": "tci",
+    "type": "gtld"
+  },
+  {
+    "tld": "td",
+    "punycode": "td",
+    "type": "cctld"
+  },
+  {
+    "tld": "team",
+    "punycode": "team",
+    "type": "gtld"
+  },
+  {
+    "tld": "tech",
+    "punycode": "tech",
+    "type": "gtld"
+  },
+  {
+    "tld": "technology",
+    "punycode": "technology",
+    "type": "gtld"
+  },
+  {
+    "tld": "tel",
+    "punycode": "tel",
+    "type": "gtld"
+  },
+  {
+    "tld": "tennis",
+    "punycode": "tennis",
+    "type": "gtld"
+  },
+  {
+    "tld": "tf",
+    "punycode": "tf",
+    "type": "cctld"
+  },
+  {
+    "tld": "tg",
+    "punycode": "tg",
+    "type": "cctld"
+  },
+  {
+    "tld": "th",
+    "punycode": "th",
+    "type": "cctld"
+  },
+  {
+    "tld": "thd",
+    "punycode": "thd",
+    "type": "gtld"
+  },
+  {
+    "tld": "theater",
+    "punycode": "theater",
+    "type": "gtld"
+  },
+  {
+    "tld": "theatre",
+    "punycode": "theatre",
+    "type": "gtld"
+  },
+  {
+    "tld": "tickets",
+    "punycode": "tickets",
+    "type": "gtld"
+  },
+  {
+    "tld": "tienda",
+    "punycode": "tienda",
+    "type": "gtld"
+  },
+  {
+    "tld": "tips",
+    "punycode": "tips",
+    "type": "gtld"
+  },
+  {
+    "tld": "tires",
+    "punycode": "tires",
+    "type": "gtld"
+  },
+  {
+    "tld": "tirol",
+    "punycode": "tirol",
+    "type": "gtld"
+  },
+  {
+    "tld": "tj",
+    "punycode": "tj",
+    "type": "cctld"
+  },
+  {
+    "tld": "tk",
+    "punycode": "tk",
+    "type": "cctld"
+  },
+  {
+    "tld": "tl",
+    "punycode": "tl",
+    "type": "cctld"
+  },
+  {
+    "tld": "tm",
+    "punycode": "tm",
+    "type": "cctld"
+  },
+  {
+    "tld": "tn",
+    "punycode": "tn",
+    "type": "cctld"
+  },
+  {
+    "tld": "to",
+    "punycode": "to",
+    "type": "cctld"
+  },
+  {
+    "tld": "today",
+    "punycode": "today",
+    "type": "gtld"
+  },
+  {
+    "tld": "tokyo",
+    "punycode": "tokyo",
+    "type": "gtld"
+  },
+  {
+    "tld": "tools",
+    "punycode": "tools",
+    "type": "gtld"
+  },
+  {
+    "tld": "top",
+    "punycode": "top",
+    "type": "gtld"
+  },
+  {
+    "tld": "tours",
+    "punycode": "tours",
+    "type": "gtld"
+  },
+  {
+    "tld": "town",
+    "punycode": "town",
+    "type": "gtld"
+  },
+  {
+    "tld": "toys",
+    "punycode": "toys",
+    "type": "gtld"
+  },
+  {
+    "tld": "tr",
+    "punycode": "tr",
+    "type": "cctld"
+  },
+  {
+    "tld": "trade",
+    "punycode": "trade",
+    "type": "gtld"
+  },
+  {
+    "tld": "trading",
+    "punycode": "trading",
+    "type": "gtld"
+  },
+  {
+    "tld": "training",
+    "punycode": "training",
+    "type": "gtld"
+  },
+  {
+    "tld": "travel",
+    "punycode": "travel",
+    "type": "gtld"
+  },
+  {
+    "tld": "travelersinsurance",
+    "punycode": "travelersinsurance",
+    "type": "gtld"
+  },
+  {
+    "tld": "trust",
+    "punycode": "trust",
+    "type": "gtld"
+  },
+  {
+    "tld": "trv",
+    "punycode": "trv",
+    "type": "gtld"
+  },
+  {
+    "tld": "tt",
+    "punycode": "tt",
+    "type": "cctld"
+  },
+  {
+    "tld": "tube",
+    "punycode": "tube",
+    "type": "gtld"
+  },
+  {
+    "tld": "tunes",
+    "punycode": "tunes",
+    "type": "gtld"
+  },
+  {
+    "tld": "tushu",
+    "punycode": "tushu",
+    "type": "gtld"
+  },
+  {
+    "tld": "tv",
+    "punycode": "tv",
+    "type": "cctld"
+  },
+  {
+    "tld": "tvs",
+    "punycode": "tvs",
+    "type": "gtld"
+  },
+  {
+    "tld": "tw",
+    "punycode": "tw",
+    "type": "cctld"
+  },
+  {
+    "tld": "tz",
+    "punycode": "tz",
+    "type": "cctld"
+  },
+  {
+    "tld": "ua",
+    "punycode": "ua",
+    "type": "cctld"
+  },
+  {
+    "tld": "ug",
+    "punycode": "ug",
+    "type": "cctld"
+  },
+  {
+    "tld": "uk",
+    "punycode": "uk",
+    "type": "cctld"
+  },
+  {
+    "tld": "university",
+    "punycode": "university",
+    "type": "gtld"
+  },
+  {
+    "tld": "uno",
+    "punycode": "uno",
+    "type": "gtld"
+  },
+  {
+    "tld": "us",
+    "punycode": "us",
+    "type": "cctld"
+  },
+  {
+    "tld": "uy",
+    "punycode": "uy",
+    "type": "cctld"
+  },
+  {
+    "tld": "uz",
+    "punycode": "uz",
+    "type": "cctld"
+  },
+  {
+    "tld": "va",
+    "punycode": "va",
+    "type": "cctld"
+  },
+  {
+    "tld": "vacations",
+    "punycode": "vacations",
+    "type": "gtld"
+  },
+  {
+    "tld": "vana",
+    "punycode": "vana",
+    "type": "gtld"
+  },
+  {
+    "tld": "vc",
+    "punycode": "vc",
+    "type": "cctld"
+  },
+  {
+    "tld": "ve",
+    "punycode": "ve",
+    "type": "cctld"
+  },
+  {
+    "tld": "vegas",
+    "punycode": "vegas",
+    "type": "gtld"
+  },
+  {
+    "tld": "ventures",
+    "punycode": "ventures",
+    "type": "gtld"
+  },
+  {
+    "tld": "versicherung",
+    "punycode": "versicherung",
+    "type": "gtld"
+  },
+  {
+    "tld": "vet",
+    "punycode": "vet",
+    "type": "gtld"
+  },
+  {
+    "tld": "vg",
+    "punycode": "vg",
+    "type": "cctld"
+  },
+  {
+    "tld": "vi",
+    "punycode": "vi",
+    "type": "cctld"
+  },
+  {
+    "tld": "viajes",
+    "punycode": "viajes",
+    "type": "gtld"
+  },
+  {
+    "tld": "video",
+    "punycode": "video",
+    "type": "gtld"
+  },
+  {
+    "tld": "villas",
+    "punycode": "villas",
+    "type": "gtld"
+  },
+  {
+    "tld": "vin",
+    "punycode": "vin",
+    "type": "gtld"
+  },
+  {
+    "tld": "vip",
+    "punycode": "vip",
+    "type": "gtld"
+  },
+  {
+    "tld": "vision",
+    "punycode": "vision",
+    "type": "gtld"
+  },
+  {
+    "tld": "viva",
+    "punycode": "viva",
+    "type": "gtld"
+  },
+  {
+    "tld": "vlaanderen",
+    "punycode": "vlaanderen",
+    "type": "gtld"
+  },
+  {
+    "tld": "vn",
+    "punycode": "vn",
+    "type": "cctld"
+  },
+  {
+    "tld": "vodka",
+    "punycode": "vodka",
+    "type": "gtld"
+  },
+  {
+    "tld": "vote",
+    "punycode": "vote",
+    "type": "gtld"
+  },
+  {
+    "tld": "voting",
+    "punycode": "voting",
+    "type": "gtld"
+  },
+  {
+    "tld": "voto",
+    "punycode": "voto",
+    "type": "gtld"
+  },
+  {
+    "tld": "voyage",
+    "punycode": "voyage",
+    "type": "gtld"
+  },
+  {
+    "tld": "vu",
+    "punycode": "vu",
+    "type": "cctld"
+  },
+  {
+    "tld": "wales",
+    "punycode": "wales",
+    "type": "gtld"
+  },
+  {
+    "tld": "wang",
+    "punycode": "wang",
+    "type": "gtld"
+  },
+  {
+    "tld": "wanggou",
+    "punycode": "wanggou",
+    "type": "gtld"
+  },
+  {
+    "tld": "watch",
+    "punycode": "watch",
+    "type": "gtld"
+  },
+  {
+    "tld": "watches",
+    "punycode": "watches",
+    "type": "gtld"
+  },
+  {
+    "tld": "weather",
+    "punycode": "weather",
+    "type": "gtld"
+  },
+  {
+    "tld": "web",
+    "punycode": "web",
+    "type": "gtld"
+  },
+  {
+    "tld": "webcam",
+    "punycode": "webcam",
+    "type": "gtld"
+  },
+  {
+    "tld": "website",
+    "punycode": "website",
+    "type": "gtld"
+  },
+  {
+    "tld": "wed",
+    "punycode": "wed",
+    "type": "gtld"
+  },
+  {
+    "tld": "wedding",
+    "punycode": "wedding",
+    "type": "gtld"
+  },
+  {
+    "tld": "weibo",
+    "punycode": "weibo",
+    "type": "gtld"
+  },
+  {
+    "tld": "wf",
+    "punycode": "wf",
+    "type": "cctld"
+  },
+  {
+    "tld": "whoswho",
+    "punycode": "whoswho",
+    "type": "gtld"
+  },
+  {
+    "tld": "wien",
+    "punycode": "wien",
+    "type": "gtld"
+  },
+  {
+    "tld": "wiki",
+    "punycode": "wiki",
+    "type": "gtld"
+  },
+  {
+    "tld": "win",
+    "punycode": "win",
+    "type": "gtld"
+  },
+  {
+    "tld": "wine",
+    "punycode": "wine",
+    "type": "gtld"
+  },
+  {
+    "tld": "work",
+    "punycode": "work",
+    "type": "gtld"
+  },
+  {
+    "tld": "works",
+    "punycode": "works",
+    "type": "gtld"
+  },
+  {
+    "tld": "world",
+    "punycode": "world",
+    "type": "gtld"
+  },
+  {
+    "tld": "wow",
+    "punycode": "wow",
+    "type": "gtld"
+  },
+  {
+    "tld": "ws",
+    "punycode": "ws",
+    "type": "cctld"
+  },
+  {
+    "tld": "wtf",
+    "punycode": "wtf",
+    "type": "gtld"
+  },
+  {
+    "tld": "xihuan",
+    "punycode": "xihuan",
+    "type": "gtld"
+  },
+  {
+    "tld": "xin",
+    "punycode": "xin",
+    "type": "gtld"
+  },
+  {
+    "tld": "कॉम",
+    "punycode": "xn--11b4c3d",
+    "type": "gtld"
+  },
+  {
+    "tld": "セール",
+    "punycode": "xn--1ck2e1b",
+    "type": "gtld"
+  },
+  {
+    "tld": "佛山",
+    "punycode": "xn--1qqw23a",
+    "type": "gtld"
+  },
+  {
+    "tld": "ಭಾರತ",
+    "punycode": "xn--2scrj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ಭಾರತ",
+    "punycode": "xn--2scrj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "慈善",
+    "punycode": "xn--30rr7y",
+    "type": "gtld"
+  },
+  {
+    "tld": "集团",
+    "punycode": "xn--3bst00m",
+    "type": "gtld"
+  },
+  {
+    "tld": "在线",
+    "punycode": "xn--3ds443g",
+    "type": "gtld"
+  },
+  {
+    "tld": "한국",
+    "punycode": "xn--3e0b707e",
+    "type": "cctld"
+  },
+  {
+    "tld": "한국",
+    "punycode": "xn--3e0b707e",
+    "type": "cctld"
+  },
+  {
+    "tld": "ଭାରତ",
+    "punycode": "xn--3hcrj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ଭାରତ",
+    "punycode": "xn--3hcrj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "点看",
+    "punycode": "xn--3pxu8k",
+    "type": "gtld"
+  },
+  {
+    "tld": "คอม",
+    "punycode": "xn--42c2d9a",
+    "type": "gtld"
+  },
+  {
+    "tld": "ভাৰত",
+    "punycode": "xn--45br5cyl",
+    "type": "cctld"
+  },
+  {
+    "tld": "ভাৰত",
+    "punycode": "xn--45br5cyl",
+    "type": "cctld"
+  },
+  {
+    "tld": "ভারত",
+    "punycode": "xn--45brj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ভারত",
+    "punycode": "xn--45brj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "八卦",
+    "punycode": "xn--45q11c",
+    "type": "gtld"
+  },
+  {
+    "tld": "ישראל",
+    "punycode": "xn--4dbrk0ce",
+    "type": "cctld"
+  },
+  {
+    "tld": "ישראל",
+    "punycode": "xn--4dbrk0ce",
+    "type": "cctld"
+  },
+  {
+    "tld": "موقع",
+    "punycode": "xn--4gbrim",
+    "type": "gtld"
+  },
+  {
+    "tld": "বাংলা",
+    "punycode": "xn--54b7fta0cc",
+    "type": "cctld"
+  },
+  {
+    "tld": "বাংলা",
+    "punycode": "xn--54b7fta0cc",
+    "type": "cctld"
+  },
+  {
+    "tld": "公益",
+    "punycode": "xn--55qw42g",
+    "type": "gtld"
+  },
+  {
+    "tld": "公司",
+    "punycode": "xn--55qx5d",
+    "type": "gtld"
+  },
+  {
+    "tld": "网站",
+    "punycode": "xn--5tzm5g",
+    "type": "gtld"
+  },
+  {
+    "tld": "移动",
+    "punycode": "xn--6frz82g",
+    "type": "gtld"
+  },
+  {
+    "tld": "我爱你",
+    "punycode": "xn--6qq986b3xl",
+    "type": "gtld"
+  },
+  {
+    "tld": "москва",
+    "punycode": "xn--80adxhks",
+    "type": "gtld"
+  },
+  {
+    "tld": "қаз",
+    "punycode": "xn--80ao21a",
+    "type": "cctld"
+  },
+  {
+    "tld": "қаз",
+    "punycode": "xn--80ao21a",
+    "type": "cctld"
+  },
+  {
+    "tld": "католик",
+    "punycode": "xn--80aqecdr1a",
+    "type": "gtld"
+  },
+  {
+    "tld": "онлайн",
+    "punycode": "xn--80asehdb",
+    "type": "gtld"
+  },
+  {
+    "tld": "сайт",
+    "punycode": "xn--80aswg",
+    "type": "gtld"
+  },
+  {
+    "tld": "срб",
+    "punycode": "xn--90a3ac",
+    "type": "cctld"
+  },
+  {
+    "tld": "срб",
+    "punycode": "xn--90a3ac",
+    "type": "cctld"
+  },
+  {
+    "tld": "бг",
+    "punycode": "xn--90ae",
+    "type": "cctld"
+  },
+  {
+    "tld": "бг",
+    "punycode": "xn--90ae",
+    "type": "cctld"
+  },
+  {
+    "tld": "бел",
+    "punycode": "xn--90ais",
+    "type": "cctld"
+  },
+  {
+    "tld": "бел",
+    "punycode": "xn--90ais",
+    "type": "cctld"
+  },
+  {
+    "tld": "קום",
+    "punycode": "xn--9dbq2a",
+    "type": "gtld"
+  },
+  {
+    "tld": "时尚",
+    "punycode": "xn--9et52u",
+    "type": "gtld"
+  },
+  {
+    "tld": "ファッション",
+    "punycode": "xn--bck1b9a5dre4c",
+    "type": "gtld"
+  },
+  {
+    "tld": "орг",
+    "punycode": "xn--c1avg",
+    "type": "gtld"
+  },
+  {
+    "tld": "नेट",
+    "punycode": "xn--c2br7g",
+    "type": "gtld"
+  },
+  {
+    "tld": "ストア",
+    "punycode": "xn--cck2b3b",
+    "type": "gtld"
+  },
+  {
+    "tld": "삼성",
+    "punycode": "xn--cg4bki",
+    "type": "gtld"
+  },
+  {
+    "tld": "சிங்கப்பூர்",
+    "punycode": "xn--clchc0ea0b2g2a9gcd",
+    "type": "cctld"
+  },
+  {
+    "tld": "சிங்கப்பூர்",
+    "punycode": "xn--clchc0ea0b2g2a9gcd",
+    "type": "cctld"
+  },
+  {
+    "tld": "商标",
+    "punycode": "xn--czr694b",
+    "type": "gtld"
+  },
+  {
+    "tld": "商店",
+    "punycode": "xn--czrs0t",
+    "type": "gtld"
+  },
+  {
+    "tld": "商城",
+    "punycode": "xn--czru2d",
+    "type": "gtld"
+  },
+  {
+    "tld": "дети",
+    "punycode": "xn--d1acj3b",
+    "type": "gtld"
+  },
+  {
+    "tld": "мкд",
+    "punycode": "xn--d1alf",
+    "type": "cctld"
+  },
+  {
+    "tld": "мкд",
+    "punycode": "xn--d1alf",
+    "type": "cctld"
+  },
+  {
+    "tld": "ею",
+    "punycode": "xn--e1a4c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ею",
+    "punycode": "xn--e1a4c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ポイント",
+    "punycode": "xn--eckvdtc9d",
+    "type": "gtld"
+  },
+  {
+    "tld": "新闻",
+    "punycode": "xn--efvy88h",
+    "type": "gtld"
+  },
+  {
+    "tld": "家電",
+    "punycode": "xn--fct429k",
+    "type": "gtld"
+  },
+  {
+    "tld": "كوم",
+    "punycode": "xn--fhbei",
+    "type": "gtld"
+  },
+  {
+    "tld": "中文网",
+    "punycode": "xn--fiq228c5hs",
+    "type": "gtld"
+  },
+  {
+    "tld": "中国",
+    "punycode": "xn--fiqs8s",
+    "type": "cctld"
+  },
+  {
+    "tld": "中国",
+    "punycode": "xn--fiqs8s",
+    "type": "cctld"
+  },
+  {
+    "tld": "中國",
+    "punycode": "xn--fiqz9s",
+    "type": "cctld"
+  },
+  {
+    "tld": "中國",
+    "punycode": "xn--fiqz9s",
+    "type": "cctld"
+  },
+  {
+    "tld": "娱乐",
+    "punycode": "xn--fjq720a",
+    "type": "gtld"
+  },
+  {
+    "tld": "భారత్",
+    "punycode": "xn--fpcrj9c3d",
+    "type": "cctld"
+  },
+  {
+    "tld": "భారత్",
+    "punycode": "xn--fpcrj9c3d",
+    "type": "cctld"
+  },
+  {
+    "tld": "ලංකා",
+    "punycode": "xn--fzc2c9e2c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ලංකා",
+    "punycode": "xn--fzc2c9e2c",
+    "type": "cctld"
+  },
+  {
+    "tld": "购物",
+    "punycode": "xn--g2xx48c",
+    "type": "gtld"
+  },
+  {
+    "tld": "クラウド",
+    "punycode": "xn--gckr3f0f",
+    "type": "gtld"
+  },
+  {
+    "tld": "ભારત",
+    "punycode": "xn--gecrj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ભારત",
+    "punycode": "xn--gecrj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "通販",
+    "punycode": "xn--gk3at1e",
+    "type": "gtld"
+  },
+  {
+    "tld": "भारतम्",
+    "punycode": "xn--h2breg3eve",
+    "type": "cctld"
+  },
+  {
+    "tld": "भारतम्",
+    "punycode": "xn--h2breg3eve",
+    "type": "cctld"
+  },
+  {
+    "tld": "भारत",
+    "punycode": "xn--h2brj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "भारत",
+    "punycode": "xn--h2brj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "भारोत",
+    "punycode": "xn--h2brj9c8c",
+    "type": "cctld"
+  },
+  {
+    "tld": "भारोत",
+    "punycode": "xn--h2brj9c8c",
+    "type": "cctld"
+  },
+  {
+    "tld": "网店",
+    "punycode": "xn--hxt814e",
+    "type": "gtld"
+  },
+  {
+    "tld": "संगठन",
+    "punycode": "xn--i1b6b1a6a2e",
+    "type": "gtld"
+  },
+  {
+    "tld": "餐厅",
+    "punycode": "xn--imr513n",
+    "type": "gtld"
+  },
+  {
+    "tld": "网络",
+    "punycode": "xn--io0a7i",
+    "type": "gtld"
+  },
+  {
+    "tld": "ком",
+    "punycode": "xn--j1aef",
+    "type": "gtld"
+  },
+  {
+    "tld": "укр",
+    "punycode": "xn--j1amh",
+    "type": "cctld"
+  },
+  {
+    "tld": "укр",
+    "punycode": "xn--j1amh",
+    "type": "cctld"
+  },
+  {
+    "tld": "香港",
+    "punycode": "xn--j6w193g",
+    "type": "cctld"
+  },
+  {
+    "tld": "香港",
+    "punycode": "xn--j6w193g",
+    "type": "cctld"
+  },
+  {
+    "tld": "食品",
+    "punycode": "xn--jvr189m",
+    "type": "gtld"
+  },
+  {
+    "tld": "台湾",
+    "punycode": "xn--kprw13d",
+    "type": "cctld"
+  },
+  {
+    "tld": "台湾",
+    "punycode": "xn--kprw13d",
+    "type": "cctld"
+  },
+  {
+    "tld": "台灣",
+    "punycode": "xn--kpry57d",
+    "type": "cctld"
+  },
+  {
+    "tld": "台灣",
+    "punycode": "xn--kpry57d",
+    "type": "cctld"
+  },
+  {
+    "tld": "手机",
+    "punycode": "xn--kput3i",
+    "type": "gtld"
+  },
+  {
+    "tld": "мон",
+    "punycode": "xn--l1acc",
+    "type": "cctld"
+  },
+  {
+    "tld": "мон",
+    "punycode": "xn--l1acc",
+    "type": "cctld"
+  },
+  {
+    "tld": "الجزائر",
+    "punycode": "xn--lgbbat1ad8j",
+    "type": "cctld"
+  },
+  {
+    "tld": "الجزائر",
+    "punycode": "xn--lgbbat1ad8j",
+    "type": "cctld"
+  },
+  {
+    "tld": "عمان",
+    "punycode": "xn--mgb9awbf",
+    "type": "cctld"
+  },
+  {
+    "tld": "عمان",
+    "punycode": "xn--mgb9awbf",
+    "type": "cctld"
+  },
+  {
+    "tld": "ارامكو",
+    "punycode": "xn--mgba3a3ejt",
+    "type": "gtld"
+  },
+  {
+    "tld": "ایران",
+    "punycode": "xn--mgba3a4f16a",
+    "type": "cctld"
+  },
+  {
+    "tld": "ایران",
+    "punycode": "xn--mgba3a4f16a",
+    "type": "cctld"
+  },
+  {
+    "tld": "العليان",
+    "punycode": "xn--mgba7c0bbn0a",
+    "type": "gtld"
+  },
+  {
+    "tld": "امارات",
+    "punycode": "xn--mgbaam7a8h",
+    "type": "cctld"
+  },
+  {
+    "tld": "امارات",
+    "punycode": "xn--mgbaam7a8h",
+    "type": "cctld"
+  },
+  {
+    "tld": "بازار",
+    "punycode": "xn--mgbab2bd",
+    "type": "gtld"
+  },
+  {
+    "tld": "موريتانيا",
+    "punycode": "xn--mgbah1a3hjkrd",
+    "type": "cctld"
+  },
+  {
+    "tld": "موريتانيا",
+    "punycode": "xn--mgbah1a3hjkrd",
+    "type": "cctld"
+  },
+  {
+    "tld": "پاکستان",
+    "punycode": "xn--mgbai9azgqp6j",
+    "type": "cctld"
+  },
+  {
+    "tld": "پاکستان",
+    "punycode": "xn--mgbai9azgqp6j",
+    "type": "cctld"
+  },
+  {
+    "tld": "الاردن",
+    "punycode": "xn--mgbayh7gpa",
+    "type": "cctld"
+  },
+  {
+    "tld": "الاردن",
+    "punycode": "xn--mgbayh7gpa",
+    "type": "cctld"
+  },
+  {
+    "tld": "بارت",
+    "punycode": "xn--mgbbh1a",
+    "type": "cctld"
+  },
+  {
+    "tld": "بارت",
+    "punycode": "xn--mgbbh1a",
+    "type": "cctld"
+  },
+  {
+    "tld": "بھارت",
+    "punycode": "xn--mgbbh1a71e",
+    "type": "cctld"
+  },
+  {
+    "tld": "بھارت",
+    "punycode": "xn--mgbbh1a71e",
+    "type": "cctld"
+  },
+  {
+    "tld": "المغرب",
+    "punycode": "xn--mgbc0a9azcg",
+    "type": "cctld"
+  },
+  {
+    "tld": "المغرب",
+    "punycode": "xn--mgbc0a9azcg",
+    "type": "cctld"
+  },
+  {
+    "tld": "ابوظبي",
+    "punycode": "xn--mgbca7dzdo",
+    "type": "gtld"
+  },
+  {
+    "tld": "البحرين",
+    "punycode": "xn--mgbcpq6gpa1a",
+    "type": "cctld"
+  },
+  {
+    "tld": "البحرين",
+    "punycode": "xn--mgbcpq6gpa1a",
+    "type": "cctld"
+  },
+  {
+    "tld": "السعودية",
+    "punycode": "xn--mgberp4a5d4ar",
+    "type": "cctld"
+  },
+  {
+    "tld": "السعودية",
+    "punycode": "xn--mgberp4a5d4ar",
+    "type": "cctld"
+  },
+  {
+    "tld": "ڀارت",
+    "punycode": "xn--mgbgu82a",
+    "type": "cctld"
+  },
+  {
+    "tld": "ڀارت",
+    "punycode": "xn--mgbgu82a",
+    "type": "cctld"
+  },
+  {
+    "tld": "كاثوليك",
+    "punycode": "xn--mgbi4ecexp",
+    "type": "gtld"
+  },
+  {
+    "tld": "سودان",
+    "punycode": "xn--mgbpl2fh",
+    "type": "cctld"
+  },
+  {
+    "tld": "سودان",
+    "punycode": "xn--mgbpl2fh",
+    "type": "cctld"
+  },
+  {
+    "tld": "همراه",
+    "punycode": "xn--mgbt3dhd",
+    "type": "gtld"
+  },
+  {
+    "tld": "عراق",
+    "punycode": "xn--mgbtx2b",
+    "type": "cctld"
+  },
+  {
+    "tld": "عراق",
+    "punycode": "xn--mgbtx2b",
+    "type": "cctld"
+  },
+  {
+    "tld": "مليسيا",
+    "punycode": "xn--mgbx4cd0ab",
+    "type": "cctld"
+  },
+  {
+    "tld": "مليسيا",
+    "punycode": "xn--mgbx4cd0ab",
+    "type": "cctld"
+  },
+  {
+    "tld": "澳門",
+    "punycode": "xn--mix891f",
+    "type": "cctld"
+  },
+  {
+    "tld": "澳門",
+    "punycode": "xn--mix891f",
+    "type": "cctld"
+  },
+  {
+    "tld": "닷컴",
+    "punycode": "xn--mk1bu44c",
+    "type": "gtld"
+  },
+  {
+    "tld": "政府",
+    "punycode": "xn--mxtq1m",
+    "type": "gtld"
+  },
+  {
+    "tld": "شبكة",
+    "punycode": "xn--ngbc5azd",
+    "type": "gtld"
+  },
+  {
+    "tld": "بيتك",
+    "punycode": "xn--ngbe9e0a",
+    "type": "gtld"
+  },
+  {
+    "tld": "عرب",
+    "punycode": "xn--ngbrx",
+    "type": "gtld"
+  },
+  {
+    "tld": "გე",
+    "punycode": "xn--node",
+    "type": "cctld"
+  },
+  {
+    "tld": "გე",
+    "punycode": "xn--node",
+    "type": "cctld"
+  },
+  {
+    "tld": "机构",
+    "punycode": "xn--nqv7f",
+    "type": "gtld"
+  },
+  {
+    "tld": "组织机构",
+    "punycode": "xn--nqv7fs00ema",
+    "type": "gtld"
+  },
+  {
+    "tld": "健康",
+    "punycode": "xn--nyqy26a",
+    "type": "gtld"
+  },
+  {
+    "tld": "ไทย",
+    "punycode": "xn--o3cw4h",
+    "type": "cctld"
+  },
+  {
+    "tld": "ไทย",
+    "punycode": "xn--o3cw4h",
+    "type": "cctld"
+  },
+  {
+    "tld": "سورية",
+    "punycode": "xn--ogbpf8fl",
+    "type": "cctld"
+  },
+  {
+    "tld": "سورية",
+    "punycode": "xn--ogbpf8fl",
+    "type": "cctld"
+  },
+  {
+    "tld": "招聘",
+    "punycode": "xn--otu796d",
+    "type": "gtld"
+  },
+  {
+    "tld": "рус",
+    "punycode": "xn--p1acf",
+    "type": "gtld"
+  },
+  {
+    "tld": "рф",
+    "punycode": "xn--p1ai",
+    "type": "cctld"
+  },
+  {
+    "tld": "рф",
+    "punycode": "xn--p1ai",
+    "type": "cctld"
+  },
+  {
+    "tld": "تونس",
+    "punycode": "xn--pgbs0dh",
+    "type": "cctld"
+  },
+  {
+    "tld": "تونس",
+    "punycode": "xn--pgbs0dh",
+    "type": "cctld"
+  },
+  {
+    "tld": "大拿",
+    "punycode": "xn--pssy2u",
+    "type": "gtld"
+  },
+  {
+    "tld": "ລາວ",
+    "punycode": "xn--q7ce6a",
+    "type": "cctld"
+  },
+  {
+    "tld": "ລາວ",
+    "punycode": "xn--q7ce6a",
+    "type": "cctld"
+  },
+  {
+    "tld": "みんな",
+    "punycode": "xn--q9jyb4c",
+    "type": "gtld"
+  },
+  {
+    "tld": "グーグル",
+    "punycode": "xn--qcka1pmc",
+    "type": "gtld"
+  },
+  {
+    "tld": "ευ",
+    "punycode": "xn--qxa6a",
+    "type": "cctld"
+  },
+  {
+    "tld": "ευ",
+    "punycode": "xn--qxa6a",
+    "type": "cctld"
+  },
+  {
+    "tld": "ελ",
+    "punycode": "xn--qxam",
+    "type": "cctld"
+  },
+  {
+    "tld": "ελ",
+    "punycode": "xn--qxam",
+    "type": "cctld"
+  },
+  {
+    "tld": "世界",
+    "punycode": "xn--rhqv96g",
+    "type": "gtld"
+  },
+  {
+    "tld": "書籍",
+    "punycode": "xn--rovu88b",
+    "type": "gtld"
+  },
+  {
+    "tld": "ഭാരതം",
+    "punycode": "xn--rvc1e0am3e",
+    "type": "cctld"
+  },
+  {
+    "tld": "ഭാരതം",
+    "punycode": "xn--rvc1e0am3e",
+    "type": "cctld"
+  },
+  {
+    "tld": "ਭਾਰਤ",
+    "punycode": "xn--s9brj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "ਭਾਰਤ",
+    "punycode": "xn--s9brj9c",
+    "type": "cctld"
+  },
+  {
+    "tld": "网址",
+    "punycode": "xn--ses554g",
+    "type": "gtld"
+  },
+  {
+    "tld": "닷넷",
+    "punycode": "xn--t60b56a",
+    "type": "gtld"
+  },
+  {
+    "tld": "コム",
+    "punycode": "xn--tckwe",
+    "type": "gtld"
+  },
+  {
+    "tld": "天主教",
+    "punycode": "xn--tiq49xqyj",
+    "type": "gtld"
+  },
+  {
+    "tld": "游戏",
+    "punycode": "xn--unup4y",
+    "type": "gtld"
+  },
+  {
+    "tld": "vermögensberater",
+    "punycode": "xn--vermgensberater-ctb",
+    "type": "gtld"
+  },
+  {
+    "tld": "vermögensberatung",
+    "punycode": "xn--vermgensberatung-pwb",
+    "type": "gtld"
+  },
+  {
+    "tld": "企业",
+    "punycode": "xn--vhquv",
+    "type": "gtld"
+  },
+  {
+    "tld": "信息",
+    "punycode": "xn--vuq861b",
+    "type": "gtld"
+  },
+  {
+    "tld": "嘉里大酒店",
+    "punycode": "xn--w4r85el8fhu5dnra",
+    "type": "gtld"
+  },
+  {
+    "tld": "مصر",
+    "punycode": "xn--wgbh1c",
+    "type": "cctld"
+  },
+  {
+    "tld": "مصر",
+    "punycode": "xn--wgbh1c",
+    "type": "cctld"
+  },
+  {
+    "tld": "قطر",
+    "punycode": "xn--wgbl6a",
+    "type": "cctld"
+  },
+  {
+    "tld": "قطر",
+    "punycode": "xn--wgbl6a",
+    "type": "cctld"
+  },
+  {
+    "tld": "广东",
+    "punycode": "xn--xhq521b",
+    "type": "gtld"
+  },
+  {
+    "tld": "இலங்கை",
+    "punycode": "xn--xkc2al3hye2a",
+    "type": "cctld"
+  },
+  {
+    "tld": "இலங்கை",
+    "punycode": "xn--xkc2al3hye2a",
+    "type": "cctld"
+  },
+  {
+    "tld": "இந்தியா",
+    "punycode": "xn--xkc2dl3a5ee0h",
+    "type": "cctld"
+  },
+  {
+    "tld": "இந்தியா",
+    "punycode": "xn--xkc2dl3a5ee0h",
+    "type": "cctld"
+  },
+  {
+    "tld": "հայ",
+    "punycode": "xn--y9a3aq",
+    "type": "cctld"
+  },
+  {
+    "tld": "հայ",
+    "punycode": "xn--y9a3aq",
+    "type": "cctld"
+  },
+  {
+    "tld": "新加坡",
+    "punycode": "xn--yfro4i67o",
+    "type": "cctld"
+  },
+  {
+    "tld": "新加坡",
+    "punycode": "xn--yfro4i67o",
+    "type": "cctld"
+  },
+  {
+    "tld": "فلسطين",
+    "punycode": "xn--ygbi2ammx",
+    "type": "cctld"
+  },
+  {
+    "tld": "فلسطين",
+    "punycode": "xn--ygbi2ammx",
+    "type": "cctld"
+  },
+  {
+    "tld": "政务",
+    "punycode": "xn--zfr164b",
+    "type": "gtld"
+  },
+  {
+    "tld": "xxx",
+    "punycode": "xxx",
+    "type": "gtld"
+  },
+  {
+    "tld": "xyz",
+    "punycode": "xyz",
+    "type": "gtld"
+  },
+  {
+    "tld": "yachts",
+    "punycode": "yachts",
+    "type": "gtld"
+  },
+  {
+    "tld": "yamaxun",
+    "punycode": "yamaxun",
+    "type": "gtld"
+  },
+  {
+    "tld": "ye",
+    "punycode": "ye",
+    "type": "cctld"
+  },
+  {
+    "tld": "yoga",
+    "punycode": "yoga",
+    "type": "gtld"
+  },
+  {
+    "tld": "yokohama",
+    "punycode": "yokohama",
+    "type": "gtld"
+  },
+  {
+    "tld": "you",
+    "punycode": "you",
+    "type": "gtld"
+  },
+  {
+    "tld": "yt",
+    "punycode": "yt",
+    "type": "cctld"
+  },
+  {
+    "tld": "yun",
+    "punycode": "yun",
+    "type": "gtld"
+  },
+  {
+    "tld": "za",
+    "punycode": "za",
+    "type": "cctld"
+  },
+  {
+    "tld": "zero",
+    "punycode": "zero",
+    "type": "gtld"
+  },
+  {
+    "tld": "zip",
+    "punycode": "zip",
+    "type": "gtld"
+  },
+  {
+    "tld": "zm",
+    "punycode": "zm",
+    "type": "cctld"
+  },
+  {
+    "tld": "zone",
+    "punycode": "zone",
+    "type": "gtld"
+  },
+  {
+    "tld": "zuerich",
+    "punycode": "zuerich",
+    "type": "gtld"
+  },
+  {
+    "tld": "zw",
+    "punycode": "zw",
+    "type": "cctld"
+  }
+]

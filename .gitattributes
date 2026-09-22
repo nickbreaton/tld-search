@@ -1,0 +1,2 @@
+tools/oxlint/anti-slop/** linguist-vendored
+generated/** linguist-generated=true
