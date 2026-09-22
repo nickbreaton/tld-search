@@ -5,13 +5,18 @@ import { TldCatalog } from "../server/TldCatalog";
 
 export const prerender = false;
 
-const tlds = await Effect.runPromise(
+const { allTlds, asciiTlds } = await Effect.runPromise(
   Effect.gen(function* () {
     const catalog = yield* TldCatalog;
 
-    return catalog.all;
+    return {
+      allTlds: catalog.list({ excludeNonAscii: false }),
+      asciiTlds: catalog.list({ excludeNonAscii: true }),
+    };
   }).pipe(Effect.provide(TldCatalog.layer)),
 );
+
+const asciiTldSet = new Set(asciiTlds);
 ---
 
 <!doctype html>
@@ -30,18 +35,33 @@ const tlds = await Effect.runPromise(
       autofocus
     />
 
+    <label>
+      <input id="ascii-only" type="checkbox" checked />
+      Hide domain endings with non-ASCII characters
+    </label>
+
     <ul id="tlds">
-      {tlds.map((tld) => <li>{tld}</li>)}
+      {
+        allTlds.map((tld) => (
+          <li data-ascii={asciiTldSet.has(tld)} hidden={!asciiTldSet.has(tld)}>{tld}</li>
+        ))
+      }
     </ul>
 
     <script>
       const input = document.querySelector<HTMLInputElement>("#query");
 
+      const asciiOnly = document.querySelector<HTMLInputElement>("#ascii-only");
+
       const list = document.querySelector<HTMLUListElement>("#tlds");
 
-      const initialTlds = Array.from(list?.querySelectorAll("li") ?? [], (item) =>
-        item.textContent ?? "",
-      );
+      const initialItems = Array.from(list?.querySelectorAll("li") ?? []);
+
+      const allTlds = initialItems.map((item) => item.textContent ?? "");
+
+      const asciiTlds = initialItems
+        .filter((item) => item.dataset.ascii === "true")
+        .map((item) => item.textContent ?? "");
 
       let timeout: ReturnType<typeof setTimeout> | undefined;
 
@@ -58,7 +78,7 @@ const tlds = await Effect.runPromise(
         const query = input.value.trim();
 
         if (!query) {
-          renderTlds(initialTlds);
+          renderTlds(asciiOnly?.checked ? asciiTlds : allTlds);
 
           return;
         }
@@ -67,7 +87,12 @@ const tlds = await Effect.runPromise(
           request = new AbortController();
 
           try {
-            const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`, {
+            const search = new URLSearchParams({
+              q: query,
+              asciiOnly: String(asciiOnly?.checked ?? true),
+            });
+
+            const response = await fetch(`/api/search?${search}`, {
               signal: request.signal,
             });
 
@@ -87,6 +112,10 @@ const tlds = await Effect.runPromise(
             }
           }
         }, 10);
+      });
+
+      asciiOnly?.addEventListener("change", () => {
+        input?.dispatchEvent(new Event("input"));
       });
     </script>
   </body>

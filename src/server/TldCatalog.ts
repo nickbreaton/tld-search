@@ -13,17 +13,23 @@ const Tlds = Schema.Array(Tld);
 export class TldCatalog extends Context.Service<
   TldCatalog,
   {
-    readonly all: ReadonlyArray<string>;
+    readonly list: (options: { readonly excludeNonAscii: boolean }) => ReadonlyArray<string>;
   }
 >()("tldr/server/TldCatalog") {
   static readonly layer = Layer.effect(
     TldCatalog,
     Schema.decodeUnknownEffect(Tlds)(generatedTlds).pipe(
-      Effect.map((tlds) =>
-        TldCatalog.of({
-          all: tlds.map((entry) => entry.tld),
-        }),
-      ),
+      Effect.map((tlds) => {
+        const allTlds = tlds.map((entry) => entry.tld);
+
+        const asciiTlds = tlds
+          .filter((entry) => entry.punycode === entry.tld)
+          .map((entry) => entry.tld);
+
+        return TldCatalog.of({
+          list: ({ excludeNonAscii }) => (excludeNonAscii ? asciiTlds : allTlds),
+        });
+      }),
       Effect.orDie,
     ),
   );

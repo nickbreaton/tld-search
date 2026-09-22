@@ -5,12 +5,13 @@ import { TldRecommender } from "../../server/RecommendTld";
 
 export const GET: APIRoute = async ({ url }) => {
   const query = url.searchParams.get("q") ?? "";
+  const excludeNonAscii = url.searchParams.get("asciiOnly") !== "false";
 
   return Effect.runPromise(
     Effect.gen(function* () {
       const recommender = yield* TldRecommender;
 
-      return yield* recommender.recommend(query);
+      return yield* recommender.recommend(query, excludeNonAscii);
     }).pipe(
       Effect.provide(TldRecommender.layer),
       Effect.tapError((error) =>

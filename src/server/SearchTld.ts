@@ -43,7 +43,10 @@ class SearchTldError extends Schema.TaggedError<SearchTldError>()("SearchTldErro
 export class SearchTld extends Context.Service<
   SearchTld,
   {
-    readonly search: (query: string) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
+    readonly search: (
+      query: string,
+      excludeNonAscii: boolean,
+    ) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
   }
 >()("tldr/server/SearchTld") {
   static readonly layer = Layer.effect(
@@ -52,7 +55,10 @@ export class SearchTld extends Context.Service<
       const ai = yield* CloudflareAi;
       const catalog = yield* TldCatalog;
 
-      const search = Effect.fn("SearchTld.search")(function* (query: string) {
+      const search = Effect.fn("SearchTld.search")(function* (
+        query: string,
+        excludeNonAscii: boolean,
+      ) {
         const normalizedQuery = query.trim();
 
         if (normalizedQuery.length === 0) {
@@ -66,7 +72,7 @@ export class SearchTld extends Context.Service<
         const questions: Record<string, { readonly type: "noul"; readonly instructions: string }> =
           {};
 
-        for (const tld of catalog.all) {
+        for (const tld of catalog.list({ excludeNonAscii })) {
           questions[tld] = {
             type: "noul",
             instructions: `Is the .${tld} top-level domain relevant to this phrase? Be creative.`,

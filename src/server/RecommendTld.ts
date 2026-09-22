@@ -17,11 +17,17 @@ export class TldRecommender extends Context.Service<
       const catalog = yield* TldCatalog;
       const searchTld = yield* SearchTld;
 
-      const recommend = Effect.fn("TldRecommender.recommend")(function* (query: string) {
-        const rankedTlds = yield* searchTld.search(query);
+      const recommend = Effect.fn("TldRecommender.recommend")(function* (
+        query: string,
+        excludeNonAscii: boolean,
+      ) {
+        const rankedTlds = yield* searchTld.search(query, excludeNonAscii);
 
         const normalizedQuery = query.trim().toLocaleLowerCase();
-        const exactMatch = catalog.all.find((tld) => tld.toLocaleLowerCase() === normalizedQuery);
+
+        const exactMatch = catalog
+          .list({ excludeNonAscii })
+          .find((tld) => tld.toLocaleLowerCase() === normalizedQuery);
 
         const prioritizedTlds = exactMatch
           ? [exactMatch, ...rankedTlds.filter((tld) => tld !== exactMatch)]
