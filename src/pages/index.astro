@@ -21,33 +21,39 @@ const asciiTldSet = new Set(asciiTlds);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-zinc-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
   </head>
-  <body>
-    <input
-      id="query"
-      type="search"
-      name="q"
-      maxlength="140"
-      placeholder="Search by phrase, idea, or feeling"
-      autofocus
-    />
+  <body class="flex flex-col max-w-2xl mx-auto my-5 gap-5">
+    <h1 class="text-2xl font-bold">TLDR</h1>
+
+    <p>Find the <span class='font-bold'>t</span>op-<span class='font-bold'>l</span>evel <span class='font-bold'>d</span>omain that's <span class='font-bold'>r</span>ight for your project.</p>
+
+    <div>
+      <input
+        id="query"
+        name="q"
+        maxlength="140"
+        placeholder="Search by phrase, idea, or feeling"
+        class="bg-white outline-0 px-4 py-3 border border-solid border-zinc-200 w-sm max-w-full"
+        autofocus
+      />
+    </div>
 
     <label>
       <input id="ascii-only" type="checkbox" checked />
       Hide domain endings with non-ASCII characters
     </label>
 
-    <ul id="tlds">
-      {
-        allTlds.map((tld) => (
-          <li data-ascii={asciiTldSet.has(tld)} hidden={!asciiTldSet.has(tld)}>{tld}</li>
-        ))
-      }
-    </ul>
+      <ul id="tlds" class="grid grid-cols-3">
+        {
+          allTlds.map((tld) => (
+            <li data-ascii={asciiTldSet.has(tld)} hidden={!asciiTldSet.has(tld)}>{tld}</li>
+          ))
+        }
+      </ul>
 
     <script>
       const input = document.querySelector<HTMLInputElement>("#query");
@@ -69,7 +75,7 @@ const asciiTldSet = new Set(asciiTlds);
       let request: AbortController | undefined;
 
       const renderTlds = (tlds: ReadonlyArray<string>) => {
-        list?.replaceChildren(...tlds.map((tld) => Object.assign(document.createElement("li"), { textContent: tld })));
+        list?.replaceChildren(...tlds.map((tld) => Object.assign(document.createElement("li"), { textContent: `.${tld}` })));
       };
 
       input?.addEventListener("input", () => {
