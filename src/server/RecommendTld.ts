@@ -11,7 +11,7 @@ export class TldRecommender extends Context.Service<
     readonly recommend: SearchTld["Service"]["search"];
   }
 >()("tldr/server/TldRecommender") {
-  static readonly layer = Layer.effect(
+  static readonly layerNoDeps = Layer.effect(
     TldRecommender,
     Effect.gen(function* () {
       const catalog = yield* TldCatalog;
@@ -38,5 +38,7 @@ export class TldRecommender extends Context.Service<
 
       return TldRecommender.of({ recommend });
     }),
-  ).pipe(Layer.provide(Layer.merge(TldCatalog.layer, SearchTld.layer)));
+  );
+
+  static readonly layer = this.layerNoDeps.pipe(Layer.provide(SearchTld.layer));
 }

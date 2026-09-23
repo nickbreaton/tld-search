@@ -1,45 +1,16 @@
-import { Context, Effect, Layer, Predicate, Schema } from "effect";
+import { Context, Effect, Layer, Schema } from "effect";
 
-import { CloudflareAi } from "./CloudflareAi";
+import { Jev, type JevQuestion } from "./Jev";
 import { TldCatalog } from "./TldCatalog";
 
 const maximumQueryLength = 140;
 
 const minimumProbability = 0.5;
 
-const JevAnswers = Schema.Record(
-  Schema.String,
-  Schema.Struct({
-    type: Schema.Literal("noul"),
-    noul: Schema.Number,
-  }),
-);
-
-const JevResponse = Schema.Union([
-  Schema.Struct({
-    answers: JevAnswers,
-    model: Schema.String,
-    usage: Schema.optionalKey(
-      Schema.Struct({
-        input_tokens: Schema.Number,
-        output_tokens: Schema.Number,
-      }),
-    ),
-  }),
-  Schema.Struct({
-    result: Schema.Struct({
-      answers: JevAnswers,
-    }),
-    state: Schema.Literal("Completed"),
-  }),
-]);
-
-const decodeJevResponse = Schema.decodeUnknownEffect(JevResponse);
-
 class SearchTldError extends Schema.TaggedError<SearchTldError>()("SearchTldError", {
   cause: Schema.Defect(),
   message: Schema.String,
-  operation: Schema.Literals(["inference", "response", "validation"]),
+  operation: Schema.Literals(["inference", "validation"]),
 }) {}
 
 export class SearchTld extends Context.Service<
@@ -51,10 +22,10 @@ export class SearchTld extends Context.Service<
     ) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
   }
 >()("tldr/server/SearchTld") {
-  static readonly layer = Layer.effect(
+  static readonly layerNoDeps = Layer.effect(
     SearchTld,
     Effect.gen(function* () {
-      const ai = yield* CloudflareAi;
+      const jev = yield* Jev;
       const catalog = yield* TldCatalog;
 
       const search = Effect.fn("SearchTld.search")(function* (
@@ -79,8 +50,7 @@ export class SearchTld extends Context.Service<
           });
         }
 
-        const questions: Record<string, { readonly type: "noul"; readonly instructions: string }> =
-          {};
+        const questions: Record<string, JevQuestion> = {};
 
         for (const tld of catalog.list({ excludeNonAscii })) {
           questions[tld] = {
@@ -89,40 +59,22 @@ export class SearchTld extends Context.Service<
           };
         }
 
-        const response = yield* Effect.tryPromise({
-          try: () =>
-            ai.run("typesafe/jev", {
-              state: normalizedQuery,
-              questions,
-            }),
-          catch: (cause) =>
-            new SearchTldError({
-              cause,
-              message: "The TLD search failed.",
-              operation: "inference",
-            }),
-        });
-
-        const decoded = yield* decodeJevResponse(response).pipe(
+        const answers = yield* jev.infer({ state: normalizedQuery, questions }).pipe(
           Effect.mapError(
             (cause) =>
               new SearchTldError({
                 cause,
-                message: "The TLD search response was invalid.",
-                operation: "response",
+                message: "The TLD search failed.",
+                operation: "inference",
               }),
           ),
         );
 
-        const answers = Predicate.hasProperty(decoded, "answers")
-          ? decoded.answers
-          : decoded.result.answers;
-
         const matches: Array<{ readonly probability: number; readonly tld: string }> = [];
 
-        for (const [tld, answer] of Object.entries(answers)) {
-          if (answer.noul >= minimumProbability) {
-            matches.push({ probability: answer.noul, tld });
+        for (const [tld, probability] of Object.entries(answers)) {
+          if (probability >= minimumProbability) {
+            matches.push({ probability, tld });
           }
         }
 
@@ -133,5 +85,10 @@ export class SearchTld extends Context.Service<
 
       return SearchTld.of({ search });
     }),
-  ).pipe(Layer.provide(TldCatalog.layer), Layer.provide(CloudflareAi.layer));
+  );
+
+  static readonly layer = this.layerNoDeps.pipe(
+    Layer.provide(Jev.layerCloudflare),
+    Layer.provideMerge(TldCatalog.layer),
+  );
 }
