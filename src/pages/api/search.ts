@@ -27,7 +27,8 @@ export const GET: APIRoute = async ({ url }) => {
         },
       }),
       Effect.match({
-        onFailure: (error) => new Response(error.message, { status: query.trim() ? 502 : 400 }),
+        onFailure: (error) =>
+          new Response(error.message, { status: error.operation === "validation" ? 400 : 502 }),
         onSuccess: (tlds) => Response.json({ tlds }),
       }),
     ),

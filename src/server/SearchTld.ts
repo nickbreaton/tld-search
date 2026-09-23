@@ -3,6 +3,8 @@ import { Context, Effect, Layer, Predicate, Schema } from "effect";
 import { CloudflareAi } from "./CloudflareAi";
 import { TldCatalog } from "./TldCatalog";
 
+const maximumQueryLength = 140;
+
 const minimumProbability = 0.5;
 
 const JevAnswers = Schema.Record(
@@ -65,6 +67,14 @@ export class SearchTld extends Context.Service<
           return yield* new SearchTldError({
             cause: "The normalized query was empty.",
             message: "A search phrase is required.",
+            operation: "validation",
+          });
+        }
+
+        if (normalizedQuery.length > maximumQueryLength) {
+          return yield* new SearchTldError({
+            cause: `The normalized query exceeded ${maximumQueryLength} characters.`,
+            message: `A search phrase must be ${maximumQueryLength} characters or fewer.`,
             operation: "validation",
           });
         }
