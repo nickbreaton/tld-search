@@ -180,11 +180,6 @@
     "type": "gtld"
   },
   {
-    "tld": "arpa",
-    "punycode": "arpa",
-    "type": "infrastructure"
-  },
-  {
     "tld": "art",
     "punycode": "art",
     "type": "gtld"
@@ -592,11 +587,6 @@
   {
     "tld": "cafe",
     "punycode": "cafe",
-    "type": "gtld"
-  },
-  {
-    "tld": "cal",
-    "punycode": "cal",
     "type": "gtld"
   },
   {
@@ -1070,11 +1060,6 @@
     "type": "gtld"
   },
   {
-    "tld": "dclk",
-    "punycode": "dclk",
-    "type": "gtld"
-  },
-  {
     "tld": "dds",
     "punycode": "dds",
     "type": "gtld"
@@ -1252,11 +1237,6 @@
   {
     "tld": "eco",
     "punycode": "eco",
-    "type": "gtld"
-  },
-  {
-    "tld": "edu",
-    "punycode": "edu",
     "type": "gtld"
   },
   {
@@ -1615,11 +1595,6 @@
     "type": "cctld"
   },
   {
-    "tld": "gbiz",
-    "punycode": "gbiz",
-    "type": "gtld"
-  },
-  {
     "tld": "gd",
     "punycode": "gd",
     "type": "cctld"
@@ -1695,11 +1670,6 @@
     "type": "gtld"
   },
   {
-    "tld": "gle",
-    "punycode": "gle",
-    "type": "gtld"
-  },
-  {
     "tld": "global",
     "punycode": "global",
     "type": "gtld"
@@ -1742,11 +1712,6 @@
   {
     "tld": "got",
     "punycode": "got",
-    "type": "gtld"
-  },
-  {
-    "tld": "gov",
-    "punycode": "gov",
     "type": "gtld"
   },
   {
@@ -1810,11 +1775,6 @@
     "type": "cctld"
   },
   {
-    "tld": "guge",
-    "punycode": "guge",
-    "type": "gtld"
-  },
-  {
     "tld": "guide",
     "punycode": "guide",
     "type": "gtld"
@@ -1847,11 +1807,6 @@
   {
     "tld": "hamburg",
     "punycode": "hamburg",
-    "type": "gtld"
-  },
-  {
-    "tld": "hangout",
-    "punycode": "hangout",
     "type": "gtld"
   },
   {
@@ -2062,11 +2017,6 @@
   {
     "tld": "insure",
     "punycode": "insure",
-    "type": "gtld"
-  },
-  {
-    "tld": "int",
-    "punycode": "int",
     "type": "gtld"
   },
   {
@@ -2560,11 +2510,6 @@
     "type": "gtld"
   },
   {
-    "tld": "map",
-    "punycode": "map",
-    "type": "gtld"
-  },
-  {
     "tld": "market",
     "punycode": "market",
     "type": "gtld"
@@ -2657,11 +2602,6 @@
   {
     "tld": "miami",
     "punycode": "miami",
-    "type": "gtld"
-  },
-  {
-    "tld": "mil",
-    "punycode": "mil",
     "type": "gtld"
   },
   {
@@ -3240,11 +3180,6 @@
     "type": "gtld"
   },
   {
-    "tld": "prod",
-    "punycode": "prod",
-    "type": "gtld"
-  },
-  {
     "tld": "productions",
     "punycode": "productions",
     "type": "gtld"
@@ -3613,11 +3548,6 @@
     "tld": "se",
     "punycode": "se",
     "type": "cctld"
-  },
-  {
-    "tld": "search",
-    "punycode": "search",
-    "type": "gtld"
   },
   {
     "tld": "secure",
@@ -5342,11 +5272,6 @@
   {
     "tld": "みんな",
     "punycode": "xn--q9jyb4c",
-    "type": "gtld"
-  },
-  {
-    "tld": "グーグル",
-    "punycode": "xn--qcka1pmc",
     "type": "gtld"
   },
   {

@@ -8,9 +8,40 @@ const sourceUrl =
 
 const outputPath = fileURLToPath(new URL("../generated/tlds.json", import.meta.url));
 
-// Public registration is not represented in the IANA data. Keep known closed
-// TLDs that do not qualify as Specification 13 brands out of the catalog here.
-const deniedTlds = new Set(["ads", "docs", "drive", "eat", "fly", "goog", "here", "meet", "play"]);
+// Delegation does not imply that the public can register names. The IANA root
+// database identifies infrastructure and sponsored TLDs, but does not encode
+// registration eligibility: https://www.iana.org/domains/root/db
+// Google likewise operates several non-Specification 13 TLDs that it does not
+// offer to registrars: https://www.registry.google/domains/
+const deniedTlds = new Set([
+  // Internet infrastructure and namespaces limited to qualifying institutions.
+  "arpa",
+  "edu",
+  "gov",
+  "int",
+  "mil",
+
+  // Google-operated namespaces absent from its public registration portfolio.
+  "ads",
+  "cal",
+  "dclk",
+  "docs",
+  "drive",
+  "eat",
+  "fly",
+  "gbiz",
+  "gle",
+  "goog",
+  "guge",
+  "hangout",
+  "here",
+  "map",
+  "meet",
+  "play",
+  "prod",
+  "search",
+  "xn--qcka1pmc", // .グーグル
+]);
 
 const TldType = Schema.Literals(["cctld", "gtld", "infrastructure"]);
 
