@@ -19,6 +19,7 @@ export class SearchTld extends Context.Service<
     readonly search: (
       query: string,
       excludeNonLatin: boolean,
+      excludeCountry: boolean,
     ) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
   }
 >()("tldr/server/SearchTld") {
@@ -31,6 +32,7 @@ export class SearchTld extends Context.Service<
       const search = Effect.fn("SearchTld.search")(function* (
         query: string,
         excludeNonLatin: boolean,
+        excludeCountry: boolean,
       ) {
         const normalizedQuery = query.trim();
 
@@ -52,7 +54,7 @@ export class SearchTld extends Context.Service<
 
         const questions: Record<string, JevQuestion> = {};
 
-        for (const tld of catalog.list({ excludeNonLatin })) {
+        for (const tld of catalog.list({ excludeNonLatin, excludeCountry })) {
           questions[tld] = {
             type: "noul",
             instructions: `Is the .${tld} top-level domain relevant to this phrase? Be creative.`,

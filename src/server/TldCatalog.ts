@@ -8,12 +8,20 @@ import porkbunTlds from "../../generated/porkbun.json";
 
 const Tlds = Schema.Array(Schema.String);
 
-const IanaTlds = Schema.Array(Schema.Struct({ punycode: Schema.String }));
+const IanaTlds = Schema.Array(
+  Schema.Struct({
+    punycode: Schema.String,
+    type: Schema.Literals(["cctld", "gtld", "infrastructure"]),
+  }),
+);
 
 export class TldCatalog extends Context.Service<
   TldCatalog,
   {
-    readonly list: (options: { readonly excludeNonLatin: boolean }) => ReadonlyArray<string>;
+    readonly list: (options: {
+      readonly excludeNonLatin: boolean;
+      readonly excludeCountry: boolean;
+    }) => ReadonlyArray<string>;
   }
 >()("tldr/server/TldCatalog") {
   static readonly layer = Layer.effect(
@@ -30,11 +38,21 @@ export class TldCatalog extends Context.Service<
         .filter((name) => rootTlds.has(name))
         .sort((left, right) => left.localeCompare(right));
 
+      const countryTlds = new Set(
+        iana
+          .filter((entry) => entry.type === "cctld")
+          .map((entry) => domainToUnicode(entry.punycode)),
+      );
+
       const allTlds = names.map(domainToUnicode);
-      const latinTlds = allTlds.filter((name) => /^[\p{Script=Latin}0-9-]+$/u.test(name));
 
       return TldCatalog.of({
-        list: ({ excludeNonLatin }) => (excludeNonLatin ? latinTlds : allTlds),
+        list: ({ excludeNonLatin, excludeCountry }) =>
+          allTlds.filter(
+            (name) =>
+              (!excludeNonLatin || /^[\p{Script=Latin}0-9-]+$/u.test(name)) &&
+              (!excludeCountry || !countryTlds.has(name)),
+          ),
       });
     }).pipe(Effect.orDie),
   );

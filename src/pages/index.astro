@@ -6,18 +6,21 @@ import "../styles/global.css";
 
 export const prerender = false;
 
-const { allTlds, latinTlds } = await Effect.runPromise(
+const { allTlds, latinTlds, nonCountryTlds } = await Effect.runPromise(
   Effect.gen(function* () {
     const catalog = yield* TldCatalog;
 
     return {
-      allTlds: catalog.list({ excludeNonLatin: false }),
-      latinTlds: catalog.list({ excludeNonLatin: true }),
+      allTlds: catalog.list({ excludeNonLatin: false, excludeCountry: false }),
+      latinTlds: catalog.list({ excludeNonLatin: true, excludeCountry: false }),
+      nonCountryTlds: catalog.list({ excludeNonLatin: false, excludeCountry: true }),
     };
   }).pipe(Effect.provide(TldCatalog.layer)),
 );
 
 const latinTldSet = new Set(latinTlds);
+
+const nonCountryTldSet = new Set(nonCountryTlds);
 ---
 
 <!doctype html>
@@ -47,10 +50,15 @@ const latinTldSet = new Set(latinTlds);
       Hide domain endings with non-Latin characters
     </label>
 
+    <label>
+      <input id="exclude-country" type="checkbox" />
+      Hide country domain endings
+    </label>
+
       <ul id="tlds" class="grid grid-cols-3">
         {
           allTlds.map((tld) => (
-            <li data-latin={latinTldSet.has(tld)} hidden={!latinTldSet.has(tld)}>{tld}</li>
+            <li data-latin={latinTldSet.has(tld)} data-non-country={nonCountryTldSet.has(tld)} hidden={!latinTldSet.has(tld)}>{tld}</li>
           ))
         }
       </ul>
@@ -60,15 +68,16 @@ const latinTldSet = new Set(latinTlds);
 
       const latinOnly = document.querySelector<HTMLInputElement>("#latin-only");
 
+      const excludeCountry = document.querySelector<HTMLInputElement>("#exclude-country");
+
       const list = document.querySelector<HTMLUListElement>("#tlds");
 
       const initialItems = Array.from(list?.querySelectorAll("li") ?? []);
 
-      const allTlds = initialItems.map((item) => item.textContent ?? "");
-
-      const latinTlds = initialItems
-        .filter((item) => item.dataset.latin === "true")
-        .map((item) => item.textContent ?? "");
+      const filteredTlds = (latin: boolean, country: boolean) =>
+        initialItems
+          .filter((item) => (!latin || item.dataset.latin === "true") && (!country || item.dataset.nonCountry === "true"))
+          .map((item) => item.textContent ?? "");
 
       let timeout: ReturnType<typeof setTimeout> | undefined;
 
@@ -85,7 +94,7 @@ const latinTldSet = new Set(latinTlds);
         const query = input.value.trim();
 
         if (!query) {
-          renderTlds(latinOnly?.checked ? latinTlds : allTlds);
+          renderTlds(filteredTlds(latinOnly?.checked ?? true, excludeCountry?.checked ?? false));
 
           return;
         }
@@ -97,6 +106,7 @@ const latinTldSet = new Set(latinTlds);
             const search = new URLSearchParams({
               q: query,
               latinOnly: String(latinOnly?.checked ?? true),
+              excludeCountry: String(excludeCountry?.checked ?? false),
             });
 
             const response = await fetch(`/api/search?${search}`, {
@@ -122,6 +132,10 @@ const latinTldSet = new Set(latinTlds);
       });
 
       latinOnly?.addEventListener("change", () => {
+        input?.dispatchEvent(new Event("input"));
+      });
+
+      excludeCountry?.addEventListener("change", () => {
         input?.dispatchEvent(new Event("input"));
       });
     </script>

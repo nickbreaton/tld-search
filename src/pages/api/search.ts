@@ -6,12 +6,13 @@ import { TldRecommender } from "../../server/RecommendTld";
 export const GET: APIRoute = async ({ url }) => {
   const query = url.searchParams.get("q") ?? "";
   const excludeNonLatin = url.searchParams.get("latinOnly") !== "false";
+  const excludeCountry = url.searchParams.get("excludeCountry") === "true";
 
   return Effect.runPromise(
     Effect.gen(function* () {
       const recommender = yield* TldRecommender;
 
-      return yield* recommender.recommend(query, excludeNonLatin);
+      return yield* recommender.recommend(query, excludeNonLatin, excludeCountry);
     }).pipe(
       Effect.provide(TldRecommender.layer),
       Effect.tapError((error) =>

@@ -20,13 +20,14 @@ export class TldRecommender extends Context.Service<
       const recommend = Effect.fn("TldRecommender.recommend")(function* (
         query: string,
         excludeNonLatin: boolean,
+        excludeCountry: boolean,
       ) {
-        const rankedTlds = yield* searchTld.search(query, excludeNonLatin);
+        const rankedTlds = yield* searchTld.search(query, excludeNonLatin, excludeCountry);
 
         const normalizedQuery = query.trim().toLocaleLowerCase();
 
         const exactMatch = catalog
-          .list({ excludeNonLatin })
+          .list({ excludeNonLatin, excludeCountry })
           .find((tld) => tld.toLocaleLowerCase() === normalizedQuery);
 
         const prioritizedTlds = exactMatch
