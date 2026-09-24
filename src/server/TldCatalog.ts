@@ -13,7 +13,7 @@ const IanaTlds = Schema.Array(Schema.Struct({ punycode: Schema.String }));
 export class TldCatalog extends Context.Service<
   TldCatalog,
   {
-    readonly list: (options: { readonly excludeNonAscii: boolean }) => ReadonlyArray<string>;
+    readonly list: (options: { readonly excludeNonLatin: boolean }) => ReadonlyArray<string>;
   }
 >()("tldr/server/TldCatalog") {
   static readonly layer = Layer.effect(
@@ -31,10 +31,10 @@ export class TldCatalog extends Context.Service<
         .sort((left, right) => left.localeCompare(right));
 
       const allTlds = names.map(domainToUnicode);
-      const asciiTlds = names.filter((name) => domainToUnicode(name) === name);
+      const latinTlds = allTlds.filter((name) => /^[\p{Script=Latin}0-9-]+$/u.test(name));
 
       return TldCatalog.of({
-        list: ({ excludeNonAscii }) => (excludeNonAscii ? asciiTlds : allTlds),
+        list: ({ excludeNonLatin }) => (excludeNonLatin ? latinTlds : allTlds),
       });
     }).pipe(Effect.orDie),
   );

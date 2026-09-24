@@ -6,18 +6,18 @@ import "../styles/global.css";
 
 export const prerender = false;
 
-const { allTlds, asciiTlds } = await Effect.runPromise(
+const { allTlds, latinTlds } = await Effect.runPromise(
   Effect.gen(function* () {
     const catalog = yield* TldCatalog;
 
     return {
-      allTlds: catalog.list({ excludeNonAscii: false }),
-      asciiTlds: catalog.list({ excludeNonAscii: true }),
+      allTlds: catalog.list({ excludeNonLatin: false }),
+      latinTlds: catalog.list({ excludeNonLatin: true }),
     };
   }).pipe(Effect.provide(TldCatalog.layer)),
 );
 
-const asciiTldSet = new Set(asciiTlds);
+const latinTldSet = new Set(latinTlds);
 ---
 
 <!doctype html>
@@ -43,14 +43,14 @@ const asciiTldSet = new Set(asciiTlds);
     </div>
 
     <label>
-      <input id="ascii-only" type="checkbox" checked />
-      Hide domain endings with non-ASCII characters
+      <input id="latin-only" type="checkbox" checked />
+      Hide domain endings with non-Latin characters
     </label>
 
       <ul id="tlds" class="grid grid-cols-3">
         {
           allTlds.map((tld) => (
-            <li data-ascii={asciiTldSet.has(tld)} hidden={!asciiTldSet.has(tld)}>{tld}</li>
+            <li data-latin={latinTldSet.has(tld)} hidden={!latinTldSet.has(tld)}>{tld}</li>
           ))
         }
       </ul>
@@ -58,7 +58,7 @@ const asciiTldSet = new Set(asciiTlds);
     <script>
       const input = document.querySelector<HTMLInputElement>("#query");
 
-      const asciiOnly = document.querySelector<HTMLInputElement>("#ascii-only");
+      const latinOnly = document.querySelector<HTMLInputElement>("#latin-only");
 
       const list = document.querySelector<HTMLUListElement>("#tlds");
 
@@ -66,8 +66,8 @@ const asciiTldSet = new Set(asciiTlds);
 
       const allTlds = initialItems.map((item) => item.textContent ?? "");
 
-      const asciiTlds = initialItems
-        .filter((item) => item.dataset.ascii === "true")
+      const latinTlds = initialItems
+        .filter((item) => item.dataset.latin === "true")
         .map((item) => item.textContent ?? "");
 
       let timeout: ReturnType<typeof setTimeout> | undefined;
@@ -85,7 +85,7 @@ const asciiTldSet = new Set(asciiTlds);
         const query = input.value.trim();
 
         if (!query) {
-          renderTlds(asciiOnly?.checked ? asciiTlds : allTlds);
+          renderTlds(latinOnly?.checked ? latinTlds : allTlds);
 
           return;
         }
@@ -96,7 +96,7 @@ const asciiTldSet = new Set(asciiTlds);
           try {
             const search = new URLSearchParams({
               q: query,
-              asciiOnly: String(asciiOnly?.checked ?? true),
+              latinOnly: String(latinOnly?.checked ?? true),
             });
 
             const response = await fetch(`/api/search?${search}`, {
@@ -121,7 +121,7 @@ const asciiTldSet = new Set(asciiTlds);
         }, 500);
       });
 
-      asciiOnly?.addEventListener("change", () => {
+      latinOnly?.addEventListener("change", () => {
         input?.dispatchEvent(new Event("input"));
       });
     </script>
