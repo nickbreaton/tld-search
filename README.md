@@ -4,27 +4,11 @@
 
 TL;DR is a server-rendered Astro site that uses Jev to rank top-level domains for a natural-language query. It runs on Cloudflare Workers and is provisioned with Alchemy.
 
-## Development
+## Registrar selection
 
-```sh
-bun install
-bun run dev
-```
+To be included a registrar must:
 
-The UI uses Astro, HTML, and CSS without a client-side framework or runtime JavaScript.
-
-## Validation
-
-```sh
-bun run check
-```
-
-## Deployment
-
-Authenticate Alchemy with the target Cloudflare account, then run:
-
-```sh
-bun run deploy
-```
-
-Alchemy provisions the Astro Worker, Workers AI binding, and Cloudflare AI Gateway.
+1. Have a high standing reputation
+2. Support enough TLDs to be worth implementing
+3. Offer a free API to fetch their supported TLDs
+4. Offer a TLD-specific search page for each supported TLD

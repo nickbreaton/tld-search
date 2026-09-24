@@ -14,6 +14,7 @@
     "generate:tlds": "bun run scripts/generate-tlds.ts",
     "generate:porkbun": "bun run scripts/generate-porkbun.ts",
     "generate:namecheap": "bun run scripts/generate-namecheap.ts",
+    "generate:dynadot": "bun run scripts/generate-dynadot.ts",
     "auth": "alchemy profile refresh --profile default --provider Cloudflare"
   },
   "dependencies": {
