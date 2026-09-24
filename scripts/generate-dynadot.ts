@@ -1,5 +1,5 @@
 import { BunFileSystem, BunRuntime } from "@effect/platform-bun";
-import { Config, Duration, Effect, FileSystem, Option, Schema, Stream } from "effect";
+import { Config, Duration, Effect, FileSystem, Option, Redacted, Schema, Stream } from "effect";
 import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/unstable/http";
 import { fileURLToPath } from "node:url";
 
@@ -20,14 +20,14 @@ const TldPriceResponse = Schema.Struct({
 const program = Effect.gen(function* () {
   const fileSystem = yield* FileSystem.FileSystem;
   const httpClient = (yield* HttpClient.HttpClient).pipe(HttpClient.filterStatusOk);
-  const apiKey = yield* Config.String("DYNADOT_API_KEY");
+  const apiKey = yield* Config.Redacted("DYNADOT_API_KEY");
 
   const pages = Stream.paginate(1, (page) =>
     Effect.gen(function* () {
       // Dynadot requires the key in the URL; avoid exposing it in HTTP errors.
       const request = HttpClientRequest.get(apiUrl).pipe(
         HttpClientRequest.setUrlParams({
-          key: apiKey,
+          key: Redacted.value(apiKey),
           command: "tld_price",
           currency: "USD",
           count_per_page: String(pageSize),

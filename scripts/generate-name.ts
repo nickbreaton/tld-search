@@ -20,7 +20,7 @@ const PricingResponse = Schema.Struct({
 const program = Effect.gen(function* () {
   const fileSystem = yield* FileSystem.FileSystem;
   const httpClient = (yield* HttpClient.HttpClient).pipe(HttpClient.filterStatusOk);
-  const apiToken = yield* Config.String("NAME_API_TOKEN");
+  const apiToken = yield* Config.Redacted("NAME_API_TOKEN");
   const username = yield* Config.String("NAME_USERNAME");
 
   const pages = Stream.paginate(1, (page) =>
