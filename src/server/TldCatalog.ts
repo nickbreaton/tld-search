@@ -63,17 +63,14 @@ export class TldCatalog extends Context.Service<
           }
 
           const base = {
-            porkbun: "https://porkbun.com/tld/",
-            dynadot: "https://www.dynadot.com/domain/",
-            namecheap: "https://www.namecheap.com/domains/registration/gtld/",
+            porkbun: "https://porkbun.com/tld/{domain}",
+            dynadot: "https://www.dynadot.com/domain/{domain}",
+            namecheap: "https://www.namecheap.com/domains/registration/gtld/{domain}/",
           }[registrar];
 
-          return Option.some(
-            new URL(
-              `${Schema.encodeSync(Schema.StringFromUriComponent)(domain)}${registrar === "namecheap" ? "/" : ""}`,
-              base,
-            ),
-          );
+          const result = base.replace("{domain}", domain);
+
+          return Schema.decodeOption(Schema.URLFromString)(result);
         },
         list: ({ excludeNonLatin, excludeCountry }) =>
           allTlds.filter(
