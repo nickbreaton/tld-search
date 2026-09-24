@@ -1,0 +1,9938 @@
+[
+  {
+    "tld": "aaa",
+    "punycode": "aaa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "aarp",
+    "punycode": "aarp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "abarth",
+    "punycode": "abarth",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "abb",
+    "punycode": "abb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "abbott",
+    "punycode": "abbott",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "abbvie",
+    "punycode": "abbvie",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "abc",
+    "punycode": "abc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "able",
+    "punycode": "able",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "abogado",
+    "punycode": "abogado",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "abudhabi",
+    "punycode": "abudhabi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ac",
+    "punycode": "ac",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "academy",
+    "punycode": "academy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "accenture",
+    "punycode": "accenture",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "accountant",
+    "punycode": "accountant",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "accountants",
+    "punycode": "accountants",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "aco",
+    "punycode": "aco",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "active",
+    "punycode": "active",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "actor",
+    "punycode": "actor",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ad",
+    "punycode": "ad",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "adac",
+    "punycode": "adac",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ads",
+    "punycode": "ads",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "adult",
+    "punycode": "adult",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ae",
+    "punycode": "ae",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "aeg",
+    "punycode": "aeg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "aero",
+    "punycode": "aero",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "aetna",
+    "punycode": "aetna",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "af",
+    "punycode": "af",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "afamilycompany",
+    "punycode": "afamilycompany",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "afl",
+    "punycode": "afl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "africa",
+    "punycode": "africa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ag",
+    "punycode": "ag",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "agakhan",
+    "punycode": "agakhan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "agency",
+    "punycode": "agency",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ai",
+    "punycode": "ai",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "aig",
+    "punycode": "aig",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "aigo",
+    "punycode": "aigo",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "airbus",
+    "punycode": "airbus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "airforce",
+    "punycode": "airforce",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "airtel",
+    "punycode": "airtel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "akdn",
+    "punycode": "akdn",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "al",
+    "punycode": "al",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "alfaromeo",
+    "punycode": "alfaromeo",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "alibaba",
+    "punycode": "alibaba",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "alipay",
+    "punycode": "alipay",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "allfinanz",
+    "punycode": "allfinanz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "allstate",
+    "punycode": "allstate",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ally",
+    "punycode": "ally",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "alsace",
+    "punycode": "alsace",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "alstom",
+    "punycode": "alstom",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "am",
+    "punycode": "am",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "amazon",
+    "punycode": "amazon",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "americanexpress",
+    "punycode": "americanexpress",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "americanfamily",
+    "punycode": "americanfamily",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "amex",
+    "punycode": "amex",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "amfam",
+    "punycode": "amfam",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "amica",
+    "punycode": "amica",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "amsterdam",
+    "punycode": "amsterdam",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "an",
+    "punycode": "an",
+    "type": "cctld",
+    "delegated": false
+  },
+  {
+    "tld": "analytics",
+    "punycode": "analytics",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "android",
+    "punycode": "android",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "anquan",
+    "punycode": "anquan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "anz",
+    "punycode": "anz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ao",
+    "punycode": "ao",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "aol",
+    "punycode": "aol",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "apartments",
+    "punycode": "apartments",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "app",
+    "punycode": "app",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "apple",
+    "punycode": "apple",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "aq",
+    "punycode": "aq",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "aquarelle",
+    "punycode": "aquarelle",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ar",
+    "punycode": "ar",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "arab",
+    "punycode": "arab",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "aramco",
+    "punycode": "aramco",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "archi",
+    "punycode": "archi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "army",
+    "punycode": "army",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "arpa",
+    "punycode": "arpa",
+    "type": "infrastructure",
+    "delegated": true
+  },
+  {
+    "tld": "art",
+    "punycode": "art",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "arte",
+    "punycode": "arte",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "as",
+    "punycode": "as",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "asda",
+    "punycode": "asda",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "asia",
+    "punycode": "asia",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "associates",
+    "punycode": "associates",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "at",
+    "punycode": "at",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "athleta",
+    "punycode": "athleta",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "attorney",
+    "punycode": "attorney",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "au",
+    "punycode": "au",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "auction",
+    "punycode": "auction",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "audi",
+    "punycode": "audi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "audible",
+    "punycode": "audible",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "audio",
+    "punycode": "audio",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "auspost",
+    "punycode": "auspost",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "author",
+    "punycode": "author",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "auto",
+    "punycode": "auto",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "autos",
+    "punycode": "autos",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "avianca",
+    "punycode": "avianca",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "aw",
+    "punycode": "aw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "aws",
+    "punycode": "aws",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ax",
+    "punycode": "ax",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "axa",
+    "punycode": "axa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "az",
+    "punycode": "az",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "azure",
+    "punycode": "azure",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ba",
+    "punycode": "ba",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "baby",
+    "punycode": "baby",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "baidu",
+    "punycode": "baidu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "banamex",
+    "punycode": "banamex",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bananarepublic",
+    "punycode": "bananarepublic",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "band",
+    "punycode": "band",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bank",
+    "punycode": "bank",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bar",
+    "punycode": "bar",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "barcelona",
+    "punycode": "barcelona",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "barclaycard",
+    "punycode": "barclaycard",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "barclays",
+    "punycode": "barclays",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "barefoot",
+    "punycode": "barefoot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bargains",
+    "punycode": "bargains",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "baseball",
+    "punycode": "baseball",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "basketball",
+    "punycode": "basketball",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bauhaus",
+    "punycode": "bauhaus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bayern",
+    "punycode": "bayern",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bb",
+    "punycode": "bb",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bbc",
+    "punycode": "bbc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bbt",
+    "punycode": "bbt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bbva",
+    "punycode": "bbva",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bcg",
+    "punycode": "bcg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bcn",
+    "punycode": "bcn",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bd",
+    "punycode": "bd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "be",
+    "punycode": "be",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "beats",
+    "punycode": "beats",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "beauty",
+    "punycode": "beauty",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "beer",
+    "punycode": "beer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bentley",
+    "punycode": "bentley",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "berlin",
+    "punycode": "berlin",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "best",
+    "punycode": "best",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bestbuy",
+    "punycode": "bestbuy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bet",
+    "punycode": "bet",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bf",
+    "punycode": "bf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bg",
+    "punycode": "bg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bh",
+    "punycode": "bh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bharti",
+    "punycode": "bharti",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bi",
+    "punycode": "bi",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bible",
+    "punycode": "bible",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bid",
+    "punycode": "bid",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bike",
+    "punycode": "bike",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bing",
+    "punycode": "bing",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bingo",
+    "punycode": "bingo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bio",
+    "punycode": "bio",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "biz",
+    "punycode": "biz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bj",
+    "punycode": "bj",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bl",
+    "punycode": "bl",
+    "type": "cctld",
+    "delegated": false
+  },
+  {
+    "tld": "black",
+    "punycode": "black",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "blackfriday",
+    "punycode": "blackfriday",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "blanco",
+    "punycode": "blanco",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "blockbuster",
+    "punycode": "blockbuster",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "blog",
+    "punycode": "blog",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bloomberg",
+    "punycode": "bloomberg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "blue",
+    "punycode": "blue",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bm",
+    "punycode": "bm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bms",
+    "punycode": "bms",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bmw",
+    "punycode": "bmw",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bn",
+    "punycode": "bn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bnl",
+    "punycode": "bnl",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "bnpparibas",
+    "punycode": "bnpparibas",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bo",
+    "punycode": "bo",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "boats",
+    "punycode": "boats",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "boehringer",
+    "punycode": "boehringer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bofa",
+    "punycode": "bofa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bom",
+    "punycode": "bom",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bond",
+    "punycode": "bond",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "boo",
+    "punycode": "boo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "book",
+    "punycode": "book",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "booking",
+    "punycode": "booking",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "boots",
+    "punycode": "boots",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "bosch",
+    "punycode": "bosch",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bostik",
+    "punycode": "bostik",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "boston",
+    "punycode": "boston",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bot",
+    "punycode": "bot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "boutique",
+    "punycode": "boutique",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "box",
+    "punycode": "box",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bq",
+    "punycode": "bq",
+    "type": "cctld",
+    "delegated": false
+  },
+  {
+    "tld": "br",
+    "punycode": "br",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bradesco",
+    "punycode": "bradesco",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bridgestone",
+    "punycode": "bridgestone",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "broadway",
+    "punycode": "broadway",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "broker",
+    "punycode": "broker",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "brother",
+    "punycode": "brother",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "brussels",
+    "punycode": "brussels",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bs",
+    "punycode": "bs",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bt",
+    "punycode": "bt",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "budapest",
+    "punycode": "budapest",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "bugatti",
+    "punycode": "bugatti",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "build",
+    "punycode": "build",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "builders",
+    "punycode": "builders",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "business",
+    "punycode": "business",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "buy",
+    "punycode": "buy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "buzz",
+    "punycode": "buzz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "bv",
+    "punycode": "bv",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bw",
+    "punycode": "bw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "by",
+    "punycode": "by",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bz",
+    "punycode": "bz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "bzh",
+    "punycode": "bzh",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ca",
+    "punycode": "ca",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cab",
+    "punycode": "cab",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cafe",
+    "punycode": "cafe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cal",
+    "punycode": "cal",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "call",
+    "punycode": "call",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "calvinklein",
+    "punycode": "calvinklein",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cam",
+    "punycode": "cam",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "camera",
+    "punycode": "camera",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "camp",
+    "punycode": "camp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cancerresearch",
+    "punycode": "cancerresearch",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "canon",
+    "punycode": "canon",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "capetown",
+    "punycode": "capetown",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "capital",
+    "punycode": "capital",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "capitalone",
+    "punycode": "capitalone",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "car",
+    "punycode": "car",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "caravan",
+    "punycode": "caravan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cards",
+    "punycode": "cards",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "care",
+    "punycode": "care",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "career",
+    "punycode": "career",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "careers",
+    "punycode": "careers",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cars",
+    "punycode": "cars",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cartier",
+    "punycode": "cartier",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "casa",
+    "punycode": "casa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "case",
+    "punycode": "case",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "caseih",
+    "punycode": "caseih",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "cash",
+    "punycode": "cash",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "casino",
+    "punycode": "casino",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cat",
+    "punycode": "cat",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "catering",
+    "punycode": "catering",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "catholic",
+    "punycode": "catholic",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cba",
+    "punycode": "cba",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cbn",
+    "punycode": "cbn",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cbre",
+    "punycode": "cbre",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cbs",
+    "punycode": "cbs",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "cc",
+    "punycode": "cc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cd",
+    "punycode": "cd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ceb",
+    "punycode": "ceb",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "center",
+    "punycode": "center",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ceo",
+    "punycode": "ceo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cern",
+    "punycode": "cern",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cf",
+    "punycode": "cf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cfa",
+    "punycode": "cfa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cfd",
+    "punycode": "cfd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cg",
+    "punycode": "cg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ch",
+    "punycode": "ch",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "chanel",
+    "punycode": "chanel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "channel",
+    "punycode": "channel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "charity",
+    "punycode": "charity",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "chase",
+    "punycode": "chase",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "chat",
+    "punycode": "chat",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cheap",
+    "punycode": "cheap",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "chintai",
+    "punycode": "chintai",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "chloe",
+    "punycode": "chloe",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "christmas",
+    "punycode": "christmas",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "chrome",
+    "punycode": "chrome",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "chrysler",
+    "punycode": "chrysler",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "church",
+    "punycode": "church",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ci",
+    "punycode": "ci",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cipriani",
+    "punycode": "cipriani",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "circle",
+    "punycode": "circle",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cisco",
+    "punycode": "cisco",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "citadel",
+    "punycode": "citadel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "citi",
+    "punycode": "citi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "citic",
+    "punycode": "citic",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "city",
+    "punycode": "city",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cityeats",
+    "punycode": "cityeats",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ck",
+    "punycode": "ck",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cl",
+    "punycode": "cl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "claims",
+    "punycode": "claims",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cleaning",
+    "punycode": "cleaning",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "click",
+    "punycode": "click",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "clinic",
+    "punycode": "clinic",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "clinique",
+    "punycode": "clinique",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "clothing",
+    "punycode": "clothing",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cloud",
+    "punycode": "cloud",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "club",
+    "punycode": "club",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "clubmed",
+    "punycode": "clubmed",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cm",
+    "punycode": "cm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cn",
+    "punycode": "cn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "co",
+    "punycode": "co",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "coach",
+    "punycode": "coach",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "codes",
+    "punycode": "codes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "coffee",
+    "punycode": "coffee",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "college",
+    "punycode": "college",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cologne",
+    "punycode": "cologne",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "com",
+    "punycode": "com",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "comcast",
+    "punycode": "comcast",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "commbank",
+    "punycode": "commbank",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "community",
+    "punycode": "community",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "company",
+    "punycode": "company",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "compare",
+    "punycode": "compare",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "computer",
+    "punycode": "computer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "comsec",
+    "punycode": "comsec",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "condos",
+    "punycode": "condos",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "construction",
+    "punycode": "construction",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "consulting",
+    "punycode": "consulting",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "contact",
+    "punycode": "contact",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "contractors",
+    "punycode": "contractors",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cooking",
+    "punycode": "cooking",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cookingchannel",
+    "punycode": "cookingchannel",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "cool",
+    "punycode": "cool",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "coop",
+    "punycode": "coop",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "corsica",
+    "punycode": "corsica",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "country",
+    "punycode": "country",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "coupon",
+    "punycode": "coupon",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "coupons",
+    "punycode": "coupons",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "courses",
+    "punycode": "courses",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cpa",
+    "punycode": "cpa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cr",
+    "punycode": "cr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "credit",
+    "punycode": "credit",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "creditcard",
+    "punycode": "creditcard",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "creditunion",
+    "punycode": "creditunion",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cricket",
+    "punycode": "cricket",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "crown",
+    "punycode": "crown",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "crs",
+    "punycode": "crs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cruise",
+    "punycode": "cruise",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cruises",
+    "punycode": "cruises",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "csc",
+    "punycode": "csc",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "cu",
+    "punycode": "cu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cuisinella",
+    "punycode": "cuisinella",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cv",
+    "punycode": "cv",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cw",
+    "punycode": "cw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cx",
+    "punycode": "cx",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cy",
+    "punycode": "cy",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "cymru",
+    "punycode": "cymru",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cyou",
+    "punycode": "cyou",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "cz",
+    "punycode": "cz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "dabur",
+    "punycode": "dabur",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "dad",
+    "punycode": "dad",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dance",
+    "punycode": "dance",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "data",
+    "punycode": "data",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "date",
+    "punycode": "date",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dating",
+    "punycode": "dating",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "datsun",
+    "punycode": "datsun",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "day",
+    "punycode": "day",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dclk",
+    "punycode": "dclk",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dds",
+    "punycode": "dds",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "de",
+    "punycode": "de",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "deal",
+    "punycode": "deal",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dealer",
+    "punycode": "dealer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "deals",
+    "punycode": "deals",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "degree",
+    "punycode": "degree",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "delivery",
+    "punycode": "delivery",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dell",
+    "punycode": "dell",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "deloitte",
+    "punycode": "deloitte",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "delta",
+    "punycode": "delta",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "democrat",
+    "punycode": "democrat",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dental",
+    "punycode": "dental",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dentist",
+    "punycode": "dentist",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "desi",
+    "punycode": "desi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "design",
+    "punycode": "design",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dev",
+    "punycode": "dev",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dhl",
+    "punycode": "dhl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "diamonds",
+    "punycode": "diamonds",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "diet",
+    "punycode": "diet",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "digital",
+    "punycode": "digital",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "direct",
+    "punycode": "direct",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "directory",
+    "punycode": "directory",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "discount",
+    "punycode": "discount",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "discover",
+    "punycode": "discover",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dish",
+    "punycode": "dish",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "diy",
+    "punycode": "diy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dj",
+    "punycode": "dj",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "dk",
+    "punycode": "dk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "dm",
+    "punycode": "dm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "dnp",
+    "punycode": "dnp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "do",
+    "punycode": "do",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "docs",
+    "punycode": "docs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "doctor",
+    "punycode": "doctor",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dodge",
+    "punycode": "dodge",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "dog",
+    "punycode": "dog",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "doha",
+    "punycode": "doha",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "domains",
+    "punycode": "domains",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "doosan",
+    "punycode": "doosan",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "dot",
+    "punycode": "dot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "download",
+    "punycode": "download",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "drive",
+    "punycode": "drive",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dtv",
+    "punycode": "dtv",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dubai",
+    "punycode": "dubai",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "duck",
+    "punycode": "duck",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "dunlop",
+    "punycode": "dunlop",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "duns",
+    "punycode": "duns",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "dupont",
+    "punycode": "dupont",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "durban",
+    "punycode": "durban",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dvag",
+    "punycode": "dvag",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dvr",
+    "punycode": "dvr",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "dz",
+    "punycode": "dz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "earth",
+    "punycode": "earth",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "eat",
+    "punycode": "eat",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ec",
+    "punycode": "ec",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "eco",
+    "punycode": "eco",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "edeka",
+    "punycode": "edeka",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "edu",
+    "punycode": "edu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "education",
+    "punycode": "education",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ee",
+    "punycode": "ee",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "eg",
+    "punycode": "eg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "eh",
+    "punycode": "eh",
+    "type": "cctld",
+    "delegated": false
+  },
+  {
+    "tld": "email",
+    "punycode": "email",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "emerck",
+    "punycode": "emerck",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "emerson",
+    "punycode": "emerson",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "energy",
+    "punycode": "energy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "engineer",
+    "punycode": "engineer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "engineering",
+    "punycode": "engineering",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "enterprises",
+    "punycode": "enterprises",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "epost",
+    "punycode": "epost",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "epson",
+    "punycode": "epson",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "equipment",
+    "punycode": "equipment",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "er",
+    "punycode": "er",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ericsson",
+    "punycode": "ericsson",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "erni",
+    "punycode": "erni",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "es",
+    "punycode": "es",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "esq",
+    "punycode": "esq",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "estate",
+    "punycode": "estate",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "esurance",
+    "punycode": "esurance",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "et",
+    "punycode": "et",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "etisalat",
+    "punycode": "etisalat",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "eu",
+    "punycode": "eu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "eurovision",
+    "punycode": "eurovision",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "eus",
+    "punycode": "eus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "events",
+    "punycode": "events",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "everbank",
+    "punycode": "everbank",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "exchange",
+    "punycode": "exchange",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "expert",
+    "punycode": "expert",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "exposed",
+    "punycode": "exposed",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "express",
+    "punycode": "express",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "extraspace",
+    "punycode": "extraspace",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fage",
+    "punycode": "fage",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fail",
+    "punycode": "fail",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fairwinds",
+    "punycode": "fairwinds",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "faith",
+    "punycode": "faith",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "family",
+    "punycode": "family",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fan",
+    "punycode": "fan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fans",
+    "punycode": "fans",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "farm",
+    "punycode": "farm",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "farmers",
+    "punycode": "farmers",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fashion",
+    "punycode": "fashion",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fast",
+    "punycode": "fast",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fedex",
+    "punycode": "fedex",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "feedback",
+    "punycode": "feedback",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ferrari",
+    "punycode": "ferrari",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ferrero",
+    "punycode": "ferrero",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fi",
+    "punycode": "fi",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "fiat",
+    "punycode": "fiat",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "fidelity",
+    "punycode": "fidelity",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fido",
+    "punycode": "fido",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "film",
+    "punycode": "film",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "final",
+    "punycode": "final",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "finance",
+    "punycode": "finance",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "financial",
+    "punycode": "financial",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fire",
+    "punycode": "fire",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "firestone",
+    "punycode": "firestone",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "firmdale",
+    "punycode": "firmdale",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fish",
+    "punycode": "fish",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fishing",
+    "punycode": "fishing",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fit",
+    "punycode": "fit",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fitness",
+    "punycode": "fitness",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fj",
+    "punycode": "fj",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "fk",
+    "punycode": "fk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "flickr",
+    "punycode": "flickr",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "flights",
+    "punycode": "flights",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "flir",
+    "punycode": "flir",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "florist",
+    "punycode": "florist",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "flowers",
+    "punycode": "flowers",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "flsmidth",
+    "punycode": "flsmidth",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "fly",
+    "punycode": "fly",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fm",
+    "punycode": "fm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "fo",
+    "punycode": "fo",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "foo",
+    "punycode": "foo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "food",
+    "punycode": "food",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "foodnetwork",
+    "punycode": "foodnetwork",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "football",
+    "punycode": "football",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ford",
+    "punycode": "ford",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "forex",
+    "punycode": "forex",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "forsale",
+    "punycode": "forsale",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "forum",
+    "punycode": "forum",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "foundation",
+    "punycode": "foundation",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fox",
+    "punycode": "fox",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fr",
+    "punycode": "fr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "free",
+    "punycode": "free",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fresenius",
+    "punycode": "fresenius",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "frl",
+    "punycode": "frl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "frogans",
+    "punycode": "frogans",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "frontdoor",
+    "punycode": "frontdoor",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "frontier",
+    "punycode": "frontier",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ftr",
+    "punycode": "ftr",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fujitsu",
+    "punycode": "fujitsu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fujixerox",
+    "punycode": "fujixerox",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "fun",
+    "punycode": "fun",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fund",
+    "punycode": "fund",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "furniture",
+    "punycode": "furniture",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "futbol",
+    "punycode": "futbol",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "fyi",
+    "punycode": "fyi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ga",
+    "punycode": "ga",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gal",
+    "punycode": "gal",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gallery",
+    "punycode": "gallery",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gallo",
+    "punycode": "gallo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gallup",
+    "punycode": "gallup",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "game",
+    "punycode": "game",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "games",
+    "punycode": "games",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gap",
+    "punycode": "gap",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "garden",
+    "punycode": "garden",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gay",
+    "punycode": "gay",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gb",
+    "punycode": "gb",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gbiz",
+    "punycode": "gbiz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gd",
+    "punycode": "gd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gdn",
+    "punycode": "gdn",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ge",
+    "punycode": "ge",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gea",
+    "punycode": "gea",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gent",
+    "punycode": "gent",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "genting",
+    "punycode": "genting",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "george",
+    "punycode": "george",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gf",
+    "punycode": "gf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gg",
+    "punycode": "gg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ggee",
+    "punycode": "ggee",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gh",
+    "punycode": "gh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gi",
+    "punycode": "gi",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gift",
+    "punycode": "gift",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gifts",
+    "punycode": "gifts",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gives",
+    "punycode": "gives",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "giving",
+    "punycode": "giving",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gl",
+    "punycode": "gl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "glade",
+    "punycode": "glade",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "glass",
+    "punycode": "glass",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gle",
+    "punycode": "gle",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "global",
+    "punycode": "global",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "globo",
+    "punycode": "globo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gm",
+    "punycode": "gm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gmail",
+    "punycode": "gmail",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gmbh",
+    "punycode": "gmbh",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gmo",
+    "punycode": "gmo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gmx",
+    "punycode": "gmx",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gn",
+    "punycode": "gn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "godaddy",
+    "punycode": "godaddy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gold",
+    "punycode": "gold",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "goldpoint",
+    "punycode": "goldpoint",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "golf",
+    "punycode": "golf",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "goo",
+    "punycode": "goo",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "goodhands",
+    "punycode": "goodhands",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "goodyear",
+    "punycode": "goodyear",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "goog",
+    "punycode": "goog",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "google",
+    "punycode": "google",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gop",
+    "punycode": "gop",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "got",
+    "punycode": "got",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gov",
+    "punycode": "gov",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gp",
+    "punycode": "gp",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gq",
+    "punycode": "gq",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gr",
+    "punycode": "gr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "grainger",
+    "punycode": "grainger",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "graphics",
+    "punycode": "graphics",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gratis",
+    "punycode": "gratis",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "green",
+    "punycode": "green",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gripe",
+    "punycode": "gripe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "grocery",
+    "punycode": "grocery",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "group",
+    "punycode": "group",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gs",
+    "punycode": "gs",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gt",
+    "punycode": "gt",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gu",
+    "punycode": "gu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "guardian",
+    "punycode": "guardian",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "gucci",
+    "punycode": "gucci",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "guge",
+    "punycode": "guge",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "guide",
+    "punycode": "guide",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "guitars",
+    "punycode": "guitars",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "guru",
+    "punycode": "guru",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "gw",
+    "punycode": "gw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "gy",
+    "punycode": "gy",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "hair",
+    "punycode": "hair",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hamburg",
+    "punycode": "hamburg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hangout",
+    "punycode": "hangout",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "haus",
+    "punycode": "haus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hbo",
+    "punycode": "hbo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hdfc",
+    "punycode": "hdfc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hdfcbank",
+    "punycode": "hdfcbank",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "health",
+    "punycode": "health",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "healthcare",
+    "punycode": "healthcare",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "help",
+    "punycode": "help",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "helsinki",
+    "punycode": "helsinki",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "here",
+    "punycode": "here",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hermes",
+    "punycode": "hermes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hgtv",
+    "punycode": "hgtv",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "hiphop",
+    "punycode": "hiphop",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hisamitsu",
+    "punycode": "hisamitsu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hitachi",
+    "punycode": "hitachi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hiv",
+    "punycode": "hiv",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hk",
+    "punycode": "hk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "hkt",
+    "punycode": "hkt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hm",
+    "punycode": "hm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "hn",
+    "punycode": "hn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "hockey",
+    "punycode": "hockey",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "holdings",
+    "punycode": "holdings",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "holiday",
+    "punycode": "holiday",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "homedepot",
+    "punycode": "homedepot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "homegoods",
+    "punycode": "homegoods",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "homes",
+    "punycode": "homes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "homesense",
+    "punycode": "homesense",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "honda",
+    "punycode": "honda",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "honeywell",
+    "punycode": "honeywell",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "horse",
+    "punycode": "horse",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hospital",
+    "punycode": "hospital",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "host",
+    "punycode": "host",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hosting",
+    "punycode": "hosting",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hot",
+    "punycode": "hot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hoteles",
+    "punycode": "hoteles",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "hotels",
+    "punycode": "hotels",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hotmail",
+    "punycode": "hotmail",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "house",
+    "punycode": "house",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "how",
+    "punycode": "how",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hr",
+    "punycode": "hr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "hsbc",
+    "punycode": "hsbc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ht",
+    "punycode": "ht",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "htc",
+    "punycode": "htc",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "hu",
+    "punycode": "hu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "hughes",
+    "punycode": "hughes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hyatt",
+    "punycode": "hyatt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "hyundai",
+    "punycode": "hyundai",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ibm",
+    "punycode": "ibm",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "icbc",
+    "punycode": "icbc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ice",
+    "punycode": "ice",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "icu",
+    "punycode": "icu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "id",
+    "punycode": "id",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ie",
+    "punycode": "ie",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ieee",
+    "punycode": "ieee",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ifm",
+    "punycode": "ifm",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "iinet",
+    "punycode": "iinet",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ikano",
+    "punycode": "ikano",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "il",
+    "punycode": "il",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "im",
+    "punycode": "im",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "imamat",
+    "punycode": "imamat",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "imdb",
+    "punycode": "imdb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "immo",
+    "punycode": "immo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "immobilien",
+    "punycode": "immobilien",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "in",
+    "punycode": "in",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "inc",
+    "punycode": "inc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "industries",
+    "punycode": "industries",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "infiniti",
+    "punycode": "infiniti",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "info",
+    "punycode": "info",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ing",
+    "punycode": "ing",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ink",
+    "punycode": "ink",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "institute",
+    "punycode": "institute",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "insurance",
+    "punycode": "insurance",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "insure",
+    "punycode": "insure",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "int",
+    "punycode": "int",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "intel",
+    "punycode": "intel",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "international",
+    "punycode": "international",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "intuit",
+    "punycode": "intuit",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "investments",
+    "punycode": "investments",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "io",
+    "punycode": "io",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ipiranga",
+    "punycode": "ipiranga",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "iq",
+    "punycode": "iq",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ir",
+    "punycode": "ir",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "irish",
+    "punycode": "irish",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "is",
+    "punycode": "is",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "iselect",
+    "punycode": "iselect",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ismaili",
+    "punycode": "ismaili",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ist",
+    "punycode": "ist",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "istanbul",
+    "punycode": "istanbul",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "it",
+    "punycode": "it",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "itau",
+    "punycode": "itau",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "itv",
+    "punycode": "itv",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "iveco",
+    "punycode": "iveco",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "iwc",
+    "punycode": "iwc",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "jaguar",
+    "punycode": "jaguar",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "java",
+    "punycode": "java",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jcb",
+    "punycode": "jcb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jcp",
+    "punycode": "jcp",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "je",
+    "punycode": "je",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "jeep",
+    "punycode": "jeep",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jetzt",
+    "punycode": "jetzt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jewelry",
+    "punycode": "jewelry",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jio",
+    "punycode": "jio",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jlc",
+    "punycode": "jlc",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "jll",
+    "punycode": "jll",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jm",
+    "punycode": "jm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "jmp",
+    "punycode": "jmp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jnj",
+    "punycode": "jnj",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jo",
+    "punycode": "jo",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "jobs",
+    "punycode": "jobs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "joburg",
+    "punycode": "joburg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jot",
+    "punycode": "jot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "joy",
+    "punycode": "joy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jp",
+    "punycode": "jp",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "jpmorgan",
+    "punycode": "jpmorgan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "jprs",
+    "punycode": "jprs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "juegos",
+    "punycode": "juegos",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "juniper",
+    "punycode": "juniper",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kaufen",
+    "punycode": "kaufen",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kddi",
+    "punycode": "kddi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ke",
+    "punycode": "ke",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "kerryhotels",
+    "punycode": "kerryhotels",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kerrylogistics",
+    "punycode": "kerrylogistics",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "kerryproperties",
+    "punycode": "kerryproperties",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kfh",
+    "punycode": "kfh",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kg",
+    "punycode": "kg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "kh",
+    "punycode": "kh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ki",
+    "punycode": "ki",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "kia",
+    "punycode": "kia",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kids",
+    "punycode": "kids",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kim",
+    "punycode": "kim",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kinder",
+    "punycode": "kinder",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "kindle",
+    "punycode": "kindle",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kitchen",
+    "punycode": "kitchen",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kiwi",
+    "punycode": "kiwi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "km",
+    "punycode": "km",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "kn",
+    "punycode": "kn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "koeln",
+    "punycode": "koeln",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "komatsu",
+    "punycode": "komatsu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kosher",
+    "punycode": "kosher",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kp",
+    "punycode": "kp",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "kpmg",
+    "punycode": "kpmg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kpn",
+    "punycode": "kpn",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kr",
+    "punycode": "kr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "krd",
+    "punycode": "krd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kred",
+    "punycode": "kred",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kuokgroup",
+    "punycode": "kuokgroup",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kw",
+    "punycode": "kw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ky",
+    "punycode": "ky",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "kyoto",
+    "punycode": "kyoto",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "kz",
+    "punycode": "kz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "la",
+    "punycode": "la",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "lacaixa",
+    "punycode": "lacaixa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ladbrokes",
+    "punycode": "ladbrokes",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "lamborghini",
+    "punycode": "lamborghini",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lamer",
+    "punycode": "lamer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lancaster",
+    "punycode": "lancaster",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "lancia",
+    "punycode": "lancia",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "lancome",
+    "punycode": "lancome",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "land",
+    "punycode": "land",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "landrover",
+    "punycode": "landrover",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lanxess",
+    "punycode": "lanxess",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lasalle",
+    "punycode": "lasalle",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lat",
+    "punycode": "lat",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "latino",
+    "punycode": "latino",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "latrobe",
+    "punycode": "latrobe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "law",
+    "punycode": "law",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lawyer",
+    "punycode": "lawyer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lb",
+    "punycode": "lb",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "lc",
+    "punycode": "lc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "lds",
+    "punycode": "lds",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lease",
+    "punycode": "lease",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "leclerc",
+    "punycode": "leclerc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lefrak",
+    "punycode": "lefrak",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "legal",
+    "punycode": "legal",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lego",
+    "punycode": "lego",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lexus",
+    "punycode": "lexus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lgbt",
+    "punycode": "lgbt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "li",
+    "punycode": "li",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "liaison",
+    "punycode": "liaison",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "lidl",
+    "punycode": "lidl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "life",
+    "punycode": "life",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lifeinsurance",
+    "punycode": "lifeinsurance",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lifestyle",
+    "punycode": "lifestyle",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lighting",
+    "punycode": "lighting",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "like",
+    "punycode": "like",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lilly",
+    "punycode": "lilly",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "limited",
+    "punycode": "limited",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "limo",
+    "punycode": "limo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lincoln",
+    "punycode": "lincoln",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "linde",
+    "punycode": "linde",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "link",
+    "punycode": "link",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lipsy",
+    "punycode": "lipsy",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "live",
+    "punycode": "live",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "living",
+    "punycode": "living",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lixil",
+    "punycode": "lixil",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "lk",
+    "punycode": "lk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "llc",
+    "punycode": "llc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "llp",
+    "punycode": "llp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "loan",
+    "punycode": "loan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "loans",
+    "punycode": "loans",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "locker",
+    "punycode": "locker",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "locus",
+    "punycode": "locus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "loft",
+    "punycode": "loft",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "lol",
+    "punycode": "lol",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "london",
+    "punycode": "london",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lotte",
+    "punycode": "lotte",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lotto",
+    "punycode": "lotto",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "love",
+    "punycode": "love",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lpl",
+    "punycode": "lpl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lplfinancial",
+    "punycode": "lplfinancial",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lr",
+    "punycode": "lr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ls",
+    "punycode": "ls",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "lt",
+    "punycode": "lt",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ltd",
+    "punycode": "ltd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ltda",
+    "punycode": "ltda",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lu",
+    "punycode": "lu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "lundbeck",
+    "punycode": "lundbeck",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lupin",
+    "punycode": "lupin",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "luxe",
+    "punycode": "luxe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "luxury",
+    "punycode": "luxury",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "lv",
+    "punycode": "lv",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ly",
+    "punycode": "ly",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ma",
+    "punycode": "ma",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "macys",
+    "punycode": "macys",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "madrid",
+    "punycode": "madrid",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "maif",
+    "punycode": "maif",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "maison",
+    "punycode": "maison",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "makeup",
+    "punycode": "makeup",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "man",
+    "punycode": "man",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "management",
+    "punycode": "management",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mango",
+    "punycode": "mango",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "map",
+    "punycode": "map",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "market",
+    "punycode": "market",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "marketing",
+    "punycode": "marketing",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "markets",
+    "punycode": "markets",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "marriott",
+    "punycode": "marriott",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "marshalls",
+    "punycode": "marshalls",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "maserati",
+    "punycode": "maserati",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mattel",
+    "punycode": "mattel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mba",
+    "punycode": "mba",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mc",
+    "punycode": "mc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mcd",
+    "punycode": "mcd",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mcdonalds",
+    "punycode": "mcdonalds",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mckinsey",
+    "punycode": "mckinsey",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "md",
+    "punycode": "md",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "me",
+    "punycode": "me",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "med",
+    "punycode": "med",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "media",
+    "punycode": "media",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "meet",
+    "punycode": "meet",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "melbourne",
+    "punycode": "melbourne",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "meme",
+    "punycode": "meme",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "memorial",
+    "punycode": "memorial",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "men",
+    "punycode": "men",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "menu",
+    "punycode": "menu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "meo",
+    "punycode": "meo",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "merck",
+    "punycode": "merck",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "merckmsd",
+    "punycode": "merckmsd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "metlife",
+    "punycode": "metlife",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mf",
+    "punycode": "mf",
+    "type": "cctld",
+    "delegated": false
+  },
+  {
+    "tld": "mg",
+    "punycode": "mg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mh",
+    "punycode": "mh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "miami",
+    "punycode": "miami",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "microsoft",
+    "punycode": "microsoft",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mil",
+    "punycode": "mil",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mini",
+    "punycode": "mini",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mint",
+    "punycode": "mint",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mit",
+    "punycode": "mit",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mitsubishi",
+    "punycode": "mitsubishi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mk",
+    "punycode": "mk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ml",
+    "punycode": "ml",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mlb",
+    "punycode": "mlb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mls",
+    "punycode": "mls",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mm",
+    "punycode": "mm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mma",
+    "punycode": "mma",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mn",
+    "punycode": "mn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mo",
+    "punycode": "mo",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mobi",
+    "punycode": "mobi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mobile",
+    "punycode": "mobile",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mobily",
+    "punycode": "mobily",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "moda",
+    "punycode": "moda",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "moe",
+    "punycode": "moe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "moi",
+    "punycode": "moi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mom",
+    "punycode": "mom",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "monash",
+    "punycode": "monash",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "money",
+    "punycode": "money",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "monster",
+    "punycode": "monster",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "montblanc",
+    "punycode": "montblanc",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mopar",
+    "punycode": "mopar",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mormon",
+    "punycode": "mormon",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mortgage",
+    "punycode": "mortgage",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "moscow",
+    "punycode": "moscow",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "moto",
+    "punycode": "moto",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "motorcycles",
+    "punycode": "motorcycles",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mov",
+    "punycode": "mov",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "movie",
+    "punycode": "movie",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "movistar",
+    "punycode": "movistar",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mp",
+    "punycode": "mp",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mq",
+    "punycode": "mq",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mr",
+    "punycode": "mr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ms",
+    "punycode": "ms",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "msd",
+    "punycode": "msd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mt",
+    "punycode": "mt",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mtn",
+    "punycode": "mtn",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mtpc",
+    "punycode": "mtpc",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mtr",
+    "punycode": "mtr",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mu",
+    "punycode": "mu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "museum",
+    "punycode": "museum",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "music",
+    "punycode": "music",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "mutual",
+    "punycode": "mutual",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mutuelle",
+    "punycode": "mutuelle",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "mv",
+    "punycode": "mv",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mw",
+    "punycode": "mw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mx",
+    "punycode": "mx",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "my",
+    "punycode": "my",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "mz",
+    "punycode": "mz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "na",
+    "punycode": "na",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nab",
+    "punycode": "nab",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nadex",
+    "punycode": "nadex",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "nagoya",
+    "punycode": "nagoya",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "name",
+    "punycode": "name",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nationwide",
+    "punycode": "nationwide",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "natura",
+    "punycode": "natura",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "navy",
+    "punycode": "navy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nba",
+    "punycode": "nba",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nc",
+    "punycode": "nc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ne",
+    "punycode": "ne",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nec",
+    "punycode": "nec",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "net",
+    "punycode": "net",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "netbank",
+    "punycode": "netbank",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "netflix",
+    "punycode": "netflix",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "network",
+    "punycode": "network",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "neustar",
+    "punycode": "neustar",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "new",
+    "punycode": "new",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "newholland",
+    "punycode": "newholland",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "news",
+    "punycode": "news",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "next",
+    "punycode": "next",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nextdirect",
+    "punycode": "nextdirect",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nexus",
+    "punycode": "nexus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nf",
+    "punycode": "nf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nfl",
+    "punycode": "nfl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ng",
+    "punycode": "ng",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ngo",
+    "punycode": "ngo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nhk",
+    "punycode": "nhk",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ni",
+    "punycode": "ni",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nico",
+    "punycode": "nico",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nike",
+    "punycode": "nike",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nikon",
+    "punycode": "nikon",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ninja",
+    "punycode": "ninja",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nissan",
+    "punycode": "nissan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nissay",
+    "punycode": "nissay",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nl",
+    "punycode": "nl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "no",
+    "punycode": "no",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nokia",
+    "punycode": "nokia",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "northwesternmutual",
+    "punycode": "northwesternmutual",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "norton",
+    "punycode": "norton",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "now",
+    "punycode": "now",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nowruz",
+    "punycode": "nowruz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nowtv",
+    "punycode": "nowtv",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "np",
+    "punycode": "np",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nr",
+    "punycode": "nr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nra",
+    "punycode": "nra",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nrw",
+    "punycode": "nrw",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ntt",
+    "punycode": "ntt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nu",
+    "punycode": "nu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "nyc",
+    "punycode": "nyc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "nz",
+    "punycode": "nz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "obi",
+    "punycode": "obi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "observer",
+    "punycode": "observer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "off",
+    "punycode": "off",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "office",
+    "punycode": "office",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "okinawa",
+    "punycode": "okinawa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "olayan",
+    "punycode": "olayan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "olayangroup",
+    "punycode": "olayangroup",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "oldnavy",
+    "punycode": "oldnavy",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ollo",
+    "punycode": "ollo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "om",
+    "punycode": "om",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "omega",
+    "punycode": "omega",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "one",
+    "punycode": "one",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ong",
+    "punycode": "ong",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "onl",
+    "punycode": "onl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "online",
+    "punycode": "online",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "onyourside",
+    "punycode": "onyourside",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ooo",
+    "punycode": "ooo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "open",
+    "punycode": "open",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "oracle",
+    "punycode": "oracle",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "orange",
+    "punycode": "orange",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "org",
+    "punycode": "org",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "organic",
+    "punycode": "organic",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "orientexpress",
+    "punycode": "orientexpress",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "origins",
+    "punycode": "origins",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "osaka",
+    "punycode": "osaka",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "otsuka",
+    "punycode": "otsuka",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ott",
+    "punycode": "ott",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ovh",
+    "punycode": "ovh",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pa",
+    "punycode": "pa",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "page",
+    "punycode": "page",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pamperedchef",
+    "punycode": "pamperedchef",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "panasonic",
+    "punycode": "panasonic",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "panerai",
+    "punycode": "panerai",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "paris",
+    "punycode": "paris",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pars",
+    "punycode": "pars",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "partners",
+    "punycode": "partners",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "parts",
+    "punycode": "parts",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "party",
+    "punycode": "party",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "passagens",
+    "punycode": "passagens",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "pay",
+    "punycode": "pay",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pccw",
+    "punycode": "pccw",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pe",
+    "punycode": "pe",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pet",
+    "punycode": "pet",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pf",
+    "punycode": "pf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pfizer",
+    "punycode": "pfizer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pg",
+    "punycode": "pg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ph",
+    "punycode": "ph",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pharmacy",
+    "punycode": "pharmacy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "phd",
+    "punycode": "phd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "philips",
+    "punycode": "philips",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "phone",
+    "punycode": "phone",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "photo",
+    "punycode": "photo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "photography",
+    "punycode": "photography",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "photos",
+    "punycode": "photos",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "physio",
+    "punycode": "physio",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "piaget",
+    "punycode": "piaget",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "pics",
+    "punycode": "pics",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pictet",
+    "punycode": "pictet",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pictures",
+    "punycode": "pictures",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pid",
+    "punycode": "pid",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pin",
+    "punycode": "pin",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ping",
+    "punycode": "ping",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pink",
+    "punycode": "pink",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pioneer",
+    "punycode": "pioneer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pizza",
+    "punycode": "pizza",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pk",
+    "punycode": "pk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pl",
+    "punycode": "pl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "place",
+    "punycode": "place",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "play",
+    "punycode": "play",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "playstation",
+    "punycode": "playstation",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "plumbing",
+    "punycode": "plumbing",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "plus",
+    "punycode": "plus",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pm",
+    "punycode": "pm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pn",
+    "punycode": "pn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pnc",
+    "punycode": "pnc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pohl",
+    "punycode": "pohl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "poker",
+    "punycode": "poker",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "politie",
+    "punycode": "politie",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "porn",
+    "punycode": "porn",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "post",
+    "punycode": "post",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pr",
+    "punycode": "pr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pramerica",
+    "punycode": "pramerica",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "praxi",
+    "punycode": "praxi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "press",
+    "punycode": "press",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "prime",
+    "punycode": "prime",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pro",
+    "punycode": "pro",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "prod",
+    "punycode": "prod",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "productions",
+    "punycode": "productions",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "prof",
+    "punycode": "prof",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "progressive",
+    "punycode": "progressive",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "promo",
+    "punycode": "promo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "properties",
+    "punycode": "properties",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "property",
+    "punycode": "property",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "protection",
+    "punycode": "protection",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pru",
+    "punycode": "pru",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "prudential",
+    "punycode": "prudential",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ps",
+    "punycode": "ps",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pt",
+    "punycode": "pt",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pub",
+    "punycode": "pub",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "pw",
+    "punycode": "pw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "pwc",
+    "punycode": "pwc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "py",
+    "punycode": "py",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "qa",
+    "punycode": "qa",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "qpon",
+    "punycode": "qpon",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "quebec",
+    "punycode": "quebec",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "quest",
+    "punycode": "quest",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "qvc",
+    "punycode": "qvc",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "racing",
+    "punycode": "racing",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "radio",
+    "punycode": "radio",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "raid",
+    "punycode": "raid",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "re",
+    "punycode": "re",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "read",
+    "punycode": "read",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "realestate",
+    "punycode": "realestate",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "realtor",
+    "punycode": "realtor",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "realty",
+    "punycode": "realty",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "recipes",
+    "punycode": "recipes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "red",
+    "punycode": "red",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "redstone",
+    "punycode": "redstone",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "redumbrella",
+    "punycode": "redumbrella",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rehab",
+    "punycode": "rehab",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "reise",
+    "punycode": "reise",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "reisen",
+    "punycode": "reisen",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "reit",
+    "punycode": "reit",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "reliance",
+    "punycode": "reliance",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ren",
+    "punycode": "ren",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rent",
+    "punycode": "rent",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rentals",
+    "punycode": "rentals",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "repair",
+    "punycode": "repair",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "report",
+    "punycode": "report",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "republican",
+    "punycode": "republican",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rest",
+    "punycode": "rest",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "restaurant",
+    "punycode": "restaurant",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "review",
+    "punycode": "review",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "reviews",
+    "punycode": "reviews",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rexroth",
+    "punycode": "rexroth",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rich",
+    "punycode": "rich",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "richardli",
+    "punycode": "richardli",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ricoh",
+    "punycode": "ricoh",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rightathome",
+    "punycode": "rightathome",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ril",
+    "punycode": "ril",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rio",
+    "punycode": "rio",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rip",
+    "punycode": "rip",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rmit",
+    "punycode": "rmit",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ro",
+    "punycode": "ro",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "rocher",
+    "punycode": "rocher",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "rocks",
+    "punycode": "rocks",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rodeo",
+    "punycode": "rodeo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rogers",
+    "punycode": "rogers",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "room",
+    "punycode": "room",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rs",
+    "punycode": "rs",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "rsvp",
+    "punycode": "rsvp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ru",
+    "punycode": "ru",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "rugby",
+    "punycode": "rugby",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ruhr",
+    "punycode": "ruhr",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "run",
+    "punycode": "run",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "rw",
+    "punycode": "rw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "rwe",
+    "punycode": "rwe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ryukyu",
+    "punycode": "ryukyu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sa",
+    "punycode": "sa",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "saarland",
+    "punycode": "saarland",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "safe",
+    "punycode": "safe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "safety",
+    "punycode": "safety",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sakura",
+    "punycode": "sakura",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sale",
+    "punycode": "sale",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "salon",
+    "punycode": "salon",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "samsclub",
+    "punycode": "samsclub",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "samsung",
+    "punycode": "samsung",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sandvik",
+    "punycode": "sandvik",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sandvikcoromant",
+    "punycode": "sandvikcoromant",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sanofi",
+    "punycode": "sanofi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sap",
+    "punycode": "sap",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sapo",
+    "punycode": "sapo",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "sarl",
+    "punycode": "sarl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sas",
+    "punycode": "sas",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "save",
+    "punycode": "save",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "saxo",
+    "punycode": "saxo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sb",
+    "punycode": "sb",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sbi",
+    "punycode": "sbi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sbs",
+    "punycode": "sbs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sc",
+    "punycode": "sc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sca",
+    "punycode": "sca",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "scb",
+    "punycode": "scb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "schaeffler",
+    "punycode": "schaeffler",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "schmidt",
+    "punycode": "schmidt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "scholarships",
+    "punycode": "scholarships",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "school",
+    "punycode": "school",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "schule",
+    "punycode": "schule",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "schwarz",
+    "punycode": "schwarz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "science",
+    "punycode": "science",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "scjohnson",
+    "punycode": "scjohnson",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "scor",
+    "punycode": "scor",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "scot",
+    "punycode": "scot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sd",
+    "punycode": "sd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "se",
+    "punycode": "se",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "search",
+    "punycode": "search",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "seat",
+    "punycode": "seat",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "secure",
+    "punycode": "secure",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "security",
+    "punycode": "security",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "seek",
+    "punycode": "seek",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "select",
+    "punycode": "select",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sener",
+    "punycode": "sener",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "services",
+    "punycode": "services",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ses",
+    "punycode": "ses",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "seven",
+    "punycode": "seven",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sew",
+    "punycode": "sew",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sex",
+    "punycode": "sex",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sexy",
+    "punycode": "sexy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sfr",
+    "punycode": "sfr",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sg",
+    "punycode": "sg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sh",
+    "punycode": "sh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "shangrila",
+    "punycode": "shangrila",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sharp",
+    "punycode": "sharp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "shaw",
+    "punycode": "shaw",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "shell",
+    "punycode": "shell",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "shia",
+    "punycode": "shia",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "shiksha",
+    "punycode": "shiksha",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "shoes",
+    "punycode": "shoes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "shop",
+    "punycode": "shop",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "shopping",
+    "punycode": "shopping",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "shouji",
+    "punycode": "shouji",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "show",
+    "punycode": "show",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "showtime",
+    "punycode": "showtime",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "shriram",
+    "punycode": "shriram",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "si",
+    "punycode": "si",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "silk",
+    "punycode": "silk",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sina",
+    "punycode": "sina",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "singles",
+    "punycode": "singles",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "site",
+    "punycode": "site",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sj",
+    "punycode": "sj",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sk",
+    "punycode": "sk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ski",
+    "punycode": "ski",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "skin",
+    "punycode": "skin",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sky",
+    "punycode": "sky",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "skype",
+    "punycode": "skype",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sl",
+    "punycode": "sl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sling",
+    "punycode": "sling",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sm",
+    "punycode": "sm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "smart",
+    "punycode": "smart",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "smile",
+    "punycode": "smile",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sn",
+    "punycode": "sn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sncf",
+    "punycode": "sncf",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "so",
+    "punycode": "so",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "soccer",
+    "punycode": "soccer",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "social",
+    "punycode": "social",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "softbank",
+    "punycode": "softbank",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "software",
+    "punycode": "software",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sohu",
+    "punycode": "sohu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "solar",
+    "punycode": "solar",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "solutions",
+    "punycode": "solutions",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "song",
+    "punycode": "song",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sony",
+    "punycode": "sony",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "soy",
+    "punycode": "soy",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "spa",
+    "punycode": "spa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "space",
+    "punycode": "space",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "spiegel",
+    "punycode": "spiegel",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "sport",
+    "punycode": "sport",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "spot",
+    "punycode": "spot",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "spreadbetting",
+    "punycode": "spreadbetting",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "sr",
+    "punycode": "sr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "srl",
+    "punycode": "srl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "srt",
+    "punycode": "srt",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ss",
+    "punycode": "ss",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "st",
+    "punycode": "st",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "stada",
+    "punycode": "stada",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "staples",
+    "punycode": "staples",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "star",
+    "punycode": "star",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "starhub",
+    "punycode": "starhub",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "statebank",
+    "punycode": "statebank",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "statefarm",
+    "punycode": "statefarm",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "statoil",
+    "punycode": "statoil",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "stc",
+    "punycode": "stc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "stcgroup",
+    "punycode": "stcgroup",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "stockholm",
+    "punycode": "stockholm",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "storage",
+    "punycode": "storage",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "store",
+    "punycode": "store",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "stream",
+    "punycode": "stream",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "studio",
+    "punycode": "studio",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "study",
+    "punycode": "study",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "style",
+    "punycode": "style",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "su",
+    "punycode": "su",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sucks",
+    "punycode": "sucks",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "supplies",
+    "punycode": "supplies",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "supply",
+    "punycode": "supply",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "support",
+    "punycode": "support",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "surf",
+    "punycode": "surf",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "surgery",
+    "punycode": "surgery",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "suzuki",
+    "punycode": "suzuki",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sv",
+    "punycode": "sv",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "swatch",
+    "punycode": "swatch",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "swiftcover",
+    "punycode": "swiftcover",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "swiss",
+    "punycode": "swiss",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sx",
+    "punycode": "sx",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sy",
+    "punycode": "sy",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "sydney",
+    "punycode": "sydney",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "symantec",
+    "punycode": "symantec",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "systems",
+    "punycode": "systems",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "sz",
+    "punycode": "sz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tab",
+    "punycode": "tab",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "taipei",
+    "punycode": "taipei",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "talk",
+    "punycode": "talk",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "taobao",
+    "punycode": "taobao",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "target",
+    "punycode": "target",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tatamotors",
+    "punycode": "tatamotors",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tatar",
+    "punycode": "tatar",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tattoo",
+    "punycode": "tattoo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tax",
+    "punycode": "tax",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "taxi",
+    "punycode": "taxi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tc",
+    "punycode": "tc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tci",
+    "punycode": "tci",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "td",
+    "punycode": "td",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tdk",
+    "punycode": "tdk",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "team",
+    "punycode": "team",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tech",
+    "punycode": "tech",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "technology",
+    "punycode": "technology",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tel",
+    "punycode": "tel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "telecity",
+    "punycode": "telecity",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "telefonica",
+    "punycode": "telefonica",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "temasek",
+    "punycode": "temasek",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tennis",
+    "punycode": "tennis",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "teva",
+    "punycode": "teva",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tf",
+    "punycode": "tf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tg",
+    "punycode": "tg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "th",
+    "punycode": "th",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "thd",
+    "punycode": "thd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "theater",
+    "punycode": "theater",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "theatre",
+    "punycode": "theatre",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tiaa",
+    "punycode": "tiaa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tickets",
+    "punycode": "tickets",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tienda",
+    "punycode": "tienda",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tiffany",
+    "punycode": "tiffany",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "tips",
+    "punycode": "tips",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tires",
+    "punycode": "tires",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tirol",
+    "punycode": "tirol",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tj",
+    "punycode": "tj",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tjmaxx",
+    "punycode": "tjmaxx",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tjx",
+    "punycode": "tjx",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tk",
+    "punycode": "tk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tkmaxx",
+    "punycode": "tkmaxx",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tl",
+    "punycode": "tl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tm",
+    "punycode": "tm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tmall",
+    "punycode": "tmall",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tn",
+    "punycode": "tn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "to",
+    "punycode": "to",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "today",
+    "punycode": "today",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tokyo",
+    "punycode": "tokyo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tools",
+    "punycode": "tools",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "top",
+    "punycode": "top",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "toray",
+    "punycode": "toray",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "toshiba",
+    "punycode": "toshiba",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "total",
+    "punycode": "total",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tours",
+    "punycode": "tours",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "town",
+    "punycode": "town",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "toyota",
+    "punycode": "toyota",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "toys",
+    "punycode": "toys",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tp",
+    "punycode": "tp",
+    "type": "cctld",
+    "delegated": false
+  },
+  {
+    "tld": "tr",
+    "punycode": "tr",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "trade",
+    "punycode": "trade",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "trading",
+    "punycode": "trading",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "training",
+    "punycode": "training",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "travel",
+    "punycode": "travel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "travelchannel",
+    "punycode": "travelchannel",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "travelers",
+    "punycode": "travelers",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "travelersinsurance",
+    "punycode": "travelersinsurance",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "trust",
+    "punycode": "trust",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "trv",
+    "punycode": "trv",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tt",
+    "punycode": "tt",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tube",
+    "punycode": "tube",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tui",
+    "punycode": "tui",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tunes",
+    "punycode": "tunes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tushu",
+    "punycode": "tushu",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tv",
+    "punycode": "tv",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tvs",
+    "punycode": "tvs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "tw",
+    "punycode": "tw",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "tz",
+    "punycode": "tz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ua",
+    "punycode": "ua",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ubank",
+    "punycode": "ubank",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ubs",
+    "punycode": "ubs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "uconnect",
+    "punycode": "uconnect",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ug",
+    "punycode": "ug",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "uk",
+    "punycode": "uk",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "um",
+    "punycode": "um",
+    "type": "cctld",
+    "delegated": false
+  },
+  {
+    "tld": "unicom",
+    "punycode": "unicom",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "university",
+    "punycode": "university",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "uno",
+    "punycode": "uno",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "uol",
+    "punycode": "uol",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ups",
+    "punycode": "ups",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "us",
+    "punycode": "us",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "uy",
+    "punycode": "uy",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "uz",
+    "punycode": "uz",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "va",
+    "punycode": "va",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "vacations",
+    "punycode": "vacations",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vana",
+    "punycode": "vana",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vanguard",
+    "punycode": "vanguard",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vc",
+    "punycode": "vc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ve",
+    "punycode": "ve",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "vegas",
+    "punycode": "vegas",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ventures",
+    "punycode": "ventures",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "verisign",
+    "punycode": "verisign",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "versicherung",
+    "punycode": "versicherung",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vet",
+    "punycode": "vet",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vg",
+    "punycode": "vg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "vi",
+    "punycode": "vi",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "viajes",
+    "punycode": "viajes",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "video",
+    "punycode": "video",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vig",
+    "punycode": "vig",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "viking",
+    "punycode": "viking",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "villas",
+    "punycode": "villas",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vin",
+    "punycode": "vin",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vip",
+    "punycode": "vip",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "virgin",
+    "punycode": "virgin",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "visa",
+    "punycode": "visa",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vision",
+    "punycode": "vision",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vista",
+    "punycode": "vista",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "vistaprint",
+    "punycode": "vistaprint",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "viva",
+    "punycode": "viva",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vivo",
+    "punycode": "vivo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vlaanderen",
+    "punycode": "vlaanderen",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vn",
+    "punycode": "vn",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "vodka",
+    "punycode": "vodka",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "volkswagen",
+    "punycode": "volkswagen",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "volvo",
+    "punycode": "volvo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vote",
+    "punycode": "vote",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "voting",
+    "punycode": "voting",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "voto",
+    "punycode": "voto",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "voyage",
+    "punycode": "voyage",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vu",
+    "punycode": "vu",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "vuelos",
+    "punycode": "vuelos",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "wales",
+    "punycode": "wales",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "walmart",
+    "punycode": "walmart",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "walter",
+    "punycode": "walter",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wang",
+    "punycode": "wang",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wanggou",
+    "punycode": "wanggou",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "warman",
+    "punycode": "warman",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "watch",
+    "punycode": "watch",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "watches",
+    "punycode": "watches",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "weather",
+    "punycode": "weather",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "weatherchannel",
+    "punycode": "weatherchannel",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "web",
+    "punycode": "web",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "webcam",
+    "punycode": "webcam",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "weber",
+    "punycode": "weber",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "website",
+    "punycode": "website",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wed",
+    "punycode": "wed",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wedding",
+    "punycode": "wedding",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "weibo",
+    "punycode": "weibo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "weir",
+    "punycode": "weir",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wf",
+    "punycode": "wf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "whoswho",
+    "punycode": "whoswho",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wien",
+    "punycode": "wien",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wiki",
+    "punycode": "wiki",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "williamhill",
+    "punycode": "williamhill",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "win",
+    "punycode": "win",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "windows",
+    "punycode": "windows",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wine",
+    "punycode": "wine",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "winners",
+    "punycode": "winners",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wme",
+    "punycode": "wme",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wolterskluwer",
+    "punycode": "wolterskluwer",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "woodside",
+    "punycode": "woodside",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "work",
+    "punycode": "work",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "works",
+    "punycode": "works",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "world",
+    "punycode": "world",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wow",
+    "punycode": "wow",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ws",
+    "punycode": "ws",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "wtc",
+    "punycode": "wtc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "wtf",
+    "punycode": "wtf",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "xbox",
+    "punycode": "xbox",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "xerox",
+    "punycode": "xerox",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "xfinity",
+    "punycode": "xfinity",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "xihuan",
+    "punycode": "xihuan",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "xin",
+    "punycode": "xin",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "测试",
+    "punycode": "xn--0zwm56d",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "कॉम",
+    "punycode": "xn--11b4c3d",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "परीक्षा",
+    "punycode": "xn--11b5bs3a9aj6g",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "セール",
+    "punycode": "xn--1ck2e1b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "佛山",
+    "punycode": "xn--1qqw23a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ಭಾರತ",
+    "punycode": "xn--2scrj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ಭಾರತ",
+    "punycode": "xn--2scrj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "慈善",
+    "punycode": "xn--30rr7y",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "集团",
+    "punycode": "xn--3bst00m",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "在线",
+    "punycode": "xn--3ds443g",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "한국",
+    "punycode": "xn--3e0b707e",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "한국",
+    "punycode": "xn--3e0b707e",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ଭାରତ",
+    "punycode": "xn--3hcrj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ଭାରତ",
+    "punycode": "xn--3hcrj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "大众汽车",
+    "punycode": "xn--3oq18vl8pn36a",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "点看",
+    "punycode": "xn--3pxu8k",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "คอม",
+    "punycode": "xn--42c2d9a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ভাৰত",
+    "punycode": "xn--45br5cyl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ভাৰত",
+    "punycode": "xn--45br5cyl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ভারত",
+    "punycode": "xn--45brj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ভারত",
+    "punycode": "xn--45brj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "八卦",
+    "punycode": "xn--45q11c",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ישראל",
+    "punycode": "xn--4dbrk0ce",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ישראל",
+    "punycode": "xn--4dbrk0ce",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "موقع",
+    "punycode": "xn--4gbrim",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "一号店",
+    "punycode": "xn--4gq48lf9j",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "বাংলা",
+    "punycode": "xn--54b7fta0cc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "বাংলা",
+    "punycode": "xn--54b7fta0cc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "公益",
+    "punycode": "xn--55qw42g",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "公司",
+    "punycode": "xn--55qx5d",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "香格里拉",
+    "punycode": "xn--5su34j936bgsg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "网站",
+    "punycode": "xn--5tzm5g",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "移动",
+    "punycode": "xn--6frz82g",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "我爱你",
+    "punycode": "xn--6qq986b3xl",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "москва",
+    "punycode": "xn--80adxhks",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "испытание",
+    "punycode": "xn--80akhbyknj4f",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "қаз",
+    "punycode": "xn--80ao21a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "қаз",
+    "punycode": "xn--80ao21a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "католик",
+    "punycode": "xn--80aqecdr1a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "онлайн",
+    "punycode": "xn--80asehdb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "сайт",
+    "punycode": "xn--80aswg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "联通",
+    "punycode": "xn--8y0a063a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "срб",
+    "punycode": "xn--90a3ac",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "срб",
+    "punycode": "xn--90a3ac",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "бг",
+    "punycode": "xn--90ae",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "бг",
+    "punycode": "xn--90ae",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "бел",
+    "punycode": "xn--90ais",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "бел",
+    "punycode": "xn--90ais",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "קום",
+    "punycode": "xn--9dbq2a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "时尚",
+    "punycode": "xn--9et52u",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "微博",
+    "punycode": "xn--9krt00a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "테스트",
+    "punycode": "xn--9t4b11yi5a",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "淡马锡",
+    "punycode": "xn--b4w605ferd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ファッション",
+    "punycode": "xn--bck1b9a5dre4c",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "орг",
+    "punycode": "xn--c1avg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "नेट",
+    "punycode": "xn--c2br7g",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ストア",
+    "punycode": "xn--cck2b3b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "アマゾン",
+    "punycode": "xn--cckwcxetd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "삼성",
+    "punycode": "xn--cg4bki",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "சிங்கப்பூர்",
+    "punycode": "xn--clchc0ea0b2g2a9gcd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "சிங்கப்பூர்",
+    "punycode": "xn--clchc0ea0b2g2a9gcd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "商标",
+    "punycode": "xn--czr694b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "商店",
+    "punycode": "xn--czrs0t",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "商城",
+    "punycode": "xn--czru2d",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "дети",
+    "punycode": "xn--d1acj3b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "мкд",
+    "punycode": "xn--d1alf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "мкд",
+    "punycode": "xn--d1alf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "טעסט",
+    "punycode": "xn--deba0ad",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "ею",
+    "punycode": "xn--e1a4c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ею",
+    "punycode": "xn--e1a4c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ポイント",
+    "punycode": "xn--eckvdtc9d",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "新闻",
+    "punycode": "xn--efvy88h",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "工行",
+    "punycode": "xn--estv75g",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "家電",
+    "punycode": "xn--fct429k",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "كوم",
+    "punycode": "xn--fhbei",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "中文网",
+    "punycode": "xn--fiq228c5hs",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "中信",
+    "punycode": "xn--fiq64b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "中国",
+    "punycode": "xn--fiqs8s",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "中国",
+    "punycode": "xn--fiqs8s",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "中國",
+    "punycode": "xn--fiqz9s",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "中國",
+    "punycode": "xn--fiqz9s",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "娱乐",
+    "punycode": "xn--fjq720a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "谷歌",
+    "punycode": "xn--flw351e",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "భారత్",
+    "punycode": "xn--fpcrj9c3d",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "భారత్",
+    "punycode": "xn--fpcrj9c3d",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ලංකා",
+    "punycode": "xn--fzc2c9e2c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ලංකා",
+    "punycode": "xn--fzc2c9e2c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "電訊盈科",
+    "punycode": "xn--fzys8d69uvgm",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "购物",
+    "punycode": "xn--g2xx48c",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "測試",
+    "punycode": "xn--g6w251d",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "クラウド",
+    "punycode": "xn--gckr3f0f",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ભારત",
+    "punycode": "xn--gecrj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ભારત",
+    "punycode": "xn--gecrj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "通販",
+    "punycode": "xn--gk3at1e",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "भारतम्",
+    "punycode": "xn--h2breg3eve",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "भारतम्",
+    "punycode": "xn--h2breg3eve",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "भारत",
+    "punycode": "xn--h2brj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "भारत",
+    "punycode": "xn--h2brj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "भारोत",
+    "punycode": "xn--h2brj9c8c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "भारोत",
+    "punycode": "xn--h2brj9c8c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "آزمایشی",
+    "punycode": "xn--hgbk6aj7f53bba",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "பரிட்சை",
+    "punycode": "xn--hlcj6aya9esc7a",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "网店",
+    "punycode": "xn--hxt814e",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "संगठन",
+    "punycode": "xn--i1b6b1a6a2e",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "餐厅",
+    "punycode": "xn--imr513n",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "网络",
+    "punycode": "xn--io0a7i",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ком",
+    "punycode": "xn--j1aef",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "укр",
+    "punycode": "xn--j1amh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "укр",
+    "punycode": "xn--j1amh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "香港",
+    "punycode": "xn--j6w193g",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "香港",
+    "punycode": "xn--j6w193g",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "亚马逊",
+    "punycode": "xn--jlq480n2rg",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "诺基亚",
+    "punycode": "xn--jlq61u9w7b",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "食品",
+    "punycode": "xn--jvr189m",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "δοκιμή",
+    "punycode": "xn--jxalpdlp",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "飞利浦",
+    "punycode": "xn--kcrx77d1x4a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "إختبار",
+    "punycode": "xn--kgbechtv",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "台湾",
+    "punycode": "xn--kprw13d",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "台湾",
+    "punycode": "xn--kprw13d",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "台灣",
+    "punycode": "xn--kpry57d",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "台灣",
+    "punycode": "xn--kpry57d",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "手表",
+    "punycode": "xn--kpu716f",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "手机",
+    "punycode": "xn--kput3i",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "мон",
+    "punycode": "xn--l1acc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "мон",
+    "punycode": "xn--l1acc",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "الجزائر",
+    "punycode": "xn--lgbbat1ad8j",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "الجزائر",
+    "punycode": "xn--lgbbat1ad8j",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "عمان",
+    "punycode": "xn--mgb9awbf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "عمان",
+    "punycode": "xn--mgb9awbf",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ارامكو",
+    "punycode": "xn--mgba3a3ejt",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ایران",
+    "punycode": "xn--mgba3a4f16a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ایران",
+    "punycode": "xn--mgba3a4f16a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "العليان",
+    "punycode": "xn--mgba7c0bbn0a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "اتصالات",
+    "punycode": "xn--mgbaakc7dvf",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "امارات",
+    "punycode": "xn--mgbaam7a8h",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "امارات",
+    "punycode": "xn--mgbaam7a8h",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "بازار",
+    "punycode": "xn--mgbab2bd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "موريتانيا",
+    "punycode": "xn--mgbah1a3hjkrd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "موريتانيا",
+    "punycode": "xn--mgbah1a3hjkrd",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "پاکستان",
+    "punycode": "xn--mgbai9azgqp6j",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "پاکستان",
+    "punycode": "xn--mgbai9azgqp6j",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "الاردن",
+    "punycode": "xn--mgbayh7gpa",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "الاردن",
+    "punycode": "xn--mgbayh7gpa",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "موبايلي",
+    "punycode": "xn--mgbb9fbpob",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "بارت",
+    "punycode": "xn--mgbbh1a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "بارت",
+    "punycode": "xn--mgbbh1a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "بھارت",
+    "punycode": "xn--mgbbh1a71e",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "بھارت",
+    "punycode": "xn--mgbbh1a71e",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "المغرب",
+    "punycode": "xn--mgbc0a9azcg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "المغرب",
+    "punycode": "xn--mgbc0a9azcg",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ابوظبي",
+    "punycode": "xn--mgbca7dzdo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "البحرين",
+    "punycode": "xn--mgbcpq6gpa1a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "البحرين",
+    "punycode": "xn--mgbcpq6gpa1a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "السعودية",
+    "punycode": "xn--mgberp4a5d4ar",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "السعودية",
+    "punycode": "xn--mgberp4a5d4ar",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ڀارت",
+    "punycode": "xn--mgbgu82a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ڀارت",
+    "punycode": "xn--mgbgu82a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "كاثوليك",
+    "punycode": "xn--mgbi4ecexp",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "سودان",
+    "punycode": "xn--mgbpl2fh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "سودان",
+    "punycode": "xn--mgbpl2fh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "همراه",
+    "punycode": "xn--mgbt3dhd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "عراق",
+    "punycode": "xn--mgbtx2b",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "عراق",
+    "punycode": "xn--mgbtx2b",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "مليسيا",
+    "punycode": "xn--mgbx4cd0ab",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "مليسيا",
+    "punycode": "xn--mgbx4cd0ab",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "澳門",
+    "punycode": "xn--mix891f",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "澳門",
+    "punycode": "xn--mix891f",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "닷컴",
+    "punycode": "xn--mk1bu44c",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "政府",
+    "punycode": "xn--mxtq1m",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "شبكة",
+    "punycode": "xn--ngbc5azd",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "بيتك",
+    "punycode": "xn--ngbe9e0a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "عرب",
+    "punycode": "xn--ngbrx",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "გე",
+    "punycode": "xn--node",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "გე",
+    "punycode": "xn--node",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "机构",
+    "punycode": "xn--nqv7f",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "组织机构",
+    "punycode": "xn--nqv7fs00ema",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "健康",
+    "punycode": "xn--nyqy26a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ไทย",
+    "punycode": "xn--o3cw4h",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ไทย",
+    "punycode": "xn--o3cw4h",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "سورية",
+    "punycode": "xn--ogbpf8fl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "سورية",
+    "punycode": "xn--ogbpf8fl",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "招聘",
+    "punycode": "xn--otu796d",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "рус",
+    "punycode": "xn--p1acf",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "рф",
+    "punycode": "xn--p1ai",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "рф",
+    "punycode": "xn--p1ai",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "珠宝",
+    "punycode": "xn--pbt977c",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "تونس",
+    "punycode": "xn--pgbs0dh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "تونس",
+    "punycode": "xn--pgbs0dh",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "大拿",
+    "punycode": "xn--pssy2u",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ລາວ",
+    "punycode": "xn--q7ce6a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ລາວ",
+    "punycode": "xn--q7ce6a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "みんな",
+    "punycode": "xn--q9jyb4c",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "グーグル",
+    "punycode": "xn--qcka1pmc",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ευ",
+    "punycode": "xn--qxa6a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ευ",
+    "punycode": "xn--qxa6a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ελ",
+    "punycode": "xn--qxam",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ελ",
+    "punycode": "xn--qxam",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "世界",
+    "punycode": "xn--rhqv96g",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "書籍",
+    "punycode": "xn--rovu88b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ഭാരതം",
+    "punycode": "xn--rvc1e0am3e",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ഭാരതം",
+    "punycode": "xn--rvc1e0am3e",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ਭਾਰਤ",
+    "punycode": "xn--s9brj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "ਭਾਰਤ",
+    "punycode": "xn--s9brj9c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "网址",
+    "punycode": "xn--ses554g",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "닷넷",
+    "punycode": "xn--t60b56a",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "コム",
+    "punycode": "xn--tckwe",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "天主教",
+    "punycode": "xn--tiq49xqyj",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "游戏",
+    "punycode": "xn--unup4y",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vermögensberater",
+    "punycode": "xn--vermgensberater-ctb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "vermögensberatung",
+    "punycode": "xn--vermgensberatung-pwb",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "企业",
+    "punycode": "xn--vhquv",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "信息",
+    "punycode": "xn--vuq861b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "嘉里大酒店",
+    "punycode": "xn--w4r85el8fhu5dnra",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "嘉里",
+    "punycode": "xn--w4rs40l",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "مصر",
+    "punycode": "xn--wgbh1c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "مصر",
+    "punycode": "xn--wgbh1c",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "قطر",
+    "punycode": "xn--wgbl6a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "قطر",
+    "punycode": "xn--wgbl6a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "广东",
+    "punycode": "xn--xhq521b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "இலங்கை",
+    "punycode": "xn--xkc2al3hye2a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "இலங்கை",
+    "punycode": "xn--xkc2al3hye2a",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "இந்தியா",
+    "punycode": "xn--xkc2dl3a5ee0h",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "இந்தியா",
+    "punycode": "xn--xkc2dl3a5ee0h",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "հայ",
+    "punycode": "xn--y9a3aq",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "հայ",
+    "punycode": "xn--y9a3aq",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "新加坡",
+    "punycode": "xn--yfro4i67o",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "新加坡",
+    "punycode": "xn--yfro4i67o",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "فلسطين",
+    "punycode": "xn--ygbi2ammx",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "فلسطين",
+    "punycode": "xn--ygbi2ammx",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "テスト",
+    "punycode": "xn--zckzah",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "政务",
+    "punycode": "xn--zfr164b",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "xperia",
+    "punycode": "xperia",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "xxx",
+    "punycode": "xxx",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "xyz",
+    "punycode": "xyz",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "yachts",
+    "punycode": "yachts",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "yahoo",
+    "punycode": "yahoo",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "yamaxun",
+    "punycode": "yamaxun",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "yandex",
+    "punycode": "yandex",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "ye",
+    "punycode": "ye",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "yodobashi",
+    "punycode": "yodobashi",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "yoga",
+    "punycode": "yoga",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "yokohama",
+    "punycode": "yokohama",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "you",
+    "punycode": "you",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "youtube",
+    "punycode": "youtube",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "yt",
+    "punycode": "yt",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "yun",
+    "punycode": "yun",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "za",
+    "punycode": "za",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "zappos",
+    "punycode": "zappos",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "zara",
+    "punycode": "zara",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "zero",
+    "punycode": "zero",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "zip",
+    "punycode": "zip",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "zippo",
+    "punycode": "zippo",
+    "type": "gtld",
+    "delegated": false
+  },
+  {
+    "tld": "zm",
+    "punycode": "zm",
+    "type": "cctld",
+    "delegated": true
+  },
+  {
+    "tld": "zone",
+    "punycode": "zone",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "zuerich",
+    "punycode": "zuerich",
+    "type": "gtld",
+    "delegated": true
+  },
+  {
+    "tld": "zw",
+    "punycode": "zw",
+    "type": "cctld",
+    "delegated": true
+  }
+]

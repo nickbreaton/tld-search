@@ -40,8 +40,6 @@ const program = Effect.gen(function* () {
         Effect.mapError(() => new Error(`Dynadot request failed on page ${page}`)),
       );
 
-      console.log(body);
-
       const result = yield* Schema.decodeUnknownEffect(TldPriceResponse)(body);
 
       if (

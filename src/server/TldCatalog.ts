@@ -1,14 +1,11 @@
 import { Context, Effect, Layer, Schema } from "effect";
+import { domainToUnicode } from "node:url";
 
-import generatedTlds from "../../generated/tlds.json";
+import dynadotTlds from "../../generated/dynadot.json";
+import namecheapTlds from "../../generated/namecheap.json";
+import porkbunTlds from "../../generated/porkbun.json";
 
-const Tld = Schema.Struct({
-  tld: Schema.String,
-  punycode: Schema.String,
-  type: Schema.Literals(["cctld", "gtld", "infrastructure"]),
-});
-
-const Tlds = Schema.Array(Tld);
+const Tlds = Schema.Array(Schema.String);
 
 export class TldCatalog extends Context.Service<
   TldCatalog,
@@ -18,19 +15,21 @@ export class TldCatalog extends Context.Service<
 >()("tldr/server/TldCatalog") {
   static readonly layer = Layer.effect(
     TldCatalog,
-    Schema.decodeUnknownEffect(Tlds)(generatedTlds).pipe(
-      Effect.map((tlds) => {
-        const allTlds = tlds.map((entry) => entry.tld);
+    Effect.gen(function* () {
+      const dynadot = yield* Schema.decodeUnknownEffect(Tlds)(dynadotTlds);
+      const namecheap = yield* Schema.decodeUnknownEffect(Tlds)(namecheapTlds);
+      const porkbun = yield* Schema.decodeUnknownEffect(Tlds)(porkbunTlds);
 
-        const asciiTlds = tlds
-          .filter((entry) => entry.punycode === entry.tld)
-          .map((entry) => entry.tld);
+      const names = [...new Set([...dynadot, ...namecheap, ...porkbun])].sort((left, right) =>
+        left.localeCompare(right),
+      );
 
-        return TldCatalog.of({
-          list: ({ excludeNonAscii }) => (excludeNonAscii ? asciiTlds : allTlds),
-        });
-      }),
-      Effect.orDie,
-    ),
+      const allTlds = names.map(domainToUnicode);
+      const asciiTlds = names.filter((name) => domainToUnicode(name) === name);
+
+      return TldCatalog.of({
+        list: ({ excludeNonAscii }) => (excludeNonAscii ? asciiTlds : allTlds),
+      });
+    }).pipe(Effect.orDie),
   );
 }
