@@ -12,6 +12,7 @@
     "typecheck": "astro check && tsc --noEmit",
     "check": "bun run format:check && bun run lint && bun run typecheck",
     "generate:tlds": "bun run scripts/generate-tlds.ts",
+    "generate:porkbun": "bun run scripts/generate-porkbun.ts",
     "auth": "alchemy profile refresh --profile default --provider Cloudflare"
   },
   "dependencies": {
