@@ -17,6 +17,14 @@ const TldPriceResponse = Schema.Struct({
   }),
 });
 
+class DynadotGenerationError extends Schema.TaggedError<DynadotGenerationError>()(
+  "DynadotGenerationError",
+  {
+    message: Schema.String,
+    cause: Schema.optionalKey(Schema.Defect()),
+  },
+) {}
+
 const program = Effect.gen(function* () {
   const fileSystem = yield* FileSystem.FileSystem;
   const httpClient = (yield* HttpClient.HttpClient).pipe(HttpClient.filterStatusOk);
@@ -37,7 +45,9 @@ const program = Effect.gen(function* () {
 
       const body = yield* httpClient.execute(request).pipe(
         Effect.flatMap((response) => response.json),
-        Effect.mapError(() => new Error(`Dynadot request failed on page ${page}`)),
+        Effect.mapError(
+          () => new DynadotGenerationError({ message: `Dynadot request failed on page ${page}` }),
+        ),
       );
 
       const result = yield* Schema.decodeUnknownEffect(TldPriceResponse)(body);
@@ -47,7 +57,9 @@ const program = Effect.gen(function* () {
         result.TldPriceResponse.Status !== "success"
       ) {
         return yield* Effect.fail(
-          new Error(`Dynadot API rejected page ${page}; check the API key and IP whitelist`),
+          new DynadotGenerationError({
+            message: `Dynadot API rejected page ${page}; check the API key and IP whitelist`,
+          }),
         );
       }
 
@@ -62,7 +74,8 @@ const program = Effect.gen(function* () {
 
   const names = yield* Stream.runCollect(pages);
 
-  if (names.length === 0) return yield* Effect.fail(new Error("Dynadot returned no TLDs"));
+  if (names.length === 0)
+    return yield* Effect.fail(new DynadotGenerationError({ message: "Dynadot returned no TLDs" }));
 
   const tlds = [...new Set(names)].sort((left, right) => left.localeCompare(right));
   yield* fileSystem.writeFileString(outputPath, `${JSON.stringify(tlds, null, 2)}\n`);

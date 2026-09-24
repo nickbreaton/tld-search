@@ -17,6 +17,11 @@ const PricingResponse = Schema.Struct({
   ),
 });
 
+class NameGenerationError extends Schema.TaggedError<NameGenerationError>()("NameGenerationError", {
+  message: Schema.String,
+  cause: Schema.optionalKey(Schema.Defect()),
+}) {}
+
 const program = Effect.gen(function* () {
   const fileSystem = yield* FileSystem.FileSystem;
   const httpClient = (yield* HttpClient.HttpClient).pipe(HttpClient.filterStatusOk);
@@ -34,16 +39,18 @@ const program = Effect.gen(function* () {
         Effect.flatMap((response) => response.json),
         Effect.mapError(
           () =>
-            new Error(
-              `name.com API request failed on page ${page}; check NAME_USERNAME and NAME_API_TOKEN`,
-            ),
+            new NameGenerationError({
+              message: `name.com API request failed on page ${page}; check NAME_USERNAME and NAME_API_TOKEN`,
+            }),
         ),
       );
 
       const result = yield* Schema.decodeUnknownEffect(PricingResponse)(body);
 
       if (result.lastPage < page)
-        return yield* Effect.fail(new Error("Invalid name.com pagination response"));
+        return yield* Effect.fail(
+          new NameGenerationError({ message: "Invalid name.com pagination response" }),
+        );
 
       return [
         result.pricing
@@ -59,7 +66,9 @@ const program = Effect.gen(function* () {
   const tlds = [...new Set(names)].sort((a, b) => a.localeCompare(b));
 
   if (tlds.length === 0)
-    return yield* Effect.fail(new Error("name.com returned no registerable TLDs"));
+    return yield* Effect.fail(
+      new NameGenerationError({ message: "name.com returned no registerable TLDs" }),
+    );
   yield* fileSystem.writeFileString(outputPath, `${JSON.stringify(tlds, null, 2)}\n`);
   yield* Effect.logInfo(`Generated ${tlds.length} name.com TLDs at generated/name.json`);
 });
