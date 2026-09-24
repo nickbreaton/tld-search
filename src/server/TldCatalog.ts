@@ -3,12 +3,12 @@ import { domainToUnicode } from "node:url";
 
 import dynadotTlds from "../../generated/dynadot.json";
 import ianaTlds from "../../generated/iana.json";
-import namecheapTlds from "../../generated/namecheap.json";
+import nameTlds from "../../generated/name.json";
 import porkbunTlds from "../../generated/porkbun.json";
 
 const Tlds = Schema.Array(Schema.String);
 
-type Registrar = "porkbun" | "dynadot" | "namecheap";
+type Registrar = "porkbun" | "dynadot" | "name";
 
 const IanaTlds = Schema.Array(
   Schema.Struct({
@@ -31,19 +31,19 @@ export class TldCatalog extends Context.Service<
     TldCatalog,
     Effect.gen(function* () {
       const dynadot = yield* Schema.decodeUnknownEffect(Tlds)(dynadotTlds);
-      const namecheap = yield* Schema.decodeUnknownEffect(Tlds)(namecheapTlds);
+      const name = yield* Schema.decodeUnknownEffect(Tlds)(nameTlds);
       const porkbun = yield* Schema.decodeUnknownEffect(Tlds)(porkbunTlds);
       const iana = yield* Schema.decodeUnknownEffect(IanaTlds)(ianaTlds);
 
       const registrars = {
         porkbun: new Set(porkbun.map(domainToUnicode)),
         dynadot: new Set(dynadot.map(domainToUnicode)),
-        namecheap: new Set(namecheap.map(domainToUnicode)),
+        name: new Set(name.map(domainToUnicode)),
       };
 
       const rootTlds = new Set(iana.map((entry) => entry.punycode));
 
-      const names = [...new Set([...dynadot, ...namecheap, ...porkbun])]
+      const names = [...new Set([...dynadot, ...name, ...porkbun])]
         .filter((name) => rootTlds.has(name))
         .sort((left, right) => left.localeCompare(right));
 
@@ -65,7 +65,7 @@ export class TldCatalog extends Context.Service<
           const base = {
             porkbun: "https://porkbun.com/tld/{domain}",
             dynadot: "https://www.dynadot.com/domain/{domain}",
-            namecheap: "https://www.namecheap.com/domains/registration/gtld/{domain}/",
+            name: "https://www.name.com/domains/{domain}",
           }[registrar];
 
           const result = base.replace("{domain}", domain);

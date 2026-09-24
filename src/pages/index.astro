@@ -62,10 +62,10 @@ const nonCountryTldSet = new Set(nonCountryTlds);
             <li data-latin={latinTldSet.has(tld)} data-non-country={nonCountryTldSet.has(tld)} hidden={!latinTldSet.has(tld)}>
               {tld}
               <ol>
-                {(["porkbun", "dynadot", "namecheap"] as const).map((registrar) => {
+                {(["porkbun", "dynadot", "name"] as const).map((registrar) => {
                   const href = catalog.getLink(tld, registrar)
                   if (Option.isNone(href)) return null
-                  return <li><a href={href.value.href} target="_blank" rel="noopener noreferrer" class="underline text-sm">{registrar}</a></li>
+                  return <li><a href={href.value.href} target="_blank" rel="noopener noreferrer" class="underline text-sm">{registrar === "name" ? "name.com" : registrar}</a></li>
                 })}
               </ol>
             </li>
