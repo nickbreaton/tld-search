@@ -63,12 +63,12 @@ export class TldCatalog extends Context.Service<
           }
 
           const base = {
-            porkbun: "https://porkbun.com/tld/{domain}",
-            dynadot: "https://www.dynadot.com/domain/{domain}",
-            name: "https://www.name.com/domains/{domain}",
+            porkbun: "https://porkbun.com/tld/{tld}",
+            dynadot: "https://www.dynadot.com/domain/{tld}",
+            name: "https://www.name.com/domains/{tld}",
           }[registrar];
 
-          const result = base.replace("{domain}", domain);
+          const result = base.replace("{tld}", domain);
 
           return Schema.decodeOption(Schema.URLFromString)(result);
         },
