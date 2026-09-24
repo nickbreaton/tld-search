@@ -1,16 +1,17 @@
 ---
-import { Effect } from "effect";
+import { Effect, Option } from "effect";
 
 import { TldCatalog } from "../server/TldCatalog";
 import "../styles/global.css";
 
 export const prerender = false;
 
-const { allTlds, latinTlds, nonCountryTlds } = await Effect.runPromise(
+const { catalog, allTlds, latinTlds, nonCountryTlds } = await Effect.runPromise(
   Effect.gen(function* () {
     const catalog = yield* TldCatalog;
 
     return {
+      catalog,
       allTlds: catalog.list({ excludeNonLatin: false, excludeCountry: false }),
       latinTlds: catalog.list({ excludeNonLatin: true, excludeCountry: false }),
       nonCountryTlds: catalog.list({ excludeNonLatin: false, excludeCountry: true }),
@@ -55,10 +56,18 @@ const nonCountryTldSet = new Set(nonCountryTlds);
       Hide country domain endings
     </label>
 
-      <ul id="tlds" class="grid grid-cols-3">
+      <ul id="tlds" class="grid grid-cols-3 gap-6">
         {
           allTlds.map((tld) => (
-            <li data-latin={latinTldSet.has(tld)} data-non-country={nonCountryTldSet.has(tld)} hidden={!latinTldSet.has(tld)}>{tld}</li>
+            <li data-latin={latinTldSet.has(tld)} data-non-country={nonCountryTldSet.has(tld)} hidden={!latinTldSet.has(tld)}>
+              {tld}
+              <ol>
+                {(["porkbun", "dynadot", "namecheap"] as const).map((registrar) => {
+                  const link = Option.getOrNull(catalog.getLink(tld, registrar));
+                  return link && <li><a href={link.href} target="_blank" rel="noopener noreferrer" class="underline text-sm">{registrar}</a></li>;
+                })}
+              </ol>
+            </li>
           ))
         }
       </ul>

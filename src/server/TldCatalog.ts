@@ -1,4 +1,4 @@
-import { Context, Effect, Layer, Schema } from "effect";
+import { Context, Effect, Layer, Option, Schema } from "effect";
 import { domainToUnicode } from "node:url";
 
 import dynadotTlds from "../../generated/dynadot.json";
@@ -7,6 +7,8 @@ import namecheapTlds from "../../generated/namecheap.json";
 import porkbunTlds from "../../generated/porkbun.json";
 
 const Tlds = Schema.Array(Schema.String);
+
+type Registrar = "porkbun" | "dynadot" | "namecheap";
 
 const IanaTlds = Schema.Array(
   Schema.Struct({
@@ -22,6 +24,7 @@ export class TldCatalog extends Context.Service<
       readonly excludeNonLatin: boolean;
       readonly excludeCountry: boolean;
     }) => ReadonlyArray<string>;
+    readonly getLink: (domain: string, registrar: Registrar) => Option.Option<URL>;
   }
 >()("tldr/server/TldCatalog") {
   static readonly layer = Layer.effect(
@@ -31,6 +34,12 @@ export class TldCatalog extends Context.Service<
       const namecheap = yield* Schema.decodeUnknownEffect(Tlds)(namecheapTlds);
       const porkbun = yield* Schema.decodeUnknownEffect(Tlds)(porkbunTlds);
       const iana = yield* Schema.decodeUnknownEffect(IanaTlds)(ianaTlds);
+
+      const registrars = {
+        porkbun: new Set(porkbun.map(domainToUnicode)),
+        dynadot: new Set(dynadot.map(domainToUnicode)),
+        namecheap: new Set(namecheap.map(domainToUnicode)),
+      };
 
       const rootTlds = new Set(iana.map((entry) => entry.punycode));
 
@@ -45,8 +54,27 @@ export class TldCatalog extends Context.Service<
       );
 
       const allTlds = names.map(domainToUnicode);
+      const availableTlds = new Set(allTlds);
 
       return TldCatalog.of({
+        getLink: (domain, registrar) => {
+          if (!availableTlds.has(domain) || !registrars[registrar].has(domain)) {
+            return Option.none();
+          }
+
+          const base = {
+            porkbun: "https://porkbun.com/tld/",
+            dynadot: "https://www.dynadot.com/domain/",
+            namecheap: "https://www.namecheap.com/domains/registration/gtld/",
+          }[registrar];
+
+          return Option.some(
+            new URL(
+              `${Schema.encodeSync(Schema.StringFromUriComponent)(domain)}${registrar === "namecheap" ? "/" : ""}`,
+              base,
+            ),
+          );
+        },
         list: ({ excludeNonLatin, excludeCountry }) =>
           allTlds.filter(
             (name) =>
