@@ -1,12 +1,12 @@
 # TL;DR
 
-TL;DR stands for “top-level domain that's right for you.” It is an Astro site deployed as a Cloudflare Worker with Alchemy. Jev ranks top-level domains against a visitor's natural-language description.
+TL;DR stands for “top-level domain that's right for you.” It is a SvelteKit site deployed as a Cloudflare Worker with Alchemy. Jev ranks top-level domains against a visitor's natural-language description.
 
 ## Architecture
 
-- Keep every page server-rendered unless a page is explicitly documented otherwise.
-- Use Astro components and plain HTML/CSS. Do not add a frontend framework.
-- Do not add client-side JavaScript without an explicit product requirement.
+- Keep initial pages server-rendered and hydrate interactive filters.
+- Use Svelte components for the hydrated catalog and filters.
+- Keep server-side domain logic in Effect; use SvelteKit remote functions for search.
 - Use Effect for server-side domain logic, validation, configuration, and errors.
 - Import Effect APIs from the highest-level `effect` package, such as `import { Effect, Schema } from "effect"`. Do not import from subpaths such as `effect/Effect` or `effect/Schema`.
 - Provision Cloudflare resources with `alchemy.run.ts`; do not add a Wrangler configuration.

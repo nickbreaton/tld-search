@@ -7,14 +7,13 @@ export const Gateway = Cloudflare.AI.Gateway("TldrGateway", {
   collectLogs: true,
 });
 
-export const Website = Cloudflare.Website.Astro("TldrWebsite", {
+export const Website = Cloudflare.Website.SvelteKit("TldrWebsite", {
   env: {
     AI: Gateway,
   },
   observability: {
     enabled: true,
   },
-  sessionKVBindingName: false,
 });
 
 export type WebsiteEnv = Cloudflare.InferEnv<typeof Website>;

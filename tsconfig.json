@@ -1,11 +1,11 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "types": ["bun", "@cloudflare/workers-types"],
-    "verbatimModuleSyntax": true
-  },
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+    "types": ["node"],
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "strict": true
+  }
 }

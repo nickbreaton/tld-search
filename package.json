@@ -9,24 +9,26 @@
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
     "lint": "oxlint --type-aware",
-    "typecheck": "astro check && tsc --noEmit",
-    "check": "bun run format:check && bun run lint && bun run typecheck",
+    "typecheck": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc --noEmit",
+    "check": "bun run format:check && bun run lint && bun run typecheck && bun run build",
     "generate:iana": "bun run scripts/generate-iana.ts",
     "generate:porkbun": "bun run scripts/generate-porkbun.ts",
     "generate:name": "bun run scripts/generate-name.ts",
     "generate:dynadot": "bun run scripts/generate-dynadot.ts",
-    "auth": "alchemy profile refresh --profile default --provider Cloudflare"
+    "auth": "alchemy profile refresh --profile default --provider Cloudflare",
+    "build": "vite build"
   },
   "dependencies": {
+    "@sveltejs/kit": "^2.70.3",
     "@tailwindcss/vite": "^4.3.3",
     "alchemy": "2.0.0-beta.79",
-    "astro": "7.3.3",
     "effect": "4.0.0-rc.116",
-    "tailwindcss": "^4.3.3"
+    "svelte": "^5.57.1",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
   },
   "devDependencies": {
     "@alchemy.run/frontend-frameworks": "2.0.0-beta.79",
-    "@astrojs/check": "^0.9.10",
     "@effect/platform-bun": "4.0.0-rc.116",
     "@oxlint/plugins": "1.83.0",
     "@types/bun": "^1.4.2",
@@ -34,6 +36,7 @@
     "oxfmt": "^0.68.0",
     "oxlint": "1.83.0",
     "oxlint-tsgolint": "^7.0.2002",
+    "svelte-check": "^4.0.0",
     "typescript": "6.0.3"
   }
 }
