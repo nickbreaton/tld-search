@@ -5,43 +5,23 @@
 
   const catalog = getCatalog();
 
-  // TODO: not final form here, need to adjust to Svelte-isms but
-  // lots changing at once.
-
   let phrase = $state('');
 
   let latinOnly = $state(true);
 
   let excludeCountry = $state(false);
 
-  let settledPhrase = $state('');
+  const input = $derived({ phrase: phrase.trim(), latinOnly, excludeCountry });
 
-  let settledLatin = $state(true);
+  const search = $derived(await (async () => {
+    const value = input;
 
-  let settledCountry = $state(false);
+    if (!value.phrase) return null;
 
-  $effect(() => {
+    await new Promise((resolve) => setTimeout(resolve, 500));
 
-    const currentPhrase = phrase.trim();
-
-    const latin = latinOnly;
-
-    const country = excludeCountry;
-
-    const timer = setTimeout(() => {
-
-      settledPhrase = currentPhrase;
-
-      settledLatin = latin;
-
-      settledCountry = country;
-    }, currentPhrase ? 500 : 0);
-
-    return () => clearTimeout(timer);
-  });
-
-
-  const search = $derived(settledPhrase ? recommend({ phrase: settledPhrase, latinOnly: settledLatin, excludeCountry: settledCountry }) : null);
+    return { input: value, response: recommend(value) };
+  })());
 </script>
 
 <svelte:head>
@@ -57,9 +37,9 @@
   <label><input type="checkbox" bind:checked={latinOnly} /> Hide domain endings with non-Latin characters</label>
   <label><input type="checkbox" bind:checked={excludeCountry} /> Hide country domain endings</label>
 
-  {#if phrase.trim() && (phrase.trim() !== settledPhrase || latinOnly !== settledLatin || excludeCountry !== settledCountry || search?.loading)}
+  {#if phrase.trim() && (phrase.trim() !== search?.input.phrase || latinOnly !== search?.input.latinOnly || excludeCountry !== search?.input.excludeCountry || search.response.loading)}
     <p role="status">Searching…</p>
-  {:else if search?.error}
+  {:else if search?.response.error}
     <p role="alert">Search failed. Please try again.</p>
   {/if}
 
@@ -68,7 +48,7 @@
   <ul class="grid grid-cols-3 gap-6">
     <!-- TODO: not final form here, we may want to leave entire response in place in dom since very large -->
     <!-- then have a secondary location we render out results. this will become more apparent with a favorites section.  -->
-    {#each phrase.trim() ? (phrase.trim() === settledPhrase && latinOnly === settledLatin && excludeCountry === settledCountry && !search?.loading && search?.current ? search.current.map((name) => tlds.find((tld) => tld.name === name)).filter((tld) => tld !== undefined) : []) : tlds.filter((tld) => (!latinOnly || tld.latin) && (!excludeCountry || tld.nonCountry)) as tld (tld.name)}
+    {#each phrase.trim() ? (phrase.trim() === search?.input.phrase && latinOnly === search?.input.latinOnly && excludeCountry === search?.input.excludeCountry && !search.response.loading && search.response.current ? search.response.current.map((name) => tlds.find((tld) => tld.name === name)).filter((tld) => tld !== undefined) : []) : tlds.filter((tld) => (!latinOnly || tld.latin) && (!excludeCountry || tld.nonCountry)) as tld (tld.name)}
       <li>
         .{tld.name}
         <ol>
