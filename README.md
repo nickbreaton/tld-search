@@ -2,7 +2,7 @@
 
 **Top-level domain that's right for you.**
 
-TL;DR is a server-rendered SvelteKit site with hydrated catalog filters and a remote search query that uses Jev to rank top-level domains for a natural-language query. It runs on Cloudflare Workers and is provisioned with Alchemy.
+TL;DR is a server-rendered Solid 2 site with hydrated catalog filters and server functions that use Jev to rank top-level domains for a natural-language query. It runs on Cloudflare Workers and is provisioned with Alchemy.
 
 ## Registrar selection
 

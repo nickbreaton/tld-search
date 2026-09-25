@@ -1,4 +1,4 @@
-import { getRequestEvent } from "$app/server";
+import type { WebsiteEnv } from "../../../alchemy.run";
 import { Context, Effect, Layer, Predicate, Record as EffectRecord, Schema } from "effect";
 
 export interface JevQuestion {
@@ -57,7 +57,13 @@ export class Jev extends Context.Service<
     Jev.of({
       infer: Effect.fn("Jev.infer")(function* (inference) {
         const response = yield* Effect.tryPromise({
-          try: () => getRequestEvent().platform!.env.AI.run("typesafe/jev", { ...inference }),
+          try: async () => {
+            const { env } = await import("cloudflare:workers");
+            // SAFETY: Alchemy binds AI on TldrWebsite for every Worker request.
+            const websiteEnv = env as WebsiteEnv;
+
+            return websiteEnv.AI.run("typesafe/jev", { ...inference });
+          },
           catch: (cause) => new JevError({ cause }),
         });
 

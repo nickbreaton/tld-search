@@ -1,10 +1,10 @@
 import { Context, Effect, Layer, Option, Schema } from "effect";
 import { domainToUnicode } from "node:url";
 
-import dynadotTlds from "../../generated/dynadot.json";
-import ianaTlds from "../../generated/iana.json";
-import nameTlds from "../../generated/name.json";
-import porkbunTlds from "../../generated/porkbun.json";
+import dynadotTlds from "../../../generated/dynadot.json";
+import ianaTlds from "../../../generated/iana.json";
+import nameTlds from "../../../generated/name.json";
+import porkbunTlds from "../../../generated/porkbun.json";
 
 const Tlds = Schema.Array(Schema.String);
 

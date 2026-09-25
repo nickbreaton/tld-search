@@ -9,7 +9,7 @@
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
     "lint": "oxlint --type-aware",
-    "typecheck": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "check": "bun run format:check && bun run lint && bun run typecheck && bun run build",
     "generate:iana": "bun run scripts/generate-iana.ts",
     "generate:porkbun": "bun run scripts/generate-porkbun.ts",
@@ -19,24 +19,24 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.70.3",
+    "@solidjs/web": "2.0.0-rc.9",
     "@tailwindcss/vite": "^4.3.3",
     "alchemy": "2.0.0-beta.79",
     "effect": "4.0.0-rc.116",
-    "svelte": "^5.57.1",
+    "solid-js": "2.0.0-rc.9",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.0"
   },
   "devDependencies": {
-    "@alchemy.run/frontend-frameworks": "2.0.0-beta.79",
     "@effect/platform-bun": "4.0.0-rc.116",
+    "@effect/platform-node": "4.0.0-rc.116",
     "@oxlint/plugins": "1.83.0",
+    "@solidjs/vite-plugin": "3.0.0-next.44",
     "@types/bun": "^1.4.2",
     "fast-xml-parser": "^5.11.1",
     "oxfmt": "^0.68.0",
     "oxlint": "1.83.0",
     "oxlint-tsgolint": "^7.0.2002",
-    "svelte-check": "^4.0.0",
     "typescript": "6.0.3"
   }
 }

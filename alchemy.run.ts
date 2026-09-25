@@ -7,7 +7,7 @@ export const Gateway = Cloudflare.AI.Gateway("TldrGateway", {
   collectLogs: true,
 });
 
-export const Website = Cloudflare.Website.SvelteKit("TldrWebsite", {
+export const Website = Cloudflare.Website.Vite("TldrWebsite", {
   env: {
     AI: Gateway,
   },

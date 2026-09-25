@@ -1,11 +1,17 @@
 {
-  "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "jsxImportSource": "@solidjs/web",
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "types": ["node"],
+    "types": ["node", "vite/client", "@cloudflare/workers-types"],
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
-    "strict": true
-  }
+    "strict": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "alchemy.run.ts", "vite.config.ts", "scripts/**/*.ts"]
 }

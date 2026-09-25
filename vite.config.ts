@@ -1,13 +1,10 @@
 import tailwindcss from "@tailwindcss/vite";
-import { sveltekit } from "@sveltejs/kit/vite";
+import solid from "@solidjs/vite-plugin";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    sveltekit({
-      experimental: { remoteFunctions: true },
-      compilerOptions: { experimental: { async: true } },
-    }),
-  ],
+  plugins: [tailwindcss(), solid({ start: true, ssr: true, serverFunctions: true })],
+  environments: {
+    ssr: { build: { rolldownOptions: { external: ["cloudflare:workers"] } } },
+  },
 });

@@ -1,9 +1,10 @@
-import { query } from "$app/server";
 import { Effect, Option } from "effect";
-import { TldCatalog } from "../server/TldCatalog";
+import { TldCatalog } from "./services/TldCatalog";
 
-export const getCatalog = query(async () =>
-  Effect.runPromise(
+export async function getCatalog() {
+  "use server";
+
+  return Effect.runPromise(
     Effect.gen(function* () {
       const catalog = yield* TldCatalog;
       const latin = new Set(catalog.list({ excludeNonLatin: true, excludeCountry: false }));
@@ -20,5 +21,5 @@ export const getCatalog = query(async () =>
         }),
       }));
     }).pipe(Effect.provide(TldCatalog.layer)),
-  ),
-);
+  );
+}

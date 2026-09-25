@@ -5,8 +5,8 @@ TL;DR stands for “top-level domain that's right for you.” It is a SvelteKit 
 ## Architecture
 
 - Keep initial pages server-rendered and hydrate interactive filters.
-- Use Svelte components for the hydrated catalog and filters.
-- Keep server-side domain logic in Effect; use SvelteKit remote functions for search.
+- Use Solid 2 components for the hydrated catalog and filters.
+- Keep server-side domain logic in Effect; use Solid server functions for catalog and search.
 - Use Effect for server-side domain logic, validation, configuration, and errors.
 - Import Effect APIs from the highest-level `effect` package, such as `import { Effect, Schema } from "effect"`. Do not import from subpaths such as `effect/Effect` or `effect/Schema`.
 - Provision Cloudflare resources with `alchemy.run.ts`; do not add a Wrangler configuration.
