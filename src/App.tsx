@@ -71,7 +71,13 @@ export default function App() {
     const visible = (tld: CatalogTld | undefined): tld is CatalogTld =>
       tld != null && (!showLatinOnly || tld.latin) && (!showNonCountryOnly || tld.nonCountry);
 
-    if (!input.phrase.trim()) return all.filter(visible);
+    if (!input.phrase.trim()) {
+      const favorites = favoriteTldSet();
+
+      return all
+        .filter(visible)
+        .sort((a, b) => Number(favorites.has(b.name)) - Number(favorites.has(a.name)));
+    }
 
     const result = search();
 
