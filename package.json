@@ -19,10 +19,12 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@remix-run/headers": "0.21.2",
     "@solidjs/web": "2.0.0-rc.9",
     "@tailwindcss/vite": "^4.3.3",
     "alchemy": "2.0.0-beta.79",
     "effect": "4.0.0-rc.116",
+    "events-to-async": "^2.0.2",
     "solid-js": "2.0.0-rc.9",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.0"

@@ -2,9 +2,10 @@ import { createMemo, For, isPending, createStore, Loading, onCleanup, Show } fro
 import { getCatalog } from "./server/catalog";
 import { recommend } from "./server/search";
 import "./styles/global.css";
+import { createCookieSignal } from "./createCookieSignal";
 import { invoke } from "@solidjs/web/server-functions";
 
-const SEARCH_DEBOUNCE_MS = 500
+const SEARCH_DEBOUNCE_MS = 500;
 
 type SearchInput = Parameters<typeof recommend>[0];
 
@@ -12,14 +13,12 @@ export default function App() {
   const catalog = createMemo(() => getCatalog());
 
   const catalogByName = createMemo(() => {
-    return new Map(catalog().map((tld) => [tld.name, tld]))
+    return new Map(catalog().map((tld) => [tld.name, tld]));
   });
 
-  const [input, setInput] = createStore<SearchInput>({
-    phrase: "",
-    latinOnly: true,
-    excludeCountry: false,
-  });
+  const [input, setInput] = createStore<Pick<SearchInput, "phrase">>({ phrase: "" });
+  const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
+  const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("excludeCountry", false);
 
   const debouncedPhrase = createMemo(async () => {
     const { phrase } = input;
@@ -45,7 +44,7 @@ export default function App() {
     return invoke(
       recommend,
       { signal: controller.signal },
-      { phrase: debouncedPhrase(), latinOnly: false, excludeCountry: false },
+      { phrase: debouncedPhrase(), latinOnly: latinOnly(), excludeCountry: excludeCountry() },
     )
       .then((names) => ({ names, error: false }))
       .catch(() => ({ names: [], error: true }));
@@ -60,9 +59,7 @@ export default function App() {
 
     if (result.error) return [];
 
-    return result.names
-      .map((name) => catalogByName().get(name))
-      .filter((tld) => tld != null);
+    return result.names.map((name) => catalogByName().get(name)).filter((tld) => tld != null);
   });
 
   return (
@@ -90,16 +87,16 @@ export default function App() {
       <label>
         <input
           type="checkbox"
-          checked={input.latinOnly}
-          // onChange={(event) => updateInput({ latinOnly: event.currentTarget.checked })}
+          checked={latinOnly()}
+          onChange={(event) => setLatinOnly(event.currentTarget.checked)}
         />{" "}
         Hide domain endings with non-Latin characters
       </label>
       <label>
         <input
           type="checkbox"
-          checked={input.excludeCountry}
-          // onChange={(event) => updateInput({ excludeCountry: event.currentTarget.checked })}
+          checked={excludeCountry()}
+          onChange={(event) => setExcludeCountry(event.currentTarget.checked)}
         />{" "}
         Hide country domain endings
       </label>
