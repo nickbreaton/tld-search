@@ -4,7 +4,7 @@ import { action, createMemo, type Accessor } from "solid-js";
 import { on } from 'events-to-async'
 import { affects } from "solid-js";
 
-export function createCookieSignal<T extends string | boolean | number>(name: string, defaultValue: T): [Accessor<T>, (next: T) => void] {
+export function createCookieSignal<T extends unknown>(name: string, defaultValue: T): [Accessor<T>, (next: T) => void] {
   const encode = (value: T): string => JSON.stringify(value)
   const decode = (value: string | null | undefined): T => value == null ? defaultValue : JSON.parse(value)
 

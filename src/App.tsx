@@ -21,6 +21,17 @@ export default function App() {
   const [input, setInput] = createStore<Pick<SearchInput, "phrase">>({ phrase: "" });
   const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
   const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("excludeCountry", false);
+  const [favoriteTlds, setFavoriteTlds] = createCookieSignal<string[]>("favoriteTlds", []);
+  const favoriteTldSet = createMemo(() => new Set(favoriteTlds()));
+
+  const toggleFavorite = (name: string) => {
+    const favorites = new Set(favoriteTlds());
+
+    if (favorites.has(name)) favorites.delete(name);
+    else favorites.add(name);
+
+    setFavoriteTlds([...favorites]);
+  };
 
   const debouncedPhrase = createMemo(async () => {
     const { phrase } = input;
@@ -115,27 +126,42 @@ export default function App() {
         </Show>
         <ul class="grid grid-cols-3 gap-6">
           <For each={visibleTlds()}>
-            {(tld) => (
-              <li>
-                .{tld.name}
-                <ol>
-                  <For each={tld.links}>
-                    {(link) => (
-                      <li>
-                        <a
-                          href={link.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="underline text-sm"
-                        >
-                          {link.registrar === "name" ? "name.com" : link.registrar}
-                        </a>
-                      </li>
-                    )}
-                  </For>
-                </ol>
-              </li>
-            )}
+            {(tld) => {
+              const isFavorite = createMemo(() => favoriteTldSet().has(tld.name));
+
+              return (
+                <li>
+                  <div class="flex items-center justify-between gap-2">
+                    <span>.{tld.name}</span>
+                    <button
+                      type="button"
+                      aria-label={`${isFavorite() ? "Remove" : "Add"} .${tld.name} ${isFavorite() ? "from" : "to"} favorites`}
+                      aria-pressed={isFavorite() ? "true" : "false"}
+                      onClick={() => toggleFavorite(tld.name)}
+                      class="cursor-pointer"
+                    >
+                      {isFavorite() ? "❤️" : "♡"}
+                    </button>
+                  </div>
+                  <ol>
+                    <For each={tld.links}>
+                      {(link) => (
+                        <li>
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="underline text-sm"
+                          >
+                            {link.registrar === "name" ? "name.com" : link.registrar}
+                          </a>
+                        </li>
+                      )}
+                    </For>
+                  </ol>
+                </li>
+              );
+            }}
           </For>
         </ul>
       </Loading>
