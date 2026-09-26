@@ -9,6 +9,8 @@ const SEARCH_DEBOUNCE_MS = 500;
 
 type SearchInput = Parameters<typeof recommend>[0];
 
+type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
+
 export default function App() {
   const catalog = createMemo(() => getCatalog());
 
@@ -52,14 +54,19 @@ export default function App() {
 
   const visibleTlds = createMemo(() => {
     const all = catalog();
+    const showLatinOnly = latinOnly();
+    const showNonCountryOnly = excludeCountry();
 
-    if (!input.phrase.trim()) return all;
+    const visible = (tld: CatalogTld | undefined): tld is CatalogTld =>
+      tld != null && (!showLatinOnly || tld.latin) && (!showNonCountryOnly || tld.nonCountry);
+
+    if (!input.phrase.trim()) return all.filter(visible);
 
     const result = search();
 
     if (result.error) return [];
 
-    return result.names.map((name) => catalogByName().get(name)).filter((tld) => tld != null);
+    return result.names.map((name) => catalogByName().get(name)).filter(visible);
   });
 
   return (
