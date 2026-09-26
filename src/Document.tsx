@@ -1,4 +1,4 @@
-import type { ParentProps } from "solid-js";
+import { Loading, type ParentProps } from "solid-js";
 import { HydrationScript } from "@solidjs/web";
 
 export default function Document(props: ParentProps) {
@@ -10,7 +10,9 @@ export default function Document(props: ParentProps) {
         <title>TLDR — find your top-level domain</title>
         <HydrationScript />
       </head>
-      <body>{props.children}</body>
+      <body>
+        <Loading fallback={null}>{props.children}</Loading>
+      </body>
     </html>
   );
 }

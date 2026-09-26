@@ -84,22 +84,24 @@ export default function App() {
         />
         <Show when={isPending(search)}>Pending...</Show>
       </div>
-      <label>
-        <input
-          type="checkbox"
-          checked={latinOnly()}
-          onChange={(event) => setLatinOnly(event.currentTarget.checked)}
-        />{" "}
-        Hide domain endings with non-Latin characters
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          checked={excludeCountry()}
-          onChange={(event) => setExcludeCountry(event.currentTarget.checked)}
-        />{" "}
-        Hide country domain endings
-      </label>
+      <Loading fallback={null}>
+        <label>
+          <input
+            type="checkbox"
+            checked={latinOnly()}
+            onChange={(event) => setLatinOnly(event.currentTarget.checked)}
+          />{" "}
+          Hide domain endings with non-Latin characters
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={excludeCountry()}
+            onChange={(event) => setExcludeCountry(event.currentTarget.checked)}
+          />{" "}
+          Hide country domain endings
+        </label>
+      </Loading>
       <Loading fallback={<p role="status">Loading catalog…</p>}>
         <Show when={input.phrase.trim() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
