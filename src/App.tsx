@@ -11,6 +11,10 @@ type SearchInput = Parameters<typeof recommend>[0];
 export default function App() {
   const catalog = createMemo(() => getCatalog());
 
+  const catalogByName = createMemo(() => {
+    return new Map(catalog().map((tld) => [tld.name, tld]))
+  });
+
   const [input, setInput] = createStore<SearchInput>({
     phrase: "",
     latinOnly: true,
@@ -56,9 +60,9 @@ export default function App() {
 
     if (result.error) return [];
 
-    const byName = new Map(all.map((tld) => [tld.name, tld]));
-
-    return result.names.map((name) => byName.get(name)).filter((tld) => tld !== undefined);
+    return result.names
+      .map((name) => catalogByName().get(name))
+      .filter((tld) => tld != null);
   });
 
   return (
