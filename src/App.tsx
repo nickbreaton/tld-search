@@ -1,13 +1,13 @@
-import { createMemo, For, isPending, createStore, Loading, onCleanup, Show } from "solid-js";
+import { createMemo, For, isPending, Loading, onCleanup, Show } from "solid-js";
 import { getCatalog } from "./server/catalog";
 import { recommend } from "./server/search";
 import "./styles/global.css";
-import { createCookieSignal } from "./createCookieSignal";
+import { createCookieSignal } from "./state/createCookieSignal";
+import { createPhraseSignal } from "./state/createPhraseSignal";
+import { createFavorites } from "./state/createFavorites";
 import { invoke } from "@solidjs/web/server-functions";
 
 const SEARCH_DEBOUNCE_MS = 500;
-
-type SearchInput = Parameters<typeof recommend>[0];
 
 type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
 
@@ -18,32 +18,22 @@ export default function App() {
     return new Map(catalog().map((tld) => [tld.name, tld]));
   });
 
-  const [input, setInput] = createStore<Pick<SearchInput, "phrase">>({ phrase: "" });
+  const { phrase, setPhrase } = createPhraseSignal();
   const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
   const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("excludeCountry", false);
-  const [favoriteTlds, setFavoriteTlds] = createCookieSignal<string[]>("favoriteTlds", []);
-  const favoriteTldSet = createMemo(() => new Set(favoriteTlds()));
-
-  const toggleFavorite = (name: string) => {
-    const favorites = new Set(favoriteTlds());
-
-    if (favorites.has(name)) favorites.delete(name);
-    else favorites.add(name);
-
-    setFavoriteTlds([...favorites]);
-  };
+  const { favorites, toggle } = createFavorites();
 
   const debouncedPhrase = createMemo(async () => {
-    const { phrase } = input;
+    const value = phrase();
 
-    if (!phrase) return "";
+    if (!value) return "";
 
     const controller = Promise.withResolvers();
     const timeout = setTimeout(() => controller.resolve(), SEARCH_DEBOUNCE_MS);
     onCleanup(() => clearTimeout(timeout));
     await controller.promise;
 
-    return phrase;
+    return value;
   });
 
   const search = createMemo(() => {
@@ -71,12 +61,12 @@ export default function App() {
     const visible = (tld: CatalogTld | undefined): tld is CatalogTld =>
       tld != null && (!showLatinOnly || tld.latin) && (!showNonCountryOnly || tld.nonCountry);
 
-    if (!input.phrase.trim()) {
-      const favorites = favoriteTldSet();
+    if (!phrase()) {
+      const favoriteNames = favorites();
 
       return all
         .filter(visible)
-        .sort((a, b) => Number(favorites.has(b.name)) - Number(favorites.has(a.name)));
+        .sort((a, b) => Number(favoriteNames.has(b.name)) - Number(favoriteNames.has(a.name)));
     }
 
     const result = search();
@@ -99,12 +89,7 @@ export default function App() {
           maxlength={140}
           placeholder="Search by phrase, idea, or feeling"
           class="bg-white outline-0 px-4 py-3 border border-solid border-zinc-200 w-sm max-w-full"
-          value={input.phrase}
-          onInput={(event) =>
-            setInput((input) => {
-              input.phrase = event.currentTarget.value;
-            })
-          }
+          onInput={(event) => setPhrase(event.currentTarget.value)}
         />
         <Show when={isPending(search)}>Pending...</Show>
       </div>
@@ -127,13 +112,13 @@ export default function App() {
         </label>
       </Loading>
       <Loading fallback={<p role="status">Loading catalog…</p>}>
-        <Show when={input.phrase.trim() && search().error}>
+        <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
         </Show>
         <ul class="grid grid-cols-3 gap-6">
           <For each={visibleTlds()}>
             {(tld) => {
-              const isFavorite = createMemo(() => favoriteTldSet().has(tld.name));
+              const isFavorite = createMemo(() => favorites().has(tld.name));
 
               return (
                 <li>
@@ -143,7 +128,7 @@ export default function App() {
                       type="button"
                       aria-label={`${isFavorite() ? "Remove" : "Add"} .${tld.name} ${isFavorite() ? "from" : "to"} favorites`}
                       aria-pressed={isFavorite() ? "true" : "false"}
-                      onClick={() => toggleFavorite(tld.name)}
+                      onClick={() => toggle(tld.name)}
                       class="cursor-pointer"
                     >
                       {isFavorite() ? "❤️" : "♡"}
