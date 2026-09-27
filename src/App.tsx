@@ -133,7 +133,6 @@ export default function App() {
           class="bg-white outline-0 px-4 py-3 border border-solid border-zinc-200 w-sm max-w-full"
           onInput={(event) => setPhrase(event.currentTarget.value)}
         />
-        <Show when={isPending(search)}>Pending...</Show>
       </div>
       <Loading fallback={null}>
         <label>
@@ -154,27 +153,29 @@ export default function App() {
         </label>
       </Loading>
       <Loading fallback={<p role="status">Loading catalog…</p>}>
-        <Show when={phrase() && search().error}>
-          <p role="alert">Search failed. Please try again.</p>
-        </Show>
-        <Show when={phrase() && !search().error && visibleTlds().length === 0}>
-          <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
-        </Show>
-        <Show
-          when={!phrase()}
-          fallback={<TldList tlds={visibleTlds()} favorites={favorites()} toggle={toggle} />}
-        >
-          <Show when={favoriteTlds().length > 0}>
+        <div class={isPending(debouncedPhrase) || isPending(search) ? "opacity-50" : ""}>
+          <Show when={phrase() && search().error}>
+            <p role="alert">Search failed. Please try again.</p>
+          </Show>
+          <Show when={phrase() && !search().error && visibleTlds().length === 0}>
+            <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
+          </Show>
+          <Show
+            when={!phrase()}
+            fallback={<TldList tlds={visibleTlds()} favorites={favorites()} toggle={toggle} />}
+          >
+            <Show when={favoriteTlds().length > 0}>
+              <section>
+                <h2 class="text-xl font-semibold mb-4">Favorites</h2>
+                <TldList tlds={favoriteTlds()} favorites={favorites()} toggle={toggle} />
+              </section>
+            </Show>
             <section>
-              <h2 class="text-xl font-semibold mb-4">Favorites</h2>
-              <TldList tlds={favoriteTlds()} favorites={favorites()} toggle={toggle} />
+              <h2 class="text-xl font-semibold mb-4">Other domain endings</h2>
+              <TldList tlds={otherTlds()} favorites={favorites()} toggle={toggle} />
             </section>
           </Show>
-          <section>
-            <h2 class="text-xl font-semibold mb-4">Other domain endings</h2>
-            <TldList tlds={otherTlds()} favorites={favorites()} toggle={toggle} />
-          </section>
-        </Show>
+        </div>
       </Loading>
     </main>
   );
