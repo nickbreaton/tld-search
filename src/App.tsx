@@ -157,6 +157,9 @@ export default function App() {
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
         </Show>
+        <Show when={phrase() && !search().error && visibleTlds().length === 0}>
+          <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
+        </Show>
         <Show
           when={!phrase()}
           fallback={<TldList tlds={visibleTlds()} favorites={favorites()} toggle={toggle} />}
