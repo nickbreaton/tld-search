@@ -7,7 +7,7 @@ import { createPhraseSignal } from "./state/createPhraseSignal";
 import { createFavorites } from "./state/createFavorites";
 import { invoke } from "@solidjs/web/server-functions";
 
-const SEARCH_DEBOUNCE_MS = 500;
+const SEARCH_DEBOUNCE_MS = 150;
 
 type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
 

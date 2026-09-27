@@ -57,12 +57,12 @@ export class Jev extends Context.Service<
     Jev.of({
       infer: Effect.fn("Jev.infer")(function* (inference) {
         const response = yield* Effect.tryPromise({
-          try: async () => {
+          try: async (signal) => {
             const { env } = await import("cloudflare:workers");
             // SAFETY: Alchemy binds AI on TldrWebsite for every Worker request.
             const websiteEnv = env as WebsiteEnv;
 
-            return websiteEnv.AI.run("typesafe/jev", { ...inference });
+            return websiteEnv.AI.run("typesafe/jev", { ...inference }, { signal });
           },
           catch: (cause) => new JevError({ cause }),
         });
