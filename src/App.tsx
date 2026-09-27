@@ -11,6 +11,51 @@ const SEARCH_DEBOUNCE_MS = 500;
 
 type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
 
+function TldList(props: {
+  tlds: CatalogTld[];
+  favorites: Set<string>;
+  toggle: (name: string) => void;
+}) {
+  return (
+    <ul class="grid grid-cols-3 gap-6">
+      <For each={props.tlds}>
+        {(tld) => (
+          <li>
+            <div class="flex items-center justify-between gap-2">
+              <span>.{tld.name}</span>
+              <button
+                type="button"
+                aria-label={`${props.favorites.has(tld.name) ? "Remove" : "Add"} .${tld.name} ${props.favorites.has(tld.name) ? "from" : "to"} favorites`}
+                aria-pressed={props.favorites.has(tld.name) ? "true" : "false"}
+                onClick={() => props.toggle(tld.name)}
+                class="cursor-pointer"
+              >
+                {props.favorites.has(tld.name) ? "❤️" : "♡"}
+              </button>
+            </div>
+            <ol>
+              <For each={tld.links}>
+                {(link) => (
+                  <li>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="underline text-sm"
+                    >
+                      {link.registrar === "name" ? "name.com" : link.registrar}
+                    </a>
+                  </li>
+                )}
+              </For>
+            </ol>
+          </li>
+        )}
+      </For>
+    </ul>
+  );
+}
+
 export default function App() {
   const catalog = createMemo(() => getCatalog());
 
@@ -61,13 +106,7 @@ export default function App() {
     const visible = (tld: CatalogTld | undefined): tld is CatalogTld =>
       tld != null && (!showLatinOnly || tld.latin) && (!showNonCountryOnly || tld.nonCountry);
 
-    if (!phrase()) {
-      const favoriteNames = favorites();
-
-      return all
-        .filter(visible)
-        .sort((a, b) => Number(favoriteNames.has(b.name)) - Number(favoriteNames.has(a.name)));
-    }
+    if (!phrase()) return all.filter(visible);
 
     const result = search();
 
@@ -75,6 +114,9 @@ export default function App() {
 
     return result.names.map((name) => catalogByName().get(name)).filter(visible);
   });
+
+  const favoriteTlds = createMemo(() => visibleTlds().filter((tld) => favorites().has(tld.name)));
+  const otherTlds = createMemo(() => visibleTlds().filter((tld) => !favorites().has(tld.name)));
 
   return (
     <main class="flex flex-col max-w-2xl mx-auto my-5 gap-5 px-4">
@@ -115,46 +157,21 @@ export default function App() {
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
         </Show>
-        <ul class="grid grid-cols-3 gap-6">
-          <For each={visibleTlds()}>
-            {(tld) => {
-              const isFavorite = createMemo(() => favorites().has(tld.name));
-
-              return (
-                <li>
-                  <div class="flex items-center justify-between gap-2">
-                    <span>.{tld.name}</span>
-                    <button
-                      type="button"
-                      aria-label={`${isFavorite() ? "Remove" : "Add"} .${tld.name} ${isFavorite() ? "from" : "to"} favorites`}
-                      aria-pressed={isFavorite() ? "true" : "false"}
-                      onClick={() => toggle(tld.name)}
-                      class="cursor-pointer"
-                    >
-                      {isFavorite() ? "❤️" : "♡"}
-                    </button>
-                  </div>
-                  <ol>
-                    <For each={tld.links}>
-                      {(link) => (
-                        <li>
-                          <a
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="underline text-sm"
-                          >
-                            {link.registrar === "name" ? "name.com" : link.registrar}
-                          </a>
-                        </li>
-                      )}
-                    </For>
-                  </ol>
-                </li>
-              );
-            }}
-          </For>
-        </ul>
+        <Show
+          when={!phrase()}
+          fallback={<TldList tlds={visibleTlds()} favorites={favorites()} toggle={toggle} />}
+        >
+          <Show when={favoriteTlds().length > 0}>
+            <section>
+              <h2 class="text-xl font-semibold mb-4">Favorites</h2>
+              <TldList tlds={favoriteTlds()} favorites={favorites()} toggle={toggle} />
+            </section>
+          </Show>
+          <section>
+            <h2 class="text-xl font-semibold mb-4">Other domain endings</h2>
+            <TldList tlds={otherTlds()} favorites={favorites()} toggle={toggle} />
+          </section>
+        </Show>
       </Loading>
     </main>
   );
