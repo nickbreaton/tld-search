@@ -130,8 +130,8 @@ export default function App() {
 
   return (
     <main class="flex flex-col max-w-4xl mx-auto my-15 gap-5 px-4">
-      <h1 class="text-3xl font-bold max-w-2xl text-balance">
-        Find the perfect domain ending for your project
+      <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
+        Find the perfect&nbsp;domain&nbsp;ending for your project
       </h1>
       <div>
         <input
