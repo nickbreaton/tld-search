@@ -22,7 +22,7 @@ function TldList(props: {
     <ul class="grid grid-cols-3 gap-2">
       <For each={props.tlds}>
         {(tld) => (
-          <li class="bg-white p-4 rounded-lg border-taupe-100 border-solid border">
+          <li class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border">
             <div class="flex items-center justify-between gap-2">
               <span>.{tld.name}</span>
               <button
@@ -35,7 +35,9 @@ function TldList(props: {
                 <span
                   aria-hidden="true"
                   class={
-                    props.favorites.has(tld.name) ? "fill-red-500 [&_svg]:size-6" : "[&_svg]:size-6"
+                    props.favorites.has(tld.name)
+                      ? "fill-red-500 [&_svg]:size-6"
+                      : "fill-taupe-700 [&_svg]:size-6"
                   }
                   innerHTML={props.favorites.has(tld.name) ? favoriteFilledIcon : favoriteIcon}
                 />
@@ -127,23 +129,21 @@ export default function App() {
   const otherTlds = createMemo(() => visibleTlds().filter((tld) => !favorites().has(tld.name)));
 
   return (
-    <main class="flex flex-col max-w-4xl mx-auto my-5 gap-5 px-4">
-      <h1 class="text-2xl font-bold">TLDR</h1>
-      <p>
-        Find the <strong>t</strong>op-<strong>l</strong>evel <strong>d</strong>omain that's{" "}
-        <strong>r</strong>ight for your project.
-      </p>
+    <main class="flex flex-col max-w-4xl mx-auto my-15 gap-5 px-4">
+      <h1 class="text-3xl font-bold max-w-2xl text-balance">
+        Find the perfect domain ending for your project
+      </h1>
       <div>
         <input
           aria-label="Search by phrase, idea, or feeling"
           maxlength={140}
-          placeholder="Search by phrase, idea, or feeling"
-          class="bg-white outline-0 px-4 py-3 border border-solid border-zinc-200 w-sm max-w-full"
+          autofocus
+          placeholder="Type a word, phrase, feeling, or idea"
+          class="bg-white rounded-lg px-4 py-3 border border-solid border-taupe-200/75 w-md max-w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200"
           onInput={(event) => setPhrase(event.currentTarget.value)}
         />
       </div>
-      <Loading fallback={null}>
-        <label>
+      {/*<label>
           <input
             type="checkbox"
             checked={latinOnly()}
@@ -158,33 +158,30 @@ export default function App() {
             onChange={(event) => setExcludeCountry(event.currentTarget.checked)}
           />{" "}
           Hide country domain endings
-        </label>
-      </Loading>
-      <Loading fallback={<p role="status">Loading catalog…</p>}>
-        <div class={isPending(debouncedPhrase) || isPending(search) ? "opacity-50" : ""}>
-          <Show when={phrase() && search().error}>
-            <p role="alert">Search failed. Please try again.</p>
-          </Show>
-          <Show when={phrase() && !search().error && visibleTlds().length === 0}>
-            <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
-          </Show>
-          <Show
-            when={!phrase()}
-            fallback={<TldList tlds={visibleTlds()} favorites={favorites()} toggle={toggle} />}
-          >
-            <Show when={favoriteTlds().length > 0}>
-              <section>
-                <h2 class="text-xl font-semibold mb-4">Favorites</h2>
-                <TldList tlds={favoriteTlds()} favorites={favorites()} toggle={toggle} />
-              </section>
-            </Show>
+        </label>*/}
+      <div class={isPending(debouncedPhrase) || isPending(search) ? "opacity-50" : ""}>
+        <Show when={phrase() && search().error}>
+          <p role="alert">Search failed. Please try again.</p>
+        </Show>
+        <Show when={phrase() && !search().error && visibleTlds().length === 0}>
+          <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
+        </Show>
+        <Show
+          when={!phrase()}
+          fallback={<TldList tlds={visibleTlds()} favorites={favorites()} toggle={toggle} />}
+        >
+          <Show when={favoriteTlds().length > 0}>
             <section>
-              <h2 class="text-xl font-semibold mb-4">Other domain endings</h2>
-              <TldList tlds={otherTlds()} favorites={favorites()} toggle={toggle} />
+              <h2 class="text-xl font-semibold mb-4">Favorites</h2>
+              <TldList tlds={favoriteTlds()} favorites={favorites()} toggle={toggle} />
             </section>
           </Show>
-        </div>
-      </Loading>
+          <section>
+            <h2 class="text-xl font-semibold mb-4">Other domain endings</h2>
+            <TldList tlds={otherTlds()} favorites={favorites()} toggle={toggle} />
+          </section>
+        </Show>
+      </div>
     </main>
   );
 }
