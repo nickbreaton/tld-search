@@ -17,10 +17,10 @@ function TldList(props: {
   toggle: (name: string) => void;
 }) {
   return (
-    <ul class="grid grid-cols-3 gap-6">
+    <ul class="grid grid-cols-3 gap-2">
       <For each={props.tlds}>
         {(tld) => (
-          <li>
+          <li class="bg-white p-4 rounded-lg border-taupe-100 border-solid border">
             <div class="flex items-center justify-between gap-2">
               <span>.{tld.name}</span>
               <button
@@ -119,7 +119,7 @@ export default function App() {
   const otherTlds = createMemo(() => visibleTlds().filter((tld) => !favorites().has(tld.name)));
 
   return (
-    <main class="flex flex-col max-w-2xl mx-auto my-5 gap-5 px-4">
+    <main class="flex flex-col max-w-4xl mx-auto my-5 gap-5 px-4">
       <h1 class="text-2xl font-bold">TLDR</h1>
       <p>
         Find the <strong>t</strong>op-<strong>l</strong>evel <strong>d</strong>omain that's{" "}

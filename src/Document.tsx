@@ -9,7 +9,7 @@ export default function Document(props: ParentProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>TLDR — find your top-level domain</title>
       </head>
-      <body>
+      <body class="bg-taupe-50">
         <HydrationScript />
         <Loading fallback={null}>{props.children}</Loading>
       </body>
