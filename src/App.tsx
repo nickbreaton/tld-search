@@ -6,6 +6,8 @@ import { createCookieSignal } from "./state/createCookieSignal";
 import { createPhraseSignal } from "./state/createPhraseSignal";
 import { createFavorites } from "./state/createFavorites";
 import { invoke } from "@solidjs/web/server-functions";
+import favoriteIcon from "@material-symbols/svg-400/rounded/favorite.svg?raw";
+import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -30,7 +32,13 @@ function TldList(props: {
                 onClick={() => props.toggle(tld.name)}
                 class="cursor-pointer"
               >
-                {props.favorites.has(tld.name) ? "❤️" : "♡"}
+                <span
+                  aria-hidden="true"
+                  class={
+                    props.favorites.has(tld.name) ? "fill-red-500 [&_svg]:size-6" : "[&_svg]:size-6"
+                  }
+                  innerHTML={props.favorites.has(tld.name) ? favoriteFilledIcon : favoriteIcon}
+                />
               </button>
             </div>
             <ol>

@@ -9,6 +9,7 @@ export function createCookieSignal<T extends unknown>(
   defaultValue: T,
 ): [Accessor<T>, (next: T) => void] {
   const encode = (value: T): string => JSON.stringify(value);
+
   const decode = (value: string | null | undefined): T =>
     value == null ? defaultValue : JSON.parse(value);
 
