@@ -7,6 +7,7 @@
       "dependencies": {
         "@fontsource-variable/google-sans": "^5.3.1",
         "@material-symbols/svg-400": "^0.47.5",
+        "@material-symbols/svg-600": "^0.47.5",
         "@material-symbols/svg-700": "^0.47.5",
         "@remix-run/headers": "0.21.2",
         "@solidjs/web": "2.0.0-rc.9",
@@ -279,6 +280,8 @@
     "@libsql/win32-x64-msvc": ["@libsql/win32-x64-msvc@0.5.29", "", { "os": "win32", "cpu": "x64" }, "sha512-4/0CvEdhi6+KjMxMaVbFM2n2Z44escBRoEYpR+gZg64DdetzGnYm8mcNLcoySaDJZNaBd6wz5DNdgRmcI4hXcg=="],
 
     "@material-symbols/svg-400": ["@material-symbols/svg-400@0.47.5", "", {}, "sha512-5AHuernGbTq1uq0YDb16QabESAaiYdqgDsDqF3Nk5usqP8pEeE5Nrt11jSs4/A/D7kOz5Ci6xyXMS/DsaxY/rw=="],
+
+    "@material-symbols/svg-600": ["@material-symbols/svg-600@0.47.5", "", {}, "sha512-JUMIvdxccCbFXtnyKcCkXsyEs+neNu0vt/pi6jWvdqOWQIxnn00bgcm6Vv6Z/irMteMy+t6NW/ptLhf11pbMMw=="],
 
     "@material-symbols/svg-700": ["@material-symbols/svg-700@0.47.5", "", {}, "sha512-3qo9xw/W36BP5G7UAvxOlBsJf83jFuOc++qm9fMkphW4HXmvSDLh0CE3MEK+ciXxKAPQrFddVj3T5rbDmRfnMw=="],
 

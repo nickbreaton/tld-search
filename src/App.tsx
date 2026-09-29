@@ -14,6 +14,7 @@ import closeIcon from "@material-symbols/svg-700/rounded/close.svg?raw";
 import chevronDownIcon from "@material-symbols/svg-400/rounded/keyboard_arrow_down.svg?raw";
 import githubIcon from "simple-icons/icons/github.svg?raw";
 import { isMobileDevice } from "./utils/isMobileDevice";
+import { Checkbox } from "./components/Checkbox";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -271,24 +272,32 @@ export default function App() {
       <dialog
         id="filters-menu"
         popover
-        class="m-0 open:flex max-w-64 flex-col gap-2 rounded-lg border border-solid border-taupe-200/75 bg-white p-4 text-sm text-taupe-700 shadow-sm shadow-taupe-400/20 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.125rem)]"
+        class="m-0 open:flex max-w-80 flex-col gap-4 rounded-lg border border-solid border-taupe-200/75 bg-white p-6 text-sm text-taupe-700 shadow-sm shadow-taupe-400/20 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.125rem)]"
       >
-        <label class="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={latinOnly()}
-            onChange={(event) => setLatinOnly(event.currentTarget.checked)}
-          />
-          Hide domain endings with non-Latin characters
-        </label>
-        <label class="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={excludeCountry()}
-            onChange={(event) => setExcludeCountry(event.currentTarget.checked)}
-          />
-          Hide country domain endings
-        </label>
+        <Checkbox
+          checked={latinOnly()}
+          onChange={setLatinOnly}
+          label="Latin script only"
+          description={
+            <>
+              Hide domain endings written in non-Latin characters, like{" "}
+              <span class="whitespace-nowrap">.рф</span> or{" "}
+              <span class="whitespace-nowrap">.中国</span>.
+            </>
+          }
+        />
+        <Checkbox
+          checked={excludeCountry()}
+          onChange={setExcludeCountry}
+          label="Hide country codes"
+          description={
+            <>
+              Exclude two-letter country-code endings, like{" "}
+              <span class="whitespace-nowrap">.us</span> or{" "}
+              <span class="whitespace-nowrap">.de</span>.
+            </>
+          }
+        />
       </dialog>
       <div class={["-mt-1", { "opacity-50": isPending(debouncedPhrase) || isPending(search) }]}>
         <Show when={phrase() && search().error}>
