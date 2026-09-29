@@ -1,4 +1,4 @@
-import { createMemo, For, isPending, onCleanup, Show } from "solid-js";
+import { createMemo, For, isPending, latest, onCleanup, Show } from "solid-js";
 import { getCatalog } from "./server/catalog";
 import { recommend } from "./server/search";
 import "./styles/global.css";
@@ -10,6 +10,7 @@ import { invoke } from "@solidjs/web/server-functions";
 import favoriteIcon from "@material-symbols/svg-400/rounded/favorite.svg?raw";
 import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
 import arrowOutwardIcon from "@material-symbols/svg-700/rounded/arrow_outward.svg?raw";
+import closeIcon from "@material-symbols/svg-700/rounded/close.svg?raw";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -115,6 +116,7 @@ export default function App() {
   const { bursts, spawn } = createHeartBursts();
 
   let mainRef: HTMLElement | undefined;
+  let searchInputRef: HTMLInputElement | undefined;
 
   const handleHeart = (clientX: number, clientY: number) => {
     const rect = mainRef?.getBoundingClientRect();
@@ -185,15 +187,34 @@ export default function App() {
       <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
         Find the perfect&nbsp;domain&nbsp;ending for your project
       </h1>
-      <div class="mt-4">
+      <div class="mt-4 relative w-md max-w-full">
         <input
+          ref={(el) => (searchInputRef = el)}
           aria-label="Search by phrase, idea, or feeling"
           maxlength={140}
           autofocus
           placeholder="Type a word, phrase, feeling, or idea"
-          class="bg-white rounded-lg px-4 py-3 border border-solid border-taupe-200/75 w-md max-w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200"
+          class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200"
           onInput={(event) => setPhrase(event.currentTarget.value)}
         />
+        <Show when={latest(() => phrase())}>
+          <button
+            type="button"
+            aria-label="Clear search"
+            onClick={() => {
+              setPhrase("");
+
+              if (searchInputRef) {
+                searchInputRef.value = "";
+              }
+
+              searchInputRef?.focus();
+            }}
+            class="cursor-pointer absolute inset-y-0 right-0 flex items-center pr-3 text-taupe-400 hover:text-taupe-600"
+          >
+            <span aria-hidden="true" class=" [&_svg]:size-5 fill-current" innerHTML={closeIcon} />
+          </button>
+        </Show>
       </div>
       {/*<label>
           <input
