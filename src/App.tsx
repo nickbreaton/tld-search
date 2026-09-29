@@ -5,6 +5,7 @@ import "./styles/global.css";
 import { createCookieSignal } from "./state/createCookieSignal";
 import { createPhraseSignal } from "./state/createPhraseSignal";
 import { createFavorites } from "./state/createFavorites";
+import { createHeartBursts } from "./state/createHeartBursts";
 import { invoke } from "@solidjs/web/server-functions";
 import favoriteIcon from "@material-symbols/svg-400/rounded/favorite.svg?raw";
 import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
@@ -29,6 +30,7 @@ function TldList(props: {
   tlds: CatalogTld[];
   favorites: Set<string>;
   toggle: (name: string) => void;
+  onHeart: (x: number, y: number) => void;
 }) {
   return (
     <ul class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-2">
@@ -41,7 +43,13 @@ function TldList(props: {
                 type="button"
                 aria-label={`${props.favorites.has(tld.name) ? "Remove" : "Add"} .${tld.name} ${props.favorites.has(tld.name) ? "from" : "to"} favorites`}
                 aria-pressed={props.favorites.has(tld.name) ? "true" : "false"}
-                onClick={() => props.toggle(tld.name)}
+                onClick={(event) => {
+                  if (!props.favorites.has(tld.name)) {
+                    props.onHeart(event.clientX, event.clientY);
+                  }
+
+                  props.toggle(tld.name);
+                }}
                 class="cursor-pointer"
               >
                 <span
@@ -104,6 +112,15 @@ export default function App() {
   const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
   const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("excludeCountry", false);
   const { favorites, toggle } = createFavorites();
+  const { bursts, spawn } = createHeartBursts();
+
+  let mainRef: HTMLElement | undefined;
+
+  const handleHeart = (clientX: number, clientY: number) => {
+    const rect = mainRef?.getBoundingClientRect();
+
+    spawn(clientX - (rect?.left ?? 0), clientY - (rect?.top ?? 0));
+  };
 
   const debouncedPhrase = createMemo(async () => {
     const value = phrase();
@@ -161,7 +178,10 @@ export default function App() {
   );
 
   return (
-    <main class="flex flex-col max-w-4xl mx-auto mt-24 mb-15 gap-5 px-4">
+    <main
+      ref={(el) => (mainRef = el)}
+      class="relative flex flex-col max-w-4xl mx-auto mt-24 mb-15 gap-5 px-4"
+    >
       <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
         Find the perfect&nbsp;domain&nbsp;ending for your project
       </h1>
@@ -198,7 +218,38 @@ export default function App() {
         <Show when={phrase() && !search().error && visibleTlds().length === 0}>
           <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
         </Show>
-        <TldList tlds={sortedTlds()} favorites={favorites()} toggle={toggle} />
+        <TldList
+          tlds={sortedTlds()}
+          favorites={favorites()}
+          toggle={toggle}
+          onHeart={handleHeart}
+        />
+      </div>
+      <div class="pointer-events-none absolute inset-0 z-50 overflow-hidden">
+        <For each={bursts()}>
+          {(burst) => (
+            <For each={burst.particles}>
+              {(particle) => (
+                <span
+                  aria-hidden="true"
+                  class="heart-burst-particle fill-red-500 absolute [&_svg]:size-full"
+                  style={{
+                    left: `${burst.x}px`,
+                    top: `${burst.y}px`,
+                    width: `${particle.size}px`,
+                    height: `${particle.size}px`,
+                    "--heart-dx": `${particle.dx}px`,
+                    "--heart-dy": `${particle.dy}px`,
+                    "--heart-rotate": `${particle.rotate}deg`,
+                    "animation-duration": `${particle.duration}ms`,
+                    "animation-delay": `${particle.delay}ms`,
+                  }}
+                  innerHTML={favoriteFilledIcon}
+                />
+              )}
+            </For>
+          )}
+        </For>
       </div>
     </main>
   );
