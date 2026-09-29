@@ -20,6 +20,8 @@ const REGISTRAR_LABELS: Record<CatalogTld["links"][number]["registrar"], string>
   name: "Name.com",
 };
 
+const REGISTRARS = Object.keys(REGISTRAR_LABELS) as CatalogTld["links"][number]["registrar"][];
+
 function TldList(props: {
   tlds: CatalogTld[];
   favorites: Set<string>;
@@ -51,26 +53,34 @@ function TldList(props: {
               </button>
             </div>
             <hr class="my-3 border-t border-solid border-taupe-200/75" />
-            <ol class="flex flex-col gap-1">
-              <For each={tld.links}>
-                {(link) => (
-                  <li>
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={`Search ${REGISTRAR_LABELS[link.registrar]} for .${tld.name} domains`}
-                      class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500"
-                    >
-                      {REGISTRAR_LABELS[link.registrar]}
-                      <span
-                        aria-hidden="true"
-                        class="fill-current translate-y-px [&_svg]:size-4"
-                        innerHTML={arrowOutwardIcon}
-                      />
-                    </a>
-                  </li>
-                )}
+            <ol class="flex flex-col gap-1 select-none">
+              <For each={REGISTRARS}>
+                {(registrar) => {
+                  const link = tld.links.find((link) => link.registrar === registrar);
+
+                  return link ? (
+                    <li>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`Search ${REGISTRAR_LABELS[registrar]} for .${tld.name} domains`}
+                        class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500"
+                      >
+                        {REGISTRAR_LABELS[registrar]}
+                        <span
+                          aria-hidden="true"
+                          class="fill-current translate-y-px [&_svg]:size-4"
+                          innerHTML={arrowOutwardIcon}
+                        />
+                      </a>
+                    </li>
+                  ) : (
+                    <li aria-hidden="true" class="order-1 text-sm">
+                      &nbsp;
+                    </li>
+                  );
+                }}
               </For>
             </ol>
           </li>
