@@ -8,7 +8,7 @@ import { createFavorites } from "./state/createFavorites";
 import { invoke } from "@solidjs/web/server-functions";
 import favoriteIcon from "@material-symbols/svg-400/rounded/favorite.svg?raw";
 import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
-import openInNewIcon from "@material-symbols/svg-700/rounded/open_in_new.svg?raw";
+import arrowOutwardIcon from "@material-symbols/svg-700/rounded/arrow_outward.svg?raw";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -65,8 +65,8 @@ function TldList(props: {
                       {REGISTRAR_LABELS[link.registrar]}
                       <span
                         aria-hidden="true"
-                        class="fill-current [&_svg]:size-4"
-                        innerHTML={openInNewIcon}
+                        class="fill-current translate-y-px [&_svg]:size-4"
+                        innerHTML={arrowOutwardIcon}
                       />
                     </a>
                   </li>
