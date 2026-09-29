@@ -190,7 +190,7 @@ export default function App() {
         <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
           Find the perfect domain ending for your project.
         </h1>
-        <nav class="flex items-center gap-4 shrink-0">
+        <nav class="hidden sm:flex items-center gap-4 shrink-0">
           <a
             href="https://nickbreaton.com"
             target="_blank"
@@ -199,7 +199,7 @@ export default function App() {
           >
             nickbreaton.com
           </a>
-          <span aria-hidden="true" class="text-sm text-taupe-400">
+          <span aria-hidden="true" class="text-sm text-taupe-400 cursor-default">
             /
           </span>
           <a
@@ -207,7 +207,7 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            class="text-taupe-400 hover:text-taupe-500"
+            class="text-taupe-400 hover:text-taupe-500 -m-2.5 p-2.5 inline-flex"
           >
             <span
               aria-hidden="true"
