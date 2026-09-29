@@ -1,5 +1,5 @@
 import { Context, Effect, Layer, Option, Schema } from "effect";
-import { domainToUnicode } from "node:url";
+import { domainToASCII, domainToUnicode } from "node:url";
 
 import dynadotTlds from "../../../generated/dynadot.json";
 import ianaTlds from "../../../generated/iana.json";
@@ -68,7 +68,7 @@ export class TldCatalog extends Context.Service<
             name: "https://www.name.com/domains/{tld}",
           }[registrar];
 
-          const result = base.replace("{tld}", domain);
+          const result = base.replace("{tld}", domainToASCII(domain));
 
           return Schema.decodeOption(Schema.URLFromString)(result);
         },
