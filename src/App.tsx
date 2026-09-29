@@ -11,6 +11,7 @@ import favoriteIcon from "@material-symbols/svg-400/rounded/favorite.svg?raw";
 import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
 import arrowOutwardIcon from "@material-symbols/svg-700/rounded/arrow_outward.svg?raw";
 import closeIcon from "@material-symbols/svg-700/rounded/close.svg?raw";
+import chevronDownIcon from "@material-symbols/svg-400/rounded/keyboard_arrow_down.svg?raw";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -216,6 +217,20 @@ export default function App() {
           </button>
         </Show>
       </div>
+      <div class="mt-3 flex items-center justify-between text-sm text-taupe-400">
+        <span>{sortedTlds().length > 500 ? "500+" : sortedTlds().length} results</span>
+        <button
+          type="button"
+          class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500"
+        >
+          Filters
+          <span
+            aria-hidden="true"
+            class="fill-current [&_svg]:size-5"
+            innerHTML={chevronDownIcon}
+          />
+        </button>
+      </div>
       {/*<label>
           <input
             type="checkbox"
@@ -232,12 +247,9 @@ export default function App() {
           />{" "}
           Hide country domain endings
         </label>*/}
-      <div class={["mt-10", { "opacity-50": isPending(debouncedPhrase) || isPending(search) }]}>
+      <div class={["-mt-1", { "opacity-50": isPending(debouncedPhrase) || isPending(search) }]}>
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
-        </Show>
-        <Show when={phrase() && !search().error && visibleTlds().length === 0}>
-          <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
         </Show>
         <TldList
           tlds={sortedTlds()}
