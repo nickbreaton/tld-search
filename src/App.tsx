@@ -183,12 +183,12 @@ export default function App() {
   return (
     <main
       ref={(el) => (mainRef = el)}
-      class="relative flex flex-col max-w-4xl mx-auto mt-24 mb-15 gap-5 px-4"
+      class="relative flex flex-col max-w-4xl mx-auto mt-4 mb-4 sm:mt-24 sm:mb-15 gap-5 px-4"
     >
       <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
-        Find the <span>perfect domain ending</span> for your project.
+        Find the perfect domain ending for your project.
       </h1>
-      <div class="mt-4 relative w-md max-w-full">
+      <div class="mt-4 relative w-full sm:w-md max-w-full">
         <input
           ref={(el) => (searchInputRef = el)}
           aria-label="Search by phrase, idea, or feeling"
