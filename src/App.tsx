@@ -8,10 +8,17 @@ import { createFavorites } from "./state/createFavorites";
 import { invoke } from "@solidjs/web/server-functions";
 import favoriteIcon from "@material-symbols/svg-400/rounded/favorite.svg?raw";
 import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
+import openInNewIcon from "@material-symbols/svg-700/rounded/open_in_new.svg?raw";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
 type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
+
+const REGISTRAR_LABELS: Record<CatalogTld["links"][number]["registrar"], string> = {
+  porkbun: "Porkbun",
+  dynadot: "Dynadot",
+  name: "Name.com",
+};
 
 function TldList(props: {
   tlds: CatalogTld[];
@@ -24,7 +31,7 @@ function TldList(props: {
         {(tld) => (
           <li class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border">
             <div class="flex items-center justify-between gap-2">
-              <span>.{tld.name}</span>
+              <span class="text-lg text-taupe-800">.{tld.name}</span>
               <button
                 type="button"
                 aria-label={`${props.favorites.has(tld.name) ? "Remove" : "Add"} .${tld.name} ${props.favorites.has(tld.name) ? "from" : "to"} favorites`}
@@ -43,7 +50,8 @@ function TldList(props: {
                 />
               </button>
             </div>
-            <ol>
+            <hr class="my-3 border-t border-solid border-taupe-200/75" />
+            <ol class="flex flex-col gap-1">
               <For each={tld.links}>
                 {(link) => (
                   <li>
@@ -51,9 +59,15 @@ function TldList(props: {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="underline text-sm"
+                      title={`Search ${REGISTRAR_LABELS[link.registrar]} for .${tld.name} domains`}
+                      class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500"
                     >
-                      {link.registrar === "name" ? "name.com" : link.registrar}
+                      {REGISTRAR_LABELS[link.registrar]}
+                      <span
+                        aria-hidden="true"
+                        class="fill-current [&_svg]:size-4"
+                        innerHTML={openInNewIcon}
+                      />
                     </a>
                   </li>
                 )}
