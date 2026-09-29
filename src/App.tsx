@@ -26,7 +26,7 @@ function TldList(props: {
   toggle: (name: string) => void;
 }) {
   return (
-    <ul class="grid grid-cols-3 gap-2">
+    <ul class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-2">
       <For each={props.tlds}>
         {(tld) => (
           <li class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border">
