@@ -225,9 +225,15 @@ export default function App() {
           ref={(el) => (searchInputRef = el)}
           maxlength={140}
           autofocus={!isMobileDevice()}
+          enterkeyhint="search"
           placeholder="Type a word, phrase, feeling, or idea..."
           class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200 touch-manipulation"
           onInput={(event) => setPhrase(event.currentTarget.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" && isMobileDevice()) {
+              event.currentTarget.blur();
+            }
+          }}
         />
         <Show when={latest(() => phrase())}>
           <button
