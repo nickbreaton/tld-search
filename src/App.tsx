@@ -253,16 +253,17 @@ export default function App() {
         <button
           type="button"
           popovertarget="filters-menu"
-          class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 -m-2 p-2 touch-manipulation [anchor-name:--filters-anchor]"
+          class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 -m-2 p-2 touch-manipulation select-none [anchor-name:--filters-anchor]"
         >
           <span>
             Filters
-            <Show when={activeFilterCount() > 0}>
+            <Show when={latest(() => activeFilterCount() > 0)}>
               {" "}
-              <span class="tracking-wider">({activeFilterCount()})</span>
+              <span class="tracking-wider">({latest(() => activeFilterCount())})</span>
             </Show>
           </span>
           <span
+            id="filters-chevron"
             aria-hidden="true"
             class="fill-current [&_svg]:size-5"
             innerHTML={chevronDownIcon}
@@ -275,7 +276,7 @@ export default function App() {
         class="m-0 open:flex max-w-80 flex-col gap-4 rounded-lg border border-solid border-taupe-200/75 bg-white p-6 text-sm text-taupe-700 shadow-sm shadow-taupe-400/20 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.125rem)]"
       >
         <Checkbox
-          checked={latinOnly()}
+          checked={latest(() => latinOnly())}
           onChange={setLatinOnly}
           label="Latin script only"
           description={
@@ -287,7 +288,7 @@ export default function App() {
           }
         />
         <Checkbox
-          checked={excludeCountry()}
+          checked={latest(() => excludeCountry())}
           onChange={setExcludeCountry}
           label="Hide country codes"
           description={
