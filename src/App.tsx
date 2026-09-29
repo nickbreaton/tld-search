@@ -1,4 +1,4 @@
-import { createMemo, For, isPending, Loading, onCleanup, Show } from "solid-js";
+import { createMemo, For, isPending, onCleanup, Show } from "solid-js";
 import { getCatalog } from "./server/catalog";
 import { recommend } from "./server/search";
 import "./styles/global.css";
@@ -14,13 +14,16 @@ const SEARCH_DEBOUNCE_MS = 150;
 
 type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
 
-const REGISTRAR_LABELS: Record<CatalogTld["links"][number]["registrar"], string> = {
+type Registrar = CatalogTld["links"][number]["registrar"];
+
+const REGISTRAR_LABELS: Record<Registrar, string> = {
   porkbun: "Porkbun",
   dynadot: "Dynadot",
   name: "Name.com",
 };
 
-const REGISTRARS = Object.keys(REGISTRAR_LABELS) as CatalogTld["links"][number]["registrar"][];
+// SAFETY: REGISTRAR_LABELS is a Record<Registrar, string>, so its keys are exactly the Registrar union.
+const REGISTRARS = Object.keys(REGISTRAR_LABELS) as Registrar[];
 
 function TldList(props: {
   tlds: CatalogTld[];
