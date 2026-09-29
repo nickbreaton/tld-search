@@ -184,11 +184,11 @@ export default function App() {
   return (
     <main
       ref={(el) => (mainRef = el)}
-      class="relative flex flex-col max-w-4xl mx-auto mt-4 mb-4 sm:mt-16 sm:mb-15 gap-5 px-4"
+      class="relative flex flex-col max-w-4xl mx-auto mt-8 mb-6 sm:mt-16 sm:mb-15 gap-5 px-4"
     >
       <div class="flex items-start justify-between gap-4">
         <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
-          Find the perfect domain ending for your project.
+          Find the perfect top-level domain for your project.
         </h1>
         <nav class="hidden sm:flex items-center gap-4 shrink-0">
           <a

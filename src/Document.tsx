@@ -9,7 +9,7 @@ export default function Document(props: ParentProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>tld-search | Find the perfect domain ending for your project</title>
+        <title>tld-search | Find the perfect top-level domain for your project</title>
         <link rel="icon" href={categorySearchIcon} type="image/svg+xml" />
         <link
           rel="preload"
