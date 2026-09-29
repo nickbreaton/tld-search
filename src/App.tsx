@@ -185,7 +185,7 @@ export default function App() {
       class="relative flex flex-col max-w-4xl mx-auto mt-24 mb-15 gap-5 px-4"
     >
       <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
-        Find the perfect&nbsp;domain&nbsp;ending for your project.
+        Find the <span>perfect domain ending</span> for your project.
       </h1>
       <div class="mt-4 relative w-md max-w-full">
         <input
