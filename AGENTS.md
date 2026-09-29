@@ -2,7 +2,6 @@
 
 - Render the initial page on the server; hydrate interactive search and filters with Solid.
 - Keep catalog, search, and recommendation logic in `src/server/`, using Effect for server-side domain logic.
-- Treat TLD results as recommendations, not guarantees that a specific domain is available to register.
 
 ## Tech stack
 

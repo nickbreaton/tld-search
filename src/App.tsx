@@ -13,6 +13,7 @@ import arrowOutwardIcon from "@material-symbols/svg-700/rounded/arrow_outward.sv
 import closeIcon from "@material-symbols/svg-700/rounded/close.svg?raw";
 import chevronDownIcon from "@material-symbols/svg-400/rounded/keyboard_arrow_down.svg?raw";
 import githubIcon from "simple-icons/icons/github.svg?raw";
+import { isMobileDevice } from "./utils/isMobileDevice";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -222,7 +223,7 @@ export default function App() {
           ref={(el) => (searchInputRef = el)}
           aria-label="Search by phrase, idea, or feeling"
           maxlength={140}
-          autofocus
+          autofocus={!isMobileDevice()}
           placeholder="Type a word, phrase, feeling, or idea"
           class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200"
           onInput={(event) => setPhrase(event.currentTarget.value)}
