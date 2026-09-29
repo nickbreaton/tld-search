@@ -12,6 +12,7 @@ import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.
 import arrowOutwardIcon from "@material-symbols/svg-700/rounded/arrow_outward.svg?raw";
 import closeIcon from "@material-symbols/svg-700/rounded/close.svg?raw";
 import chevronDownIcon from "@material-symbols/svg-400/rounded/keyboard_arrow_down.svg?raw";
+import githubIcon from "simple-icons/icons/github.svg?raw";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -185,9 +186,37 @@ export default function App() {
       ref={(el) => (mainRef = el)}
       class="relative flex flex-col max-w-4xl mx-auto mt-4 mb-4 sm:mt-24 sm:mb-15 gap-5 px-4"
     >
-      <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
-        Find the perfect domain ending for your project.
-      </h1>
+      <div class="flex items-start justify-between gap-4">
+        <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
+          Find the perfect domain ending for your project.
+        </h1>
+        <nav class="flex items-center gap-4 shrink-0">
+          <a
+            href="https://nickbreaton.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-taupe-400 hover:text-taupe-500 hover:underline"
+          >
+            nickbreaton.com
+          </a>
+          <span aria-hidden="true" class="text-sm text-taupe-400">
+            /
+          </span>
+          <a
+            href="https://github.com/nickbreaton/tldr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="text-taupe-400 hover:text-taupe-500"
+          >
+            <span
+              aria-hidden="true"
+              class="fill-current [&_svg]:size-4 flex [transform:translateY(-6%)]"
+              innerHTML={githubIcon}
+            />
+          </a>
+        </nav>
+      </div>
       <div class="mt-4 relative w-full sm:w-md max-w-full">
         <input
           ref={(el) => (searchInputRef = el)}
