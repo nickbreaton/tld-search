@@ -115,6 +115,7 @@ export default function App() {
   const { phrase, setPhrase } = createPhraseSignal();
   const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
   const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("excludeCountry", false);
+  const activeFilterCount = createMemo(() => Number(latinOnly()) + Number(excludeCountry()));
   const { favorites, toggle } = createFavorites();
   const { bursts, spawn } = createHeartBursts();
 
@@ -254,7 +255,11 @@ export default function App() {
           class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 -m-2 p-2 touch-manipulation [anchor-name:--filters-anchor]"
         >
           <span>
-            Filters <span class="tracking-wider">(2)</span>
+            Filters
+            <Show when={activeFilterCount() > 0}>
+              {" "}
+              <span class="tracking-wider">({activeFilterCount()})</span>
+            </Show>
           </span>
           <span
             aria-hidden="true"
@@ -266,7 +271,7 @@ export default function App() {
       <dialog
         id="filters-menu"
         popover
-        class="m-0 open:flex flex-col gap-2 rounded-lg border-0 bg-white p-4 text-sm text-taupe-700 shadow-lg shadow-taupe-900/10 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.5rem)]"
+        class="m-0 open:flex max-w-64 flex-col gap-2 rounded-lg border border-solid border-taupe-200/75 bg-white p-4 text-sm text-taupe-700 shadow-sm shadow-taupe-400/20 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.125rem)]"
       >
         <label class="flex items-center gap-2">
           <input
