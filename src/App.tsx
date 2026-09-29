@@ -200,7 +200,7 @@ export default function App() {
           >
             nickbreaton.com
           </a>
-          <span aria-hidden="true" class="text-sm text-taupe-400 cursor-default">
+          <span aria-hidden="true" class="text-sm text-taupe-400 cursor-default select-none">
             /
           </span>
           <a
@@ -250,7 +250,8 @@ export default function App() {
         <span>{sortedTlds().length > 500 ? "500+" : sortedTlds().length} results</span>
         <button
           type="button"
-          class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 -m-2 p-2 touch-manipulation"
+          popovertarget="filters-menu"
+          class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 -m-2 p-2 touch-manipulation [anchor-name:--filters-anchor]"
         >
           <span>
             Filters <span class="tracking-wider">(2)</span>
@@ -262,22 +263,28 @@ export default function App() {
           />
         </button>
       </div>
-      {/*<label>
+      <dialog
+        id="filters-menu"
+        popover
+        class="m-0 open:flex flex-col gap-2 rounded-lg border-0 bg-white p-4 text-sm text-taupe-700 shadow-lg shadow-taupe-900/10 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.5rem)]"
+      >
+        <label class="flex items-center gap-2">
           <input
             type="checkbox"
             checked={latinOnly()}
             onChange={(event) => setLatinOnly(event.currentTarget.checked)}
-          />{" "}
+          />
           Hide domain endings with non-Latin characters
         </label>
-        <label>
+        <label class="flex items-center gap-2">
           <input
             type="checkbox"
             checked={excludeCountry()}
             onChange={(event) => setExcludeCountry(event.currentTarget.checked)}
-          />{" "}
+          />
           Hide country domain endings
-        </label>*/}
+        </label>
+      </dialog>
       <div class={["-mt-1", { "opacity-50": isPending(debouncedPhrase) || isPending(search) }]}>
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
