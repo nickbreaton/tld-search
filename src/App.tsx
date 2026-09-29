@@ -54,7 +54,7 @@ function TldList(props: {
 
                   props.toggle(tld.name);
                 }}
-                class="cursor-pointer"
+                class="cursor-pointer -m-2.5 p-2.5 touch-manipulation"
               >
                 <span
                   aria-hidden="true"
@@ -80,7 +80,7 @@ function TldList(props: {
                         target="_blank"
                         rel="noopener noreferrer"
                         title={`Search ${REGISTRAR_LABELS[registrar]} for .${tld.name} domains`}
-                        class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500"
+                        class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500 [-webkit-tap-highlight-color:--alpha(var(--color-taupe-400)/40%)]"
                       >
                         {REGISTRAR_LABELS[registrar]}
                         <span
@@ -221,11 +221,10 @@ export default function App() {
       <div class="mt-4 relative w-full sm:w-md max-w-full">
         <input
           ref={(el) => (searchInputRef = el)}
-          aria-label="Search by phrase, idea, or feeling"
           maxlength={140}
           autofocus={!isMobileDevice()}
-          placeholder="Type a word, phrase, feeling, or idea"
-          class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200"
+          placeholder="Type a word, phrase, feeling, or idea..."
+          class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200 touch-manipulation"
           onInput={(event) => setPhrase(event.currentTarget.value)}
         />
         <Show when={latest(() => phrase())}>
@@ -241,7 +240,7 @@ export default function App() {
 
               searchInputRef?.focus();
             }}
-            class="cursor-pointer absolute inset-y-0 right-0 flex items-center pr-3 text-taupe-400 hover:text-taupe-600"
+            class="cursor-pointer absolute inset-y-0 right-0 flex items-center pl-2 pr-3 text-taupe-400 hover:text-taupe-600 touch-manipulation"
           >
             <span aria-hidden="true" class=" [&_svg]:size-5 fill-current" innerHTML={closeIcon} />
           </button>
@@ -251,7 +250,7 @@ export default function App() {
         <span>{sortedTlds().length > 500 ? "500+" : sortedTlds().length} results</span>
         <button
           type="button"
-          class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500"
+          class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 -m-2 p-2 touch-manipulation"
         >
           <span>
             Filters <span class="tracking-wider">(2)</span>
