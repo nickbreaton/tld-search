@@ -125,15 +125,20 @@ export default function App() {
     return result.names.map((name) => catalogByName().get(name)).filter(visible);
   });
 
-  const favoriteTlds = createMemo(() => visibleTlds().filter((tld) => favorites().has(tld.name)));
-  const otherTlds = createMemo(() => visibleTlds().filter((tld) => !favorites().has(tld.name)));
+  const sortedTlds = createMemo(() =>
+    phrase()
+      ? visibleTlds()
+      : visibleTlds().toSorted(
+          (a, b) => Number(favorites().has(b.name)) - Number(favorites().has(a.name)),
+        ),
+  );
 
   return (
-    <main class="flex flex-col max-w-4xl mx-auto my-15 gap-5 px-4">
+    <main class="flex flex-col max-w-4xl mx-auto mt-24 mb-15 gap-5 px-4">
       <h1 class="text-3xl leading-8 font-bold max-w-2xl text-balance">
         Find the perfect&nbsp;domain&nbsp;ending for your project
       </h1>
-      <div>
+      <div class="mt-4">
         <input
           aria-label="Search by phrase, idea, or feeling"
           maxlength={140}
@@ -159,28 +164,14 @@ export default function App() {
           />{" "}
           Hide country domain endings
         </label>*/}
-      <div class={isPending(debouncedPhrase) || isPending(search) ? "opacity-50" : ""}>
+      <div class={["mt-10", { "opacity-50": isPending(debouncedPhrase) || isPending(search) }]}>
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
         </Show>
         <Show when={phrase() && !search().error && visibleTlds().length === 0}>
           <p role="status">No TLDs found. Try a different search or adjust the filters.</p>
         </Show>
-        <Show
-          when={!phrase()}
-          fallback={<TldList tlds={visibleTlds()} favorites={favorites()} toggle={toggle} />}
-        >
-          <Show when={favoriteTlds().length > 0}>
-            <section>
-              <h2 class="text-xl font-semibold mb-4">Favorites</h2>
-              <TldList tlds={favoriteTlds()} favorites={favorites()} toggle={toggle} />
-            </section>
-          </Show>
-          <section>
-            <h2 class="text-xl font-semibold mb-4">Other domain endings</h2>
-            <TldList tlds={otherTlds()} favorites={favorites()} toggle={toggle} />
-          </section>
-        </Show>
+        <TldList tlds={sortedTlds()} favorites={favorites()} toggle={toggle} />
       </div>
     </main>
   );
