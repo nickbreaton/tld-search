@@ -1,6 +1,7 @@
 import { Loading, type ParentProps } from "solid-js";
 import { HydrationScript } from "@solidjs/web";
 import googleSansUrl from "@fontsource-variable/google-sans/files/google-sans-latin-wght-normal.woff2?url";
+import categorySearchIcon from "@material-symbols/svg-700/rounded/category_search.svg?url";
 
 export default function Document(props: ParentProps) {
   return (
@@ -8,7 +9,8 @@ export default function Document(props: ParentProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>TLDR — find your top-level domain</title>
+        <title>tld-search | Find the perfect domain ending for your project</title>
+        <link rel="icon" href={categorySearchIcon} type="image/svg+xml" />
         <link
           rel="preload"
           href={googleSansUrl}
