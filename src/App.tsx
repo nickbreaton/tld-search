@@ -223,7 +223,9 @@ export default function App() {
           type="button"
           class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500"
         >
-          Filters
+          <span>
+            Filters <span class="tracking-wider">(2)</span>
+          </span>
           <span
             aria-hidden="true"
             class="fill-current [&_svg]:size-5"
