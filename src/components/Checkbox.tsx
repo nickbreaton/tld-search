@@ -31,7 +31,9 @@ export function Checkbox(props: {
       <span class="flex flex-col">
         <span class="text-sm leading-5 text-taupe-700 dark:text-taupe-300">{props.label}</span>
         <Show when={props.description}>
-          <span class="text-xs text-taupe-400 dark:text-taupe-500">{props.description}</span>
+          {(description) => (
+            <span class="text-xs text-taupe-400 dark:text-taupe-500">{description()}</span>
+          )}
         </Show>
       </span>
     </label>
