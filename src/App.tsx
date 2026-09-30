@@ -96,6 +96,9 @@ export default function App() {
         ),
   );
 
+  const pending = () => isPending(debouncedPhrase) || isPending(search);
+  const pendingClass = () => ({ "opacity-40 dark:opacity-33": pending() });
+
   return (
     <main
       ref={(el) => (mainRef = el)}
@@ -107,8 +110,10 @@ export default function App() {
         onInput={setPhrase}
         onClear={() => setPhrase("")}
       />
-      <div class="mt-3 flex items-center justify-between text-sm text-taupe-400">
-        <span>{sortedTlds().length > 500 ? "500+" : sortedTlds().length} results</span>
+      <div class="mt-3 flex items-center justify-between text-sm text-taupe-400 dark:text-taupe-500">
+        <span class={pendingClass()}>
+          {sortedTlds().length > 500 ? "500+" : sortedTlds().length} results
+        </span>
         <Filters
           latinOnly={latest(() => latinOnly())}
           onLatinOnlyChange={setLatinOnly}
@@ -116,7 +121,7 @@ export default function App() {
           onExcludeCountryChange={setExcludeCountry}
         />
       </div>
-      <div class={["-mt-1", { "opacity-50": isPending(debouncedPhrase) || isPending(search) }]}>
+      <div class={["-mt-1", pendingClass()]} inert={pending()}>
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
         </Show>

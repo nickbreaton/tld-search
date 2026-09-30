@@ -22,9 +22,9 @@ export function TldCard(props: {
   onToggleFavorite: (event: ToggleFavoriteEvent) => void;
 }) {
   return (
-    <li class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border">
+    <li class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border dark:bg-taupe-900/85 dark:border-taupe-800 dark:inset-shadow-2xs dark:inset-shadow-white/5">
       <div class="flex items-center justify-between gap-2">
-        <span class="text-lg text-taupe-800">.{props.tld.name}</span>
+        <span class="text-lg text-taupe-800 dark:text-taupe-100">.{props.tld.name}</span>
         <button
           type="button"
           aria-label={`${props.favorite ? "Remove" : "Add"} .${props.tld.name} ${props.favorite ? "from" : "to"} favorites`}
@@ -36,12 +36,15 @@ export function TldCard(props: {
         >
           <span
             aria-hidden="true"
-            class={["[&_svg]:size-6", props.favorite ? "fill-red-500" : "fill-taupe-700"]}
+            class={[
+              "[&_svg]:size-6",
+              props.favorite ? "fill-red-500" : "fill-taupe-700 dark:fill-taupe-300",
+            ]}
             innerHTML={props.favorite ? favoriteFilledIcon : favoriteIcon}
           />
         </button>
       </div>
-      <hr class="my-3 border-t border-solid border-taupe-200/75" />
+      <hr class="my-3 border-t border-solid border-taupe-200/75 dark:border-taupe-800" />
       <ol class="flex flex-col gap-1 select-none">
         <For each={REGISTRARS}>
           {(registrar) => (
@@ -60,7 +63,7 @@ export function TldCard(props: {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={`Search ${registrar.label} for .${props.tld.name} domains`}
-                    class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500 touch-manipulation [-webkit-tap-highlight-color:--alpha(var(--color-taupe-400)/40%)]"
+                    class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500 dark:text-taupe-500 dark:hover:text-taupe-400 touch-manipulation [-webkit-tap-highlight-color:--alpha(var(--color-taupe-400)/40%)] dark:[-webkit-tap-highlight-color:--alpha(var(--color-taupe-600)/40%)]"
                   >
                     {registrar.label}
                     <span

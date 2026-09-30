@@ -17,7 +17,7 @@ export function SearchInput(props: {
         autofocus={!isMobileDevice()}
         enterkeyhint="search"
         placeholder="Type a word, phrase, feeling, or idea..."
-        class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200 touch-manipulation"
+        class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200 dark:bg-taupe-900/85 dark:border-taupe-800 dark:placeholder:text-taupe-500 dark:focus:border-taupe-600 dark:focus:ring-taupe-800 dark:inset-shadow-xs dark:inset-shadow-black/30 touch-manipulation"
         onInput={(event) => props.onInput(event.currentTarget.value)}
         onKeyDown={(event) => {
           if (event.key === "Enter" && isMobileDevice()) {
@@ -38,7 +38,7 @@ export function SearchInput(props: {
 
             inputRef?.focus();
           }}
-          class="cursor-pointer absolute inset-y-0 right-0 flex items-center pl-2 pr-3 text-taupe-400 hover:text-taupe-600 touch-manipulation"
+          class="cursor-pointer absolute inset-y-0 right-0 flex items-center pl-2 pr-3 text-taupe-400 hover:text-taupe-600 dark:text-taupe-500 dark:hover:text-taupe-300 touch-manipulation"
         >
           <span aria-hidden="true" class=" [&_svg]:size-5 fill-current" innerHTML={closeIcon} />
         </button>

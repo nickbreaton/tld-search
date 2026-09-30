@@ -16,7 +16,7 @@ export function Filters(props: {
       <button
         type="button"
         popovertarget={menuId}
-        class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 -m-2 p-2 touch-manipulation select-none [anchor-name:--filters-anchor]"
+        class="cursor-pointer shrink-0 inline-flex items-center gap-1.5 text-sm text-taupe-400 hover:text-taupe-500 dark:text-taupe-500 dark:hover:text-taupe-400 -m-2 p-2 touch-manipulation select-none [anchor-name:--filters-anchor]"
       >
         <span>
           Filters
@@ -34,7 +34,7 @@ export function Filters(props: {
       <dialog
         id={menuId}
         popover
-        class="m-0 open:flex max-w-80 flex-col gap-4 rounded-lg border border-solid border-taupe-200/75 bg-white p-6 text-sm text-taupe-700 shadow-sm shadow-taupe-400/20 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.125rem)]"
+        class="m-0 open:flex max-w-80 flex-col gap-4 rounded-lg border border-solid border-taupe-200/75 bg-white p-6 text-sm text-taupe-700 shadow-sm shadow-taupe-400/20 dark:border-taupe-800 dark:bg-taupe-900 dark:text-taupe-300 dark:shadow-black/50 dark:inset-shadow-2xs dark:inset-shadow-white/5 [inset:auto] [position-anchor:--filters-anchor] [right:anchor(right)] [top:calc(anchor(bottom)_+_0.125rem)]"
       >
         <Checkbox
           checked={props.latinOnly}

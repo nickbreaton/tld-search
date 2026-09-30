@@ -19,7 +19,7 @@ export default function Document(props: ParentProps) {
           crossorigin="anonymous"
         />
       </head>
-      <body class="bg-taupe-50">
+      <body class="bg-taupe-50 dark:bg-taupe-950 dark:text-taupe-50">
         <HydrationScript />
         <Loading fallback={null}>{props.children}</Loading>
       </body>

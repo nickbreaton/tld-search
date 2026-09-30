@@ -35,3 +35,7 @@
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
+:root {
+  color-scheme: light dark;
+}

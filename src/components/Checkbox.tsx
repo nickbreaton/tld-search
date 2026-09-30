@@ -22,14 +22,16 @@ export function Checkbox(props: {
         class={[
           "-mt-px shrink-0 rounded-xs [&_svg]:size-5",
           "peer-focus-visible:[outline:auto]",
-          props.checked ? "fill-taupe-700" : "fill-taupe-400",
+          props.checked
+            ? "fill-taupe-700 dark:fill-taupe-300"
+            : "fill-taupe-400 dark:fill-taupe-500",
         ]}
         innerHTML={props.checked ? checkBoxIcon : checkBoxOutlineBlankIcon}
       />
       <span class="flex flex-col">
-        <span class="text-sm leading-5 text-taupe-700">{props.label}</span>
+        <span class="text-sm leading-5 text-taupe-700 dark:text-taupe-300">{props.label}</span>
         <Show when={props.description}>
-          <span class="text-xs text-taupe-400">{props.description}</span>
+          <span class="text-xs text-taupe-400 dark:text-taupe-500">{props.description}</span>
         </Show>
       </span>
     </label>
