@@ -11,7 +11,7 @@ import { Header } from "./components/Header";
 import { SearchInput } from "./components/SearchInput";
 import { Filters } from "./components/Filters";
 import { TldList } from "./components/TldList";
-import type { CatalogTld } from "./components/TldCard";
+import type { CatalogTld, ToggleFavoriteEvent } from "./components/TldCard";
 import { HeartBursts } from "./components/HeartBursts";
 
 const SEARCH_DEBOUNCE_MS = 150;
@@ -31,10 +31,14 @@ export default function App() {
 
   let mainRef: HTMLElement | undefined;
 
-  const handleHeart = (clientX: number, clientY: number) => {
-    const rect = mainRef?.getBoundingClientRect();
+  const handleToggleFavorite = (name: string, { coords }: ToggleFavoriteEvent) => {
+    if (!favorites().has(name)) {
+      const rect = mainRef?.getBoundingClientRect();
 
-    spawn(clientX - (rect?.left ?? 0), clientY - (rect?.top ?? 0));
+      spawn(coords.x - (rect?.left ?? 0), coords.y - (rect?.top ?? 0));
+    }
+
+    toggle(name);
   };
 
   const debouncedPhrase = createMemo(async () => {
@@ -119,8 +123,7 @@ export default function App() {
         <TldList
           tlds={sortedTlds()}
           favorites={favorites()}
-          toggle={toggle}
-          onHeart={handleHeart}
+          onToggleFavorite={handleToggleFavorite}
         />
       </div>
       <HeartBursts bursts={bursts()} />

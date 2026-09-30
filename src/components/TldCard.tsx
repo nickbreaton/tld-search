@@ -14,11 +14,12 @@ const REGISTRARS: { id: Registrar; label: string }[] = [
   { id: "name", label: "Name.com" },
 ];
 
+export type ToggleFavoriteEvent = { coords: { x: number; y: number } };
+
 export function TldCard(props: {
   tld: CatalogTld;
   favorite: boolean;
-  onToggleFavorite: () => void;
-  onHeart: (x: number, y: number) => void;
+  onToggleFavorite: (event: ToggleFavoriteEvent) => void;
 }) {
   return (
     <li class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border">
@@ -28,13 +29,9 @@ export function TldCard(props: {
           type="button"
           aria-label={`${props.favorite ? "Remove" : "Add"} .${props.tld.name} ${props.favorite ? "from" : "to"} favorites`}
           aria-pressed={props.favorite ? "true" : "false"}
-          onClick={(event) => {
-            if (!props.favorite) {
-              props.onHeart(event.clientX, event.clientY);
-            }
-
-            props.onToggleFavorite();
-          }}
+          onClick={(event) =>
+            props.onToggleFavorite({ coords: { x: event.clientX, y: event.clientY } })
+          }
           class="cursor-pointer -m-2.5 p-2.5 touch-manipulation"
         >
           <span
