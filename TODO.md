@@ -4,4 +4,4 @@
 - Finalize language in filters
 - Focus states need work - mobile safari filter dialog too
 - Readme needs cleanup
-- Safari sometimes shows default cookie values on load
+- Safari filter show bottom bar
