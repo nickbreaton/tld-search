@@ -35,7 +35,3 @@
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-
-main:has(#filters-menu:popover-open) #filters-chevron {
-  transform: scaleY(-1);
-}

@@ -3,3 +3,4 @@
 - Double check service names makes sense
 - Dark mode
 - Get "nickbreaton.com / GitHub" in the footer on mobile
+- Finalize language in filters
