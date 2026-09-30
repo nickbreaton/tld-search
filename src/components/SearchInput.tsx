@@ -17,7 +17,7 @@ export function SearchInput(props: {
         autofocus={!isMobileDevice()}
         enterkeyhint="search"
         placeholder="Type a word, phrase, feeling, or idea..."
-        class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200 dark:bg-taupe-900/85 dark:border-taupe-800 dark:placeholder:text-taupe-500 dark:focus:border-taupe-600 dark:focus:ring-taupe-800 touch-manipulation"
+        class="bg-white rounded-lg pl-4 pr-10 py-3 border border-solid border-taupe-200/75 w-full outline-none placeholder:text-taupe-400 focus:border-taupe-400 focus:ring-4 focus:ring-taupe-200 dark:bg-taupe-900 dark:border-taupe-800 dark:placeholder:text-taupe-500 dark:focus:border-taupe-600 dark:focus:ring-taupe-800 touch-manipulation"
         onInput={(event) => props.onInput(event.currentTarget.value)}
         onKeyDown={(event) => {
           if (event.key === "Enter" && isMobileDevice()) {
