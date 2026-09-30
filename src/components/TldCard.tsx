@@ -30,7 +30,9 @@ export function TldCard(props: {
       class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border dark:bg-taupe-900/85 dark:border-taupe-800"
     >
       <div class="flex items-center justify-between gap-2">
-        <span class="text-lg text-taupe-800 dark:text-taupe-100">.{props.tld.name}</span>
+        <span translate="no" class="notranslate text-lg text-taupe-800 dark:text-taupe-100">
+          .{props.tld.name}
+        </span>
         <button
           type="button"
           aria-label={`${props.favorite ? "Remove" : "Add"} .${props.tld.name} ${props.favorite ? "from" : "to"} favorites`}
