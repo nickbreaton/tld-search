@@ -133,7 +133,7 @@ export default function App() {
           onExcludeCountryChange={setExcludeCountry}
         />
       </div>
-      <div class={["-mt-1", pendingClass()]} inert={pending()}>
+      <div class={["-mt-1", pendingClass()]}>
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
         </Show>
