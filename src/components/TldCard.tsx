@@ -24,7 +24,7 @@ export function TldCard(props: {
   return (
     <li
       hidden={props.hidden}
-      class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border dark:bg-taupe-900 dark:border-taupe-800"
+      class="[content-visibility:auto] [contain-intrinsic-size:auto_167px] bg-white p-4 rounded-lg border-taupe-200/75 border-solid border dark:bg-taupe-900 dark:border-taupe-800"
     >
       <div class="flex items-center justify-between gap-2">
         <span translate="no" class="notranslate text-lg text-taupe-800 dark:text-taupe-100">
