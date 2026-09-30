@@ -102,9 +102,8 @@ export default function App() {
   // Keyed by TLD name so each card only re-renders when its own state changes.
   const cardStates = createProjection<Record<string, TldCardState>>((draft) => {
     for (const { name } of catalog()) {
-      draft[name] ??= { hidden: true, favorite: false };
+      draft[name] ??= { hidden: true };
       draft[name].hidden = !resultNames().has(name);
-      draft[name].favorite = favorites().has(name);
     }
   }, {});
 
@@ -140,6 +139,7 @@ export default function App() {
         <TldList
           tlds={cardOrder()}
           cardStates={cardStates}
+          favorites={favorites()}
           onToggleFavorite={handleToggleFavorite}
         />
       </div>

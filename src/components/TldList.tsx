@@ -4,6 +4,7 @@ import { TldCard, type CatalogTld, type TldCardState, type ToggleFavoriteEvent }
 export function TldList(props: {
   tlds: CatalogTld[];
   cardStates: Record<string, TldCardState>;
+  favorites: ReadonlySet<string>;
   onToggleFavorite: (name: string, event: ToggleFavoriteEvent) => void;
 }) {
   return (
@@ -13,7 +14,7 @@ export function TldList(props: {
           <TldCard
             tld={tld}
             hidden={props.cardStates[tld.name].hidden}
-            favorite={props.cardStates[tld.name].favorite}
+            favorite={props.favorites.has(tld.name)}
             onToggleFavorite={(event) => props.onToggleFavorite(tld.name, event)}
           />
         )}

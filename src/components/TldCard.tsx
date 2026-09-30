@@ -11,7 +11,7 @@ const REGISTRARS: { id: Registrar; label: string }[] = [
   { id: "name", label: "Name.com" },
 ];
 
-export type TldCardState = { hidden: boolean; favorite: boolean };
+export type TldCardState = { hidden: boolean };
 
 export type ToggleFavoriteEvent = { coords: { x: number; y: number } };
 
