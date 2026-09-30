@@ -36,6 +36,20 @@
   animation-fill-mode: forwards;
 }
 
+/* Card icons render as CSS masks instead of inline SVG: with ~1,600 cards mounted, thousands of
+   inline <svg> elements make Safari's style, layout, and paint noticeably slow. */
+@utility icon-favorite {
+  mask: url("@material-symbols/svg-400/rounded/favorite.svg") center / contain no-repeat;
+}
+
+@utility icon-favorite-fill {
+  mask: url("@material-symbols/svg-400/rounded/favorite-fill.svg") center / contain no-repeat;
+}
+
+@utility icon-arrow-outward {
+  mask: url("@material-symbols/svg-700/rounded/arrow_outward.svg") center / contain no-repeat;
+}
+
 :root {
   color-scheme: light dark;
 }

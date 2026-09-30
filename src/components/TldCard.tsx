@@ -1,8 +1,5 @@
 import { For, Show } from "solid-js";
 import type { getCatalog } from "../server/catalog";
-import favoriteIcon from "@material-symbols/svg-400/rounded/favorite.svg?raw";
-import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
-import arrowOutwardIcon from "@material-symbols/svg-700/rounded/arrow_outward.svg?raw";
 
 export type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
 
@@ -45,10 +42,11 @@ export function TldCard(props: {
           <span
             aria-hidden="true"
             class={[
-              "[&_svg]:size-6",
-              props.favorite ? "fill-red-500" : "fill-taupe-700 dark:fill-taupe-300",
+              "block size-6 bg-current",
+              props.favorite
+                ? "icon-favorite-fill text-red-500"
+                : "icon-favorite text-taupe-700 dark:text-taupe-300",
             ]}
-            innerHTML={props.favorite ? favoriteFilledIcon : favoriteIcon}
           />
         </button>
       </div>
@@ -76,8 +74,7 @@ export function TldCard(props: {
                     {registrar.label}
                     <span
                       aria-hidden="true"
-                      class="fill-current translate-y-px [&_svg]:size-4"
-                      innerHTML={arrowOutwardIcon}
+                      class="icon-arrow-outward size-4 bg-current translate-y-px"
                     />
                   </a>
                 </li>
