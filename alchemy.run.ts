@@ -2,14 +2,11 @@ import * as Alchemy from "alchemy";
 import * as Cloudflare from "alchemy/Cloudflare";
 import { Effect } from "effect";
 
-export const Gateway = Cloudflare.AI.Gateway("TldrGateway", {
-  cacheTtl: 300,
-  collectLogs: true,
-});
-
 export const Website = Cloudflare.Website.Vite("TldSearchWebsite", {
+  domain: "tld-search.nickbreaton.com",
+  workersDev: false,
   env: {
-    AI: Gateway,
+    AI: Cloudflare.Workers.AI(),
   },
   observability: {
     enabled: true,
@@ -25,11 +22,9 @@ export default Alchemy.Stack(
     state: Cloudflare.state(),
   },
   Effect.gen(function* () {
-    const gateway = yield* Gateway;
     const website = yield* Website;
 
     return {
-      gatewayId: gateway.gatewayId,
       url: website.url,
     };
   }),

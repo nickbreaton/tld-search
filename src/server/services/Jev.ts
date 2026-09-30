@@ -62,7 +62,14 @@ export class Jev extends Context.Service<
             // SAFETY: Alchemy binds AI on TldSearchWebsite for every Worker request.
             const websiteEnv = env as WebsiteEnv;
 
-            return websiteEnv.AI.run("typesafe/jev", { ...inference }, { signal });
+            return websiteEnv.AI.run(
+              "typesafe/jev",
+              { ...inference },
+              {
+                signal,
+                gateway: { id: "default" },
+              },
+            );
           },
           catch: (cause) => new JevError({ cause }),
         });

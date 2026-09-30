@@ -11,6 +11,8 @@ This repository uses Alchemy `2.0.0` (beta) to provision and deploy resources.
 
 Define resources in `alchemy.run.ts`. Do not add a Wrangler configuration for cloudflare.
 
+DO NOT deploy resources unless explicitly instructed to do so. Dry runs are totally fine.
+
 ## Effect
 
 This repository uses the Effect (v4 release candidate) TypeScript library.
