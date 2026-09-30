@@ -24,7 +24,7 @@ export function TldCard(props: {
   return (
     <li
       hidden={props.hidden}
-      class="[content-visibility:auto] [contain-intrinsic-size:auto_167px] bg-white p-4 rounded-lg border-taupe-200/75 border-solid border dark:bg-taupe-900 dark:border-taupe-800"
+      class="[content-visibility:auto] [contain-intrinsic-size:auto_167px] bg-white p-4 rounded-lg border-taupe-200 border-solid border dark:bg-taupe-900 dark:border-taupe-800"
     >
       <div class="flex items-center justify-between gap-2">
         <span translate="no" class="notranslate text-lg text-taupe-800 dark:text-taupe-100">
@@ -50,7 +50,7 @@ export function TldCard(props: {
           />
         </button>
       </div>
-      <hr class="my-3 border-t border-solid border-taupe-200/75 dark:border-taupe-800" />
+      <hr class="my-3 border-t border-solid border-taupe-200 dark:border-taupe-800" />
       <ol class="flex flex-col gap-1 select-none">
         <For each={REGISTRARS}>
           {(registrar) => (
