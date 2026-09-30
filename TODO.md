@@ -2,3 +2,5 @@
 - Double check service names makes sense
 - Get "nickbreaton.com / GitHub" in the footer on mobile
 - Finalize language in filters
+- Focus states need work - mobile safari filter dialog too
+- Readme needs cleanup
