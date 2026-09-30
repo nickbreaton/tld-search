@@ -8,6 +8,7 @@ import { createFavorites } from "./state/createFavorites";
 import { createHeartBursts } from "./state/createHeartBursts";
 import { invoke } from "@solidjs/web/server-functions";
 import { Header } from "./components/Header";
+import { SiteLinks } from "./components/SiteLinks";
 import { SearchInput } from "./components/SearchInput";
 import { Filters } from "./components/Filters";
 import { TldList } from "./components/TldList";
@@ -113,7 +114,7 @@ export default function App() {
   return (
     <main
       ref={(el) => (mainRef = el)}
-      class="relative flex flex-col max-w-4xl mx-auto mt-8 mb-6 sm:mt-16 sm:mb-15 gap-5 px-4"
+      class="relative flex flex-col min-h-dvh max-w-4xl mx-auto pt-8 pb-6 sm:pt-16 sm:pb-15 gap-5 px-4"
     >
       <Header />
       <SearchInput
@@ -132,7 +133,7 @@ export default function App() {
           onExcludeCountryChange={setExcludeCountry}
         />
       </div>
-      <div class={["-mt-1", pendingClass()]}>
+      <div class={["-mt-1 flex-1", pendingClass()]}>
         <Show when={phrase() && search().error}>
           <p role="alert">Search failed. Please try again.</p>
         </Show>
@@ -143,6 +144,9 @@ export default function App() {
           onToggleFavorite={handleToggleFavorite}
         />
       </div>
+      <footer class="sm:hidden pt-6">
+        <SiteLinks class="justify-center" />
+      </footer>
       <HeartBursts bursts={bursts()} />
     </main>
   );

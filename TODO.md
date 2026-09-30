@@ -1,5 +1,8 @@
 - When scrolled down on iOS Safari and favoriting from the list, the heart spray both lags and is not under the pointer.
 - Double check service names makes sense
-- Get "nickbreaton.com / GitHub" in the footer on mobile
 - Finalize language in filters
 - Readme needs cleanup
+- Add some better no results copy
+  - actually no results
+  - error
+  - 404
