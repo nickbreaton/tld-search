@@ -14,15 +14,21 @@ const REGISTRARS: { id: Registrar; label: string }[] = [
   { id: "name", label: "Name.com" },
 ];
 
+export type TldCardState = { hidden: boolean; favorite: boolean };
+
 export type ToggleFavoriteEvent = { coords: { x: number; y: number } };
 
 export function TldCard(props: {
   tld: CatalogTld;
+  hidden: boolean;
   favorite: boolean;
   onToggleFavorite: (event: ToggleFavoriteEvent) => void;
 }) {
   return (
-    <li class="bg-white p-4 rounded-lg border-taupe-200/75 border-solid border dark:bg-taupe-900/85 dark:border-taupe-800 dark:inset-shadow-2xs dark:inset-shadow-white/5">
+    <li
+      hidden={props.hidden}
+      class="[content-visibility:auto] [contain-intrinsic-height:auto_167px] bg-white p-4 rounded-lg border-taupe-200/75 border-solid border dark:bg-taupe-900/85 dark:border-taupe-800 dark:inset-shadow-2xs dark:inset-shadow-white/5"
+    >
       <div class="flex items-center justify-between gap-2">
         <span class="text-lg text-taupe-800 dark:text-taupe-100">.{props.tld.name}</span>
         <button

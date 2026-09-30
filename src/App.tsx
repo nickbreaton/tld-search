@@ -1,4 +1,4 @@
-import { createMemo, isPending, latest, onCleanup, Show } from "solid-js";
+import { createMemo, createProjection, isPending, latest, onCleanup, Show } from "solid-js";
 import { getCatalog } from "./server/catalog";
 import { recommend } from "./server/search";
 import "./styles/global.css";
@@ -11,7 +11,7 @@ import { Header } from "./components/Header";
 import { SearchInput } from "./components/SearchInput";
 import { Filters } from "./components/Filters";
 import { TldList } from "./components/TldList";
-import type { CatalogTld, ToggleFavoriteEvent } from "./components/TldCard";
+import type { CatalogTld, TldCardState, ToggleFavoriteEvent } from "./components/TldCard";
 import { HeartBursts } from "./components/HeartBursts";
 
 const SEARCH_DEBOUNCE_MS = 150;
@@ -19,9 +19,7 @@ const SEARCH_DEBOUNCE_MS = 150;
 export default function App() {
   const catalog = createMemo(() => getCatalog());
 
-  const catalogByName = createMemo(() => {
-    return new Map(catalog().map((tld) => [tld.name, tld]));
-  });
+  const catalogByName = createMemo(() => new Map(catalog().map((tld) => [tld.name, tld])));
 
   const { phrase, setPhrase } = createPhraseSignal();
   const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
@@ -71,30 +69,44 @@ export default function App() {
       .catch(() => ({ names: [], error: true }));
   });
 
-  const visibleTlds = createMemo(() => {
-    const all = catalog();
+  // Matching TLDs in display order: search rank while searching, otherwise favorites first.
+  const results = createMemo(() => {
     const showLatinOnly = latinOnly();
     const showNonCountryOnly = excludeCountry();
 
-    const visible = (tld: CatalogTld | undefined): tld is CatalogTld =>
+    const matches = (tld: CatalogTld | undefined): tld is CatalogTld =>
       tld != null && (!showLatinOnly || tld.latin) && (!showNonCountryOnly || tld.nonCountry);
 
-    if (!phrase()) return all.filter(visible);
+    if (!phrase()) {
+      return catalog()
+        .filter(matches)
+        .toSorted((a, b) => Number(favorites().has(b.name)) - Number(favorites().has(a.name)));
+    }
 
     const result = search();
 
     if (result.error) return [];
 
-    return result.names.map((name) => catalogByName().get(name)).filter(visible);
+    return result.names.map((name) => catalogByName().get(name)).filter(matches);
   });
 
-  const sortedTlds = createMemo(() =>
-    phrase()
-      ? visibleTlds()
-      : visibleTlds().toSorted(
-          (a, b) => Number(favorites().has(b.name)) - Number(favorites().has(a.name)),
-        ),
-  );
+  const resultNames = createMemo(() => new Set(results().map((tld) => tld.name)));
+
+  // Every catalog entry stays mounted so filtering and favoriting only move existing cards.
+  // Results lead in display order; the rest trail in catalog order and are hidden.
+  const cardOrder = createMemo(() => [
+    ...results(),
+    ...catalog().filter((tld) => !resultNames().has(tld.name)),
+  ]);
+
+  // Keyed by TLD name so each card only re-renders when its own state changes.
+  const cardStates = createProjection<Record<string, TldCardState>>((draft) => {
+    for (const { name } of catalog()) {
+      draft[name] ??= { hidden: true, favorite: false };
+      draft[name].hidden = !resultNames().has(name);
+      draft[name].favorite = favorites().has(name);
+    }
+  }, {});
 
   const pending = () => isPending(debouncedPhrase) || isPending(search);
   const pendingClass = () => ({ "opacity-40 dark:opacity-33": pending() });
@@ -112,7 +124,7 @@ export default function App() {
       />
       <div class="mt-3 flex items-center justify-between text-sm text-taupe-400 dark:text-taupe-500">
         <span class={pendingClass()}>
-          {sortedTlds().length > 500 ? "500+" : sortedTlds().length} results
+          {results().length > 500 ? "500+" : results().length} results
         </span>
         <Filters
           latinOnly={latest(() => latinOnly())}
@@ -126,8 +138,8 @@ export default function App() {
           <p role="alert">Search failed. Please try again.</p>
         </Show>
         <TldList
-          tlds={sortedTlds()}
-          favorites={favorites()}
+          tlds={cardOrder()}
+          cardStates={cardStates}
           onToggleFavorite={handleToggleFavorite}
         />
       </div>

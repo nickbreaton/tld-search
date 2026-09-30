@@ -1,9 +1,9 @@
 import { For } from "solid-js";
-import { TldCard, type CatalogTld, type ToggleFavoriteEvent } from "./TldCard";
+import { TldCard, type CatalogTld, type TldCardState, type ToggleFavoriteEvent } from "./TldCard";
 
 export function TldList(props: {
   tlds: CatalogTld[];
-  favorites: Set<string>;
+  cardStates: Record<string, TldCardState>;
   onToggleFavorite: (name: string, event: ToggleFavoriteEvent) => void;
 }) {
   return (
@@ -12,7 +12,8 @@ export function TldList(props: {
         {(tld) => (
           <TldCard
             tld={tld}
-            favorite={props.favorites.has(tld.name)}
+            hidden={props.cardStates[tld.name].hidden}
+            favorite={props.cardStates[tld.name].favorite}
             onToggleFavorite={(event) => props.onToggleFavorite(tld.name, event)}
           />
         )}
