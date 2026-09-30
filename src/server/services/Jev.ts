@@ -51,7 +51,7 @@ export class Jev extends Context.Service<
       inference: JevInference,
     ) => Effect.Effect<Readonly<Record<string, number>>, JevError>;
   }
->()("tldr/server/Jev") {
+>()("tld-search/server/Jev") {
   static readonly layerCloudflare = Layer.succeed(
     Jev,
     Jev.of({
@@ -59,7 +59,7 @@ export class Jev extends Context.Service<
         const response = yield* Effect.tryPromise({
           try: async (signal) => {
             const { env } = await import("cloudflare:workers");
-            // SAFETY: Alchemy binds AI on TldrWebsite for every Worker request.
+            // SAFETY: Alchemy binds AI on TldSearchWebsite for every Worker request.
             const websiteEnv = env as WebsiteEnv;
 
             return websiteEnv.AI.run("typesafe/jev", { ...inference }, { signal });

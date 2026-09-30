@@ -22,7 +22,7 @@ export class SearchTld extends Context.Service<
       excludeCountry: boolean,
     ) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
   }
->()("tldr/server/SearchTld") {
+>()("tld-search/server/SearchTld") {
   static readonly layerNoDeps = Layer.effect(
     SearchTld,
     Effect.gen(function* () {

@@ -7,7 +7,7 @@ export const Gateway = Cloudflare.AI.Gateway("TldrGateway", {
   collectLogs: true,
 });
 
-export const Website = Cloudflare.Website.Vite("TldrWebsite", {
+export const Website = Cloudflare.Website.Vite("TldSearchWebsite", {
   env: {
     AI: Gateway,
   },
@@ -19,7 +19,7 @@ export const Website = Cloudflare.Website.Vite("TldrWebsite", {
 export type WebsiteEnv = Cloudflare.InferEnv<typeof Website>;
 
 export default Alchemy.Stack(
-  "Tldr",
+  "TldSearch",
   {
     providers: Cloudflare.providers(),
     state: Cloudflare.state(),

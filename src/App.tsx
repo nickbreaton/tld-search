@@ -206,7 +206,7 @@ export default function App() {
             /
           </span>
           <a
-            href="https://github.com/nickbreaton/tldr"
+            href="https://github.com/nickbreaton/tld-search"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

@@ -10,7 +10,7 @@ export class TldRecommender extends Context.Service<
   {
     readonly recommend: SearchTld["Service"]["search"];
   }
->()("tldr/server/TldRecommender") {
+>()("tld-search/server/TldRecommender") {
   static readonly layerNoDeps = Layer.effect(
     TldRecommender,
     Effect.gen(function* () {

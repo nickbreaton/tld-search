@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "bookmarks-jev",
+      "name": "tld-search",
       "dependencies": {
         "@fontsource-variable/google-sans": "^5.3.1",
         "@material-symbols/svg-400": "^0.47.5",

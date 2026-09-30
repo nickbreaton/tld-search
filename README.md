@@ -1,14 +1,11 @@
-# TL;DR
+# tld-search
 
-**Top-level domain that's right for you.**
+A small personal project that takes advantage of Jev's quick inference to provide a semantic search of top-level domains.
 
-TL;DR is a server-rendered Solid 2 site with hydrated catalog filters and server functions that use Jev to rank top-level domains for a natural-language query. It runs on Cloudflare Workers and is provisioned with Alchemy.
+## Tech
 
-## Registrar selection
+Had a ton of fun building this because it relies on:
 
-To be included a registrar must:
-
-1. Have a high standing reputation
-2. Support enough TLDs to be worth implementing
-3. Offer a free API to fetch their supported TLDs
-4. Offer a TLD-specific search page for each supported TLD
+1. Solid 2 (currently RC) – a game changer when it comes to handling async state on the client.
+2. Effect 4 (currently RC) - agents are finally getting really good here, and its refined toolkit in v4 makes the server pieces just fall into place like legos.
+3. Alchemy 2 (beta) - vastly simplifies building against Cloudflare, making local dev setup a breeze.
