@@ -1,8 +1,7 @@
 import { Cookie } from "@remix-run/headers/cookie";
 import { getRequestEvent, isServer } from "@solidjs/web";
-import { action, createMemo, type Accessor } from "solid-js";
+import { action, createOptimistic, until, type Accessor } from "solid-js";
 import { on } from "events-to-async";
-import { affects } from "solid-js";
 
 export function createCookieSignal<T extends unknown>(
   name: string,
@@ -13,7 +12,7 @@ export function createCookieSignal<T extends unknown>(
   const decode = (value: string | null | undefined): T =>
     value == null ? defaultValue : JSON.parse(value);
 
-  const value = createMemo(
+  const [value, setValue] = createOptimistic<T>(
     async function* () {
       if (isServer) {
         yield decode(
@@ -55,8 +54,9 @@ export function createCookieSignal<T extends unknown>(
   return [
     value,
     action(function* (next: T) {
-      affects(value);
+      setValue(() => next);
       yield window.cookieStore.set(name, encode(next));
+      yield until(() => encode(value()) === encode(next), { timeout: 500 });
     }),
   ] as const;
 }
