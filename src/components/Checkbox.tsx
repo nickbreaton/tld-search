@@ -10,7 +10,7 @@ export function Checkbox(props: {
   description?: JSX.Element;
 }) {
   return (
-    <label class="flex items-start gap-2 cursor-pointer select-none">
+    <label class="flex items-start gap-2 cursor-pointer select-none touch-manipulation">
       <input
         type="checkbox"
         checked={props.checked}

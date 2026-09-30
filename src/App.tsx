@@ -81,7 +81,7 @@ function TldList(props: {
                         target="_blank"
                         rel="noopener noreferrer"
                         title={`Search ${REGISTRAR_LABELS[registrar]} for .${tld.name} domains`}
-                        class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500 [-webkit-tap-highlight-color:--alpha(var(--color-taupe-400)/40%)]"
+                        class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500 touch-manipulation [-webkit-tap-highlight-color:--alpha(var(--color-taupe-400)/40%)]"
                       >
                         {REGISTRAR_LABELS[registrar]}
                         <span
@@ -198,7 +198,7 @@ export default function App() {
             href="https://nickbreaton.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-sm text-taupe-400 hover:text-taupe-500 hover:underline"
+            class="text-sm text-taupe-400 hover:text-taupe-500 hover:underline touch-manipulation"
           >
             nickbreaton.com
           </a>
@@ -210,7 +210,7 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            class="text-taupe-400 hover:text-taupe-500 -m-2.5 p-2.5 inline-flex"
+            class="text-taupe-400 hover:text-taupe-500 -m-2.5 p-2.5 inline-flex touch-manipulation"
           >
             <span
               aria-hidden="true"
