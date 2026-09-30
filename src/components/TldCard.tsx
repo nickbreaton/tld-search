@@ -37,7 +37,7 @@ export function TldCard(props: {
           onClick={(event) =>
             props.onToggleFavorite({ coords: { x: event.clientX, y: event.clientY } })
           }
-          class="cursor-pointer -m-2.5 p-2.5 touch-manipulation"
+          class="cursor-pointer -m-2.5 p-2.5"
         >
           <span
             aria-hidden="true"
@@ -69,7 +69,7 @@ export function TldCard(props: {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={`Search ${registrar.label} for .${props.tld.name} domains`}
-                    class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500 dark:text-taupe-500 dark:hover:text-taupe-400 touch-manipulation [-webkit-tap-highlight-color:--alpha(var(--color-taupe-400)/40%)] dark:[-webkit-tap-highlight-color:--alpha(var(--color-taupe-600)/40%)]"
+                    class="inline-flex items-center gap-1 hover:underline text-sm text-taupe-400 hover:text-taupe-500 dark:text-taupe-500 dark:hover:text-taupe-400 [-webkit-tap-highlight-color:--alpha(var(--color-taupe-400)/40%)] dark:[-webkit-tap-highlight-color:--alpha(var(--color-taupe-600)/40%)]"
                   >
                     {registrar.label}
                     <span
