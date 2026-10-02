@@ -5,15 +5,13 @@ import "./styles/global.css";
 import { createCookieSignal } from "./state/createCookieSignal";
 import { createPhraseSignal } from "./state/createPhraseSignal";
 import { createFavorites } from "./state/createFavorites";
-import { createHeartBursts } from "./state/createHeartBursts";
 import { invoke } from "@solidjs/web/server-functions";
 import { Header } from "./components/Header";
 import { SiteLinks } from "./components/SiteLinks";
 import { SearchInput } from "./components/SearchInput";
 import { Filters } from "./components/Filters";
 import { TldList } from "./components/TldList";
-import type { CatalogTld, TldCardState, ToggleFavoriteEvent } from "./components/TldCard";
-import { HeartBursts } from "./components/HeartBursts";
+import type { CatalogTld, TldCardState } from "./components/TldCard";
 
 const SEARCH_DEBOUNCE_MS = 150;
 
@@ -26,19 +24,6 @@ export default function App() {
   const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
   const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("excludeCountry", false);
   const { favorites, toggle } = createFavorites();
-  const { bursts, spawn } = createHeartBursts();
-
-  let mainRef: HTMLElement | undefined;
-
-  const handleToggleFavorite = (name: string, { coords }: ToggleFavoriteEvent) => {
-    if (!favorites().has(name)) {
-      const rect = mainRef?.getBoundingClientRect();
-
-      spawn(coords.x - (rect?.left ?? 0), coords.y - (rect?.top ?? 0));
-    }
-
-    toggle(name);
-  };
 
   const debouncedPhrase = createMemo(async () => {
     const value = phrase();
@@ -112,10 +97,7 @@ export default function App() {
   const pendingClass = () => ({ "opacity-40 dark:opacity-33": pending() });
 
   return (
-    <main
-      ref={(el) => (mainRef = el)}
-      class="relative flex flex-col min-h-dvh max-w-4xl mx-auto pt-8 pb-6 sm:pt-16 sm:pb-15 gap-5 px-4"
-    >
+    <main class="relative flex flex-col min-h-dvh max-w-4xl mx-auto pt-8 pb-6 sm:pt-16 sm:pb-15 gap-5 px-4">
       <Header />
       <SearchInput
         hasValue={!!latest(() => phrase())}
@@ -141,13 +123,12 @@ export default function App() {
           tlds={cardOrder()}
           cardStates={cardStates}
           favorites={favorites()}
-          onToggleFavorite={handleToggleFavorite}
+          onToggleFavorite={toggle}
         />
       </div>
       <footer class="sm:hidden pt-6">
         <SiteLinks class="justify-center" />
       </footer>
-      <HeartBursts bursts={bursts()} />
     </main>
   );
 }

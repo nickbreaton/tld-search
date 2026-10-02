@@ -1,4 +1,5 @@
 import { For, Show } from "solid-js";
+import { HeartBursts } from "./HeartBursts";
 import type { getCatalog } from "../server/catalog";
 
 export type CatalogTld = Awaited<ReturnType<typeof getCatalog>>[number];
@@ -13,13 +14,11 @@ const REGISTRARS: { id: Registrar; label: string }[] = [
 
 export type TldCardState = { hidden: boolean };
 
-export type ToggleFavoriteEvent = { coords: { x: number; y: number } };
-
 export function TldCard(props: {
   tld: CatalogTld;
   hidden: boolean;
   favorite: boolean;
-  onToggleFavorite: (event: ToggleFavoriteEvent) => void;
+  onToggleFavorite: () => void;
 }) {
   return (
     <li
@@ -30,25 +29,33 @@ export function TldCard(props: {
         <span translate="no" class="notranslate text-lg text-taupe-800 dark:text-taupe-100">
           .{props.tld.name}
         </span>
-        <button
-          type="button"
-          aria-label={`${props.favorite ? "Remove" : "Add"} .${props.tld.name} ${props.favorite ? "from" : "to"} favorites`}
-          aria-pressed={props.favorite ? "true" : "false"}
-          onClick={(event) =>
-            props.onToggleFavorite({ coords: { x: event.clientX, y: event.clientY } })
-          }
-          class="cursor-pointer -m-2.5 p-2.5"
-        >
-          <span
-            aria-hidden="true"
-            class={[
-              "block size-6 bg-current",
-              props.favorite
-                ? "icon-favorite-fill text-red-500"
-                : "icon-favorite text-taupe-700 dark:text-taupe-300",
-            ]}
-          />
-        </button>
+        <HeartBursts>
+          {(spawn) => (
+            <button
+              type="button"
+              aria-label={`${props.favorite ? "Remove" : "Add"} .${props.tld.name} ${props.favorite ? "from" : "to"} favorites`}
+              aria-pressed={props.favorite ? "true" : "false"}
+              onClick={(event) => {
+                if (!props.favorite) {
+                  spawn(event.currentTarget);
+                }
+
+                props.onToggleFavorite();
+              }}
+              class="cursor-pointer -m-2.5 p-2.5"
+            >
+              <span
+                aria-hidden="true"
+                class={[
+                  "block size-6 bg-current",
+                  props.favorite
+                    ? "icon-favorite-fill text-red-500"
+                    : "icon-favorite text-taupe-700 dark:text-taupe-300",
+                ]}
+              />
+            </button>
+          )}
+        </HeartBursts>
       </div>
       <hr class="my-3 border-t border-solid border-taupe-200 dark:border-taupe-800" />
       <ol class="flex flex-col gap-1 select-none">

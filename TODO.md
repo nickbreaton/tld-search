@@ -1,4 +1,3 @@
-- When scrolled down on iOS Safari and favoriting from the list, the heart spray both lags and is not under the pointer.
 - Double check service names makes sense
 - Finalize language in filters
 - Readme needs cleanup
