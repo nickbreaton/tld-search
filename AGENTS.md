@@ -15,7 +15,7 @@ DO NOT deploy resources unless explicitly instructed to do so. Dry runs are tota
 
 ## Effect
 
-This repository uses the Effect (v4 release candidate) TypeScript library.
+This repository uses the Effect (v4) TypeScript library.
 
 Before writing any Effect code, first read `node_modules/effect/AGENTS.md` completely, and follow the links in the file when required.
 
