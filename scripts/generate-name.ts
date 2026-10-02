@@ -1,6 +1,6 @@
 import { BunFileSystem, BunRuntime } from "@effect/platform-bun";
 import { Config, Duration, Effect, FileSystem, Schema, Stream, Option } from "effect";
-import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/http";
+import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/unstable/http";
 import { fileURLToPath } from "node:url";
 
 const apiUrl = "https://api.name.com/core/v1/tldpricing";

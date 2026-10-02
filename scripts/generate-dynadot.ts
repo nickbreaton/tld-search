@@ -1,6 +1,6 @@
 import { BunFileSystem, BunRuntime } from "@effect/platform-bun";
 import { Config, Duration, Effect, FileSystem, Option, Redacted, Schema, Stream } from "effect";
-import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/http";
+import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/unstable/http";
 import { fileURLToPath } from "node:url";
 
 const apiUrl = "https://api.dynadot.com/api3.json";

@@ -1,6 +1,6 @@
 import { BunFileSystem, BunRuntime } from "@effect/platform-bun";
 import { Duration, Effect, FileSystem, Schema } from "effect";
-import { FetchHttpClient, HttpClient, HttpClientResponse } from "effect/http";
+import { FetchHttpClient, HttpClient, HttpClientResponse } from "effect/unstable/http";
 import { domainToUnicode, fileURLToPath } from "node:url";
 
 const sourceUrl =
