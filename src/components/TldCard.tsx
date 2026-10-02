@@ -70,7 +70,7 @@ export function TldCard(props: {
               }
             >
               {(link) => (
-                <li>
+                <li class="flex items-center">
                   <a
                     href={link().href}
                     target="_blank"
