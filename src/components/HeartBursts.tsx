@@ -1,5 +1,5 @@
 import { createSignal, For, onSettled, Show } from "solid-js";
-import type { JSX } from "@solidjs/web";
+import { Portal, type JSX } from "@solidjs/web";
 import favoriteFilledIcon from "@material-symbols/svg-400/rounded/favorite-fill.svg?raw";
 
 type HeartParticle = {
@@ -52,8 +52,8 @@ export function HeartBursts(props: {
 
   const spawn = (element: Element) => {
     const rect = element.getBoundingClientRect();
-    const x = rect.left + rect.width / 2;
-    const y = rect.top + rect.height / 2;
+    const x = rect.left + rect.width / 2 + window.scrollX;
+    const y = rect.top + rect.height / 2 + window.scrollY;
     const id = nextId++;
 
     setBursts((current) => [...current, { id, x, y, particles: createParticles() }]);
@@ -70,31 +70,33 @@ export function HeartBursts(props: {
     <>
       {props.children(spawn)}
       <Show when={bursts().length > 0}>
-        <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-50 overflow-hidden">
-          <For each={bursts()}>
-            {(burst) => (
-              <For each={burst.particles}>
-                {(particle) => (
-                  <span
-                    class="heart-burst-particle fill-red-500 absolute [&_svg]:size-full"
-                    style={{
-                      left: `${burst.x}px`,
-                      top: `${burst.y}px`,
-                      width: `${particle.size}px`,
-                      height: `${particle.size}px`,
-                      "--heart-dx": `${particle.dx}px`,
-                      "--heart-dy": `${particle.dy}px`,
-                      "--heart-rotate": `${particle.rotate}deg`,
-                      "animation-duration": `${particle.duration}ms`,
-                      "animation-delay": `${particle.delay}ms`,
-                    }}
-                    innerHTML={favoriteFilledIcon}
-                  />
-                )}
-              </For>
-            )}
-          </For>
-        </div>
+        <Portal mount={document.body}>
+          <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-50 overflow-x-clip">
+            <For each={bursts()}>
+              {(burst) => (
+                <For each={burst.particles}>
+                  {(particle) => (
+                    <span
+                      class="heart-burst-particle fill-red-500 absolute [&_svg]:size-full"
+                      style={{
+                        left: `${burst.x}px`,
+                        top: `${burst.y}px`,
+                        width: `${particle.size}px`,
+                        height: `${particle.size}px`,
+                        "--heart-dx": `${particle.dx}px`,
+                        "--heart-dy": `${particle.dy}px`,
+                        "--heart-rotate": `${particle.rotate}deg`,
+                        "animation-duration": `${particle.duration}ms`,
+                        "animation-delay": `${particle.delay}ms`,
+                      }}
+                      innerHTML={favoriteFilledIcon}
+                    />
+                  )}
+                </For>
+              )}
+            </For>
+          </div>
+        </Portal>
       </Show>
     </>
   );

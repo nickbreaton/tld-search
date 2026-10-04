@@ -10,7 +10,7 @@ export function TldList(props: {
   // touch-action applies to every descendant, so one declaration here covers each card's links and
   // button. Setting it per element made Safari noticeably slow to focus the search input.
   return (
-    <ul class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-2 touch-manipulation">
+    <ul class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-2 touch-manipulation [overflow-anchor:none]">
       <For each={props.tlds}>
         {(tld) => (
           <TldCard
