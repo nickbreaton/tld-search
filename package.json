@@ -39,7 +39,7 @@
     "@effect/platform-bun": "4.0.0",
     "@effect/platform-node": "4.0.0",
     "@oxlint/plugins": "1.86.0",
-    "@solidjs/vite-plugin": "3.0.0-next.47",
+    "@solidjs/vite-plugin": "3.0.0-next.42",
     "@types/bun": "^1.4.2",
     "fast-xml-parser": "^5.11.2",
     "husky": "^9.1.7",
