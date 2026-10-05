@@ -26,7 +26,7 @@ export class TldCatalog extends Context.Service<
     }) => ReadonlyArray<string>;
     readonly getLink: (domain: string, registrar: Registrar) => Option.Option<URL>;
   }
->()("tld-search/server/TldCatalog") {
+>()("tld-search/server/services/TldCatalog") {
   static readonly layer = Layer.effect(
     TldCatalog,
     Effect.gen(function* () {

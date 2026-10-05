@@ -40,22 +40,22 @@ const JevResponse = Schema.Union([
 
 const decodeJevResponse = Schema.decodeUnknownEffect(JevResponse);
 
-export class JevError extends Schema.TaggedError<JevError>()("JevError", {
+export class JevClientError extends Schema.TaggedError<JevClientError>()("JevClientError", {
   cause: Schema.Defect(),
 }) {}
 
-export class Jev extends Context.Service<
-  Jev,
+export class JevClient extends Context.Service<
+  JevClient,
   {
     readonly infer: (
       inference: JevInference,
-    ) => Effect.Effect<Readonly<Record<string, number>>, JevError>;
+    ) => Effect.Effect<Readonly<Record<string, number>>, JevClientError>;
   }
->()("tld-search/server/Jev") {
+>()("tld-search/server/services/JevClient") {
   static readonly layerCloudflare = Layer.succeed(
-    Jev,
-    Jev.of({
-      infer: Effect.fn("Jev.infer")(function* (inference) {
+    JevClient,
+    JevClient.of({
+      infer: Effect.fn("JevClient.infer")(function* (inference) {
         const response = yield* Effect.tryPromise({
           try: async (signal) => {
             const { env } = await import("cloudflare:workers");
@@ -71,11 +71,11 @@ export class Jev extends Context.Service<
               },
             );
           },
-          catch: (cause) => new JevError({ cause }),
+          catch: (cause) => new JevClientError({ cause }),
         });
 
         const decoded = yield* decodeJevResponse(response).pipe(
-          Effect.mapError((cause) => new JevError({ cause })),
+          Effect.mapError((cause) => new JevClientError({ cause })),
         );
 
         const answers = Predicate.hasProperty(decoded, "answers")

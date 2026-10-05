@@ -1,4 +1,3 @@
-- Double check service names makes sense
 - Finalize language in filters
 - Readme needs cleanup
 - Add some better no results copy

@@ -1,5 +1,5 @@
 import { Effect, Schema } from "effect";
-import { TldRecommender } from "./services/RecommendTld";
+import { TldRecommender } from "./services/TldRecommender";
 
 const SearchInput = Schema.Struct({
   phrase: Schema.String,

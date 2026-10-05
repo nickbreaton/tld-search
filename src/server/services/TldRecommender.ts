@@ -1,6 +1,6 @@
 import { Context, Effect, Layer } from "effect";
 
-import { SearchTld } from "./SearchTld";
+import { TldRanker } from "./TldRanker";
 import { TldCatalog } from "./TldCatalog";
 
 const maximumResults = 20;
@@ -8,21 +8,21 @@ const maximumResults = 20;
 export class TldRecommender extends Context.Service<
   TldRecommender,
   {
-    readonly recommend: SearchTld["Service"]["search"];
+    readonly recommend: TldRanker["Service"]["rank"];
   }
->()("tld-search/server/TldRecommender") {
+>()("tld-search/server/services/TldRecommender") {
   static readonly layerNoDeps = Layer.effect(
     TldRecommender,
     Effect.gen(function* () {
       const catalog = yield* TldCatalog;
-      const searchTld = yield* SearchTld;
+      const ranker = yield* TldRanker;
 
       const recommend = Effect.fn("TldRecommender.recommend")(function* (
         query: string,
         excludeNonLatin: boolean,
         excludeCountry: boolean,
       ) {
-        const rankedTlds = yield* searchTld.search(query, excludeNonLatin, excludeCountry);
+        const rankedTlds = yield* ranker.rank(query, excludeNonLatin, excludeCountry);
 
         const normalizedQuery = query.trim().toLocaleLowerCase();
 
@@ -41,5 +41,5 @@ export class TldRecommender extends Context.Service<
     }),
   );
 
-  static readonly layer = this.layerNoDeps.pipe(Layer.provide(SearchTld.layer));
+  static readonly layer = this.layerNoDeps.pipe(Layer.provide(TldRanker.layer));
 }

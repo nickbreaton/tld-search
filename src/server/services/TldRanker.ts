@@ -1,35 +1,35 @@
 import { Context, Effect, Layer, Schema } from "effect";
 
-import { Jev, type JevQuestion } from "./Jev";
+import { JevClient, type JevQuestion } from "./JevClient";
 import { TldCatalog } from "./TldCatalog";
 
 const maximumQueryLength = 140;
 
 const minimumProbability = 0.5;
 
-class SearchTldError extends Schema.TaggedError<SearchTldError>()("SearchTldError", {
+class TldRankerError extends Schema.TaggedError<TldRankerError>()("TldRankerError", {
   cause: Schema.Defect(),
   message: Schema.String,
   operation: Schema.Literals(["inference", "validation"]),
 }) {}
 
-export class SearchTld extends Context.Service<
-  SearchTld,
+export class TldRanker extends Context.Service<
+  TldRanker,
   {
-    readonly search: (
+    readonly rank: (
       query: string,
       excludeNonLatin: boolean,
       excludeCountry: boolean,
-    ) => Effect.Effect<ReadonlyArray<string>, SearchTldError>;
+    ) => Effect.Effect<ReadonlyArray<string>, TldRankerError>;
   }
->()("tld-search/server/SearchTld") {
+>()("tld-search/server/services/TldRanker") {
   static readonly layerNoDeps = Layer.effect(
-    SearchTld,
+    TldRanker,
     Effect.gen(function* () {
-      const jev = yield* Jev;
+      const jev = yield* JevClient;
       const catalog = yield* TldCatalog;
 
-      const search = Effect.fn("SearchTld.search")(function* (
+      const rank = Effect.fn("TldRanker.rank")(function* (
         query: string,
         excludeNonLatin: boolean,
         excludeCountry: boolean,
@@ -37,7 +37,7 @@ export class SearchTld extends Context.Service<
         const normalizedQuery = query.trim();
 
         if (normalizedQuery.length === 0) {
-          return yield* new SearchTldError({
+          return yield* new TldRankerError({
             cause: "The normalized query was empty.",
             message: "A search phrase is required.",
             operation: "validation",
@@ -45,7 +45,7 @@ export class SearchTld extends Context.Service<
         }
 
         if (normalizedQuery.length > maximumQueryLength) {
-          return yield* new SearchTldError({
+          return yield* new TldRankerError({
             cause: `The normalized query exceeded ${maximumQueryLength} characters.`,
             message: `A search phrase must be ${maximumQueryLength} characters or fewer.`,
             operation: "validation",
@@ -64,7 +64,7 @@ export class SearchTld extends Context.Service<
         const answers = yield* jev.infer({ state: normalizedQuery, questions }).pipe(
           Effect.mapError(
             (cause) =>
-              new SearchTldError({
+              new TldRankerError({
                 cause,
                 message: "The TLD search failed.",
                 operation: "inference",
@@ -85,12 +85,12 @@ export class SearchTld extends Context.Service<
         return matches.map((match) => match.tld);
       });
 
-      return SearchTld.of({ search });
+      return TldRanker.of({ rank });
     }),
   );
 
   static readonly layer = this.layerNoDeps.pipe(
-    Layer.provide(Jev.layerCloudflare),
+    Layer.provide(JevClient.layerCloudflare),
     Layer.provideMerge(TldCatalog.layer),
   );
 }
