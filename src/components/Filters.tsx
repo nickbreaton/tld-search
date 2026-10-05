@@ -40,10 +40,10 @@ export function Filters(props: {
         <Checkbox
           checked={props.latinOnly}
           onChange={props.onLatinOnlyChange}
-          label="Latin script only"
+          label="Latin alphabet only"
           description={
             <>
-              Hide domain endings written in non-Latin characters, like{" "}
+              Hide TLDs that use other alphabets or writing systems, like{" "}
               <span class="whitespace-nowrap">.рф</span> or{" "}
               <span class="whitespace-nowrap">.中国</span>.
             </>
@@ -55,9 +55,9 @@ export function Filters(props: {
           label="Hide country codes"
           description={
             <>
-              Exclude two-letter country-code endings, like{" "}
-              <span class="whitespace-nowrap">.us</span> or{" "}
-              <span class="whitespace-nowrap">.de</span>.
+              Hide TLDs assigned to countries or territories, like{" "}
+              <span class="whitespace-nowrap">.us</span>, <span class="whitespace-nowrap">.de</span>
+              , or <span class="whitespace-nowrap">.io</span>.
             </>
           }
         />
