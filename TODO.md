@@ -1,5 +1,0 @@
-- Readme needs cleanup
-- Add some better no results copy
-  - actually no results
-  - error
-  - 404
