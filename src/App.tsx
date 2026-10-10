@@ -5,6 +5,7 @@ import "./styles/global.css";
 import { createCookieSignal } from "./state/createCookieSignal";
 import { createPhraseSignal } from "./state/createPhraseSignal";
 import { createFavorites } from "./state/createFavorites";
+import { createShuffled } from "./state/createShuffled";
 import { invoke } from "@solidjs/web/server-functions";
 import { Header } from "./components/Header";
 import { SiteLinks } from "./components/SiteLinks";
@@ -19,6 +20,11 @@ export default function App() {
   const catalog = createMemo(() => getCatalog());
 
   const catalogByName = createMemo(() => new Map(catalog().map((tld) => [tld.name, tld])));
+
+  const shuffledCatalog = createShuffled(
+    () => catalog(),
+    (tld) => tld.name,
+  );
 
   const { phrase, setPhrase } = createPhraseSignal();
   const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
@@ -55,7 +61,8 @@ export default function App() {
       .catch(() => ({ names: [], error: true }));
   });
 
-  // Matching TLDs in display order: search rank while searching, otherwise favorites first.
+  // Matching TLDs in display order: search rank while searching, otherwise favorites first
+  // (alphabetical) followed by everything else in shuffled order.
   const results = createMemo(() => {
     const showLatinOnly = latinOnly();
     const showNonCountryOnly = excludeCountry();
@@ -64,9 +71,10 @@ export default function App() {
       tld != null && (!showLatinOnly || tld.latin) && (!showNonCountryOnly || tld.nonCountry);
 
     if (!phrase()) {
-      return catalog()
-        .filter(matches)
-        .toSorted((a, b) => Number(favorites().has(b.name)) - Number(favorites().has(a.name)));
+      return [
+        ...catalog().filter((tld) => favorites().has(tld.name) && matches(tld)),
+        ...shuffledCatalog().filter((tld) => !favorites().has(tld.name) && matches(tld)),
+      ];
     }
 
     const result = search();
