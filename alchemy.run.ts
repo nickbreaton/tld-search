@@ -3,6 +3,7 @@ import * as Cloudflare from "alchemy/Cloudflare";
 import { Effect } from "effect";
 
 export const Website = Cloudflare.Website.Vite("TldSearchWebsite", {
+  name: "tld-search",
   domain: "tld-search.nickbreaton.com",
   workersDev: false,
   env: {
