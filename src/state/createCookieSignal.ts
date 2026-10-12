@@ -3,6 +3,8 @@ import { getRequestEvent, isServer } from "@solidjs/web";
 import { action, createOptimistic, until, type Accessor } from "solid-js";
 import { on } from "events-to-async";
 
+const MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
+
 export function createCookieSignal<T extends unknown>(
   name: string,
   defaultValue: T,
@@ -55,7 +57,13 @@ export function createCookieSignal<T extends unknown>(
     value,
     action(function* (next: T) {
       setValue(() => next);
-      yield window.cookieStore.set(name, encode(next));
+      yield window.cookieStore.set({
+        name,
+        value: encode(next),
+        expires: Date.now() + MAX_AGE_MS,
+        path: "/",
+        sameSite: "lax",
+      });
       yield until(() => encode(value()) === encode(next), { timeout: 500 });
     }),
   ] as const;
