@@ -27,8 +27,8 @@ export default function App() {
   );
 
   const { phrase, setPhrase } = createPhraseSignal();
-  const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latinOnly", true);
-  const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("excludeCountry", false);
+  const [latinOnly, setLatinOnly] = createCookieSignal<boolean>("latin_only", true);
+  const [excludeCountry, setExcludeCountry] = createCookieSignal<boolean>("exclude_country", false);
   const { favorites, toggle } = createFavorites();
 
   const debouncedPhrase = createMemo(async () => {
