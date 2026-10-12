@@ -84,6 +84,12 @@ export default function App() {
     return result.names.map((name) => catalogByName().get(name)).filter(matches);
   });
 
+  const resultCount = () => {
+    const count = results().length;
+    if (count > 500) return "500+ results";
+    return count === 1 ? "1 result" : `${count} results`;
+  };
+
   const resultNames = createMemo(() => new Set(results().map((tld) => tld.name)));
 
   // Every catalog entry stays mounted so filtering and favoriting only move existing cards.
@@ -113,8 +119,8 @@ export default function App() {
         onClear={() => setPhrase("")}
       />
       <div class="mt-3 flex items-center justify-between text-sm text-taupe-400 dark:text-taupe-500">
-        <span class={pendingClass()}>
-          {results().length > 500 ? "500+" : results().length} results
+        <span role="status" class={pendingClass()}>
+          {resultCount()}
         </span>
         <Filters
           latinOnly={latest(() => latinOnly())}
