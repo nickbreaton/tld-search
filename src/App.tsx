@@ -6,6 +6,7 @@ import { createCookieSignal } from "./state/createCookieSignal";
 import { createPhraseSignal } from "./state/createPhraseSignal";
 import { createFavorites } from "./state/createFavorites";
 import { createShuffled } from "./state/createShuffled";
+import { deprioritizeSensitiveTlds } from "./utils/deprioritizeSensitiveTlds";
 import { invoke } from "@solidjs/web/server-functions";
 import { Header } from "./components/Header";
 import { SiteLinks } from "./components/SiteLinks";
@@ -73,7 +74,9 @@ export default function App() {
     if (!phrase()) {
       return [
         ...catalog().filter((tld) => favorites().has(tld.name) && matches(tld)),
-        ...shuffledCatalog().filter((tld) => !favorites().has(tld.name) && matches(tld)),
+        ...deprioritizeSensitiveTlds(
+          shuffledCatalog().filter((tld) => !favorites().has(tld.name) && matches(tld)),
+        ),
       ];
     }
 
@@ -86,7 +89,9 @@ export default function App() {
 
   const resultCount = () => {
     const count = results().length;
+
     if (count > 500) return "500+ results";
+
     return count === 1 ? "1 result" : `${count} results`;
   };
 
